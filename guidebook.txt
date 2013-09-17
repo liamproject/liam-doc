@@ -6,7 +6,7 @@ LINKED ARCHIVAL METADATA: A GUIDEBOOK
 Executive Summary
 =================
 
-[The Executive Summary will core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
+[The Executive Summary will list core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
 
 
 Introduction
@@ -60,12 +60,16 @@ In the same text ("Linked Data -- Design Issues") Berners-Lee also outlined a so
 
   * 1 star for making data available on the web (whatever format)
     but with an open licence, to be Open Data
+
   * 2 stars for making the data machine-readable structured data
     (e.g. excel instead of image scan of a table)
+
   * 3 stars for making the data available in non-proprietary
     format (e.g. CSV instead of excel)
+
   * 4 stars for using open standards from W3C (RDF and SPARQL)
     to identify things, so that people can point at your stuff
+
   * 5 stars for linking your data to other people's data to
     provide context
 
@@ -111,13 +115,13 @@ Unfortunately and to-date too little Linked Data has been made available and/or 
 
 There are a number of challenges in the process. Some of them are listed below, and some of them have been alluded to above:
 
-  * Create useful LOD, meaning, create LOD that links to other LOD. LOD does not live in a world by itself. Remember, the “L” stands for “linked”. For example, try to include URIs that are the URIs used on other LOD data sets. Sometimes this is not possible, for example, le with the names of people in archival materials. When possible, they used VIAF, but other times they needed to create their own URI denoting an individual.
+  * Create useful LOD, meaning, create LOD that links to other LOD. LOD does not live in a world by itself. Remember, the "L" stands for "linked". For example, try to include URIs that are the URIs used on other LOD data sets. Sometimes this is not possible, for example, le with the names of people in archival materials. When possible, they used VIAF, but other times they needed to create their own URI denoting an individual.
 
   * There is a level of rigor involved in creating the data model, and there may be many discussions regarding semantics. For example, what is a creator? Or, when is a term intended to be an index term as opposed reference. When does one term in one vocabulary equal a different term in a different vocabulary?
 
   * Balance the creation of your own vocabulary with the need to speak the language of others using their vocabulary.
 
-  * Consider “fixing” the data as it comes in or goes out because it might not be consistent nor thorough.
+  * Consider "fixing" the data as it comes in or goes out because it might not be consistent nor thorough.
 
   * Provenance is an issue. People — especially scholars — will want to know where the LOD came from and whether or not it is authoritative. How to solve or address this problem? The jury is still out on this one.
 
@@ -133,6 +137,14 @@ Objectives
 Overview of linked data concepts and vocabulary
 -----------------------------------------------
 
+Linked Data is a process for systematically and methodically exposing metadata on the Web. In many ways, it is the re-articulation of a thing called the Semantic Web first outlined more than a decade ago. Linked Data (and the Semantic Web) are efforts to increase the "sphere of knowledge" through the use of computer technology. 
+
+Increasingly you will hear of of linked data being qualified as "linked open data". The "open" qualifier alludes to the important distinctions between truly free data/information and licensed data/information which comes with some strings attached. Truly "open" linked data comes with no licensing restrictions.
+
+When you hear of linked data and the Semantic Web, the next thing you often hear is "RDF" or "Resource Description Framework". First and foremost, RDF is a way of representing knowledge. It does this through the use of assertions (think, "sentences") with only three parts: 1) a subject, 2) a predicate, and 3) an object. Put together, these three things create things called "triples". The subject of each assertion is expected to be a Universal Resource Identifier (or URI, but think URL), and this URI is expected to represent a thing -- anything. (Really, anything.) The predicate is some sort of relationship such as equals or is a sub-part of or contains or is a description of, or is the name of, etc. Predicates are the vocabulary of linked data, and you will find an abundance of vocabularies from which to choose when creating Linked Data. Finally, objects come in two forms: 1) more URIs (pointers to things) or literal values such the names of people, places, or things. Examples of literals include "Lancaster, PA", "Thomas Jefferson", or "Musée d'Orsay".
+
+RDF is not to be confused with RDF/XML or another other type of RDF "serialization". Remember, RDF describes triples, but it does not specify how the triples are express or written down. On the other hand, RDF/XML is an XML syntax for expressing RDF. Some people think RDF/XML is too complicated and too verbose. Consequently, other serializations have manifested themselves including N3 and Turtle.
+ 
 
 Brief overview of the history of LOD-LAM
 ----------------------------------------
@@ -157,10 +169,15 @@ Trends in LOD-LAM
 
 With great interest I read the Spring/Summer issue of Information Standards Quarterly where there were a number of articles pertaining to linked open data in cultural heritage institutions. [0] Of particular interest to me where the various loosely enumerated challenges of linked open data. Some of them included:
 
-  * the apparent Tower Of Babel when it comes to vocabularies used to describe content
+  * the apparent Tower Of Babel when it comes to vocabularies used
+    to describe content
+
   * dirty, inconsistent, or wide varieties of data integrity
+
   * persistent URIs
-  * the “chicken & egg” problem of why linked data if there is no killer application
+
+  * the "chicken & egg" problem of why linked data if there is no
+    killer application
 
 
 Getting Started: Strategies and Steps
@@ -218,6 +235,10 @@ Integration into daily practice
 Three Cs: Cleanup, Conversion, Consistency
 ------------------------------------------
 
+Creating and maintaining metadata is a never-ending process. The items being described can always use elaboration. Collections may increase is size. Rights applied against content may change. Things become digitized, or digitized things are migrated from one format to another. Because of these sorts of things and many others, cleanup, conversion, and consistency are something every metadata specialist needs to keep in mind. 
+
+Cleanup, conversion, and consistency means many things. Does all of your metadata use the same set of one or more vocabularies? Are things spelled correctly? Maybe you used abbreviations in one document but spelled things out in another? Have you migrated your JPEG images to JPEG2000 or TIFF formats? Maybe the EAD DTD has been updated, and you want (need) to migrate your finding aids from one XML format to another? Do all of your finding aids exhibit the same level of detail; are some "thinner" than others? Have you used one form of a person's name in one document but used another form in a different document? The answers to these sorts of questions point to the need for cleanup, conversion, and consistency. 
+
 
 Tools
 -----
@@ -252,71 +273,71 @@ Further reading
 
 This is a list of links and citations to get one started on Linked Open Data
 
-	 “About - LOCAH Linked Archives Hub Test Dataset.” Accessed August 16, 2013. http://data.archiveshub.ac.uk/about.html.
+	 "About - LOCAH Linked Archives Hub Test Dataset." Accessed August 16, 2013. http://data.archiveshub.ac.uk/about.html.
 
-	 Berners-Lee, Tim. “Linked Data - Design Issues.” Accessed August 4, 2013. http://www.w3.org/DesignIssues/LinkedData.html.
+	 Berners-Lee, Tim. "Linked Data - Design Issues." Accessed August 4, 2013. http://www.w3.org/DesignIssues/LinkedData.html.
 
-	 “Ckan - The Open Source Data Portal Software.” Accessed August 14, 2013. http://ckan.org/.
+	 "Ckan - The Open Source Data Portal Software." Accessed August 14, 2013. http://ckan.org/.
 
-	 “Content Negotiation.” Wikipedia, the Free Encyclopedia, July 2, 2013. https://en.wikipedia.org/w/index.php?title=Content_negotiation&oldid=562532260.
+	 "Content Negotiation." Wikipedia, the Free Encyclopedia, July 2, 2013. https://en.wikipedia.org/w/index.php?title=Content_negotiation&oldid=562532260.
 
-	 “Curl and Libcurl.” Accessed August 6, 2013. http://curl.haxx.se/.
+	 "Curl and Libcurl." Accessed August 6, 2013. http://curl.haxx.se/.
 
-	 David Beckett. “Turtle.” Accessed August 6, 2013. http://www.w3.org/TR/2012/WD-turtle-20120710/.
+	 David Beckett. "Turtle." Accessed August 6, 2013. http://www.w3.org/TR/2012/WD-turtle-20120710/.
 
-	 Dunsire, Gordon, Corey Harper, Diane Hillmann, and Jon Phipps. “Linked Data Vocabulary Management: Infrastructure Support, Data Integration, and Interoperability.” Information Standards Quarterly 24, no. 2/3 (2012): 4. doi:10.3789/isqv24n2-3.2012.02.
+	 Dunsire, Gordon, Corey Harper, Diane Hillmann, and Jon Phipps. "Linked Data Vocabulary Management: Infrastructure Support, Data Integration, and Interoperability." Information Standards Quarterly 24, no. 2/3 (2012): 4. doi:10.3789/isqv24n2-3.2012.02.
 
-	 Elliott, Thomas, Sebastian Heath, and John Muccigrosso. “Report on the Linked Ancient World Data Institute.” Information Standards Quarterly 24, no. 2/3 (2012): 43. doi:10.3789/isqv24n2-3.2012.08.
+	 Elliott, Thomas, Sebastian Heath, and John Muccigrosso. "Report on the Linked Ancient World Data Institute." Information Standards Quarterly 24, no. 2/3 (2012): 43. doi:10.3789/isqv24n2-3.2012.08.
 
-	 Fons, Ted, Jeff Penka, and Richard Wallis. “OCLC’s Linked Data Initiative: Using Schema.org to Make Library Data Relevant on the Web.” Information Standards Quarterly 24, no. 2/3 (2012): 29. doi:10.3789/isqv24n2-3.2012.05.
+	 Fons, Ted, Jeff Penka, and Richard Wallis. "OCLC's Linked Data Initiative: Using Schema.org to Make Library Data Relevant on the Web." Information Standards Quarterly 24, no. 2/3 (2012): 29. doi:10.3789/isqv24n2-3.2012.05.
 
-	 Gruber, Ethan. “Eaditor.” GitHub. Accessed August 12, 2013. https://github.com/ewg118/eaditor.
+	 Gruber, Ethan. "Eaditor." GitHub. Accessed August 12, 2013. https://github.com/ewg118/eaditor.
 
-	 Isaac, Antoine, Robina Clayphan, and Bernhard Haslhofer. “Europeana: Moving to Linked Open Data.” Information Standards Quarterly 24, no. 2/3 (2012): 34. doi:10.3789/isqv24n2-3.2012.06.
+	 Isaac, Antoine, Robina Clayphan, and Bernhard Haslhofer. "Europeana: Moving to Linked Open Data." Information Standards Quarterly 24, no. 2/3 (2012): 34. doi:10.3789/isqv24n2-3.2012.06.
 
-	 LiAM. “LiAM: Linked Archival Metadata.” Accessed July 30, 2013. http://sites.tufts.edu/liam/.
+	 LiAM. "LiAM: Linked Archival Metadata." Accessed July 30, 2013. http://sites.tufts.edu/liam/.
 
-	 “Linked Data.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Linked_data&oldid=562554554.
+	 "Linked Data." Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Linked_data&oldid=562554554.
 
-	 “Linked Open Data in Libraries, Archives, & Museums (Google Group).” Accessed August 6, 2013. https://groups.google.com/forum/#!forum/lod-lam.
+	 "Linked Open Data in Libraries, Archives, & Museums (Google Group)." Accessed August 6, 2013. https://groups.google.com/forum/#!forum/lod-lam.
 
-	 “Linking Lives | Using Linked Data to Create Biographical Resources.” Accessed August 16, 2013. http://archiveshub.ac.uk/linkinglives/.
+	 "Linking Lives | Using Linked Data to Create Biographical Resources." Accessed August 16, 2013. http://archiveshub.ac.uk/linkinglives/.
 
-	 “LOCAH Linked Archives Hub Test Dataset.” Accessed August 6, 2013. http://data.archiveshub.ac.uk/.
+	 "LOCAH Linked Archives Hub Test Dataset." Accessed August 6, 2013. http://data.archiveshub.ac.uk/.
 
-	 LODLAM. “Zotero | Groups > LOD-LAM.” Accessed August 6, 2013. https://www.zotero.org/groups/lod-lam.
+	 LODLAM. "Zotero | Groups > LOD-LAM." Accessed August 6, 2013. https://www.zotero.org/groups/lod-lam.
 
-	 “LODLAM - Linked Open Data in Libraries, Archives & Museums.” Accessed August 6, 2013. http://lodlam.net/.
+	 "LODLAM - Linked Open Data in Libraries, Archives & Museums." Accessed August 6, 2013. http://lodlam.net/.
 
-	 “Notation3.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Notation3&oldid=541302540.
+	 "Notation3." Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Notation3&oldid=541302540.
 
-	 “OWL 2 Web Ontology Language Primer.” Accessed August 14, 2013. http://www.w3.org/TR/2009/REC-owl2-primer-20091027/.
+	 "OWL 2 Web Ontology Language Primer." Accessed August 14, 2013. http://www.w3.org/TR/2009/REC-owl2-primer-20091027/.
 
-	 “RDF/XML.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=RDF/XML&oldid=561972340.
+	 "RDF/XML." Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=RDF/XML&oldid=561972340.
 
-	 “RDFa.” Wikipedia, the Free Encyclopedia, July 22, 2013. http://en.wikipedia.org/w/index.php?title=RDFa&oldid=561972699.
+	 "RDFa." Wikipedia, the Free Encyclopedia, July 22, 2013. http://en.wikipedia.org/w/index.php?title=RDFa&oldid=561972699.
 
-	 Rubinstein, Aaron. “OWLDoc.” Accessed August 12, 2013. http://gslis.simmons.edu/archival/arch/index.html.
+	 Rubinstein, Aaron. "OWLDoc." Accessed August 12, 2013. http://gslis.simmons.edu/archival/arch/index.html.
 
-	 “Semantic Web.” Wikipedia, the Free Encyclopedia, August 2, 2013. http://en.wikipedia.org/w/index.php?title=Semantic_Web&oldid=566813312.
+	 "Semantic Web." Wikipedia, the Free Encyclopedia, August 2, 2013. http://en.wikipedia.org/w/index.php?title=Semantic_Web&oldid=566813312.
 
-	 “SPARQL.” Wikipedia, the Free Encyclopedia, August 1, 2013. http://en.wikipedia.org/w/index.php?title=SPARQL&oldid=566718788.
+	 "SPARQL." Wikipedia, the Free Encyclopedia, August 1, 2013. http://en.wikipedia.org/w/index.php?title=SPARQL&oldid=566718788.
 
-	 “SPARQL 1.1 Overview.” Accessed August 6, 2013. http://www.w3.org/TR/sparql11-overview/.
+	 "SPARQL 1.1 Overview." Accessed August 6, 2013. http://www.w3.org/TR/sparql11-overview/.
 
-	 “Spring/Summer 2012 (v.24 No.2/3) - National Information Standards Organization.” Accessed August 6, 2013. http://www.niso.org/publications/isq/2012/v24no2-3/.
+	 "Spring/Summer 2012 (v.24 No.2/3) - National Information Standards Organization." Accessed August 6, 2013. http://www.niso.org/publications/isq/2012/v24no2-3/.
 
-	 “TemaTres Controlled Vocabulary Server.” Accessed August 14, 2013. http://www.vocabularyserver.com/.
+	 "TemaTres Controlled Vocabulary Server." Accessed August 14, 2013. http://www.vocabularyserver.com/.
 
-	 “Transforming EAD XML into RDF/XML Using XSLT.” Accessed August 16, 2013. http://archiveshub.ac.uk/locah/tag/transform/.
+	 "Transforming EAD XML into RDF/XML Using XSLT." Accessed August 16, 2013. http://archiveshub.ac.uk/locah/tag/transform/.
 
-	 “Turtle (syntax).” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Turtle_(syntax)&oldid=542183836.
+	 "Turtle (syntax)." Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Turtle_(syntax)&oldid=542183836.
 
-	 Voss, Jon. “LODLAM State of Affairs.” Information Standards Quarterly 24, no. 2/3 (2012): 41. doi:10.3789/isqv24n2-3.2012.07.
+	 Voss, Jon. "LODLAM State of Affairs." Information Standards Quarterly 24, no. 2/3 (2012): 41. doi:10.3789/isqv24n2-3.2012.07.
 
-	 W3C. “LinkedData - W3C Wiki.” Accessed August 4, 2013. http://www.w3.org/wiki/LinkedData.
+	 W3C. "LinkedData - W3C Wiki." Accessed August 4, 2013. http://www.w3.org/wiki/LinkedData.
 
-	 “Welcome - the Datahub.” Accessed August 14, 2013. http://datahub.io/.
+	 "Welcome - the Datahub." Accessed August 14, 2013. http://datahub.io/.
 
 --
 Eric Lease Morgan
