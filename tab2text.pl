@@ -1,0 +1,44 @@
+#!/usr/bin/perl
+
+# tab2text.pl - output simple formatted text from tabbed input
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# September 21, 2013 - first cut; why can't Filemaker do this!?
+
+
+# require
+use strict;
+
+# do the work
+while ( <DATA> ) {
+
+	chop;
+	my ( $name, $url, $description ) = split /\t/, $_;
+	print "$name ($url) - $description\n";
+	
+}
+
+# replace this data every time
+__DATA__
+ckan	http://ckan.org	The open source data portal software
+Curl	http://curl.haxx.se	curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks.
+W3C RDF Validation Service	http://www.w3.org/RDF/Validator/	Enter a URI or paste an RDF/XML document into the text field above. A 3-tuple (triple) representation of the corresponding data model as well as an optional graphical visualization of the data model will be displayed.
+CouchDB	http://couchdb.apache.org	CouchDB is a database that completely embraces the web. Store your data with JSON documents. Access your documents with your web browser, via HTTP. Query, combine, and transform your documents with JavaScript. CouchDB works well with modern web and mobile apps. You can even serve web apps directly out of CouchDB. And you can distribute your data, or your apps, efficiently using CouchDB’s incremental replication. CouchDB supports master-master setups with automatic conflict detection.
+Solr	http://lucene.apache.org/solr/	Solr is the popular, blazing fast open source enterprise search platform from the Apache LuceneTM project. Its major features include powerful full-text search, hit highlighting, faceted search, near real-time indexing, dynamic clustering, database integration, rich document (e.g., Word, PDF) handling, and geospatial search. Solr is highly reliable, scalable and fault tolerant, providing distributed indexing, replication and load-balanced querying, automated failover and recovery, centralized configuration and more. Solr powers the search and navigation features of many of the world's largest internet sites.
+elasticsearch	http://www.elasticsearch.org	flexible and powerful open source, distributed real-time search and analytics engine for the cloud
+MySQL	http://www.mysql.com	The world's most popular open source database
+Fusion Tables	http://www.google.com/drive/apps.html	Bust your data out of its silo! Combine it with other data on the web. Collaborate, visualize and share.
+TemaTres	http://www.vocabularyserver.com	The open source way to manage formal representations of knowledge
+Protégé	http://protege.stanford.edu	Protégé is a free, open source ontology editor and knowledge-base framework The Protégé platform supports modeling ontologies via a web client or a desktop client. Protégé ontologies can be developed in a variety of formats including OWL, RDF(S), and XML Schema Protégé is based on Java, is extensible, and provides a plug-and-play environment that makes it a flexible base for rapid prototyping and application development.
+ead2rdf	http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl	The “transform” process is currently performed using XSLT to read an EAD XML document and output RDF/XML, and the current version of the stylesheet is now available:
+DBpedia	http://dbpedia.org/	DBpedia is a crowd-sourced community effort to extract structured information from Wikipedia and make this information available on the Web. DBpedia allows you to ask sophisticated queries against Wikipedia, and to link the different data sets on the Web to Wikipedia data. We hope that this work will make it easier for the huge amount of information in Wikipedia to be used in some new interesting ways. Furthermore, it might inspire new mechanisms for navigating, linking, and improving the encyclopedia itself.
+GeoNames	http://www.geonames.org	The GeoNames geographical database covers all countries and contains over eight million placenames that are available for download free of charge.
+Datahub	http://datahub.io/	the free, powerful data management platform from the Open Knowledge Foundation
+Data.Gov.uk	http://data.gov.uk	The [British] Government is releasing public data to help people understand how government works and how policies are made. Some of this data is already available, but data.gov.uk brings it together in one searchable website. Making this data easily available means it will be easier for people to make decisions and suggestions about government policies based on detailed information.
+Data.gov	http://www.data.gov	The purpose of Data.gov is to increase public access to high value, machine readable datasets generated by the Executive Branch of the Federal Government. As a priority Open Government Initiative for President Obama's administration, Data.gov increases the ability of the public to easily find, download, and use datasets that are generated and held by the Federal Government. Data.gov provides descriptions of the Federal datasets (metadata), information about how to access the datasets, and tools that leverage government datasets. The data catalogs will continue to grow as datasets are added. Federal, Executive Branch data are included in the first version of Data.gov.
+VAIF	http://viaf.org	The VIAF™ (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted name authority service. The goal of the service is to lower the cost and increase the utility of library authority files by matching and linking widely-used authority files and making that information available on the Web.
+OpenRefine	https://github.com/OpenRefine/	OpenRefine is a free, open source power tool for working with messy data and improving it
+Gephi	http://gephi.org	Gephi is an interactive visualization and exploration platform for all kinds of networks and complex systems, dynamic and hierarchical graphs.
+Tableau Public	http://www.tableausoftware.com/public	With Tableau Public you can create interactive graphs, dashboards, maps and tables from virtually any data and embed them on your website or blog in minutes.
+D3.js	http://d3js.org	D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
+ULAN	http://www.getty.edu/research/tools/vocabularies/ulan/	The Union List of Artist Names ® (ULAN), the Getty Thesaurus of Geographic Names ® (TGN), the Art & Architecture Thesaurus ® (AAT), and the Cultural Objects Name Authority ® (CONA) (in development) are structured vocabularies that can be used to improve access to information about art, architecture, and material culture.
