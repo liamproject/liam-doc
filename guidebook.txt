@@ -20,11 +20,13 @@ The Guidebook is a product of the Linked Archival Metadata planning project (LiA
 Why linked data, and why now?
 -----------------------------
 
-Linked data, or more recently referred to as "linked open data" for reasons to be explained later, is a proposed technique for generating new knowledge. It is intended to be a synergy between people and sets of agreed upon computer sysystems that when combined will enable both people and computers to discover and build relationships between seemingly disparate data and information to create and discover new knowledge. In a nutshell, this is how it works. People possess data and information. They encode that data and information in any number of formats easily readable by computers. They then put then make the encoded data and information available on the Web. Computers are then employed to systematicaly harvested the encoded data. Since the data is easily readable, the computers store the data locally and look for similarly encoded things in other locally stored data sets. When similar items are identified relationships can be inferred between the items as well as the other items in the data set. To people, some of these relationships may seem obvious and "old hat". On the other hand, since the data sets can be massive, relationships that were never observed previously may come to light, thus new knowledge is created.
+Linked data, or more recently referred to as "linked open data" for reasons to be explained later, is a proposed technique for generating new knowledge. It is intended to be a synergy between people and sets of agreed upon computer sysystems that when combined will enable both people and computers to discover and build relationships between seemingly disparate data and information to create and discover new knowledge.
+
+In a nutshell, this is how it works. People possess data and information. They encode that data and information in any number of formats easily readable by computers. They then make the encoded data and information available on the Web. Computers are then employed to systematicaly harvested the encoded data. Since the data is easily readable, the computers store the data locally and look for similarly encoded things in other locally stored data sets. When similar items are identified relationships can be inferred between the items as well as the other items in the data set. To people, some of these relationships may seem obvious and "old hat". On the other hand, since the data sets can be massive, relationships that were never observed previously may come to light, thus new knowledge is created.
 
 Some of this knowledge may be trivial. For example, there might be a data set of places -- places from all over the world including things like geographic coordinates, histories of the places, images, etc. There might be another data set of poeple. Each person may be described using their name, their place of birth, and a short biography. These data sets may contain ten's of thousands of items each. Using linked data it would be possible to cross reference the people with the places to discover who might have met whom when and where. Some people may have similar ideas, and those ideas may have been generated in a particular place. Linked data may help in discovering who was in the same place at the same time and the researcher may be better able to figure out how a particular idea came to fruition. 
 
-Here's an example hitting closer to the home of archives and archivists. Suppose most archival finding aids were written in a format easily readable by computers. Let's call this format Encoded Archival Description. Let's suppose these finding aids were made available on the Web. Let's suppose one or more computers crawled thesearchival sites harvesting the finding aids. Once done a computer program could be used to find all the occurances of particular name and generate a virtual finding aid that is more complete and more comprehensible than any single finding aid on that particular person. 
+Here's an example hitting closer to the home of archives and archivists. Suppose most archival finding aids were written in a format easily readable by computers. Let's call this format Encoded Archival Description. Let's suppose these finding aids were made available on the Web. Let's suppose one or more computers crawled these archival sites harvesting the finding aids. Once done a computer program could be used to find all the occurances of particular name and generate a virtual finding aid that is more complete and more comprehensible than any single finding aid on that particular person. 
 
 The amount of data and information accessible today is greater in size than it has ever been in human history. Using our traditional techniques of reading, re-reading, writing, discussing, etc. is more than possible to learn new things about the state of the world, the universe, and the human condition. By exploiting the current state of computer technology is possible to expand upon our traditional techniques and possibly excellerate the mass of knowledge. 
 
@@ -46,19 +48,19 @@ Linked Data for Archives: a Primer, or "What is Linked Data and why should I car
 
 Linked Data is a process for manifesting the ideas behind Semantic Web. The Semantic Web is about encoding data, information, and knowledge in computer-readable fashions, making these encodings accessible on the World Wide Web, allowing computers to crawl the encodings, and finally, employing reasoning engines against them for the purpose of discovering and creating new knowledge. The canonical article describing this concept was written by Tim Berners-Lee, James Hendler, and Ora Lassila in 2001.
 
-In 2006 Berners-Lee more concretely described how to make the Semantic Web a reality in a text called "Linked Data -- Design Issues". In it he outlined four often-quoted expectations for implementing the Semantic Web. Each of these expectations are listed below along with some elaborations:
+In 2006 Berners-Lee more concretely described how to make the Semantic Web a reality in a text called "Linked Data -- Design Issues". In it he outlined four often-quoted expectations for implementing the Semantic Web. Each of these expectations are listed below along with some of my own elaborations:
 
   1. "Use URIs as names for things" - URIs (Universal Resource Identifiers) are unique identifiers, and they are expected to have the same shape as URLs (Universal Resource Locators). These identifiers are expected to represent things such as people, places, institutions, concepts, books, etc. URIs are monikers or handles for real world or imaginary objects. 
 
   2. "Use HTTP URIs so that people can look up those names." - The URIs are expected to look and ideally function on the World Wide Web through the Hypertext Transfer Protocol (HTTP), meaning the URI's point to things on Web servers. 
 
-  3. "When someone looks up a URI, provide useful information, using the standards (RDF*, SPARQL)" - When URIs are sent to Web servers by Web browsers (or "user-agents" in HTTP parlance), the response from the server should be in a conventional, computer readable format. This format is usually a version of RDF (Resource Description Framework) -- a notation looking much like a rudimentary sentence composed of a subject, predicate, and object.
+  3. "When someone looks up a URI, provide useful information, using the standards (RDF*, SPARQL)" - When URIs are sent to Web servers by Web browsers (or "user-agents" in HTTP parlance), the response from the server should be in a conventional, computer readable format. This format is usually a "serialization" of RDF (Resource Description Framework) -- a notation looking much like a rudimentary sentence composed of a subject, predicate, and object.
 
   4. "Include links to other URIs. So that they can discover more things." - Simply put, try very hard to use URIs that other people have have used. This way the relationships you create can literally be linked to the relationships other people have created. These links may represent new knowledge. 
 
 In the same text ("Linked Data -- Design Issues") Berners-Lee also outlined a sort of reward system -- sets of stars -- for levels of implementation. Unfortunately, nobody seems to have taken up the stars very seriously. A person gets:
 
-  * 1 star for making data available on the web (whatever format)
+  * 1 star for making data available on the web (in whatever format)
     but with an open licence, to be Open Data
 
   * 2 stars for making the data machine-readable structured data
@@ -87,13 +89,20 @@ Suppose further that the subject and object of the triple are identified using U
 
 Unfortunately, this assertion is not easily read by a computer. Believe it or not, something like the XML below is much more amenable, and if it were the sort of content returned by a Web server to a Web browser (read "user-agent"), then it would satisfy Expectations #3 and #4 because the notation is standardized and because it points to other people's content:
 
-  <rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <rdf:Description rdf:about="http://www.archives.gov/exhibits/charters/declaration_transcript.html">
-      <dc:creator>http://www.worldcat.org/identities/lccn-n79-89957</dc:creator>
-    </rdf:Description>
-  </rdf:RDF>
+<?xml version="1.0"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/" >
+
+  <!-- the Declaration Of Independence was authored by Thomas Jefferson -->
+  <rdf:Description
+  rdf:about="http://www.archives.gov/exhibits/charters/declaration_transcript.html">
+    <dc:creator>http://id.loc.gov/authorities/names/n79089957</dc:creator>
+  </rdf:Description>
+
+</rdf:RDF>
+
+[INSERT ASSERTION-01.PNG HERE.]
 
 Suppose we had a second assertion:
 
@@ -101,13 +110,42 @@ Suppose we had a second assertion:
 
 In this case, the subject is "Thomas Jefferson". The predicate is "was". The object is "man". This assertion can be expressed in a more computer-readable fashion like this:
 
-  <rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-    xmlns:foaf="http://xmlns.com/foaf/0.1/">
-    <rdf:Description rdf:about="http://www.worldcat.org/identities/lccn-n79-89957">
-      <foaf:gender>male</foaf:gender>
-    </rdf:Description>
-  </rdf:RDF>
+<?xml version="1.0"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+  <!-- Thomas Jefferson is man (a male) -->
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n7908995">
+    <foaf:Person foaf:gender="male" />
+  </rdf:Description>
+
+</rdf:RDF>
+
+[INSERT ASSERTION-02.PNG HERE.]
+
+Suppose there were smart Linked Data robot / spider. Suppose it crawled both Assertion #1 and Assertion #2, it then ought to be able to assert the following:
+
+<?xml version="1.0"?>
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+  <!-- the Declaration Of Independence was written by
+  Thomas Jefferson, and Thomas Jefferson is a male -->
+  <rdf:Description
+	rdf:about="http://www.archives.gov/exhibits/charters/declaration_transcript.html">
+	  <dc:creator>
+		<foaf:Person rdf:about="http://id.loc.gov/authorities/names/n79089957">
+		  <foaf:gender>male</foaf:gender>
+		</foaf:Person>
+	  </dc:creator>
+  </rdf:Description>
+ 
+</rdf:RDF>
+
+[INSERT ASSERTION-03.PNG HERE.]
 
 Looking at the two assertions, a reasonable person can deduce a third assertion, namely, the Declaration Of Independence was authored by a man. Which brings us back to the point of the Semantic Web and Linked Data. If everybody uses URIs (read "URLs") to describe things, if everybody denotes relationships (through the use of predicates) between URIs, if everybody makes their data available on the Web in standardized formats, and if everybody uses similar URIs, then new knowledge can be deduced from the original relationships.
 
@@ -259,40 +297,61 @@ Tools for archivists (data preparation, cleanup, management)
 
 What's available now
 
+  * Bibframe (http://bibframe.org) - The Bibliographic Framework Initiative (BIBFRAME) is an undertaking by the Library of Congress and the community to better accommodate future needs of the library community. A major focus of the initiative will be to determine a transition path for the MARC 21 exchange format to more Web based, Linked Data standards. Zepheira and The Library of Congress are working together to develop a Linked Data model, vocabulary and enabling tools / services for supporting this Initiative.
+
   * ckan (http://ckan.org) - The open source data portal software
 
   * CouchDB (http://couchdb.apache.org) - CouchDB is a database that completely embraces the web. Store your data with JSON documents. Access your documents with your web browser, via HTTP. Query, combine, and transform your documents with JavaScript. CouchDB works well with modern web and mobile apps. You can even serve web apps directly out of CouchDB. And you can distribute your data, or your apps, efficiently using CouchDB’s incremental replication. CouchDB supports master-master setups with automatic conflict detection.
 
   * Curl (http://curl.haxx.se) - curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks.
 
-  * Data.gov (http://www.data.gov) - The purpose of Data.gov is to increase public access to high value, machine readable datasets generated by the Executive Branch of the Federal Government. As a priority Open Government Initiative for President Obama's administration, Data.gov increases the ability of the public to easily find, download, and use datasets that are generated and held by the Federal Government. Data.gov provides descriptions of the Federal datasets (metadata), information about how to access the datasets, and tools that leverage government datasets. The data catalogs will continue to grow as datasets are added. Federal, Executive Branch data are included in the first version of Data.gov.
-
-  * Data.Gov.uk (http://data.gov.uk) - The [British] Government is releasing public data to help people understand how government works and how policies are made. Some of this data is already available, but data.gov.uk brings it together in one searchable website. Making this data easily available means it will be easier for people to make decisions and suggestions about government policies based on detailed information.
+  * D2RQ (http://d2rq.org) - The D2RQ Platform is a system for accessing relational databases as virtual, read-only RDF graphs. It offers RDF-based access to the content of relational databases without having to replicate it into an RDF store. Using D2RQ you can: query a non-RDF database using SPARQL, access the content of the database as Linked Data over the Web, create custom dumps of the database in RDF formats for loading into an RDF store, access information in a non-RDF database using the Apache Jena API
 
   * Datahub (http://datahub.io/) - the free, powerful data management platform from the Open Knowledge Foundation
 
-  * DBpedia (http://dbpedia.org/) - DBpedia is a crowd-sourced community effort to extract structured information from Wikipedia and make this information available on the Web. DBpedia allows you to ask sophisticated queries against Wikipedia, and to link the different data sets on the Web to Wikipedia data. We hope that this work will make it easier for the huge amount of information in Wikipedia to be used in some new interesting ways. Furthermore, it might inspire new mechanisms for navigating, linking, and improving the encyclopedia itself.
+  * Disco - Hyperdata Browser (http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/) - The Disco - Hyperdata Browser is a simple browser for navigating the Semantic Web as an unbound set of data sources. The browser renders all information, that it can find on the Semantic Web about a specific resource, as an HTML page. This resource description contains hyperlinks that allow you to navigate between resources. While you move from resource to resource, the browser dynamically retrieves information by dereferencing HTTP URIs and by following rdfs:seeAlso links.
 
   * ead2rdf (http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl) - The “transform” process is currently performed using XSLT to read an EAD XML document and output RDF/XML, and the current version of the stylesheet is now available:
 
-  * elasticsearch (http://www.elasticsearch.org) - flexible and powerful open source, distributed real-time search and analytics engine for the cloud
+  * eaditor (https://github.com/ewg118/eaditor) - EADitor is an XForms framework for the creation and editing of Encoded Archival Description (EAD) finding aids using Orbeon, an enterprise-level XForms Java application, which runs in Apache Tomcat.
 
-  * GeoNames (http://www.geonames.org) - The GeoNames geographical database covers all countries and contains over eight million placenames that are available for download free of charge.
+  * Fusion Tables (http://www.google.com/drive/apps.html) - Bust your data out of its silo! Combine it with other data on the web. Collaborate, visualize and share.
 
-  * MySQL (http://www.mysql.com) - The world's most popular open source database
+  * Linked Data Tools (http://linkeddata.org/tools) - 
+
+  * Linked Media Framework (https://code.google.com/p/lmf/) - The Linked Media Framework is an easy-to-setup server application that bundles together some key open source projects to offer some advanced services for linked media management.
+
+  * oai2lod (https://github.com/behas/oai2lod) - exposes OAI-PMH data sources as Linked Data
+
+  * OpenLink Data Explorer Extension (http://ode.openlinksw.com) - The OpenLink Data Explorer (ODE) is a browser extension (currently available for Firefox, Safari, Chrome, Opera, and Internet Explorer with additional browser support to follow) that adds a new option to the realm of Web User Agent functionality, in the form of new menu options for viewing Data Sources associated with Web Pages.
+
+  * OpenRefine (https://github.com/OpenRefine/) - OpenRefine is a free, open source power tool for working with messy data and improving it
+
+  * Perl and RDF (http://www.perlrdf.org) - The Perl RDF project hopes to address these issues:, publish an official API for storage, parsing and serializing modules, produce a set of base classes for representing common RDF objects such as statements and nodes (resources, literals, blank nodes), produce patches to existing RDF tools to support these APIs, subclassing where appropriate, produce a test suite for storage, parsing, serializing, statement and node classes.
+
+  * Perl-SPARQL-client-library (https://github.com/swh/Perl-SPARQL-client-library) - A simple Perl library for accessing SPARQL endpoints.
 
   * Protégé (http://protege.stanford.edu) - Protégé is a free, open source ontology editor and knowledge-base framework The Protégé platform supports modeling ontologies via a web client or a desktop client. Protégé ontologies can be developed in a variety of formats including OWL, RDF(S), and XML Schema Protégé is based on Java, is extensible, and provides a plug-and-play environment that makes it a flexible base for rapid prototyping and application development.
 
-  * Solr (http://lucene.apache.org/solr/) - Solr is the popular, blazing fast open source enterprise search platform from the Apache LuceneTM project. Its major features include powerful full-text search, hit highlighting, faceted search, near real-time indexing, dynamic clustering, database integration, rich document (e.g., Word, PDF) handling, and geospatial search. Solr is highly reliable, scalable and fault tolerant, providing distributed indexing, replication and load-balanced querying, automated failover and recovery, centralized configuration and more. Solr powers the search and navigation features of many of the world's largest internet sites.
+  * RDFImportersAndAdapters (http://www.w3.org/wiki/RDFImportersAndAdapters) - Tools and applications that can convert from other data and file formats to RDF.
+
+  * Semantic Web Development Tools (http://www.w3.org/2001/sw/wiki/Tools) - This Wiki contains a collection of tool references that can help in developing Semantic Web applications. These include complete development environments, editors, libraries or modules for various programming languages, specialized browsers, etc. The goal is to list such tools and not Semantic Web applications in general (the interested reader may consider looking at the W3C SW Use Case Collection for those.)
+
+  * Sematic Web Client Library (http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/semwebclient/) - The Sematic Web Client Library represents the complete Semantic Web as a single RDF graph. The library enables applications to query this global graph using SPARQL- and find(SPO) queries. To answer queries, the library dynamically retrieves information from the Semantic Web by dereferencing HTTP URIs, by following rdfs:seeAlso links, and by querying the Sindice search engine. The library is written in Java and is based on the Jena framework.
+
+  * SparqlImplementations (http://www.w3.org/wiki/SparqlImplementations) - This page lists some implementations of SPARQL, a query language and protocol for RDF acccess released by the W3C RDF Data Access Working Group - DAWG.
+
+  * Tableau Public (http://www.tableausoftware.com/public) - With Tableau Public you can create interactive graphs, dashboards, maps and tables from virtually any data and embed them on your website or blog in minutes.
+
+  * Tabulator (http://www.w3.org/2005/ajar/tab) - The Tabulator project is a generic data browser and editor. Using outline and table modes, it provides a way to browse RDF data on the web. RDF is the standard for inter-application data exchange.
 
   * TemaTres (http://www.vocabularyserver.com) - The open source way to manage formal representations of knowledge
 
-  * ULAN (http://www.getty.edu/research/tools/vocabularies/ulan/) - The Union List of Artist Names ® (ULAN), the Getty Thesaurus of Geographic Names ® (TGN), the Art & Architecture Thesaurus ® (AAT), and the Cultural Objects Name Authority ® (CONA) (in development) are structured vocabularies that can be used to improve access to information about art, architecture, and material culture.
-
-  * VAIF (http://viaf.org) - The VIAF™ (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted name authority service. The goal of the service is to lower the cost and increase the utility of library authority files by matching and linking widely-used authority files and making that information available on the Web.
+  * VirtuosoUniversalServer (http://www.w3.org/wiki/VirtuosoUniversalServer) - OpenLink Virtuoso is a multi-purpose and multi-protocol (Hybrid) Data Server from OpenLink Software that includes SQL Object-Relational, RDF, XML, and Free Text data management, alongside Web Application (HTTP, SOAP, WebDAV), SyncML, and Discussion Server functionality, in a single server.
 
   * W3C RDF Validation Service (http://www.w3.org/RDF/Validator/) - Enter a URI or paste an RDF/XML document into the text field above. A 3-tuple (triple) representation of the corresponding data model as well as an optional graphical visualization of the data model will be displayed.
 
+  * 
 
 Gaps: What is needed
 
@@ -313,133 +372,207 @@ What's available now
 Gaps: What is needed
 
 
+Tools
+=====
+
+  * “Behas/oai2lod · GitHub.” Accessed November 3, 2013. https://github.com/behas/oai2lod.
+
+  * “BIBFRAME.ORG :: Bibliographic Framework Initiative - Overview.” Accessed November 3, 2013. http://bibframe.org/.
+
+  * “Ckan - The Open Source Data Portal Software.” Accessed November 3, 2013. http://ckan.org/.
+
+  * “Community | Tableau Public.” Accessed November 3, 2013. http://www.tableausoftware.com/public/community.
+
+  * “Curl and Libcurl.” Accessed November 3, 2013. http://curl.haxx.se/.
+
+  * “Disco Hyperdata Browser.” Accessed November 3, 2013. http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/.
+
+  * “Ewg118/eaditor · GitHub.” Accessed November 3, 2013. https://github.com/ewg118/eaditor.
+
+  * “Google Drive.” Accessed November 3, 2013. http://www.google.com/drive/apps.html.
+
+  * “Lmf - Linked Media Framework - Google Project Hosting.” Accessed November 3, 2013. https://code.google.com/p/lmf/.
+
+  * “OpenLink Data Explorer Extension.” Accessed November 3, 2013. http://ode.openlinksw.com/.
+
+  * “OpenRefine (OpenRefine) · GitHub.” Accessed November 3, 2013. https://github.com/OpenRefine/.
+
+  * “RDFImportersAndAdapters - W3C Wiki.” Accessed November 3, 2013. http://www.w3.org/wiki/RDFImportersAndAdapters.
+
+  * “Semantic Web Client Library.” Accessed November 3, 2013. http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/semwebclient/.
+
+  * “SparqlImplementations - W3C Wiki.” Accessed November 3, 2013. http://www.w3.org/wiki/SparqlImplementations.
+
+  * “swh/Perl-SPARQL-client-library · GitHub.” Accessed November 3, 2013. https://github.com/swh/Perl-SPARQL-client-library.
+
+  * “Tabulator: Generic Data Browser.” Accessed November 3, 2013. http://www.w3.org/2005/ajar/tab.
+
+  * “TemaTres Controlled Vocabulary Server.” Accessed November 3, 2013. http://www.vocabularyserver.com/.
+
+  * “The D2RQ Platform – Accessing Relational Databases as Virtual RDF Graphs.” Accessed November 3, 2013. http://d2rq.org/.
+
+  * “The Protégé Ontology Editor and Knowledge Acquisition System.” Accessed November 3, 2013. http://protege.stanford.edu/.
+
+  * “Tools - Semantic Web Standards.” Accessed November 3, 2013. http://www.w3.org/2001/sw/wiki/Tools.
+
+  * “Tools | Linked Data - Connect Distributed Data Across the Web.” Accessed November 3, 2013. http://linkeddata.org/tools.
+
+  * “VirtuosoUniversalServer - W3C Wiki.” Accessed November 3, 2013. http://www.w3.org/wiki/VirtuosoUniversalServer.
+
+  * “W3C RDF Validation Service.” Accessed November 3, 2013. http://www.w3.org/RDF/Validator/.
+
+  * “Working with RDF with Perl.” Accessed November 3, 2013. http://www.perlrdf.org/.
+
+
+Data sets
+=========
+
+  * “(LOV) Linked Open Vocabularies.” Accessed November 3, 2013. http://lov.okfn.org/dataset/lov/.
+
+  * “Data Sets & Services.” Accessed November 3, 2013. http://www.oclc.org/data/data-sets-services.en.html.
+
+  * “Data.gov.uk.” Accessed November 3, 2013. http://data.gov.uk/.
+
+  * “Freebase.” Accessed November 3, 2013. http://www.freebase.com/.
+
+  * “GeoKnow/LinkedGeoData · GitHub.” Accessed November 3, 2013. https://github.com/GeoKnow/LinkedGeoData.
+
+  * “GeoNames.” Accessed November 3, 2013. http://www.geonames.org/.
+
+  * “Getty Union List of Artist Names (Research at the Getty).” Accessed November 3, 2013. http://www.getty.edu/research/tools/vocabularies/ulan/.
+
+  * “Home - LC Linked Data Service (Library of Congress).” Accessed November 3, 2013. http://id.loc.gov/.
+
+  * “Home | Data.gov.” Accessed November 3, 2013. http://www.data.gov/.
+
+  * “ISBNdb - A Unique Book & ISBN Database.” Accessed November 3, 2013. http://isbndb.com/.
+
+  * “Linked Movie Data Base | Start Page.” Accessed November 3, 2013. http://linkedmdb.org/.
+
+  * “MusicBrainz - The Open Music Encyclopedia.” Accessed November 3, 2013. http://musicbrainz.org/.
+
+  * “New York Times - Linked Open Data.” Accessed November 3, 2013. http://data.nytimes.com/.
+
+  * “PELAGIOS: About PELAGIOS.” Accessed September 4, 2013. http://pelagios-project.blogspot.com/p/about-pelagios.html.
+
+  * “Start Page | D2R Server for the CIA Factbook.” Accessed November 3, 2013. http://wifo5-03.informatik.uni-mannheim.de/factbook/.
+
+  * “Start Page | D2R Server for the Gutenberg Project.” Accessed November 3, 2013. http://wifo5-03.informatik.uni-mannheim.de/gutendata/.
+
+  * “The Friend of a Friend (FOAF) Project | FOAF Project.” Accessed November 3, 2013. http://www.foaf-project.org/.
+
+  * “VIAF.” Accessed August 27, 2013. http://viaf.org/.
+
+  * “VoID - Semanticweb.org.” Accessed November 3, 2013. http://semanticweb.org/wiki/VoID.
+
+  * “Welcome - the Datahub.” Accessed August 14, 2013. http://datahub.io/.
+
+  * “Welcome to Open Library (Open Library).” Accessed November 3, 2013. https://openlibrary.org/.
+
+  * “Wiki.dbpedia.org : About.” Accessed November 3, 2013. http://dbpedia.org/About.
+
+  * “World Bank Linked Data.” Accessed November 3, 2013. http://worldbank.270a.info/.html.
+
+
 Further reading
 ===============
 
 This is a list of links and citations to get one started on Linked Open Data
 
-  * "About - LOCAH Linked Archives Hub Test Dataset." Accessed August 16, 2013. http://data.archiveshub.ac.uk/about.html.
+  * “About - LOCAH Linked Archives Hub Test Dataset.” Accessed August 16, 2013. http://data.archiveshub.ac.uk/about.html.
 
-  * Becker, Christian, and Christian Bizer. "Exploring the Geospatial Semantic Web with DBpedia Mobile." Web Semantics: Science, Services and Agents on the World Wide Web 7, no. 4 (December 2009): 278–286. doi:10.1016/j.websem.2009.09.004.
+  * Becker, Christian, and Christian Bizer. “Exploring the Geospatial Semantic Web with DBpedia Mobile.” Web Semantics: Science, Services and Agents on the World Wide Web 7, no. 4 (December 2009): 278–286. doi:10.1016/j.websem.2009.09.004.
 
-  * Belleau, François, Marc-Alexandre Nolin, Nicole Tourigny, Philippe Rigault, and Jean Morissette. "Bio2RDF: Towards a Mashup to Build Bioinformatics Knowledge Systems." Journal of Biomedical Informatics 41, no. 5 (October 2008): 706–716. doi:10.1016/j.jbi.2008.03.004.
+  * Belleau, François, Marc-Alexandre Nolin, Nicole Tourigny, Philippe Rigault, and Jean Morissette. “Bio2RDF: Towards a Mashup to Build Bioinformatics Knowledge Systems.” Journal of Biomedical Informatics 41, no. 5 (October 2008): 706–716. doi:10.1016/j.jbi.2008.03.004.
 
-  * Berners-Lee, Tim. "Linked Data - Design Issues." Accessed August 4, 2013. http://www.w3.org/DesignIssues/LinkedData.html.
+  * Berners-Lee, Tim. “Linked Data - Design Issues.” Accessed August 4, 2013. http://www.w3.org/DesignIssues/LinkedData.html.
 
-  * Berners-Lee, Tim, James Hendler, and Ora Lassila. "The Semantic Web." Scientific American 284, no. 5 (May 2001): 34–43. doi:10.1038/scientificamerican0501-34.
+  * Berners-Lee, Tim, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (May 2001): 34–43. doi:10.1038/scientificamerican0501-34.
 
-  * "BIBFRAME.ORG :: Bibliographic Framework Initiative - Overview." Accessed September 2, 2013. http://bibframe.org/.
+  * Bizer, Christian, Tom Heath, and Tim Berners-Lee. “Linked Data - The Story So Far:” International Journal on Semantic Web and Information Systems 5, no. 3 (33 2009): 1–22. doi:10.4018/jswis.2009081901.
 
-  * Bizer, Christian, Tom Heath, and Tim Berners-Lee. "Linked Data - The Story So Far:" International Journal on Semantic Web and Information Systems 5, no. 3 (33 2009): 1–22. doi:10.4018/jswis.2009081901.
+  * Carroll, Jeremy J., Christian Bizer, Pat Hayes, and Patrick Stickler. “Named Graphs.” Web Semantics: Science, Services and Agents on the World Wide Web 3, no. 4 (December 2005): 247–267. doi:10.1016/j.websem.2005.09.001.
 
-  * Bizer, Christian, Jens Lehmann, Georgi Kobilarov, Sören Auer, Christian Becker, Richard Cyganiak, and Sebastian Hellmann. "DBpedia - A Crystallization Point for the Web of Data." Web Semantics: Science, Services and Agents on the World Wide Web 7, no. 3 (September 2009): 154–165. doi:10.1016/j.websem.2009.07.002.
+  * “Content Negotiation.” Wikipedia, the Free Encyclopedia, July 2, 2013. https://en.wikipedia.org/wiki/Content_negotiation.
 
-  * Buneman, Peter, Sanjeev Khanna, and Tan Wang-Chiew. "Why and Where: A Characterization of Data Provenance." In Database Theory — ICDT 2001, edited by Jan Bussche and Victor Vianu, 1973:316–330. Berlin, Heidelberg: Springer Berlin Heidelberg. Accessed September 4, 2013. http://www.springerlink.com/index/10.1007/3-540-44503-X_20.
+  * “Cool URIs for the Semantic Web.” Accessed November 3, 2013. http://www.w3.org/TR/cooluris/.
 
-  * Carroll, Jeremy J., Christian Bizer, Pat Hayes, and Patrick Stickler. "Named Graphs." Web Semantics: Science, Services and Agents on the World Wide Web 3, no. 4 (December 2005): 247–267. doi:10.1016/j.websem.2005.09.001.
+  * Correndo, Gianluca, Manuel Salvadores, Ian Millard, Hugh Glaser, and Nigel Shadbolt. “SPARQL Query Rewriting for Implementing Data Integration over Linked Data.” 1. ACM Press, 2010. doi:10.1145/1754239.1754244.
 
-  * "Ckan - The Open Source Data Portal Software." Accessed August 14, 2013. http://ckan.org/.
+  * David Beckett. “Turtle.” Accessed August 6, 2013. http://www.w3.org/TR/2012/WD-turtle-20120710/.
 
-  * "Content Negotiation." Wikipedia, the Free Encyclopedia, July 2, 2013. https://en.wikipedia.org/wiki/Content_negotiation.
+  * “Debugging Semantic Web Sites with cURL | Cygri’s Notes on Web Data.” Accessed November 3, 2013. http://richard.cyganiak.de/blog/2007/02/debugging-semantic-web-sites-with-curl/.
 
-  * Correndo, Gianluca, Manuel Salvadores, Ian Millard, Hugh Glaser, and Nigel Shadbolt. "SPARQL Query Rewriting for Implementing Data Integration over Linked Data." 1. ACM Press, 2010. doi:10.1145/1754239.1754244.
+  * Dunsire, Gordon, Corey Harper, Diane Hillmann, and Jon Phipps. “Linked Data Vocabulary Management: Infrastructure Support, Data Integration, and Interoperability.” Information Standards Quarterly 24, no. 2/3 (2012): 4. doi:10.3789/isqv24n2-3.2012.02.
 
-  * Cudré-Mauroux, Philippe, Parisa Haghani, Michael Jost, Karl Aberer, and Hermann De Meer. "idMesh: Graph-based Disambiguation of Linked Data." 591. ACM Press, 2009. doi:10.1145/1526709.1526789.
+  * Elliott, Thomas, Sebastian Heath, and John Muccigrosso. “Report on the Linked Ancient World Data Institute.” Information Standards Quarterly 24, no. 2/3 (2012): 43. doi:10.3789/isqv24n2-3.2012.08.
 
-  * "Curl and Libcurl." Accessed August 6, 2013. http://curl.haxx.se/.
+  * Fons, Ted, Jeff Penka, and Richard Wallis. “OCLC’s Linked Data Initiative: Using Schema.org to Make Library Data Relevant on the Web.” Information Standards Quarterly 24, no. 2/3 (2012): 29. doi:10.3789/isqv24n2-3.2012.05.
 
-  * Cyganiak, Richard, Holger Stenzhorn, Renaud Delbru, Stefan Decker, and Giovanni Tummarello. "Semantic Sitemaps: Efficient and Flexible Access to Datasets on the Semantic Web." In The Semantic Web: Research and Applications, edited by Sean Bechhofer, Manfred Hauswirth, Jörg Hoffmann, and Manolis Koubarakis, 5021:690–704. Berlin, Heidelberg: Springer Berlin Heidelberg. Accessed September 4, 2013. http://www.springerlink.com/index/10.1007/978-3-540-68234-9_50.
+  * Hartig, Olaf. “Querying Trust in RDF Data with tSPARQL.” In The Semantic Web: Research and Applications, edited by Lora Aroyo, Paolo Traverso, Fabio Ciravegna, Philipp Cimiano, Tom Heath, Eero Hyvönen, Riichiro Mizoguchi, Eyal Oren, Marta Sabou, and Elena Simperl, 5554:5–20. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-02121-3_5.
 
-  * David Beckett. "Turtle." Accessed August 6, 2013. http://www.w3.org/TR/2012/WD-turtle-20120710/.
+  * Hartig, Olaf, Christian Bizer, and Johann-Christoph Freytag. “Executing SPARQL Queries over the Web of Linked Data.” In The Semantic Web - ISWC 2009, edited by Abraham Bernstein, David R. Karger, Tom Heath, Lee Feigenbaum, Diana Maynard, Enrico Motta, and Krishnaprasad Thirunarayan, 5823:293–309. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-04930-9_19.
 
-  * Dunsire, Gordon, Corey Harper, Diane Hillmann, and Jon Phipps. "Linked Data Vocabulary Management: Infrastructure Support, Data Integration, and Interoperability." Information Standards Quarterly 24, no. 2/3 (2012): 4. doi:10.3789/isqv24n2-3.2012.02.
+  * Heath, Tom, and Christian Bizer. “Linked Data: Evolving the Web into a Global Data Space.” Synthesis Lectures on the Semantic Web: Theory and Technology 1, no. 1 (February 9, 2011): 1–136. doi:10.2200/S00334ED1V01Y201102WBE001.
 
-  * Elliott, Thomas, Sebastian Heath, and John Muccigrosso. "Report on the Linked Ancient World Data Institute." Information Standards Quarterly 24, no. 2/3 (2012): 43. doi:10.3789/isqv24n2-3.2012.08.
+  * Isaac, Antoine, Robina Clayphan, and Bernhard Haslhofer. “Europeana: Moving to Linked Open Data.” Information Standards Quarterly 24, no. 2/3 (2012): 34. doi:10.3789/isqv24n2-3.2012.06.
 
-  * Fons, Ted, Jeff Penka, and Richard Wallis. "OCLC's Linked Data Initiative: Using Schema.org to Make Library Data Relevant on the Web." Information Standards Quarterly 24, no. 2/3 (2012): 29. doi:10.3789/isqv24n2-3.2012.05.
+  * Kobilarov, Georgi, Tom Scott, Yves Raimond, Silver Oliver, Chris Sizemore, Michael Smethurst, Christian Bizer, and Robert Lee. “Media Meets Semantic Web – How the BBC Uses DBpedia and Linked Data to Make Connections.” In The Semantic Web: Research and Applications, edited by Lora Aroyo, Paolo Traverso, Fabio Ciravegna, Philipp Cimiano, Tom Heath, Eero Hyvönen, Riichiro Mizoguchi, Eyal Oren, Marta Sabou, and Elena Simperl, 5554:723–737. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-02121-3_53.
 
-  * Gruber, Ethan. "Eaditor." GitHub. Accessed August 12, 2013. https://github.com/ewg118/eaditor.
+  * LiAM. “LiAM: Linked Archival Metadata.” Accessed July 30, 2013. http://sites.tufts.edu/liam/.
 
-  * Halpin, Harry, Patrick J. Hayes, James P. McCusker, Deborah L. McGuinness, and Henry S. Thompson. "When owl:sameAs Isn't the Same: An Analysis of Identity in Linked Data." In The Semantic Web – ISWC 2010, edited by Peter F. Patel-Schneider, Yue Pan, Pascal Hitzler, Peter Mika, Lei Zhang, Jeff Z. Pan, Ian Horrocks, and Birte Glimm, 6496:305–320. Berlin, Heidelberg: Springer Berlin Heidelberg, 2010. http://www.springerlink.com/index/10.1007/978-3-642-17746-0_20.
+  * “Linked Data.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Linked_data&oldid=562554554.
 
-  * Hartig, Olaf. "Querying Trust in RDF Data with tSPARQL." In The Semantic Web: Research and Applications, edited by Lora Aroyo, Paolo Traverso, Fabio Ciravegna, Philipp Cimiano, Tom Heath, Eero Hyvönen, Riichiro Mizoguchi, Eyal Oren, Marta Sabou, and Elena Simperl, 5554:5–20. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-02121-3_5.
+  * “Linked Data: Evolving the Web into a Global Data Space.” Accessed September 4, 2013. http://linkeddatabook.com/editions/1.0/.
 
-  * Hartig, Olaf, Christian Bizer, and Johann-Christoph Freytag. "Executing SPARQL Queries over the Web of Linked Data." In The Semantic Web - ISWC 2009, edited by Abraham Bernstein, David R. Karger, Tom Heath, Lee Feigenbaum, Diana Maynard, Enrico Motta, and Krishnaprasad Thirunarayan, 5823:293–309. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-04930-9_19.
+  * “Linked Open Data.” Europeana. Accessed September 12, 2013. http://pro.europeana.eu/web/guest;jsessionid=09A5D79E7474609AE246DF5C5A18DDD4.
 
-  * Heath, Tom, and Christian Bizer. "Linked Data: Evolving the Web into a Global Data Space." Synthesis Lectures on the Semantic Web: Theory and Technology 1, no. 1 (February 9, 2011): 1–136. doi:10.2200/S00334ED1V01Y201102WBE001.
+  * “Linked Open Data in Libraries, Archives, & Museums (Google Group).” Accessed August 6, 2013. https://groups.google.com/forum/#!forum/lod-lam.
 
-  * Heath, Tom, and Enrico Motta. "Revyu: Linking Reviews and Ratings into the Web of Data." Web Semantics: Science, Services and Agents on the World Wide Web 6, no. 4 (November 2008): 266–273. doi:10.1016/j.websem.2008.09.003.
+  * “Linking Lives | Using Linked Data to Create Biographical Resources.” Accessed August 16, 2013. http://archiveshub.ac.uk/linkinglives/.
 
-  * Isaac, Antoine, Robina Clayphan, and Bernhard Haslhofer. "Europeana: Moving to Linked Open Data." Information Standards Quarterly 24, no. 2/3 (2012): 34. doi:10.3789/isqv24n2-3.2012.06.
+  * “LOCAH Linked Archives Hub Test Dataset.” Accessed August 6, 2013. http://data.archiveshub.ac.uk/.
 
-  * Kobilarov, Georgi, Tom Scott, Yves Raimond, Silver Oliver, Chris Sizemore, Michael Smethurst, Christian Bizer, and Robert Lee. "Media Meets Semantic Web – How the BBC Uses DBpedia and Linked Data to Make Connections." In The Semantic Web: Research and Applications, edited by Lora Aroyo, Paolo Traverso, Fabio Ciravegna, Philipp Cimiano, Tom Heath, Eero Hyvönen, Riichiro Mizoguchi, Eyal Oren, Marta Sabou, and Elena Simperl, 5554:723–737. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-02121-3_53.
+  * “LODLAM - Linked Open Data in Libraries, Archives & Museums.” Accessed August 6, 2013. http://lodlam.net/.
 
-  * Le-Phuoc, Danh, Axel Polleres, Manfred Hauswirth, Giovanni Tummarello, and Christian Morbidoni. "Rapid Prototyping of Semantic Mash-ups through Semantic Web Pipes." 581. ACM Press, 2009. doi:10.1145/1526709.1526788.
+  * “Notation3.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Notation3&oldid=541302540.
 
-  * LiAM. "LiAM: Linked Archival Metadata." Accessed July 30, 2013. http://sites.tufts.edu/liam/.
+  * “OWL 2 Web Ontology Language Primer.” Accessed August 14, 2013. http://www.w3.org/TR/2009/REC-owl2-primer-20091027/.
 
-  * "Linked Data." Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Linked_data&oldid=562554554.
+  * Quilitz, Bastian, and Ulf Leser. “Querying Distributed RDF Data Sources with SPARQL.” In The Semantic Web: Research and Applications, edited by Sean Bechhofer, Manfred Hauswirth, Jörg Hoffmann, and Manolis Koubarakis, 5021:524–538. Berlin, Heidelberg: Springer Berlin Heidelberg. Accessed September 4, 2013. http://www.springerlink.com/index/10.1007/978-3-540-68234-9_39.
 
-  * "Linked Data: Evolving the Web into a Global Data Space." Accessed September 4, 2013. http://linkeddatabook.com/editions/1.0/.
+  * “RDF/XML.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/wiki/RDF/XML.
 
-  * "Linked Open Data." Europeana. Accessed September 12, 2013. http://pro.europeana.eu/web/guest;jsessionid=09A5D79E7474609AE246DF5C5A18DDD4.
+  * “RDFa.” Wikipedia, the Free Encyclopedia, July 22, 2013. http://en.wikipedia.org/wiki/RDFa.
 
-  * "Linked Open Data in Libraries, Archives, & Museums (Google Group)." Accessed August 6, 2013. https://groups.google.com/forum/#!forum/lod-lam.
+  * “Semantic Web.” Wikipedia, the Free Encyclopedia, August 2, 2013. http://en.wikipedia.org/w/index.php?title=Semantic_Web&oldid=566813312.
 
-  * "Linking Lives | Using Linked Data to Create Biographical Resources." Accessed August 16, 2013. http://archiveshub.ac.uk/linkinglives/.
+  * “SPARQL.” Wikipedia, the Free Encyclopedia, August 1, 2013. http://en.wikipedia.org/w/index.php?title=SPARQL&oldid=566718788.
 
-  * "LOCAH Linked Archives Hub Test Dataset." Accessed August 6, 2013. http://data.archiveshub.ac.uk/.
+  * “SPARQL 1.1 Overview.” Accessed August 6, 2013. http://www.w3.org/TR/sparql11-overview/.
 
-  * LODLAM. "Zotero | Groups > LOD-LAM." Accessed August 6, 2013. https://www.zotero.org/groups/lod-lam.
+  * “Spring/Summer 2012 (v.24 No.2/3) - National Information Standards Organization.” Accessed August 6, 2013. http://www.niso.org/publications/isq/2012/v24no2-3/.
 
-  * "LODLAM - Linked Open Data in Libraries, Archives & Museums." Accessed August 6, 2013. http://lodlam.net/.
+  * “The Linking Open Data Cloud Diagram.” Accessed November 3, 2013. http://lod-cloud.net/.
 
-  * Möller, Knud, Tom Heath, Siegfried Handschuh, and John Domingue. "Recipes for Semantic Web Dog Food — The ESWC and ISWC Metadata Projects." In The Semantic Web, edited by Karl Aberer, Key-Sun Choi, Natasha Noy, Dean Allemang, Kyung-Il Lee, Lyndon Nixon, Jennifer Golbeck, et al., 4825:802–815. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. http://www.springerlink.com/index/10.1007/978-3-540-76298-0_58.
+  * Tim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Accessed September 4, 2013. http://www.scientificamerican.com/article.cfm?id=the-semantic-web.
 
-  * "Notation3." Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Notation3&oldid=541302540.
+  * “Transforming EAD XML into RDF/XML Using XSLT.” Accessed August 16, 2013. http://archiveshub.ac.uk/locah/tag/transform/.
 
-  * "OWL 2 Web Ontology Language Primer." Accessed August 14, 2013. http://www.w3.org/TR/2009/REC-owl2-primer-20091027/.
+  * “Turtle (syntax).” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Turtle_(syntax)&oldid=542183836.
 
-  * "PELAGIOS: About PELAGIOS." Accessed September 4, 2013. http://pelagios-project.blogspot.com/p/about-pelagios.html.
+  * Volz, Julius, Christian Bizer, Martin Gaedke, and Georgi Kobilarov. “Discovering and Maintaining Links on the Web of Data.” In The Semantic Web - ISWC 2009, edited by Abraham Bernstein, David R. Karger, Tom Heath, Lee Feigenbaum, Diana Maynard, Enrico Motta, and Krishnaprasad Thirunarayan, 5823:650–665. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-04930-9_41.
 
-  * Quilitz, Bastian, and Ulf Leser. "Querying Distributed RDF Data Sources with SPARQL." In The Semantic Web: Research and Applications, edited by Sean Bechhofer, Manfred Hauswirth, Jörg Hoffmann, and Manolis Koubarakis, 5021:524–538. Berlin, Heidelberg: Springer Berlin Heidelberg. Accessed September 4, 2013. http://www.springerlink.com/index/10.1007/978-3-540-68234-9_39.
+  * Voss, Jon. “LODLAM State of Affairs.” Information Standards Quarterly 24, no. 2/3 (2012): 41. doi:10.3789/isqv24n2-3.2012.07.
 
-  * "RDF/XML." Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=RDF/XML&oldid=561972340.
+  * W3C. “LinkedData - W3C Wiki.” Accessed August 4, 2013. http://www.w3.org/wiki/LinkedData.
 
-  * "RDFa." Wikipedia, the Free Encyclopedia, July 22, 2013. http://en.wikipedia.org/w/index.php?title=RDFa&oldid=561972699.
+  * “Welcome to Euclid.” Accessed September 4, 2013. http://www.euclid-project.eu/.
 
-  * "Semantic Web." Wikipedia, the Free Encyclopedia, August 2, 2013. http://en.wikipedia.org/w/index.php?title=Semantic_Web&oldid=566813312.
-
-  * "SPARQL." Wikipedia, the Free Encyclopedia, August 1, 2013. http://en.wikipedia.org/w/index.php?title=SPARQL&oldid=566718788.
-
-  * "SPARQL 1.1 Overview." Accessed August 6, 2013. http://www.w3.org/TR/sparql11-overview/.
-
-  * "Spring/Summer 2012 (v.24 No.2/3) - National Information Standards Organization." Accessed August 6, 2013. http://www.niso.org/publications/isq/2012/v24no2-3/.
-
-  * "TemaTres Controlled Vocabulary Server." Accessed August 14, 2013. http://www.vocabularyserver.com/.
-
-  * "The Protégé Ontology Editor and Knowledge Acquisition System." Accessed September 2, 2013. http://protege.stanford.edu/.
-
-  * Tim Berners-Lee, James Hendler, and Ora Lassila. "The Semantic Web." Accessed September 4, 2013. http://www.scientificamerican.com/article.cfm?id=the-semantic-web.
-
-  * "Transforming EAD XML into RDF/XML Using XSLT." Accessed August 16, 2013. http://archiveshub.ac.uk/locah/tag/transform/.
-
-  * "Turtle (syntax)." Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Turtle_(syntax)&oldid=542183836.
-
-  * "VIAF." Accessed August 27, 2013. http://viaf.org/.
-
-  * Volz, Julius, Christian Bizer, Martin Gaedke, and Georgi Kobilarov. "Discovering and Maintaining Links on the Web of Data." In The Semantic Web - ISWC 2009, edited by Abraham Bernstein, David R. Karger, Tom Heath, Lee Feigenbaum, Diana Maynard, Enrico Motta, and Krishnaprasad Thirunarayan, 5823:650–665. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-04930-9_41.
-
-  * Voss, Jon. "LODLAM State of Affairs." Information Standards Quarterly 24, no. 2/3 (2012): 41. doi:10.3789/isqv24n2-3.2012.07.
-
-  * W3C. "LinkedData - W3C Wiki." Accessed August 4, 2013. http://www.w3.org/wiki/LinkedData.
-
-  * "Welcome - the Datahub." Accessed August 14, 2013. http://datahub.io/.
-
-  * "Welcome to Euclid." Accessed September 4, 2013. http://www.euclid-project.eu/.
+  * “Wiki.dbpedia.org : About.” Accessed November 3, 2013. http://dbpedia.org/About.
 
 --
 Eric Lease Morgan
-September 21, 2013
+November 3, 2013
 
 
