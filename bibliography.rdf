@@ -3584,6 +3584,46 @@ Not finding your favourite one? Suggest a new vocabulary to add to LOV!</dcterms
         <link:type>text/html</link:type>
         <link:charset>1</link:charset>
     </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2399"/>
+        <dc:title>TaskForces/CommunityProjects/LinkingOpenData/SemWebClients - W3C Wiki</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-05 02:54:09</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2399">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>TaskForces/CommunityProjects/LinkingOpenData/SemWebClients - W3C Wiki</dc:title>
+        <dcterms:dateSubmitted>2013-11-05 02:54:11</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>ead2rdf</dc:title>
+        <dcterms:abstract>The “transform” process is currently performed using XSLT to read an EAD XML document and output RDF/XML, and the current version of the stylesheet is now available:</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:50:08</dcterms:dateSubmitted>
+    </bib:Document>
     <z:Collection rdf:about="#collection_20">
         <dc:title>citations</dc:title>
         <dcterms:hasPart rdf:resource="http://sites.tufts.edu/liam/"/>
@@ -3685,5 +3725,7 @@ Not finding your favourite one? Suggest a new vocabulary to add to LOV!</dcterms
         <dcterms:hasPart rdf:resource="http://www.vocabularyserver.com/"/>
         <dcterms:hasPart rdf:resource="http://www.w3.org/wiki/VirtuosoUniversalServer"/>
         <dcterms:hasPart rdf:resource="http://www.w3.org/RDF/Validator/"/>
+        <dcterms:hasPart rdf:resource="http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients"/>
+        <dcterms:hasPart rdf:resource="http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl"/>
     </z:Collection>
 </rdf:RDF>
