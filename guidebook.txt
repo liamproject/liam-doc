@@ -83,7 +83,7 @@ This statement can be divided into three parts. The first part is a subject (Dec
 
 Suppose further that the subject and object of the triple are identified using URIs (as in Expectations #1 and #2, above). This would turn our assertion into something like this with carriage returns added for readability:
 
-  http://www.archives.gov/exhibits/charters/declaration_transcript.html
+  http://en.wikipedia.org/wiki/Declaration_of_Independence
   was authored by
   http://www.worldcat.org/identities/lccn-n79-89957
 
@@ -92,12 +92,12 @@ Unfortunately, this assertion is not easily read by a computer. Believe it or no
 <?xml version="1.0"?>
 <rdf:RDF
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:dc="http://purl.org/dc/elements/1.1/" >
+  xmlns:dcterms="http://purl.org/dc/terms/" >
 
   <!-- the Declaration Of Independence was authored by Thomas Jefferson -->
   <rdf:Description
-  rdf:about="http://www.archives.gov/exhibits/charters/declaration_transcript.html">
-    <dc:creator>http://id.loc.gov/authorities/names/n79089957</dc:creator>
+  rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
+    <dcterms:creator>http://id.loc.gov/authorities/names/n79089957</dcterms:creator>
   </rdf:Description>
 
 </rdf:RDF>
@@ -129,18 +129,18 @@ Suppose there were smart Linked Data robot / spider. Suppose it crawled both Ass
 <?xml version="1.0"?>
 <rdf:RDF
  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
- xmlns:dc="http://purl.org/dc/elements/1.1/"
- xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
   <!-- the Declaration Of Independence was written by
   Thomas Jefferson, and Thomas Jefferson is a male -->
   <rdf:Description
-	rdf:about="http://www.archives.gov/exhibits/charters/declaration_transcript.html">
-	  <dc:creator>
+	rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
+	  <dcterms:creator>
 		<foaf:Person rdf:about="http://id.loc.gov/authorities/names/n79089957">
 		  <foaf:gender>male</foaf:gender>
 		</foaf:Person>
-	  </dc:creator>
+	  </dcterms:creator>
   </rdf:Description>
  
 </rdf:RDF>
@@ -387,6 +387,8 @@ Tools
 
   * “Disco Hyperdata Browser.” Accessed November 3, 2013. http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/.
 
+  * “Ead2rdf.” Accessed November 3, 2013. http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl.
+
   * “Ewg118/eaditor · GitHub.” Accessed November 3, 2013. https://github.com/ewg118/eaditor.
 
   * “Google Drive.” Accessed November 3, 2013. http://www.google.com/drive/apps.html.
@@ -406,6 +408,8 @@ Tools
   * “swh/Perl-SPARQL-client-library · GitHub.” Accessed November 3, 2013. https://github.com/swh/Perl-SPARQL-client-library.
 
   * “Tabulator: Generic Data Browser.” Accessed November 3, 2013. http://www.w3.org/2005/ajar/tab.
+
+  * “TaskForces/CommunityProjects/LinkingOpenData/SemWebClients - W3C Wiki.” Accessed November 5, 2013. http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients.
 
   * “TemaTres Controlled Vocabulary Server.” Accessed November 3, 2013. http://www.vocabularyserver.com/.
 
@@ -573,6 +577,6 @@ This is a list of links and citations to get one started on Linked Open Data
 
 --
 Eric Lease Morgan
-November 3, 2013
+November 5, 2013
 
 
