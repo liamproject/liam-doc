@@ -527,6 +527,10 @@ Gaps: What is needed
 Tools
 =====
 
+  * “4store - Scalable RDF Storage.” Accessed November 12, 2013. http://4store.org/.
+
+  * “Apache Jena - Home.” Accessed November 11, 2013. http://jena.apache.org/.
+
   * “Behas/oai2lod · GitHub.” Accessed November 3, 2013. https://github.com/behas/oai2lod.
 
   * “BIBFRAME.ORG :: Bibliographic Framework Initiative - Overview.” Accessed November 3, 2013. http://bibframe.org/.
@@ -535,7 +539,11 @@ Tools
 
   * “Community | Tableau Public.” Accessed November 3, 2013. http://www.tableausoftware.com/public/community.
 
+  * “ConverterToRdf - W3C Wiki.” Accessed November 11, 2013. http://www.w3.org/wiki/ConverterToRdf.
+
   * “Curl and Libcurl.” Accessed November 3, 2013. http://curl.haxx.se/.
+
+  * “D2R Server | The D2RQ Platform.” Accessed November 15, 2013. http://d2rq.org/d2r-server.
 
   * “Disco Hyperdata Browser.” Accessed November 3, 2013. http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/.
 
@@ -545,15 +553,27 @@ Tools
 
   * “Google Drive.” Accessed November 3, 2013. http://www.google.com/drive/apps.html.
 
+  * Library, The standard EAC-CPF is maintained by the Society of American Archivists in partnership with the Berlin State. “Society of American Archivists and the Berlin State Library.” Accessed January 1, 2014. http://eac.staatsbibliothek-berlin.de/.
+
   * “Lmf - Linked Media Framework - Google Project Hosting.” Accessed November 3, 2013. https://code.google.com/p/lmf/.
 
   * “OpenLink Data Explorer Extension.” Accessed November 3, 2013. http://ode.openlinksw.com/.
 
+  * “openRDF.org: Home.” Accessed November 12, 2013. http://www.openrdf.org/.
+
   * “OpenRefine (OpenRefine) · GitHub.” Accessed November 3, 2013. https://github.com/OpenRefine/.
+
+  * “Parrot, a RIF and OWL Documentation Service.” Accessed November 11, 2013. http://ontorule-project.eu/parrot/parrot.
+
+  * “RDF2RDF - Converts RDF from Any Format to Any.” Accessed December 5, 2013. http://www.l3s.de/~minack/rdf2rdf/.
 
   * “RDFImportersAndAdapters - W3C Wiki.” Accessed November 3, 2013. http://www.w3.org/wiki/RDFImportersAndAdapters.
 
+  * “RDFizers - SIMILE.” Accessed November 11, 2013. http://simile.mit.edu/wiki/RDFizers.
+
   * “Semantic Web Client Library.” Accessed November 3, 2013. http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/semwebclient/.
+
+  * “SIMILE Widgets | Exhibit.” Accessed November 11, 2013. http://www.simile-widgets.org/exhibit/.
 
   * “SparqlImplementations - W3C Wiki.” Accessed November 3, 2013. http://www.w3.org/wiki/SparqlImplementations.
 
@@ -573,9 +593,13 @@ Tools
 
   * “Tools | Linked Data - Connect Distributed Data Across the Web.” Accessed November 3, 2013. http://linkeddata.org/tools.
 
+  * “Vapour, a Linked Data Validator.” Accessed November 11, 2013. http://validator.linkeddata.org/vapour.
+
   * “VirtuosoUniversalServer - W3C Wiki.” Accessed November 3, 2013. http://www.w3.org/wiki/VirtuosoUniversalServer.
 
   * “W3C RDF Validation Service.” Accessed November 3, 2013. http://www.w3.org/RDF/Validator/.
+
+  * “W3c/rdfvalidator-ng.” Accessed December 10, 2013. https://github.com/w3c/rdfvalidator-ng.
 
   * “Working with RDF with Perl.” Accessed November 3, 2013. http://www.perlrdf.org/.
 
@@ -621,6 +645,8 @@ Data sets
 
   * “VoID - Semanticweb.org.” Accessed November 3, 2013. http://semanticweb.org/wiki/VoID.
 
+  * “Web Data Commons.” Accessed November 19, 2013. http://webdatacommons.org/.
+
   * “Welcome - the Datahub.” Accessed August 14, 2013. http://datahub.io/.
 
   * “Welcome to Open Library (Open Library).” Accessed November 3, 2013. https://openlibrary.org/.
@@ -629,13 +655,12 @@ Data sets
 
   * “World Bank Linked Data.” Accessed November 3, 2013. http://worldbank.270a.info/.html.
 
-
 Further reading
 ===============
 
 This is a list of links and citations to get one started on Linked Open Data
 
-  * “About - LOCAH Linked Archives Hub Test Dataset.” Accessed August 16, 2013. http://data.archiveshub.ac.uk/about.html.
+  * admin. “Barriers to Using EAD,” August 4, 2012. http://oclc.org/research/activities/eadtools.html.
 
   * Becker, Christian, and Christian Bizer. “Exploring the Geospatial Semantic Web with DBpedia Mobile.” Web Semantics: Science, Services and Agents on the World Wide Web 7, no. 4 (December 2009): 278–286. doi:10.1016/j.websem.2009.09.004.
 
@@ -648,6 +673,8 @@ This is a list of links and citations to get one started on Linked Open Data
   * Bizer, Christian, Tom Heath, and Tim Berners-Lee. “Linked Data - The Story So Far:” International Journal on Semantic Web and Information Systems 5, no. 3 (33 2009): 1–22. doi:10.4018/jswis.2009081901.
 
   * Carroll, Jeremy J., Christian Bizer, Pat Hayes, and Patrick Stickler. “Named Graphs.” Web Semantics: Science, Services and Agents on the World Wide Web 3, no. 4 (December 2005): 247–267. doi:10.1016/j.websem.2005.09.001.
+
+  * “Chem2bio2rdf - How to Publish Data Using D2R?” Accessed January 6, 2014. http://chem2bio2rdf.wikispaces.com/How+to+publish+data+using+D2R%3F.
 
   * “Content Negotiation.” Wikipedia, the Free Encyclopedia, July 2, 2013. https://en.wikipedia.org/wiki/Content_negotiation.
 
@@ -679,7 +706,7 @@ This is a list of links and citations to get one started on Linked Open Data
 
   * “Linked Data.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Linked_data&oldid=562554554.
 
-  * “Linked Data: Evolving the Web into a Global Data Space.” Accessed September 4, 2013. http://linkeddatabook.com/editions/1.0/.
+  * “Linked Data Glossary.” Accessed January 1, 2014. http://www.w3.org/TR/ld-glossary/.
 
   * “Linked Open Data.” Europeana. Accessed September 12, 2013. http://pro.europeana.eu/web/guest;jsessionid=09A5D79E7474609AE246DF5C5A18DDD4.
 
@@ -709,11 +736,17 @@ This is a list of links and citations to get one started on Linked Open Data
 
   * “Spring/Summer 2012 (v.24 No.2/3) - National Information Standards Organization.” Accessed August 6, 2013. http://www.niso.org/publications/isq/2012/v24no2-3/.
 
+  * Summers, Ed, and Dorothea Salo. Linking Things on the Web: A Pragmatic Examination of Linked Data for Libraries, Archives and Museums. ArXiv e-print, February 19, 2013. http://arxiv.org/abs/1302.4591.
+
   * “The Linking Open Data Cloud Diagram.” Accessed November 3, 2013. http://lod-cloud.net/.
+
+  * “The Trouble with Triples | Duke Collaboratory for Classics Computing (DC3).” Accessed November 6, 2013. http://blogs.library.duke.edu/dcthree/2013/07/27/the-trouble-with-triples/.
 
   * Tim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Accessed September 4, 2013. http://www.scientificamerican.com/article.cfm?id=the-semantic-web.
 
   * “Transforming EAD XML into RDF/XML Using XSLT.” Accessed August 16, 2013. http://archiveshub.ac.uk/locah/tag/transform/.
+
+  * “Triplestore - Wikipedia, the Free Encyclopedia.” Accessed November 11, 2013. http://en.wikipedia.org/wiki/Triplestore.
 
   * “Turtle (syntax).” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Turtle_(syntax)&oldid=542183836.
 
@@ -721,7 +754,7 @@ This is a list of links and citations to get one started on Linked Open Data
 
   * Voss, Jon. “LODLAM State of Affairs.” Information Standards Quarterly 24, no. 2/3 (2012): 41. doi:10.3789/isqv24n2-3.2012.07.
 
-  * W3C. “LinkedData - W3C Wiki.” Accessed August 4, 2013. http://www.w3.org/wiki/LinkedData.
+  * W3C. “LinkedData.” Accessed August 4, 2013. http://www.w3.org/wiki/LinkedData.
 
   * “Welcome to Euclid.” Accessed September 4, 2013. http://www.euclid-project.eu/.
 
