@@ -1,0 +1,1012 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <bib:Document rdf:about="http://bibframe.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2349"/>
+        <dc:title>BIBFRAME.ORG :: Bibliographic Framework Initiative - Overview</dc:title>
+        <dcterms:abstract>The Bibliographic Framework Initiative (BIBFRAME) is an undertaking by the Library of Congress and the community to better accommodate future needs of the library community. A major focus of the initiative will be to determine a transition path for the MARC 21 exchange format to more Web based, Linked Data standards. Zepheira and The Library of Congress are working together to develop a Linked Data model, vocabulary and enabling tools / services for supporting this Initiative.</dcterms:abstract>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://bibframe.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:44:16</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2349">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>BIBFRAME.ORG :: Bibliographic Framework Initiative - Overview</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:44:18</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://bibframe.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://ckan.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2351"/>
+        <dc:title>ckan - The open source data portal software</dc:title>
+        <dcterms:abstract>CKAN is a powerful data management system that makes data accessible – by providing tools to streamline publishing, sharing, finding and using data. CKAN is aimed at data publishers (national and regional governments, companies and organizations) wanting to make their data open and available. - See more at: http://ckan.org/#sthash.xX8XfLRv.dpuf</dcterms:abstract>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://ckan.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:44:37</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2351">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>ckan - The open source data portal software</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:44:39</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://ckan.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://curl.haxx.se/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2353"/>
+        <dc:title>curl and libcurl</dc:title>
+        <dcterms:abstract>curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks.</dcterms:abstract>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://curl.haxx.se/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:45:05</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2353">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>curl and libcurl</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:45:07</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://curl.haxx.se/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://d2rq.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2355"/>
+        <dc:title>The D2RQ Platform – Accessing Relational Databases as Virtual RDF Graphs</dc:title>
+        <dcterms:abstract>The D2RQ Platform is a system for accessing relational databases as virtual, read-only RDF graphs. It offers RDF-based access to the content of relational databases without having to replicate it into an RDF store. Using D2RQ you can: query a non-RDF database using SPARQL, access the content of the database as Linked Data over the Web, create custom dumps of the database in RDF formats for loading into an RDF store, access information in a non-RDF database using the Apache Jena API</dcterms:abstract>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://d2rq.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:45:28</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2355">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>The D2RQ Platform – Accessing Relational Databases as Virtual RDF Graphs</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:45:30</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://d2rq.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2357"/>
+        <dc:title>Disco Hyperdata Browser</dc:title>
+        <dcterms:abstract>The Disco - Hyperdata Browser is a simple browser for navigating the Semantic Web as an unbound set of data sources. The browser renders all information, that it can find on the Semantic Web about a specific resource, as an HTML page. This resource description contains hyperlinks that allow you to navigate between resources. While you move from resource to resource, the browser dynamically retrieves information by dereferencing HTTP URIs and by following rdfs:seeAlso links.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:46:06</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2357">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Disco Hyperdata Browser</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:46:08</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="https://github.com/ewg118/eaditor">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2359"/>
+        <dc:title>ewg118/eaditor · GitHub</dc:title>
+        <dcterms:abstract>EADitor is an XForms framework for the creation and editing of Encoded Archival Description (EAD) finding aids using Orbeon, an enterprise-level XForms Java application, which runs in Apache Tomcat.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/ewg118/eaditor</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:47:21</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2359">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>ewg118/eaditor · GitHub</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:47:23</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/ewg118/eaditor</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.google.com/drive/apps.html">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2361"/>
+        <dc:title>Google Drive</dc:title>
+        <dcterms:abstract>Bust your data out of its silo! Combine it with other data on the web. Collaborate, visualize and share.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.google.com/drive/apps.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:47:51</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2361">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Google Drive</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:47:53</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.google.com/drive/apps.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://linkeddata.org/tools">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2363"/>
+        <dc:title>Tools | Linked Data - Connect Distributed Data across the Web</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://linkeddata.org/tools</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:48:12</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2363">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Tools | Linked Data - Connect Distributed Data across the Web</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:48:14</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://linkeddata.org/tools</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="https://code.google.com/p/lmf/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2365"/>
+        <dc:title>lmf - Linked Media Framework - Google Project Hosting</dc:title>
+        <dcterms:abstract>The Linked Media Framework is an easy-to-setup server application that bundles together some key open source projects to offer some advanced services for linked media management.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://code.google.com/p/lmf/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:48:32</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2365">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>lmf - Linked Media Framework - Google Project Hosting</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:48:34</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://code.google.com/p/lmf/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="https://github.com/behas/oai2lod">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2367"/>
+        <dc:title>behas/oai2lod · GitHub</dc:title>
+        <dcterms:abstract>exposes OAI-PMH data sources as Linked Data</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/behas/oai2lod</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:49:05</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2367">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>behas/oai2lod · GitHub</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:49:07</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/behas/oai2lod</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://ode.openlinksw.com/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2369"/>
+        <dc:title>OpenLink Data Explorer Extension</dc:title>
+        <dcterms:abstract>The OpenLink Data Explorer (ODE) is a browser extension (currently available for Firefox, Safari, Chrome, Opera, and Internet Explorer with additional browser support to follow) that adds a new option to the realm of Web User Agent functionality, in the form of new menu options for viewing Data Sources associated with Web Pages.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ode.openlinksw.com/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:49:28</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2369">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>OpenLink Data Explorer Extension</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:49:30</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ode.openlinksw.com/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="https://github.com/OpenRefine/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2371"/>
+        <dc:title>OpenRefine (OpenRefine) · GitHub</dc:title>
+        <dcterms:abstract>OpenRefine is a free, open source power tool for working with messy data and improving it</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/OpenRefine/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:49:50</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2371">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>OpenRefine (OpenRefine) · GitHub</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:49:52</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/OpenRefine/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.perlrdf.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2373"/>
+        <dc:title>Working with RDF with Perl</dc:title>
+        <dcterms:abstract>The Perl RDF project hopes to address these issues:, publish an official API for storage, parsing and serializing modules, produce a set of base classes for representing common RDF objects such as statements and nodes (resources, literals, blank nodes), produce patches to existing RDF tools to support these APIs, subclassing where appropriate, produce a test suite for storage, parsing, serializing, statement and node classes.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.perlrdf.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:50:08</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2373">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Working with RDF with Perl</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:50:10</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.perlrdf.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="https://github.com/swh/Perl-SPARQL-client-library">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2375"/>
+        <dc:title>swh/Perl-SPARQL-client-library · GitHub</dc:title>
+        <dcterms:abstract>A simple Perl library for accessing SPARQL endpoints.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://github.com/swh/Perl-SPARQL-client-library</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:50:30</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2375">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>swh/Perl-SPARQL-client-library · GitHub</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:50:32</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://github.com/swh/Perl-SPARQL-client-library</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://protege.stanford.edu/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2377"/>
+        <dc:title>The Protégé Ontology Editor and Knowledge Acquisition System</dc:title>
+        <dcterms:abstract>Protégé is a free, open source ontology editor and knowledge-base framework The Protégé platform supports modeling ontologies via a web client or a desktop client. Protégé ontologies can be developed in a variety of formats including OWL, RDF(S), and XML Schema Protégé is based on Java, is extensible, and provides a plug-and-play environment that makes it a flexible base for rapid prototyping and application development.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://protege.stanford.edu/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:50:49</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2377">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>The Protégé Ontology Editor and Knowledge Acquisition System</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:50:51</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://protege.stanford.edu/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/wiki/RDFImportersAndAdapters">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2379"/>
+        <dc:title>RDFImportersAndAdapters - W3C Wiki</dc:title>
+        <dcterms:abstract>Tools and applications that can convert from other data and file formats to RDF.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/wiki/RDFImportersAndAdapters</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:51:24</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2379">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>RDFImportersAndAdapters - W3C Wiki</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:51:26</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/wiki/RDFImportersAndAdapters</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/2001/sw/wiki/Tools">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2381"/>
+        <dc:title>Tools - Semantic Web Standards</dc:title>
+        <dcterms:abstract>This Wiki contains a collection of tool references that can help in developing Semantic Web applications. These include complete development environments, editors, libraries or modules for various programming languages, specialized browsers, etc. The goal is to list such tools and not Semantic Web applications in general (the interested reader may consider looking at the W3C SW Use Case Collection for those.)</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/2001/sw/wiki/Tools</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:51:49</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2381">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Tools - Semantic Web Standards</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:51:51</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/2001/sw/wiki/Tools</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/semwebclient/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2383"/>
+        <dc:title>Semantic Web Client Library</dc:title>
+        <dcterms:abstract>The Sematic Web Client Library represents the complete Semantic Web as a single RDF graph. The library enables applications to query this global graph using SPARQL- and find(SPO) queries. To answer queries, the library dynamically retrieves information from the Semantic Web by dereferencing HTTP URIs, by following rdfs:seeAlso links, and by querying the Sindice search engine. The library is written in Java and is based on the Jena framework.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/semwebclient/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:52:05</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2383">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Semantic Web Client Library</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:52:07</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/semwebclient/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/wiki/SparqlImplementations">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2385"/>
+        <dc:title>SparqlImplementations - W3C Wiki</dc:title>
+        <dcterms:abstract>This page lists some implementations of SPARQL, a query language and protocol for RDF acccess released by the W3C RDF Data Access Working Group - DAWG.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/wiki/SparqlImplementations</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:52:36</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2385">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>SparqlImplementations - W3C Wiki</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:52:38</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/wiki/SparqlImplementations</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.tableausoftware.com/public/community">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2387"/>
+        <dc:title>Community | Tableau Public</dc:title>
+        <dcterms:abstract>With Tableau Public you can create interactive graphs, dashboards, maps and tables from virtually any data and embed them on your website or blog in minutes.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.tableausoftware.com/public/community</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:52:57</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2387">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Community | Tableau Public</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:52:59</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.tableausoftware.com/public/community</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/2005/ajar/tab">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2389"/>
+        <dc:title>Tabulator: Generic data browser</dc:title>
+        <dcterms:abstract>The Tabulator project is a generic data browser and editor. Using outline and table modes, it provides a way to browse RDF data on the web. RDF is the standard for inter-application data exchange.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/2005/ajar/tab</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:53:11</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2389">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Tabulator: Generic data browser</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:53:13</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/2005/ajar/tab</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.vocabularyserver.com/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2391"/>
+        <dc:title>TemaTres Controlled Vocabulary server</dc:title>
+        <dcterms:abstract>The open source way to manage formal representations of knowledge</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.vocabularyserver.com/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:53:32</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2391">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>TemaTres Controlled Vocabulary server</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:53:34</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.vocabularyserver.com/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/wiki/VirtuosoUniversalServer">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2393"/>
+        <dc:title>VirtuosoUniversalServer - W3C Wiki</dc:title>
+        <dcterms:abstract>OpenLink Virtuoso is a multi-purpose and multi-protocol (Hybrid) Data Server from OpenLink Software that includes SQL Object-Relational, RDF, XML, and Free Text data management, alongside Web Application (HTTP, SOAP, WebDAV), SyncML, and Discussion Server functionality, in a single server.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/wiki/VirtuosoUniversalServer</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:54:03</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2393">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>VirtuosoUniversalServer - W3C Wiki</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:54:05</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/wiki/VirtuosoUniversalServer</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/RDF/Validator/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2395"/>
+        <dc:title>W3C RDF Validation Service</dc:title>
+        <dcterms:abstract>Enter a URI or paste an RDF/XML document into the text field above. A 3-tuple (triple) representation of the corresponding data model as well as an optional graphical visualization of the data model will be displayed.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/RDF/Validator/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:54:18</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2395">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>W3C RDF Validation Service</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:54:20</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/RDF/Validator/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2399"/>
+        <dc:title>TaskForces/CommunityProjects/LinkingOpenData/SemWebClients - W3C Wiki</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-05 02:54:09</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2399">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>TaskForces/CommunityProjects/LinkingOpenData/SemWebClients - W3C Wiki</dc:title>
+        <dcterms:dateSubmitted>2013-11-05 02:54:11</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>ead2rdf</dc:title>
+        <dcterms:abstract>The “transform” process is currently performed using XSLT to read an EAD XML document and output RDF/XML, and the current version of the stylesheet is now available:</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:50:08</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Document rdf:about="http://ontorule-project.eu/parrot/parrot">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2407"/>
+        <dc:title>Parrot, a RIF and OWL documentation service</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ontorule-project.eu/parrot/parrot</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-11 02:37:24</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2407">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Parrot, a RIF and OWL documentation service</dc:title>
+        <dcterms:dateSubmitted>2013-11-11 02:37:26</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ontorule-project.eu/parrot/parrot</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://validator.linkeddata.org/vapour">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2409"/>
+        <dc:title>Vapour, a Linked Data validator</dc:title>
+        <dcterms:abstract>Vapour is a validation service to check whether semantic web data is correctly published according to the current best practices, as defined by the Linked Data principles, the Best Practice Recipes and the Cool URIs.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://validator.linkeddata.org/vapour</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-11 02:39:30</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2409">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Vapour, a Linked Data validator</dc:title>
+        <dcterms:dateSubmitted>2013-11-11 02:39:32</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://validator.linkeddata.org/vapour</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://simile.mit.edu/wiki/RDFizers">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2427"/>
+        <dc:title>RDFizers - SIMILE</dc:title>
+        <dcterms:abstract>The RDFizer project is directory of tools for converting various data formats into RDF. In addition we provide a home for some of these tools.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://simile.mit.edu/wiki/RDFizers</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-11 14:31:31</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2427">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>RDFizers - SIMILE</dc:title>
+        <dcterms:dateSubmitted>2013-11-11 14:31:33</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://simile.mit.edu/wiki/RDFizers</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.simile-widgets.org/exhibit/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2426"/>
+        <dc:title>SIMILE Widgets | Exhibit</dc:title>
+        <dcterms:abstract>Exhibit lets you easily create web pages with advanced text search and filtering functionalities, with interactive maps, timelines, and other visualizations</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.simile-widgets.org/exhibit/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-11 14:32:54</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2426">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>SIMILE Widgets | Exhibit</dc:title>
+        <dcterms:dateSubmitted>2013-11-11 14:32:56</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.simile-widgets.org/exhibit/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://jena.apache.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2424"/>
+        <dc:title>Apache Jena - Home</dc:title>
+        <dcterms:abstract>A free and open source Java framework for building Semantic Web and Linked Data applications.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://jena.apache.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-11 14:31:50</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2424">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Apache Jena - Home</dc:title>
+        <dcterms:dateSubmitted>2013-11-11 14:31:52</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://jena.apache.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/wiki/ConverterToRdf">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2420"/>
+        <dc:title>ConverterToRdf - W3C Wiki</dc:title>
+        <dcterms:abstract>A Converter to RDF is a tool which converts application data from an application-specific format into RDF for use with RDF tools and integration with other data. Converters may be part of a one-time migration effort, or part of a running system which provides a semantic web view of a given application.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/wiki/ConverterToRdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-11 14:21:24</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2420">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>ConverterToRdf - W3C Wiki</dc:title>
+        <dcterms:dateSubmitted>2013-11-11 14:21:26</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/wiki/ConverterToRdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://4store.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2429"/>
+        <dc:title>4store - Scalable RDF storage</dc:title>
+        <dcterms:abstract>4store, an efficient, scalable and stable RDF database
+4store was designed by Steve Harris and developed at Garlik to underpin their Semantic Web applications. It has been providing the base platform for around 3 years. At times holding and running queries over databases of 15GT, supporting a Web application used by thousands of people.</dcterms:abstract>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://4store.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-12 00:41:39</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2429">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>4store - Scalable RDF storage</dc:title>
+        <dcterms:dateSubmitted>2013-11-12 00:41:41</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://4store.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.openrdf.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2431"/>
+        <dc:title>openRDF.org: Home</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.openrdf.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-12 02:05:14</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2431">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>openRDF.org: Home</dc:title>
+        <dcterms:dateSubmitted>2013-11-12 02:05:16</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.openrdf.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://d2rq.org/d2r-server">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2433"/>
+        <dc:title>D2R Server | The D2RQ Platform</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://d2rq.org/d2r-server</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-15 03:12:14</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2433">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>D2R Server | The D2RQ Platform</dc:title>
+        <dcterms:dateSubmitted>2013-11-15 03:12:16</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://d2rq.org/d2r-server</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.l3s.de/~minack/rdf2rdf/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2441"/>
+        <dc:title>RDF2RDF - Converts RDF from any format to any</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.l3s.de/~minack/rdf2rdf/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-12-05 12:30:32</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2441">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>RDF2RDF - Converts RDF from any format to any</dc:title>
+        <dcterms:dateSubmitted>2013-12-05 12:30:34</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.l3s.de/~minack/rdf2rdf/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="https://github.com/w3c/rdfvalidator-ng">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2444"/>
+        <dc:title>w3c/rdfvalidator-ng</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/w3c/rdfvalidator-ng</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-12-10 00:27:25</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2444">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>w3c/rdfvalidator-ng</dc:title>
+        <dcterms:dateSubmitted>2013-12-10 00:27:27</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/w3c/rdfvalidator-ng</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://eac.staatsbibliothek-berlin.de/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Library</foaf:surname>
+                        <foaf:givenname>The standard EAC-CPF is maintained by the Society of American Archivists in partnership with the Berlin State</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2450"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>EAC-CPF</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Society of American Archivists and the Berlin State Library</dc:title>
+        <dcterms:abstract>The standard EAC-CPF is maintained by the Society of American Archivists in partnership with the Berlin State Library</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://eac.staatsbibliothek-berlin.de/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2014-01-01 16:33:24</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <dc:rights>Society of American Archivists and the Berlin State Library</dc:rights>
+        <dc:description>The standard EAC-CPF is maintained by the Society of American Archivists in partnership with the Berlin State Library</dc:description>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2450">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2014-01-01 16:33:26</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://eac.staatsbibliothek-berlin.de/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+</rdf:RDF>

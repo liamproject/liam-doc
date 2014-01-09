@@ -1,0 +1,2506 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Document rdf:about="http://chem2bio2rdf.wikispaces.com/How+to+publish+data+using+D2R%3F">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2"/>
+        <dc:title>chem2bio2rdf - How to publish data using D2R?</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://chem2bio2rdf.wikispaces.com/How+to+publish+data+using+D2R%3F</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2014-01-06 03:08:00</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>chem2bio2rdf - How to publish data using D2R?</dc:title>
+        <dcterms:dateSubmitted>2014-01-06 03:08:02</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://chem2bio2rdf.wikispaces.com/How+to+publish+data+using+D2R%3F</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://oclc.org/research/activities/eadtools.html">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                   <foaf:Person><foaf:surname>admin</foaf:surname></foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_4"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Merrilee Proffitt</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Barriers to Using EAD</dc:title>
+        <dcterms:abstract>Barriers to Using EAD</dcterms:abstract>
+        <dc:date>2012-8-4</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://oclc.org/research/activities/eadtools.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2014-01-07 16:22:40</dcterms:dateSubmitted>
+        <z:language>en_US</z:language>
+        <dc:rights>null</dc:rights>
+        <dc:description>Barriers to Using EAD</dc:description>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_4">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2014-01-07 16:22:44</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://oclc.org/research/activities/eadtools.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://sites.tufts.edu/liam/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                   <foaf:Person><foaf:surname>LiAM</foaf:surname></foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_30"/>
+        <dc:title>LiAM: Linked Archival Metadata</dc:title>
+        <dcterms:abstract>The Linked Archival Metadata (LiAM) Project is funded by the Institute of Museum and Library Services’ National Leadership Grants Program as a Planning Grant. Tufts University’s Digital Collections and Archives is the project lead. Work on LiAM began October 1, 2012, and is scheduled to be complete by September 30, 2013. LiAM is focused on planning for the application of linked data approaches to archival description. Our goal is to better understand the benefits that linked data could bring to the management, discovery, and use of archival collections while also investigating the efforts required to implement these approaches. Central to this effort is identifying graduated approaches that will enable archives to build on existing description as well as mapping out a more ambitious vision for linked data in archives.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://sites.tufts.edu/liam/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-07-30 02:28:19</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_30">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>LiAM: Linked Archival Metadata</dc:title>
+        <dcterms:dateSubmitted>2013-07-30 02:28:20</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://sites.tufts.edu/liam/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://en.wikipedia.org/w/index.php?title=Linked_data&amp;oldid=562554554">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_1738"/>
+        <dc:title>Linked data</dc:title>
+        <dcterms:abstract>In computing, linked data (often capitalized as Linked Data) describes a method of publishing structured data so that it can be interlinked and become more useful. It builds upon standard Web technologies such as HTTP, RDF and URIs, but rather than using them to serve web pages for human readers, it extends them to share information in a way that can be read automatically by computers. This enables data from different sources to be connected and queried.</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2013-07-13T06:51:28Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Linked_data&amp;oldid=562554554</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-04 15:02:01</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 562554554</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_1738">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-08-04 15:02:09</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Linked_data&amp;oldid=562554554</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/wiki/LinkedData">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                   <foaf:Person><foaf:surname>W3C</foaf:surname></foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1740"/>
+        <dc:title>LinkedData</dc:title>
+        <dcterms:abstract>LinkedData is to spreadsheets and databases what the Web of hypertext documents is to word processor files.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/wiki/LinkedData</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-04 15:03:29</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_1740">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>LinkedData - W3C Wiki</dc:title>
+        <dcterms:dateSubmitted>2013-08-04 15:03:31</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/wiki/LinkedData</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/DesignIssues/LinkedData.html">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Berners-Lee</foaf:surname>
+                        <foaf:givenname>Tim</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1742"/>
+        <dc:title>Linked Data - Design Issues</dc:title>
+        <dcterms:abstract>The Semantic Web isn't just about putting data on the web. It is about making links, so that a person or machine can explore the web of data.  With linked data, when you have some of it, you can find other, related, data.
+
+Like the web of hypertext, the web of data is constructed with documents on the web. However,  unlike the web of hypertext,  where links are relationships anchors in hypertext documents written in HTML, for data they links  between arbitrary things described by RDF,.  The URIs identify any kind of object or  concept.   But for HTML or RDF, the same expectations apply to make the web grow: 1) Use URIs as names for things, 2) Use HTTP URIs so that people can look up those names, 3) When someone looks up a URI, provide useful information, using the standards (RDF*, SPARQL), and 4) Include links to other URIs. so that they can discover more things.
+
+Simple.  In fact, though, a surprising amount of data isn't linked in 2006, because of problems with one or more of the steps.  This article discusses solutions to these problems, details of implementation, and factors affecting choices about how you publish your data.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/DesignIssues/LinkedData.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-04 15:05:23</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_1742">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Linked Data - Design Issues</dc:title>
+        <dcterms:dateSubmitted>2013-08-04 15:05:25</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/DesignIssues/LinkedData.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://lodlam.net/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_1744"/>
+        <dc:title>LODLAM - Linked Open Data in Libraries, Archives &amp; Museums</dc:title>
+        <dcterms:abstract>LODLAM is Linked Open Data in Libraries, Archives, and Museums.  LODLAM.net is an informal, borderless network of enthusiasts, technicians, professionals and any number of other people who are interested in or working with Linked Open Data pertaining to galleries, libraries, archives, and museums... LODLAM.net is designed to be a central place for sharing resources and connecting and collaborating with other interested individuals.  There is also a Google Group, and the #LODLAM hashtag is used extensively on Twitter for shared news, questions, and projects regarding LODLAM.</dcterms:abstract>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://lodlam.net/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 00:47:36</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_1744">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>LODLAM - Linked Open Data in Libraries, Archives &amp; Museums</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 00:47:38</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://lodlam.net/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="https://groups.google.com/forum/#!forum/lod-lam">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2162"/>
+        <dc:title>Linked Open Data in Libraries, Archives, &amp; Museums (Google Group)</dc:title>
+        <dcterms:abstract>Exploring Linked Open Data across libraries, archives, and museums. Compare notes and share thoughts on issues such as technology, copyright, education, and use cases common across LAMs. Organizing the LOD-LAM Summit June 2-3 in San Francisco, CA.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://groups.google.com/forum/#!forum/lod-lam</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 00:54:56</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2162">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>(99+) Linked Open Data in Libraries, Archives, &amp; Museums - Google Groups</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 00:54:57</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://groups.google.com/forum/#!forum/lod-lam</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://en.wikipedia.org/w/index.php?title=SPARQL&amp;oldid=566718788">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_2166"/>
+        <dc:title>SPARQL</dc:title>
+        <dcterms:abstract>SPARQL (pronounced &quot;sparkle&quot;, a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a query language for databases, able to retrieve and manipulate data stored in Resource Description Framework format.[1][2] It was made a standard by the RDF Data Access Working Group (DAWG) of the World Wide Web Consortium, and is recongnized as one of the key technologies of the semantic web. On 15 January 2008, SPARQL 1.0 became an official W3C Recommendation,[3][4] and SPARQL 1.1 in March, 2013.[5]</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2013-08-01T14:02:48Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=SPARQL&amp;oldid=566718788</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:19:49</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 566718788</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_2166">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:19:55</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=SPARQL&amp;oldid=566718788</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/TR/sparql11-overview/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2168"/>
+        <dc:title>SPARQL 1.1 Overview</dc:title>
+        <dcterms:abstract>This document is an overview of SPARQL 1.1. It provides an introduction to a set of W3C specifications that facilitate querying and manipulating RDF graph content on the Web or in an RDF store.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/TR/sparql11-overview/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:20:52</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2168">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>SPARQL 1.1 Overview</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:20:54</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/TR/sparql11-overview/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://en.wikipedia.org/w/index.php?title=Turtle_(syntax)&amp;oldid=542183836">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_2170"/>
+        <dc:title>Turtle (syntax)</dc:title>
+        <dcterms:abstract>Turtle (Terse RDF Triple Language) is a format for expressing data in the Resource Description Framework (RDF) data model, similar to SPARQL. RDF, in turn, represents information using &quot;triples&quot;, each of which consists of a subject, a predicate, and an object. Each of those items is expressed as a Web URI.</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2013-07-13T06:51:28Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Turtle_(syntax)&amp;oldid=542183836</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:22:29</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 542183836</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_2170">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:22:32</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Turtle_(syntax)&amp;oldid=542183836</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://en.wikipedia.org/w/index.php?title=Notation3&amp;oldid=541302540">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_2172"/>
+        <dc:title>Notation3</dc:title>
+        <dcterms:abstract>Notation3, or N3 as it is more commonly known, is a shorthand non-XML serialization of Resource Description Framework models, designed with human-readability in mind: N3 is much more compact and readable than XML RDF notation. The format is being developed by Tim Berners-Lee and others from the Semantic Web community.</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2013-07-13T06:51:28Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Notation3&amp;oldid=541302540</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:22:42</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 541302540</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_2172">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:22:44</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Notation3&amp;oldid=541302540</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://en.wikipedia.org/wiki/RDF/XML">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_2174"/>
+        <dc:title>RDF/XML</dc:title>
+        <dcterms:abstract>RDF/XML is a syntax,[1] defined by the W3C[2] , to express (i.e. serialize) an RDF graph as an XML document. According to the W3C, &quot;RDF/XML is the normative syntax for writing RDF&quot;.[3] RDF (Resource Description Framework) is the data model used to represent for semantic web resources.</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2013-07-13T06:51:28Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://en.wikipedia.org/wiki/RDF/XML</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:22:54</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 561972340</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_2174">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:22:56</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=RDF/XML&amp;oldid=561972340</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://en.wikipedia.org/wiki/RDFa">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_2176"/>
+        <dc:title>RDFa</dc:title>
+        <dcterms:abstract>RDFa (or Resource Description Framework in Attributes[1]) is a W3C Recommendation that adds a set of attribute-level extensions to HTML, XHTML and various XML-based document types for embedding rich metadata within Web documents. The RDF data-model mapping enables its use for embedding RDF subject-predicate-object expressions within XHTML documents. It also enables the extraction of RDF model triples by compliant user agents.</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2013-07-22T20:20:52Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://en.wikipedia.org/wiki/RDFa</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:23:05</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 561972699</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_2176">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:23:08</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=RDFa&amp;oldid=561972699</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://en.wikipedia.org/w/index.php?title=Semantic_Web&amp;oldid=566813312">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_2178"/>
+        <dc:title>Semantic Web</dc:title>
+        <dcterms:abstract>The Semantic Web is a collaborative movement led by the international standards body, the World Wide Web Consortium (W3C).[1] The standard promotes common data formats on the World Wide Web. By encouraging the inclusion of semantic content in web pages, the Semantic Web aims at converting the current web, dominated by unstructured and semi-structured documents into a &quot;web of data&quot;. The Semantic Web stack builds on the W3C's Resource Description Framework (RDF).[2]</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2013-08-02T19:58:45Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Semantic_Web&amp;oldid=566813312</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:23:19</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 566813312</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_2178">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:23:25</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Semantic_Web&amp;oldid=566813312</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/TR/2012/WD-turtle-20120710/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>David Beckett</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2182"/>
+        <dc:title>Turtle</dc:title>
+        <dcterms:abstract>This document defines a textual syntax for RDF called Turtle that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. Turtle provides levels of compatibility with the existing N-Triples format as well as the triple pattern syntax of the SPARQL W3C Recommendation.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/TR/2012/WD-turtle-20120710/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:36:38</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2182">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Turtle</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:36:40</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/TR/2012/WD-turtle-20120710/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Content_negotiation">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_2184"/>
+        <dc:title>Content negotiation</dc:title>
+        <dcterms:abstract>Content negotiation is a mechanism defined in the HTTP specification that makes it possible to serve different versions of a document (or more generally, a resource representation) at the same URI, so that user agents can specify which version fit their capabilities the best. One classical use of this mechanism is to serve an image in GIF or PNG format, so that a browser that cannot display PNG images (e.g. MS Internet Explorer 4) will be served the GIF version. To summarize how this works, when a user agent submits a request to a server, the user agent informs the server what media types it understands with ratings of how well it understands them. More precisely, the user agent provides an Accept HTTP header that lists acceptable media types and associated quality factors. The server is then able to supply the version of the resource that best fits the user agent's needs.</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2013-07-02T12:00:45Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://en.wikipedia.org/wiki/Content_negotiation</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:38:11</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 562532260</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_2184">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:38:18</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://en.wikipedia.org/w/index.php?title=Content_negotiation&amp;oldid=562532260</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://data.archiveshub.ac.uk/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2188"/>
+        <dc:title>LOCAH Linked Archives Hub Test Dataset</dc:title>
+        <dcterms:abstract>The LOCAH project was a JISC funded project under the jiscEXPO strand of its Information Environment programme. The main aims of the project were to make available data from the Archives Hub and from Copac in the form of Linked Data. The participants in the project were Mimas, UKOLN, Eduserv, Talis, and OCLC Research. The project ran from August 2010 until July 2011.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://data.archiveshub.ac.uk/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:46:20</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2188">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Home - LOCAH Linked Archives Hub Test Dataset</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:46:22</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://data.archiveshub.ac.uk/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.niso.org/publications/isq/2012/v24no2-3/dunsire/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1041-0031"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dunsire</foaf:surname>
+                        <foaf:givenname>Gordon</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Harper</foaf:surname>
+                        <foaf:givenname>Corey</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hillmann</foaf:surname>
+                        <foaf:givenname>Diane</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Phipps</foaf:surname>
+                        <foaf:givenname>Jon</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2192"/>
+        <dc:title>Linked Data Vocabulary Management: Infrastructure Support, Data Integration, and Interoperability</dc:title>
+        <bib:pages>4</bib:pages>
+        <dc:date>21/2012</dc:date>
+        <z:shortTitle>Linked Data Vocabulary Management</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/dunsire/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:51:26</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1041-0031">
+        <dc:title>Information Standards Quarterly</dc:title>
+        <prism:volume>24</prism:volume>
+        <prism:number>2/3</prism:number>
+        <dc:identifier>DOI 10.3789/isqv24n2-3.2012.02</dc:identifier>
+        <dc:identifier>ISSN 1041-0031</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_2192">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Linked Data Vocabularies (Gordon Dunsire et al.) - National Information Standards Organization</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:51:28</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/dunsire/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>5</link:charset>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.niso.org/publications/isq/2012/v24no2-3/fons/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>Information Standards Quarterly</dc:title>
+                <prism:volume>24</prism:volume>
+                <prism:number>2/3</prism:number>
+                <dc:identifier>DOI 10.3789/isqv24n2-3.2012.05</dc:identifier>
+                <dc:identifier>ISSN 1041-0031</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fons</foaf:surname>
+                        <foaf:givenname>Ted</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Penka</foaf:surname>
+                        <foaf:givenname>Jeff</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wallis</foaf:surname>
+                        <foaf:givenname>Richard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2194"/>
+        <dc:title>OCLC's Linked Data Initiative: Using Schema.org to Make Library Data Relevant on the Web</dc:title>
+        <bib:pages>29</bib:pages>
+        <dc:date>21/2012</dc:date>
+        <z:shortTitle>OCLC's Linked Data Initiative</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/fons/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:53:05</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_2194">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>OCLC Linked Data (Ted Fons et al.) - National Information Standards Organization</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:53:07</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/fons/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>5</link:charset>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.niso.org/publications/isq/2012/v24no2-3/isaac/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>Information Standards Quarterly</dc:title>
+                <prism:volume>24</prism:volume>
+                <prism:number>2/3</prism:number>
+                <dc:identifier>DOI 10.3789/isqv24n2-3.2012.06</dc:identifier>
+                <dc:identifier>ISSN 1041-0031</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Isaac</foaf:surname>
+                        <foaf:givenname>Antoine</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Clayphan</foaf:surname>
+                        <foaf:givenname>Robina</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Haslhofer</foaf:surname>
+                        <foaf:givenname>Bernhard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Europeana: Moving to Linked Open Data</dc:title>
+        <bib:pages>34</bib:pages>
+        <dc:date>21/2012</dc:date>
+        <z:shortTitle>Europeana</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/isaac/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:53:37</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <bib:Article rdf:about="http://www.niso.org/publications/isq/2012/v24no2-3/voss/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>Information Standards Quarterly</dc:title>
+                <prism:volume>24</prism:volume>
+                <prism:number>2/3</prism:number>
+                <dc:identifier>DOI 10.3789/isqv24n2-3.2012.07</dc:identifier>
+                <dc:identifier>ISSN 1041-0031</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Voss</foaf:surname>
+                        <foaf:givenname>Jon</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2197"/>
+        <dc:title>LODLAM State of Affairs</dc:title>
+        <bib:pages>41</bib:pages>
+        <dc:date>21/2012</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/voss/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:53:53</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_2197">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>LODLAM (Jon Voss) - National Information Standards Organization</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:53:56</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/voss/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>5</link:charset>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.niso.org/publications/isq/2012/v24no2-3/elliott/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>Information Standards Quarterly</dc:title>
+                <prism:volume>24</prism:volume>
+                <prism:number>2/3</prism:number>
+                <dc:identifier>DOI 10.3789/isqv24n2-3.2012.08</dc:identifier>
+                <dc:identifier>ISSN 1041-0031</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Elliott</foaf:surname>
+                        <foaf:givenname>Thomas</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heath</foaf:surname>
+                        <foaf:givenname>Sebastian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Muccigrosso</foaf:surname>
+                        <foaf:givenname>John</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2199"/>
+        <dc:title>Report on the Linked Ancient World Data Institute</dc:title>
+        <bib:pages>43</bib:pages>
+        <dc:date>21/2012</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/elliott/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:54:08</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_2199">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>LAWDI (Thomas Elliott et al.) - National Information Standards Organization</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:54:10</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/elliott/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>5</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.niso.org/publications/isq/2012/v24no2-3/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2201"/>
+        <dc:title>Spring/Summer 2012 (v.24 no.2/3) - National Information Standards Organization</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-06 01:59:54</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2201">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Spring/Summer 2012 (v.24 no.2/3) - National Information Standards Organization</dc:title>
+        <dcterms:dateSubmitted>2013-08-06 01:59:56</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.niso.org/publications/isq/2012/v24no2-3/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/TR/2009/REC-owl2-primer-20091027/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2211"/>
+        <dc:title>OWL 2 Web Ontology Language Primer</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/TR/2009/REC-owl2-primer-20091027/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-14 00:59:33</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2211">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>OWL 2 Web Ontology Language Primer</dc:title>
+        <dcterms:dateSubmitted>2013-08-14 00:59:35</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.w3.org/TR/2009/REC-owl2-primer-20091027/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://archiveshub.ac.uk/linkinglives/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2225"/>
+        <dc:title>Linking Lives | Using Linked Data to create biographical resources</dc:title>
+        <dcterms:abstract>Linking Lives is exploring ways to present Linked Data. We aim to show that archives can benefit from being presented as a part of the diverse data sources on the Web to create full biographical pictures, enabling researchers to make connections between people and events.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://archiveshub.ac.uk/linkinglives/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-16 03:14:07</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2225">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Linking Lives | Using Linked Data to create biographical resources</dc:title>
+        <dcterms:dateSubmitted>2013-08-16 03:14:09</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://archiveshub.ac.uk/linkinglives/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://archiveshub.ac.uk/locah/tag/transform/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2227"/>
+        <dc:title>Transforming EAD XML into RDF/XML using XSLT</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://archiveshub.ac.uk/locah/tag/transform/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-16 03:19:49</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2227">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>transform | LOCAH Project</dc:title>
+        <dcterms:dateSubmitted>2013-08-16 03:19:51</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://archiveshub.ac.uk/locah/tag/transform/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.scientificamerican.com/article.cfm?id=the-semantic-web">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Tim Berners-Lee</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>James Hendler</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Ora Lassila</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2238"/>
+        <dc:title>The Semantic Web</dc:title>
+        <dcterms:abstract>A new form of Web content that is meaningful to computers will unleash a revolution of new possibilities</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.scientificamerican.com/article.cfm?id=the-semantic-web</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 01:03:21</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2238">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>The Semantic Web: Scientific American</dc:title>
+        <dcterms:dateSubmitted>2013-09-04 01:03:23</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.scientificamerican.com/article.cfm?id=the-semantic-web</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-3-540-68233-2,%20978-3-540-68234-9">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:title>The Semantic Web: Research and Applications</dc:title>
+                <prism:volume>5021</prism:volume>
+                <dc:identifier>ISBN 978-3-540-68233-2, 978-3-540-68234-9</dc:identifier>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Berlin, Heidelberg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer Berlin Heidelberg</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bechhofer</foaf:surname>
+                        <foaf:givenname>Sean</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hauswirth</foaf:surname>
+                        <foaf:givenname>Manfred</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hoffmann</foaf:surname>
+                        <foaf:givenname>Jörg</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Koubarakis</foaf:surname>
+                        <foaf:givenname>Manolis</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Quilitz</foaf:surname>
+                        <foaf:givenname>Bastian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leser</foaf:surname>
+                        <foaf:givenname>Ulf</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Querying Distributed RDF Data Sources with SPARQL</dc:title>
+        <bib:pages>524-538</bib:pages>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.springerlink.com/index/10.1007/978-3-540-68234-9_39</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:BookSection>
+    <bib:Article rdf:about="http://linkinghub.elsevier.com/retrieve/pii/S1570826805000235">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:15708268"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Carroll</foaf:surname>
+                        <foaf:givenname>Jeremy J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bizer</foaf:surname>
+                        <foaf:givenname>Christian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hayes</foaf:surname>
+                        <foaf:givenname>Pat</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stickler</foaf:surname>
+                        <foaf:givenname>Patrick</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Named graphs</dc:title>
+        <bib:pages>247-267</bib:pages>
+        <dc:date>12/2005</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://linkinghub.elsevier.com/retrieve/pii/S1570826805000235</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:15708268">
+        <dc:title>Web Semantics: Science, Services and Agents on the World Wide Web</dc:title>
+        <prism:volume>3</prism:volume>
+        <prism:number>4</prism:number>
+        <dc:identifier>DOI 10.1016/j.websem.2005.09.001</dc:identifier>
+        <dc:identifier>ISSN 15708268</dc:identifier>
+    </bib:Journal>
+    <bib:Document rdf:about="http://www.euclid-project.eu/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2285"/>
+        <dc:title>Welcome to Euclid</dc:title>
+        <dcterms:abstract>EUCLID is a European project facilitating professional training for data practitioners, who aim to use Linked Data in their daily work. EUCLID delivers a curriculum implemented as a combination of living learning materials and activities (eBook series, webinars, face‐to‐face training), validated by the user community through continuous feedback.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.euclid-project.eu/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:40:25</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2285">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-09-04 17:40:29</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.euclid-project.eu/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.morganclaypool.com/doi/abs/10.2200/S00334ED1V01Y201102WBE001">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2160-4711,%202160-472X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heath</foaf:surname>
+                        <foaf:givenname>Tom</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bizer</foaf:surname>
+                        <foaf:givenname>Christian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Linked Data: Evolving the Web into a Global Data Space</dc:title>
+        <bib:pages>1-136</bib:pages>
+        <dc:date>2011-02-09</dc:date>
+        <z:shortTitle>Linked Data</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.morganclaypool.com/doi/abs/10.2200/S00334ED1V01Y201102WBE001</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2160-4711,%202160-472X">
+        <dc:title>Synthesis Lectures on the Semantic Web: Theory and Technology</dc:title>
+        <prism:volume>1</prism:volume>
+        <prism:number>1</prism:number>
+        <dc:identifier>DOI 10.2200/S00334ED1V01Y201102WBE001</dc:identifier>
+        <dc:identifier>ISSN 2160-4711, 2160-472X</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.nature.com/doifinder/10.1038/scientificamerican0501-34">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0036-8733"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Berners-Lee</foaf:surname>
+                        <foaf:givenname>Tim</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hendler</foaf:surname>
+                        <foaf:givenname>James</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lassila</foaf:surname>
+                        <foaf:givenname>Ora</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>The Semantic Web</dc:title>
+        <bib:pages>34-43</bib:pages>
+        <dc:date>5/2001</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.nature.com/doifinder/10.1038/scientificamerican0501-34</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0036-8733">
+        <dc:title>Scientific American</dc:title>
+        <prism:volume>284</prism:volume>
+        <prism:number>5</prism:number>
+        <dc:identifier>DOI 10.1038/scientificamerican0501-34</dc:identifier>
+        <dc:identifier>ISSN 0036-8733</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/jswis.2009081901">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1552-6283,%201552-6291"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bizer</foaf:surname>
+                        <foaf:givenname>Christian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heath</foaf:surname>
+                        <foaf:givenname>Tom</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Berners-Lee</foaf:surname>
+                        <foaf:givenname>Tim</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Linked Data - The Story So Far:</dc:title>
+        <bib:pages>1-22</bib:pages>
+        <dc:date>33/2009</dc:date>
+        <z:shortTitle>Linked Data - The Story So Far</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/jswis.2009081901</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1552-6283,%201552-6291">
+        <dc:title>International Journal on Semantic Web and Information Systems</dc:title>
+        <prism:volume>5</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:identifier>DOI 10.4018/jswis.2009081901</dc:identifier>
+        <dc:identifier>ISSN 1552-6283, 1552-6291</dc:identifier>
+    </bib:Journal>
+    <bib:BookSection rdf:about="urn:isbn:978-3-642-04929-3,%20978-3-642-04930-9">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:title>The Semantic Web - ISWC 2009</dc:title>
+                <prism:volume>5823</prism:volume>
+                <dc:identifier>ISBN 978-3-642-04929-3, 978-3-642-04930-9</dc:identifier>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Berlin, Heidelberg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer Berlin Heidelberg</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <z:seriesEditors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hutchison</foaf:surname>
+                        <foaf:givenname>David</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kanade</foaf:surname>
+                        <foaf:givenname>Takeo</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kittler</foaf:surname>
+                        <foaf:givenname>Josef</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kleinberg</foaf:surname>
+                        <foaf:givenname>Jon M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mattern</foaf:surname>
+                        <foaf:givenname>Friedemann</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mitchell</foaf:surname>
+                        <foaf:givenname>John C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Naor</foaf:surname>
+                        <foaf:givenname>Moni</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nierstrasz</foaf:surname>
+                        <foaf:givenname>Oscar</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pandu Rangan</foaf:surname>
+                        <foaf:givenname>C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Steffen</foaf:surname>
+                        <foaf:givenname>Bernhard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sudan</foaf:surname>
+                        <foaf:givenname>Madhu</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Terzopoulos</foaf:surname>
+                        <foaf:givenname>Demetri</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tygar</foaf:surname>
+                        <foaf:givenname>Doug</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vardi</foaf:surname>
+                        <foaf:givenname>Moshe Y.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weikum</foaf:surname>
+                        <foaf:givenname>Gerhard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </z:seriesEditors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bernstein</foaf:surname>
+                        <foaf:givenname>Abraham</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Karger</foaf:surname>
+                        <foaf:givenname>David R.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heath</foaf:surname>
+                        <foaf:givenname>Tom</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Feigenbaum</foaf:surname>
+                        <foaf:givenname>Lee</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Maynard</foaf:surname>
+                        <foaf:givenname>Diana</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Motta</foaf:surname>
+                        <foaf:givenname>Enrico</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Thirunarayan</foaf:surname>
+                        <foaf:givenname>Krishnaprasad</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hartig</foaf:surname>
+                        <foaf:givenname>Olaf</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bizer</foaf:surname>
+                        <foaf:givenname>Christian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Freytag</foaf:surname>
+                        <foaf:givenname>Johann-Christoph</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Executing SPARQL Queries over the Web of Linked Data</dc:title>
+        <dc:date>2009</dc:date>
+        <bib:pages>293-309</bib:pages>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.springerlink.com/index/10.1007/978-3-642-04930-9_19</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:BookSection>
+    <bib:Document rdf:about="http://pro.europeana.eu/web/guest;jsessionid=09A5D79E7474609AE246DF5C5A18DDD4">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>Europeana</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2283"/>
+        <dc:title>Linked Open Data</dc:title>
+        <dcterms:abstract>Linked Open Data is a way of publishing structured data that allows metadata to be connected and enriched, so that different representations of the same content can be found, and links made between related resources.</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://pro.europeana.eu/web/guest;jsessionid=09A5D79E7474609AE246DF5C5A18DDD4</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-12 19:19:14</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2283">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-09-12 19:19:16</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://pro.europeana.eu/linked-open-data</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-3-642-02120-6,%20978-3-642-02121-3">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:title>The Semantic Web: Research and Applications</dc:title>
+                <prism:volume>5554</prism:volume>
+                <dc:identifier>ISBN 978-3-642-02120-6, 978-3-642-02121-3</dc:identifier>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Berlin, Heidelberg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer Berlin Heidelberg</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <z:seriesEditors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hutchison</foaf:surname>
+                        <foaf:givenname>David</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kanade</foaf:surname>
+                        <foaf:givenname>Takeo</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kittler</foaf:surname>
+                        <foaf:givenname>Josef</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kleinberg</foaf:surname>
+                        <foaf:givenname>Jon M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mattern</foaf:surname>
+                        <foaf:givenname>Friedemann</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mitchell</foaf:surname>
+                        <foaf:givenname>John C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Naor</foaf:surname>
+                        <foaf:givenname>Moni</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nierstrasz</foaf:surname>
+                        <foaf:givenname>Oscar</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pandu Rangan</foaf:surname>
+                        <foaf:givenname>C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Steffen</foaf:surname>
+                        <foaf:givenname>Bernhard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sudan</foaf:surname>
+                        <foaf:givenname>Madhu</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Terzopoulos</foaf:surname>
+                        <foaf:givenname>Demetri</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tygar</foaf:surname>
+                        <foaf:givenname>Doug</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vardi</foaf:surname>
+                        <foaf:givenname>Moshe Y.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weikum</foaf:surname>
+                        <foaf:givenname>Gerhard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </z:seriesEditors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Aroyo</foaf:surname>
+                        <foaf:givenname>Lora</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Traverso</foaf:surname>
+                        <foaf:givenname>Paolo</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ciravegna</foaf:surname>
+                        <foaf:givenname>Fabio</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cimiano</foaf:surname>
+                        <foaf:givenname>Philipp</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heath</foaf:surname>
+                        <foaf:givenname>Tom</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hyvönen</foaf:surname>
+                        <foaf:givenname>Eero</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mizoguchi</foaf:surname>
+                        <foaf:givenname>Riichiro</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Oren</foaf:surname>
+                        <foaf:givenname>Eyal</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sabou</foaf:surname>
+                        <foaf:givenname>Marta</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Simperl</foaf:surname>
+                        <foaf:givenname>Elena</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kobilarov</foaf:surname>
+                        <foaf:givenname>Georgi</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scott</foaf:surname>
+                        <foaf:givenname>Tom</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Raimond</foaf:surname>
+                        <foaf:givenname>Yves</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Oliver</foaf:surname>
+                        <foaf:givenname>Silver</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sizemore</foaf:surname>
+                        <foaf:givenname>Chris</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Smethurst</foaf:surname>
+                        <foaf:givenname>Michael</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bizer</foaf:surname>
+                        <foaf:givenname>Christian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lee</foaf:surname>
+                        <foaf:givenname>Robert</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Media Meets Semantic Web – How the BBC Uses DBpedia and Linked Data to Make Connections</dc:title>
+        <dc:date>2009</dc:date>
+        <bib:pages>723-737</bib:pages>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.springerlink.com/index/10.1007/978-3-642-02121-3_53</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:BookSection>
+    <bib:BookSection rdf:about="http://www.springerlink.com/index/10.1007/978-3-642-02121-3_5">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:title>The Semantic Web: Research and Applications</dc:title>
+                <prism:volume>5554</prism:volume>
+                <dc:identifier>ISBN 978-3-642-02120-6, 978-3-642-02121-3</dc:identifier>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Berlin, Heidelberg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer Berlin Heidelberg</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <z:seriesEditors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hutchison</foaf:surname>
+                        <foaf:givenname>David</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kanade</foaf:surname>
+                        <foaf:givenname>Takeo</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kittler</foaf:surname>
+                        <foaf:givenname>Josef</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kleinberg</foaf:surname>
+                        <foaf:givenname>Jon M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mattern</foaf:surname>
+                        <foaf:givenname>Friedemann</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mitchell</foaf:surname>
+                        <foaf:givenname>John C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Naor</foaf:surname>
+                        <foaf:givenname>Moni</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nierstrasz</foaf:surname>
+                        <foaf:givenname>Oscar</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pandu Rangan</foaf:surname>
+                        <foaf:givenname>C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Steffen</foaf:surname>
+                        <foaf:givenname>Bernhard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sudan</foaf:surname>
+                        <foaf:givenname>Madhu</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Terzopoulos</foaf:surname>
+                        <foaf:givenname>Demetri</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tygar</foaf:surname>
+                        <foaf:givenname>Doug</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vardi</foaf:surname>
+                        <foaf:givenname>Moshe Y.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weikum</foaf:surname>
+                        <foaf:givenname>Gerhard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </z:seriesEditors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Aroyo</foaf:surname>
+                        <foaf:givenname>Lora</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Traverso</foaf:surname>
+                        <foaf:givenname>Paolo</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ciravegna</foaf:surname>
+                        <foaf:givenname>Fabio</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cimiano</foaf:surname>
+                        <foaf:givenname>Philipp</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heath</foaf:surname>
+                        <foaf:givenname>Tom</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hyvönen</foaf:surname>
+                        <foaf:givenname>Eero</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mizoguchi</foaf:surname>
+                        <foaf:givenname>Riichiro</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Oren</foaf:surname>
+                        <foaf:givenname>Eyal</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sabou</foaf:surname>
+                        <foaf:givenname>Marta</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Simperl</foaf:surname>
+                        <foaf:givenname>Elena</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hartig</foaf:surname>
+                        <foaf:givenname>Olaf</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Querying Trust in RDF Data with tSPARQL</dc:title>
+        <dc:date>2009</dc:date>
+        <bib:pages>5-20</bib:pages>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.springerlink.com/index/10.1007/978-3-642-02121-3_5</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:BookSection>
+    <bib:BookSection rdf:about="http://www.springerlink.com/index/10.1007/978-3-642-04930-9_41">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:title>The Semantic Web - ISWC 2009</dc:title>
+                <prism:volume>5823</prism:volume>
+                <dc:identifier>ISBN 978-3-642-04929-3, 978-3-642-04930-9</dc:identifier>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Berlin, Heidelberg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer Berlin Heidelberg</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <z:seriesEditors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hutchison</foaf:surname>
+                        <foaf:givenname>David</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kanade</foaf:surname>
+                        <foaf:givenname>Takeo</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kittler</foaf:surname>
+                        <foaf:givenname>Josef</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kleinberg</foaf:surname>
+                        <foaf:givenname>Jon M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mattern</foaf:surname>
+                        <foaf:givenname>Friedemann</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mitchell</foaf:surname>
+                        <foaf:givenname>John C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Naor</foaf:surname>
+                        <foaf:givenname>Moni</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nierstrasz</foaf:surname>
+                        <foaf:givenname>Oscar</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pandu Rangan</foaf:surname>
+                        <foaf:givenname>C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Steffen</foaf:surname>
+                        <foaf:givenname>Bernhard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sudan</foaf:surname>
+                        <foaf:givenname>Madhu</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Terzopoulos</foaf:surname>
+                        <foaf:givenname>Demetri</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tygar</foaf:surname>
+                        <foaf:givenname>Doug</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vardi</foaf:surname>
+                        <foaf:givenname>Moshe Y.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weikum</foaf:surname>
+                        <foaf:givenname>Gerhard</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </z:seriesEditors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bernstein</foaf:surname>
+                        <foaf:givenname>Abraham</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Karger</foaf:surname>
+                        <foaf:givenname>David R.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heath</foaf:surname>
+                        <foaf:givenname>Tom</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Feigenbaum</foaf:surname>
+                        <foaf:givenname>Lee</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Maynard</foaf:surname>
+                        <foaf:givenname>Diana</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Motta</foaf:surname>
+                        <foaf:givenname>Enrico</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Thirunarayan</foaf:surname>
+                        <foaf:givenname>Krishnaprasad</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Volz</foaf:surname>
+                        <foaf:givenname>Julius</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bizer</foaf:surname>
+                        <foaf:givenname>Christian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gaedke</foaf:surname>
+                        <foaf:givenname>Martin</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kobilarov</foaf:surname>
+                        <foaf:givenname>Georgi</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Discovering and Maintaining Links on the Web of Data</dc:title>
+        <dc:date>2009</dc:date>
+        <bib:pages>650-665</bib:pages>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.springerlink.com/index/10.1007/978-3-642-04930-9_41</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:BookSection>
+    <bib:Article rdf:about="http://linkinghub.elsevier.com/retrieve/pii/S1532046408000415">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:15320464"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Belleau</foaf:surname>
+                        <foaf:givenname>François</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nolin</foaf:surname>
+                        <foaf:givenname>Marc-Alexandre</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tourigny</foaf:surname>
+                        <foaf:givenname>Nicole</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rigault</foaf:surname>
+                        <foaf:givenname>Philippe</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Morissette</foaf:surname>
+                        <foaf:givenname>Jean</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Bio2RDF: Towards a mashup to build bioinformatics knowledge systems</dc:title>
+        <bib:pages>706-716</bib:pages>
+        <dc:date>10/2008</dc:date>
+        <z:shortTitle>Bio2RDF</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://linkinghub.elsevier.com/retrieve/pii/S1532046408000415</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:15320464">
+        <dc:title>Journal of Biomedical Informatics</dc:title>
+        <prism:volume>41</prism:volume>
+        <prism:number>5</prism:number>
+        <dc:identifier>DOI 10.1016/j.jbi.2008.03.004</dc:identifier>
+        <dc:identifier>ISSN 15320464</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://linkinghub.elsevier.com/retrieve/pii/S1570826809000468">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>Web Semantics: Science, Services and Agents on the World Wide Web</dc:title>
+                <prism:volume>7</prism:volume>
+                <prism:number>4</prism:number>
+                <dc:identifier>DOI 10.1016/j.websem.2009.09.004</dc:identifier>
+                <dc:identifier>ISSN 15708268</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Becker</foaf:surname>
+                        <foaf:givenname>Christian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bizer</foaf:surname>
+                        <foaf:givenname>Christian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Exploring the Geospatial Semantic Web with DBpedia Mobile</dc:title>
+        <bib:pages>278-286</bib:pages>
+        <dc:date>12/2009</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://linkinghub.elsevier.com/retrieve/pii/S1570826809000468</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <rdf:Description rdf:about="urn:isbn:9781605589909">
+        <z:itemType>conferencePaper</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>ACM Press</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Correndo</foaf:surname>
+                        <foaf:givenname>Gianluca</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Salvadores</foaf:surname>
+                        <foaf:givenname>Manuel</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Millard</foaf:surname>
+                        <foaf:givenname>Ian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Glaser</foaf:surname>
+                        <foaf:givenname>Hugh</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shadbolt</foaf:surname>
+                        <foaf:givenname>Nigel</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>SPARQL query rewriting for implementing data integration over linked data</dc:title>
+        <dc:date>2010</dc:date>
+        <bib:pages>1</bib:pages>
+        <dc:identifier>DOI 10.1145/1754239.1754244</dc:identifier>
+        <dc:identifier>ISBN 9781605589909</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://portal.acm.org/citation.cfm?doid=1754239.1754244</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </rdf:Description>
+    <bib:Document rdf:about="http://dbpedia.org/About">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2299"/>
+        <dc:title>wiki.dbpedia.org : About</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://dbpedia.org/About</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:20:36</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2299">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>wiki.dbpedia.org : About</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:20:38</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://dbpedia.org/About</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://lod-cloud.net/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2331"/>
+        <dc:title>The Linking Open Data cloud diagram</dc:title>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://lod-cloud.net/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:01:44</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2331">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>The Linking Open Data cloud diagram</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:01:46</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://lod-cloud.net/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://richard.cyganiak.de/blog/2007/02/debugging-semantic-web-sites-with-curl/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2343"/>
+        <dc:title>Debugging Semantic Web sites with cURL | cygri’s notes on web data</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://richard.cyganiak.de/blog/2007/02/debugging-semantic-web-sites-with-curl/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:19:00</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2343">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Debugging Semantic Web sites with cURL | cygri’s notes on web data</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:19:02</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://richard.cyganiak.de/blog/2007/02/debugging-semantic-web-sites-with-curl/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/TR/cooluris/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2345"/>
+        <dc:title>Cool URIs for the Semantic Web</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/TR/cooluris/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:19:20</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2345">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Cool URIs for the Semantic Web</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:19:22</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/TR/cooluris/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Report rdf:about="http://arxiv.org/abs/1302.4591">
+        <z:itemType>report</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Summers</foaf:surname>
+                        <foaf:givenname>Ed</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Salo</foaf:surname>
+                        <foaf:givenname>Dorothea</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2404"/>
+        <link:link rdf:resource="#item_2405"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Digital Libraries</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Linking Things on the Web: A Pragmatic Examination of Linked Data for Libraries, Archives and Museums</dc:title>
+        <dcterms:abstract>The Web publishing paradigm of Linked Data has been gaining traction in the cultural heritage sector: libraries, archives and museums. At first glance, the principles of Linked Data seem simple enough. However experienced Web developers, designers and architects who attempt to put these ideas into practice often find themselves having to digest and understand debates about Web architecture, the semantic web, artificial intelligence and the philosophical nature of identity. In this paper I will discuss some of the reasons why Linked Data is of interest to the cultural heritage community, what some of the pain points are for deploying it, and characterize some pragmatic ways for cultural heritage organizations to realize the goals of Linked Data with examples from the Web we have today.</dcterms:abstract>
+        <prism:number>1302.4591</prism:number>
+        <z:type>arXiv e-print</z:type>
+        <dc:date>2013-02-19</dc:date>
+        <z:shortTitle>Linking Things on the Web</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1302.4591</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-10 14:16:51</dcterms:dateSubmitted>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_2404">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>1302.4591 PDF</dc:title>
+        <dcterms:dateSubmitted>2013-11-10 14:16:51</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.arxiv.org/pdf/1302.4591.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_2405">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>arXiv.org Snapshot</dc:title>
+        <dcterms:dateSubmitted>2013-11-10 14:16:54</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1302.4591</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://en.wikipedia.org/wiki/Triplestore">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2425"/>
+        <dc:title>Triplestore - Wikipedia, the free encyclopedia</dc:title>
+        <dcterms:abstract>A triplestore is a purpose-built database for the storage and retrieval of triples,[1] a triple being a data entity composed of subject-predicate-object, like &quot;Bob is 35&quot; or &quot;Bob knows Fred&quot;.
+Much like a relational database, one stores information in a triplestore and retrieves it via a query language. Unlike a relational database, a triplestore is optimized for the storage and retrieval of triples. In addition to queries, triples can usually be imported/exported using Resource Description Framework (RDF) and other formats.
+Some triplestores can store billions of triples</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://en.wikipedia.org/wiki/Triplestore</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-11 14:32:21</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2425">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Triplestore - Wikipedia, the free encyclopedia</dc:title>
+        <dcterms:dateSubmitted>2013-11-11 14:32:23</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://en.wikipedia.org/wiki/Triplestore</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://blogs.library.duke.edu/dcthree/2013/07/27/the-trouble-with-triples/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2422"/>
+        <dc:title>The Trouble with Triples | Duke Collaboratory for Classics Computing (DC3)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://blogs.library.duke.edu/dcthree/2013/07/27/the-trouble-with-triples/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-06 15:02:16</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2422">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>The Trouble with Triples | Duke Collaboratory for Classics Computing (DC3)</dc:title>
+        <dcterms:dateSubmitted>2013-11-06 15:02:18</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://blogs.library.duke.edu/dcthree/2013/07/27/the-trouble-with-triples/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.w3.org/TR/ld-glossary/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2452"/>
+        <dc:title>Linked Data Glossary</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/TR/ld-glossary/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2014-01-01 16:57:31</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2452">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Linked Data Glossary</dc:title>
+        <dcterms:dateSubmitted>2014-01-01 16:57:33</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.w3.org/TR/ld-glossary/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+</rdf:RDF>

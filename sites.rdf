@@ -1,0 +1,609 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:bib="http://purl.org/net/biblio#">
+    <bib:Document rdf:about="http://datahub.io/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2217"/>
+        <dc:title>Welcome - the Datahub</dc:title>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://datahub.io/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-14 14:46:06</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2217">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Welcome - the Datahub</dc:title>
+        <dcterms:dateSubmitted>2013-08-14 14:46:08</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://datahub.io/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://viaf.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2231"/>
+        <dc:title>VIAF</dc:title>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://viaf.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-08-27 02:01:45</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2231">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>VIAF</dc:title>
+        <dcterms:dateSubmitted>2013-08-27 02:01:47</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://viaf.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://pelagios-project.blogspot.com/p/about-pelagios.html">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2284"/>
+        <dc:title>PELAGIOS: About PELAGIOS</dc:title>
+        <dcterms:abstract>PELAGIOS stands for 'Pelagios: Enable Linked Ancient Geodata In Open Systems' - its aim is to help introduce Linked Open Data goodness into online resources that refer to places in the Ancient World. Why do we want to do that? Well, we think it will make all sorts of other things possible, including new modes of discovery and visualization for scholars and the general public. Pelagios also means 'of the sea', the superhighway of the ancient world - a metaphor we consider appropriate for a digital resource that will connect references to ancient places</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://pelagios-project.blogspot.com/p/about-pelagios.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-09-04 17:35:18</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2284">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PELAGIOS: About PELAGIOS</dc:title>
+        <dcterms:dateSubmitted>2013-09-04 17:35:20</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://pelagios-project.blogspot.com/p/about-pelagios.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.data.gov/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2301"/>
+        <dc:title>Home | Data.gov</dc:title>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://www.data.gov/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:23:18</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2301">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Home | Data.gov</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:23:20</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://www.data.gov/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://dbpedia.org/About">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2303"/>
+        <dc:title>wiki.dbpedia.org : About</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://dbpedia.org/About</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:23:36</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2303">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>wiki.dbpedia.org : About</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:23:38</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://dbpedia.org/About</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://data.gov.uk/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2305"/>
+        <dc:title>data.gov.uk</dc:title>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://data.gov.uk/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:24:42</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2305">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>data.gov.uk</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:24:44</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://data.gov.uk/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.freebase.com/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2307"/>
+        <dc:title>Freebase</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.freebase.com/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:25:26</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2307">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Freebase</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:25:28</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.freebase.com/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://worldbank.270a.info/.html">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2309"/>
+        <dc:title>World Bank Linked Data</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://worldbank.270a.info/.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:27:12</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2309">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>World Bank Linked Data</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:27:14</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://worldbank.270a.info/.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://musicbrainz.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2311"/>
+        <dc:title>MusicBrainz - The Open Music Encyclopedia</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://musicbrainz.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:27:52</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2311">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>MusicBrainz - The Open Music Encyclopedia</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:27:54</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://musicbrainz.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://linkedmdb.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2313"/>
+        <dc:title>Linked Movie Data Base | Start Page</dc:title>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://linkedmdb.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:28:25</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2313">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Linked Movie Data Base | Start Page</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:28:27</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://linkedmdb.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://wifo5-03.informatik.uni-mannheim.de/factbook/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2315"/>
+        <dc:title>Start Page | D2R Server for the CIA Factbook</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wifo5-03.informatik.uni-mannheim.de/factbook/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:32:25</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2315">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Start Page | D2R Server for the CIA Factbook</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:32:27</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wifo5-03.informatik.uni-mannheim.de/factbook/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.geonames.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2317"/>
+        <dc:title>GeoNames</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.geonames.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:33:43</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2317">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>GeoNames</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:33:45</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.geonames.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://wifo5-03.informatik.uni-mannheim.de/gutendata/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2319"/>
+        <dc:title>Start Page | D2R Server for the Gutenberg Project</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wifo5-03.informatik.uni-mannheim.de/gutendata/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:36:05</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2319">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Start Page | D2R Server for the Gutenberg Project</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:36:07</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wifo5-03.informatik.uni-mannheim.de/gutendata/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="https://github.com/GeoKnow/LinkedGeoData">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2321"/>
+        <dc:title>GeoKnow/LinkedGeoData · GitHub</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/GeoKnow/LinkedGeoData</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:39:18</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2321">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>GeoKnow/LinkedGeoData · GitHub</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:39:20</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/GeoKnow/LinkedGeoData</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://isbndb.com/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2323"/>
+        <dc:title>ISBNdb - A Unique Book &amp; ISBN Database</dc:title>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://isbndb.com/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:40:40</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2323">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>ISBNdb - A Unique Book &amp; ISBN Database</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:40:42</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://isbndb.com/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="https://openlibrary.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2325"/>
+        <dc:title>Welcome to Open Library (Open Library)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://openlibrary.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:43:17</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2325">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Welcome to Open Library (Open Library)</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:43:19</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://openlibrary.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.getty.edu/research/tools/vocabularies/ulan/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2327"/>
+        <dc:title>Getty Union List of Artist Names (Research at the Getty)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.getty.edu/research/tools/vocabularies/ulan/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:54:42</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2327">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Getty Union List of Artist Names (Research at the Getty)</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:54:44</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.getty.edu/research/tools/vocabularies/ulan/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.foaf-project.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2329"/>
+        <dc:title>The Friend of a Friend (FOAF) project | FOAF project</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.foaf-project.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 21:58:32</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2329">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>The Friend of a Friend (FOAF) project | FOAF project</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 21:58:34</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.foaf-project.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://semanticweb.org/wiki/VoID">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2333"/>
+        <dc:title>VoID - semanticweb.org</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://semanticweb.org/wiki/VoID</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:05:16</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2333">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>VoID - semanticweb.org</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:05:18</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://semanticweb.org/wiki/VoID</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://data.nytimes.com/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2335"/>
+        <dc:title>New York Times - Linked Open Data</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://data.nytimes.com/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:05:42</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2335">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>New York Times - Linked Open Data</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:05:44</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://data.nytimes.com/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://id.loc.gov/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2337"/>
+        <dc:title>Home - LC Linked Data Service (Library of Congress)</dc:title>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://id.loc.gov/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:06:44</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2337">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Home - LC Linked Data Service (Library of Congress)</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:06:46</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://id.loc.gov/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://lov.okfn.org/dataset/lov/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2339"/>
+        <dc:title>(LOV) Linked Open Vocabularies</dc:title>
+        <dcterms:abstract>Welcome to LOV, your entry point to the growing ecosystem of linked open vocabularies (RDFS or OWL ontologies) used in the Linked Data Cloud. Here you will find vocabularies listed and individually described by metadata, classified by vocabulary spaces, interlinked using the dedicated vocabulary VOAF.
+You will enjoy querying the LOV dataset either at vocabulary level or at element level, exploring the vocabulary content using full-text faceted search, and finding metrics about the use of vocabularies in the Semantic Web.
+Not finding your favourite one? Suggest a new vocabulary to add to LOV!</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://lov.okfn.org/dataset/lov/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:07:25</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2339">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>(LOV) Linked Open Vocabularies</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:07:27</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://lov.okfn.org/dataset/lov/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.oclc.org/data/data-sets-services.en.html">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2341"/>
+        <dc:title>Data sets &amp; services</dc:title>
+        <dcterms:abstract>Most OCLC services are powered by WorldCat bibliographic data collected, improved and expanded on by the cooperative’s member libraries. Increasingly, OCLC is making that data available in the form of data services or downloadable data sets which allow programmers and developers access to tools and data necessary to create and improve their own applications</dcterms:abstract>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.oclc.org/data/data-sets-services.en.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-03 22:09:33</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2341">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Data sets &amp; services</dc:title>
+        <dcterms:dateSubmitted>2013-11-03 22:09:35</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.oclc.org/data/data-sets-services.en.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://webdatacommons.org/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_2439"/>
+        <dc:title>Web Data Commons</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://webdatacommons.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2013-11-19 18:29:31</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_2439">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Web Data Commons</dc:title>
+        <dcterms:dateSubmitted>2013-11-19 18:29:33</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://webdatacommons.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+</rdf:RDF>
