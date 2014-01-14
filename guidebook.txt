@@ -241,6 +241,10 @@ Newspaper Clippings Archives
   archives, out there which do similar things, and would be very
   happy about hints.
 
+    * http://challenge.semanticweb.org/submissions/swc2010_submission_6.pdf
+    * http://elag2011.techlib.cz/files/download/id/45/drawing-context-from-the-linked-data-web-the-20th-century-press-archives-neubert.pdf
+    * http://www.w3.org/2005/Incubator/lld/wiki/Use_Case_Publishing_20th_Century_Press_Archives
+
   --
   Joachim Neubert
   ZBW – German National Library of Economics
