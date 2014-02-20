@@ -1,0 +1,22 @@
+4.b. Trends in LOD-LAM
+
+  * Mash ups
+  * Harvesting along side other protocols
+  * Increased interest
+  * Increased number of RDF serializations
+  * Governments making their content available
+  * Using them to enhance online catalogs
+  * Creating timelines
+  * Creating “named graphs”
+  * Increased number of programming toolkits
+  * Emphasis on “open” linked data and linked data in museums and archives
+  * Making RDF dumps available
+  * Interest in schema.org
+
+With great interest I read the Spring/Summer issue of Information Standards Quarterly where there were a number of articles pertaining to linked open data in cultural heritage institutions. [0] Of particular interest to me where the various loosely enumerated challenges of linked open data. Some of them included:
+
+  * the apparent Tower Of Babel when it comes to vocabularies used to describe content, and the same time we need to have “ontology mindfulness”. 
+  * dirty, inconsistent, or wide varieties of data integrity
+  * persistent URIs
+  * the “chicken & egg” problem of why linked data if there is no killer application
+

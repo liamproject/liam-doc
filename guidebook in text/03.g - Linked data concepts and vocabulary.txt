@@ -1,0 +1,79 @@
+3.b. Overview of linked data concepts and vocabulary
+
+Linked Data is a process for systematically and methodically exposing metadata on the Web. In many ways, it is the re-articulation of a thing called the Semantic Web first outlined more than a decade ago. Linked Data (and the Semantic Web) are efforts to increase the “sphere of knowledge” through the use of computer technology. 
+
+Increasingly you will hear of of linked data being qualified as “linked open data”. The “open” qualifier alludes to the important distinctions between truly free data/information and licensed data/information which comes with some strings attached. Truly “open” linked data comes with no licensing restrictions.
+
+When you hear of linked data and the Semantic Web, the next thing you often hear is “RDF” or “Resource Description Framework”. First and foremost, RDF is a way of representing knowledge. It does this through the use of assertions (think, “sentences”) with only three parts: 1) a subject, 2) a predicate, and 3) an object. Put together, these three things create things called “triples”. The subject of each assertion is expected to be a Universal Resource Identifier (or URI, but think URL), and this URI is expected to represent a thing -- anything. (Really, anything.) The predicate is some sort of relationship such as equals or is a sub-part of or contains or is a description of, or is the name of, etc. Predicates are the vocabulary of linked data, and you will find an abundance of vocabularies from which to choose when creating Linked Data. Finally, objects come in two forms: 1) more URIs (pointers to things) or literal values such the names of people, places, or things. Examples of literals include “Lancaster, PA”, “Thomas Jefferson”, or “Musée d’Orsay”.
+
+RDF is not to be confused with RDF/XML or another other type of RDF “serialization”. Remember, RDF describes triples, but it does not specify how the triples are express or written down. On the other hand, RDF/XML is an XML syntax for expressing RDF. Some people think RDF/XML is too complicated and too verbose. Consequently, other serializations have manifested themselves including N3 and Turtle.
+
+This is a beginner's glossary to linked data.
+
+  * API - (see application programmer interface)
+
+  * application programmer interface (API) - an abstracted set of functions and commands used to get output from remote computer applications. These functions and commands are not necessarily tied to any specific programming language and therefore allow programmers to use a programming language of their choice.
+
+  * content negotiation - a process whereby a user-agent and HTTP server mutually decide what data format will be exchanged during an HTTP request. In the world of linked data, content negotiation is very important when URIs are requested by user-agents because content negotiation helps determine whether or not HTML or serialized RDF will be returned.
+
+  * extensible markup language (XML) - a standardized data structure made up of a minimum of rules and can be easily used to represent everything from tiny bits of data to long narrative texts. XML is designed to be read my people as well as computers, but because of this it is often considered verbose, and ironically, difficult to read.  
+  * file transfer protocol (FTP) -  
+
+  * FTP - (see file transfer protocol) 
+
+  * HTML - (see hypertext markup language) 
+
+  * HTTP - (see hypertext transfer protocol) 
+
+  * hypertext markup language (HTML) - an XML-like data structure intended to be rendered by user-agents whose output is for people to read. For the most part, HTML is used to markup text and denote a text's stylistic characteristics such as headers, paragraphs, and list items. It is also used do markup the hypertext links (URLs) between documents.
+
+  * hypertext transfer protocol (HTTP) - the formal name for the way the World Wide Web operates. It begins with one computer program (a user-agent) requesting content from another computer program (a server) and getting back a response. Once received, the response is formatted for reading by a person or for processing by a computer program. The shape and content of both the request and the response are what make-up the protocol. 
+
+  * Javascript object notation (JSON) - like XML, a data structure enabling allowing arbitrarily large sets of values to associated with an arbitrarily large set of names (variables). JSON was first natively implemented as a part of the Javascript language, but has since become popular in other computer languages.
+
+  * JSON - (see Javascript object notation)
+
+  * linked data - the stuff and technical process for making real the ideas behind the Semantic Web. It begins with the creation of serialized RDF and making the serialization available via HTTP. User agents are then expected to harvest the RDF, combine it with other harvested RDF, and ideally use it to bring to light new or existing relationships between real world objects -- people, places, and things -- thus creating and enhancing human knowledge. 
+
+  * linked open data - a qualification of linked data whereby the information being exchanged is expected to be "free" as in gratis. 
+
+  * OAI - (see Open Archives Initiative-Protocol for Metadata Harvesting) 
+
+  * ontology - a highly structured vocabulary, and in the parlance of linked data, used to denote, describe, and qualify the predicates of RDF triples. Ontologies have been defined for a very wide range of human domains, everything from bibliography (Dublin Core or MODS), to people (FOAF), to sounds (Audio Features). 
+
+  * Open Archives Initiative-Protocol for Metadata Harvesting (OAI-PMH)
+
+  * RDF - (see resource description framework)
+
+  * representational state transfer (REST) - a process for querying remote HTTP servers and getting back computer-readable results. The process usually employs denoting name-value pairs in a URL and getting back something like XML or JSON. 
+
+  * resource description framework - the conceptual model for describing the knowledge of the Semantic Web. It is rooted in the notion of triples whose subjects and objects are literally linked with other triples through the use of actionable URIs.
+
+  * REST - (see representational state transfer)
+
+  * Semantic Web - an idea articulated by Tim Berners Lee whereby human knowledge is expressed in a computer-readable fashion and made available via HTTP so computers can harvest it and bring to light new information or knowledge.
+
+  * serialization - a manifestation of RDF; one of any number of textual expressions of RDF triples. Examples include but are not limited to RDF/XML, RDFa, N3, and JSON-LD.
+
+  * SPARQL - (see SPARQL protocol and RDF query language) 
+
+  * SPARQL protocol and RDF query language (SPARQL) - a formal specification for querying and returning results from RDF triple stores. It looks and operates very much like the structured query language (SQL) of relational databases complete with its SELECT, WHERE, and ORDER BY clauses.
+
+  * triple - the atomistic facts making up RDF. Each fact is akin to a rudimentary sentence with three parts: 1) subject, 2) predicate, and 3) object. Subjects are expected to be URIs. Ideally, objects are URIs as well, but can also be literals (words, phrases, or numbers). Predicates are akin to the verbs in a sentence and they denote a relationship between the subject and object. Predicates are expected to be a member of a formalized ontology.
+
+  * triple store - a database of RDF triples usually accessible via SPARQL
+
+  * universal resource identifier (URI) - a unique pointer to a real-world object or a description of an object. In the parlance of linked data, URIs are expected to have the same shape and function as URLs, and if they do, then the URIs are often described as "actionable". 
+
+  * universal resource locator (URL) - an address denoting the location of something on the Internet. These addresses usually specify a protocol (like http), a host (or computer) where the protocol is implemented, and a path (directory and file) specifying where on the computer the item of interest resides. 
+
+  * URI - (see universal resource identifier) 
+
+  * URL - (see universal resource locator) 
+user agent - this is the formal name for what is commonly called a "Web browser", but Web browsers usually denote applications where people are viewing the results. User agents are usually "Web browsers" whose readers are computer programs.  
+
+  * XML - (see extensible markup language)
+
+For a more complete and exhaustive glossary, see the W3C's Linked Data Glossary. 
+
+

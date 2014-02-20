@@ -1,0 +1,64 @@
+11 A question from a library school student
+
+In January of 2014 I received the following email message from a library school student. The questions they asked were apropos to the Guide, so I thought I’d include my responseggt here, but the names have been changed to protect the innocent.
+
+From: Eric Lease Morgan <emorgan@nd.edu>
+Subject: Re: RDF ontologies discussion on Code4Lib Listserv
+Date: January 21, 2014 at 9:36:36 PM EST
+
+> I'm writing you to ask you about your thoughts on implementing
+> these kinds of RDF descriptions for institutional collections.
+> Have you worked on a project that incorporated LD technologies
+> like these descriptions? What was that experience like? Also,
+> what kind of strategies have you used to implement these
+> strategies, for instance, was considerable buy-in from your
+> organization necessary, or were you able to spearhead it
+> relatively solo? In essence, what would it "cost" to really do
+> this?
+> 
+> I apologize for the mass of questions, especially over e-mail. My
+> only experience with ontology work has been theoretical, and I
+> haven't met any professionals in the field yet who have actually
+> used it. When I talk to my mentors about it, they are aware of it
+> from an academic standpoint but are wary of it due these
+> questions of cost and resource allocation, or confusion that it
+> doesn't provide anything new for users. My final project was to
+> build an ontology to describe some sort of resource and I settled
+> on building a vocabulary to describe digital facsimiles and their
+> physical artifacts, but I have yet to actually implement or use
+> any of it. Nor have I had a chance yet to really use any
+> preexisting vocabularies. So I've found myself in a slightly
+> frustrating position where I've studied this from an academic
+> perspective and seek to incorporate it in my GLAM work, but I
+> lack the hands-on opportunity to play around with it.
+> 
+> --
+> MLIS Candidate
+
+Dear MLS Candidate, no problem, really, but I don’t know how much help I will really be.
+
+The whole RDF / Semantic Web thing started more than ten years ago. The idea was to expose RDF/XML, allow robots to crawl these files, amass the data, and discover new knowledge — relationships — underneath. Many in the library profession thought this was science fiction and/or the sure pathway to professional obsolescence. Needless to say, it didn’t get very far. A few years ago the idea of linked data was articulated, and it a nutshell it outlined how to make various flavors of serialized RDF available via an HTTP technique called content negotiation. This was when things like Turtle, N3, the idea of triple stores, maybe SPARQL, and other things came to fruition. This time the idea of linked data was more real and got a bit more traction, but it is still not main stream.
+
+I have very little experience putting the idea of RDF and linked data into practice. A long time ago I created RDF versions of my Alex Catalogue and implemented a content negotiation tool against it. The Catalogue was not a part of any institution other than myself. When I saw the call for the LiAM Guidebook I applied and got the “job” because of my Alex Catalogue experiences as well as some experience with a thing colloquially called The Catholic Portal which contains content from EAD files.
+
+I knew this previously, but linked data is all about URIs and ontologies. Minting URIs is not difficult, but instead of rolling your own, it is better to use the URIs of others, such as the URIs in DBpedia, GeoNames, VIAF, etc. The ontologies used to create relationships between the URIs are difficult to identify, articulate, and/or use consistently. They are manifestations of human language, and human language is ambiguous. Trying to implement the nuances of human language in computer “sentences” called RDF triples is only an approximation at best. I sometimes wonder if the whole thing can really come to fruition. I look at OAI-PMH. It had the same goals, but it was finally called not a success because it was too difficult to implement. The Semantic Web may follow suit.
+
+That said, it is not too difficult to make the metadata of just about any library or archive available as linked data. The technology is inexpensive and already there. The implementation will not necessarily implement best practices, but it will not expose incorrect nor invalid data, just data that is not the best. Assuming the library has MARC or EAD files, it is possible to use XSL to transform the metadata into RDF/XML. HTML and RDF/XML versions of the metadata can then be saved on an HTTP file system and disseminated either to humans or robots through content negotiation. Once a library or archive gets this far they can then either improve their MARC or EAD files to include more URIs, they can improve their XSLT to take better advantage of shared ontologies, and/or they can dump MARC and EAD all together and learn to expose linked data directly from (relational) databases. It is an iterative process which is never completed. 
+
+Nothing new to users? Ah, that is the rub and a sticking point with the linked data / Semantic Web thing. It is a sort of chicken & egg problem. “Show me the cool application that can be created if I expose my metadata as linked data”, say some people. On the other hand, “I can not create the cool application until there is a critical mass of available content.” Despite this issue, things are happening for readers, namely mash-ups. (I don’t like the word “users”.) Do a search in Facebook for the Athens. You will get a cool looking Web page describing Athens, who has been there, etc. This was created by assembling metadata from a host of different places (all puns intended), and one of those places were linked data repositories. Do a search in Google for the same thing. Instead of just bringing back a list of links, Google presents you with real content, again, amassed through various APIs including linked data. Visit VIAF and search for a well-known author. Navigate the result an you will maybe end up at WorldCat identities where all sorts of interesting information about an author, who they wrote with, what they wrote, and where is displayed. All of this is rooted in linked data and Web Services computing techniques. This is where the benefit comes. Library and archival metadata will become part of these mash-up — called “named graphs” — driving readers to library and archival websites. Linked data can become part of Wikipedia. It can be used to enrich descriptions of people in authority lists, gazetteers, etc.
+
+What is the cost? Good question. Time is the biggest expense. If a person knows what they are doing, then a robust set of linked data could be exposed in less than a month, but in order to get that far many people need to contribute. Systems types to get the data out of content management systems as well as set up HTTP servers. Programmers will be needed to do the transformations. Catalogers will be needed to assist in the interpretation of AACR2 cataloging practices, etc. It will take a village to do the work, and that doesn’t even count convincing people this is a good idea.
+
+Your frustration is not uncommon. Often times if there is not a real world problem to solve, learning anything new when it comes to computers is difficult. I took BASIC computer programming three times before anything sunk in, and it only sunk in when I needed to calculate how much money I was earning as a taxi driver. 
+
+Try implementing one of your passions. Do you collect anything? Baseball cards? Flowers? Books? Records? Music? Art? Is there something in your employer’s special collections of interest to you? Find something of interest to you. For simplicity’s sake, use a database to describe each item in the collection making sure each record in our database includes a unique key field. Identify one or more ontologies (others as well as rolling your own) whose properties match closely the names of your fields in your database. Write a program against your database to create static HTML pages. Put the pages on the Web. Write a program against your database to create static RDF/XML (or some other RDF serialization). Put the pages on the Web. Implement a content negotiation script that takes the keys to your database’s fields as input and redirects HTTP user agents to either the HTML or RDF. Submit the root of your linked data implementation to Datahub.io. Ta da! You have successfully implemented linked data and learned a whole lot along the way. Once you get that far you can take what you have learned and apply it in a bigger and better way for a larger set of data. 
+
+On one hand the process is not difficult. It is a matter of repurposing the already existing skills of people who work in cultural heritage institutions. On the other hand, change in the ways things are done is difficult (but not as difficult in the what of what is done). The change is difficult to balance existing priorities. 
+
+Exposing library and archival content as linked data represents a different working style, but the end result is the same — making the content of our collections available for use and understanding. 
+
+HTH.
+
+—
+
+Eric Morgan

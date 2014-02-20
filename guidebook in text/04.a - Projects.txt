@@ -1,0 +1,123 @@
+4.a. Projects: Brief descriptions with an emphasis on tangible benefits and outcomes of each
+
+ReLoad
+
+The ReLoad project (Repository for Linked open archival data)
+will foster experimentation with the technology and methods of
+linked open data for archival resources. Its goal is the creation
+of a web of linked archival data.
+
+LOD-LAM, which is an acronym for Linked Open Data for Libraries,
+Archives and Museums, is an umbrella term for the community and
+active projects in this area.
+
+The first experimental phase will make use of W3C semantic web
+standards, mash-up techniques, software for linking and for
+defining the semantics of the data in the selected databases.
+
+The archives that have made portions of their institutions’ data
+and databases openly available for this project are the Central
+State Archive, and the Cultural Heritage Institute of Emilia
+Romagna Region. These will be used to test methodologies to
+expose the resources as linked open data.
+
+http://labs.regesta.com/progettoReload/en
+
+OAD Vocabulary Specification 1.2 - http://labs.regesta.com/progettoReload/wp-content/uploads/2013/08/oadNew.html
+
+Reload project (http://labs.regesta.com/progettoReload/), an Italian experimentation started in 2012 and supported by Central State Archive, Cultural Heritage Institute of Emilia Romagna Region and regesta.exe, published the first version of OAD ontology (ontology for archival description) based on ISAD (G) standard and EAD schema, in 2013. The project team define a specific ontology for archival description domain because there isn't yet something useful to describe all significant classes and properties necessary in archival description and we integrated OAD with other "Lightweight ontologies" (like foaf or dublin core) to encode the most common metadata. Within Reload project, to describe authority records in Linked Data we use EAC-CPF ontology, published in 2012 by Cultural Heritage Institute of Emilia Romagna Region.
+
+Reload project was presented during the last LODLAM Challenge in Montréal (http://summit2013.lodlam.net/2012/12/21/announcing-heat-1-lodlam-challenge-finalists/).
+
+You are welcome in any integration and suggestion you'd like to do in this work.
+Reload project website: http://labs.regesta.com/progettoReload/ 
+
+--
+Silvia Mazzini
+regesta.exe srl 
+via Monte Zebio 19 - 00195 Roma
+vox +39 0637501056 | +39 3477357729
+fax +39 0637410460
+smazzini@regesta.com | www.regesta.com | @regesta_sm
+
+Google (and Facebook) knowledge graphs
+
+OpenCat
+
+  Another common theme / application demonstrated at the conference
+  were variations of the venerable library catalog. OpenCat,
+  presented by Agnes Simon (Bibliothéque Nationale de France), was
+  an additional example of this trend. Combining authority data
+  (available as RDF) provided by the National Library of France
+  with works of a second library (Fresnes Public Library), the
+  OpenCat prototype provides quite an interesting interface to
+  library holdings. --http://demo.cubicweb.org/opencatfresnes/
+
+Newspaper Clippings Archives
+
+  On Jan 8, 2014, at 12:05 PM, Neubert Joachim <J.Neubert@zbw.eu>
+  wrote:
+
+  Thank you for your report on SWIB13! I’m glad you enjoyed the
+  conference and your stay in Hamburg.
+
+  I wanted to get in touch with you because you mentioned in your
+  blog that you are working on a book about LOD in archives.
+  Perhaps, in your research for that, you came across
+  press/newspaper clippings archives.
+
+  As you may know, I’ve published the persons and company part of
+  the 20th Century Press Archives (http://zbw.eu/beta/p20) as a
+  linked data application. It uses RDFa and OAI-ORE extensively to
+  give every dossier, every article and every page a citable URI,
+  and on the other hand consumes linked data from various linked
+  data sources to enrich the web pages and to provide context to
+  the rather plain scanned article images.
+
+  I wonder if there are other archives, and particular newspaper
+  archives, out there which do similar things, and would be very
+  happy about hints.
+
+  http://challenge.semanticweb.org/submissions/swc2010_submission_6.pdf
+  http://elag2011.techlib.cz/files/download/id/45/drawing-context-from-the-linked-data-web-the-20th-century-press-archives-neubert.pdf
+  http://www.w3.org/2005/Incubator/lld/wiki/Use_Case_Publishing_20th_Century_Press_Archives
+
+  --
+  Joachim Neubert
+  ZBW – German National Library of Economics
+  Leibniz Information Centre for Economics
+  Neuer Jungfernstieg 21
+  20354 Hamburg
+
+LOCAH Project
+
+  Mimas and UKOLN worked together on an exciting JISC funded
+  project to make Archives Hub data available as structured Linked
+  Data, for the benefit of education and research. We worked in
+  partnership with Eduserv, Talis and OCLC, leading experts within
+  their fields. The aim was put archival and bibliographic data at
+  the heart of the Linked Data Web, enabling new links to be made
+  between diverse content sources and enabling the free and
+  flexible exploration of data so that researchers can make new
+  connections between subjects, people, organisations and places to
+  reveal more about our history and society. --http://archiveshub.ac.uk/locah/
+
+Linking Lives
+
+  Linking Lives is exploring ways to present Linked Data. We aim to
+  show that archives can benefit from being presented as a part of
+  the diverse data sources on the Web to create full biographical
+  pictures, enabling researchers to make connections between people
+  and events.
+
+  Linking Lives builds upon the Locah project. Locah was a
+  JISC-funded project to expose the Archives Hub descriptions as
+  Linked Data. --http://archiveshub.ac.uk/linkinglives/
+
+Linked Archives Hub Test Dataset
+
+  The dataset describes archives held by UK institutions. The data
+  is derived from a sample of the archival finding aids held by the
+  UK Archives Hub. --http://data.archiveshub.ac.uk
+
+

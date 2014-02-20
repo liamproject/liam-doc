@@ -1,0 +1,4 @@
+3.a Content-negotiation, REST-ful style computing, and APIs
+
+It is important to understand the difference between linked data and more proprietary application programmer interfaces. This difference is really between REST-ful interfaces to data and content negotiaion interfaces. REST-ful interfaces are specific to specific websites. Content-negotiation is more universal and does not require API keys or the knowledge of name-value pairs. Linked data computing techniques is our HTTP. REST-ful interfaces need to be learn and are all different from one another. Linked data is more universal. 
+

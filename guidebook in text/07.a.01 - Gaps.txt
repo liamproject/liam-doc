@@ -1,0 +1,15 @@
+7.a.ii. Gaps: What is needed
+
+There needs to be easy to use tools to find URIs and insert them in to archival descriptions. One such tool is called lobid:
+
+  In “From strings to things: A linked data API for library hackers
+  and Web developers” Fabian Steeg and Pascal Christoph (HBZ)
+  described an interface allowing librarians to determine the URIs
+  of people, places, and things for library catalog records. “How
+  can we benefit from linked data without being linked data
+  experts? We want to pub Web developers into focus using JSON for
+  HTTP.” There are few hacks illustrating some of their work on
+  Github in the lobid repository. --https://github.com/lobid
+
+Another example would be an interface to the varius linked data sets available from the Library of Congress. --http://id.loc.gov
+

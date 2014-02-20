@@ -1,0 +1,77 @@
+8.a Tools
+---------
+
+“4store - Scalable RDF Storage.” Accessed November 12, 2013. http://4store.org/.
+
+“Apache Jena - Home.” Accessed November 11, 2013. http://jena.apache.org/.
+
+“Behas/oai2lod · GitHub.” Accessed November 3, 2013. https://github.com/behas/oai2lod.
+
+“BIBFRAME.ORG :: Bibliographic Framework Initiative - Overview.” Accessed November 3, 2013. http://bibframe.org/.
+
+“Ckan - The Open Source Data Portal Software.” Accessed November 3, 2013. http://ckan.org/.
+
+“Community | Tableau Public.” Accessed November 3, 2013. http://www.tableausoftware.com/public/community.
+
+“ConverterToRdf - W3C Wiki.” Accessed November 11, 2013. http://www.w3.org/wiki/ConverterToRdf.
+
+“Curl and Libcurl.” Accessed November 3, 2013. http://curl.haxx.se/.
+“D2R Server | The D2RQ Platform.” Accessed November 15, 2013. http://d2rq.org/d2r-server.
+
+“Disco Hyperdata Browser.” Accessed November 3, 2013. http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/.
+
+“Ead2rdf.” Accessed November 3, 2013. http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl.
+
+“Ewg118/eaditor · GitHub.” Accessed November 3, 2013. https://github.com/ewg118/eaditor.
+
+“Google Drive.” Accessed November 3, 2013. http://www.google.com/drive/apps.html.
+
+Library, The standard EAC-CPF is maintained by the Society of American Archivists in partnership with the Berlin State. “Society of American Archivists and the Berlin State Library.” Accessed January 1, 2014. http://eac.staatsbibliothek-berlin.de/.
+
+“Lmf - Linked Media Framework - Google Project Hosting.” Accessed November 3, 2013. https://code.google.com/p/lmf/.
+
+“OpenLink Data Explorer Extension.” Accessed November 3, 2013. http://ode.openlinksw.com/.
+
+“openRDF.org: Home.” Accessed November 12, 2013. http://www.openrdf.org/.
+
+“OpenRefine (OpenRefine) · GitHub.” Accessed November 3, 2013. https://github.com/OpenRefine/.
+
+“Parrot, a RIF and OWL Documentation Service.” Accessed November 11, 2013. http://ontorule-project.eu/parrot/parrot.
+
+“RDF2RDF - Converts RDF from Any Format to Any.” Accessed December 5, 2013. http://www.l3s.de/~minack/rdf2rdf/.
+
+“RDFImportersAndAdapters - W3C Wiki.” Accessed November 3, 2013. http://www.w3.org/wiki/RDFImportersAndAdapters.
+
+“RDFizers - SIMILE.” Accessed November 11, 2013. http://simile.mit.edu/wiki/RDFizers.
+
+“Semantic Web Client Library.” Accessed November 3, 2013. http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/semwebclient/.
+
+“SIMILE Widgets | Exhibit.” Accessed November 11, 2013. http://www.simile-widgets.org/exhibit/.
+
+“SparqlImplementations - W3C Wiki.” Accessed November 3, 2013. http://www.w3.org/wiki/SparqlImplementations.
+
+“swh/Perl-SPARQL-client-library · GitHub.” Accessed November 3, 2013. https://github.com/swh/Perl-SPARQL-client-library.
+
+“Tabulator: Generic Data Browser.” Accessed November 3, 2013. http://www.w3.org/2005/ajar/tab.
+
+“TaskForces/CommunityProjects/LinkingOpenData/SemWebClients - W3C Wiki.” Accessed November 5, 2013. http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients.
+
+“TemaTres Controlled Vocabulary Server.” Accessed November 3, 2013. http://www.vocabularyserver.com/.
+
+“The D2RQ Platform – Accessing Relational Databases as Virtual RDF Graphs.” Accessed November 3, 2013. http://d2rq.org/.
+
+“The Protégé Ontology Editor and Knowledge Acquisition System.” Accessed November 3, 2013. http://protege.stanford.edu/.
+
+“Tools - Semantic Web Standards.” Accessed November 3, 2013. http://www.w3.org/2001/sw/wiki/Tools.
+
+“Tools | Linked Data - Connect Distributed Data Across the Web.” Accessed November 3, 2013. http://linkeddata.org/tools.
+
+“Vapour, a Linked Data Validator.” Accessed November 11, 2013. http://validator.linkeddata.org/vapour.
+
+“VirtuosoUniversalServer - W3C Wiki.” Accessed November 3, 2013. http://www.w3.org/wiki/VirtuosoUniversalServer.
+
+“W3C RDF Validation Service.” Accessed November 3, 2013. http://www.w3.org/RDF/Validator/.
+
+“W3c/rdfvalidator-ng.” Accessed December 10, 2013. https://github.com/w3c/rdfvalidator-ng.
+
+“Working with RDF with Perl.” Accessed November 3, 2013. http://www.perlrdf.org/.

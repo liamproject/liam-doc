@@ -1,0 +1,12 @@
+2.a Lots of ways to participate
+
+  * finding URIs
+  * associating URIs with predicates
+  * publishing serialized RDF with: 1) pure HTTP, and/or 2) SPARQL
+  * harvesting RDF
+  * storing RDF
+  * analyzing RDF
+  * providing services against RDF
+  * leading groups of people
+  * articulating policies
+  * allocating resources
