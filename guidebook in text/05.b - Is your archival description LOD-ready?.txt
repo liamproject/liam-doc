@@ -1,2 +1,4 @@
 5.b. Is your archival description LOD-ready?
 
+Is your archival description LOD-ready? Now? The simple, straight-forward answer is, "Yes." The longer and more complicated answer is, "No. Your data is never 100% linked data ready because the process of archival description is never finished." That said, the balance of the Guide describes what you can do going forward. 
+
