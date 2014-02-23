@@ -1,104 +1,0 @@
-8.3 Further reading
--------------------
-
-This is a list of links and citations to get one started on Linked Open Data
-
-admin. “Barriers to Using EAD,” August 4, 2012. http://oclc.org/research/activities/eadtools.html. 
-
-Becker, Christian, and Christian Bizer. “Exploring the Geospatial Semantic Web with DBpedia Mobile.” Web Semantics: Science, Services and Agents on the World Wide Web 7, no. 4 (December 2009): 278–286. doi:10.1016/j.websem.2009.09.004. 
-
-Belleau, François, Marc-Alexandre Nolin, Nicole Tourigny, Philippe Rigault, and Jean Morissette. “Bio2RDF: Towards a Mashup to Build Bioinformatics Knowledge Systems.” Journal of Biomedical Informatics 41, no. 5 (October 2008): 706–716. doi:10.1016/j.jbi.2008.03.004. 
-
-Berners-Lee, Tim. “Linked Data - Design Issues.” Accessed August 4, 2013. http://www.w3.org/DesignIssues/LinkedData.html. 
-
-Berners-Lee, Tim, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (May 2001): 34–43. doi:10.1038/scientificamerican0501-34. 
-
-Bizer, Christian, Tom Heath, and Tim Berners-Lee. “Linked Data - The Story So Far:” International Journal on Semantic Web and Information Systems 5, no. 3 (33 2009): 1–22. doi:10.4018/jswis.2009081901. 
-
-Carroll, Jeremy J., Christian Bizer, Pat Hayes, and Patrick Stickler. “Named Graphs.” Web Semantics: Science, Services and Agents on the World Wide Web 3, no. 4 (December 2005): 247–267. doi:10.1016/j.websem.2005.09.001. 
-
-“Chem2bio2rdf - How to Publish Data Using D2R?” Accessed January 6, 2014. http://chem2bio2rdf.wikispaces.com/How+to+publish+data+using+D2R%3F. 
-
-“Content Negotiation.” Wikipedia, the Free Encyclopedia, July 2, 2013. https://en.wikipedia.org/wiki/Content_negotiation. 
-
-“Cool URIs for the Semantic Web.” Accessed November 3, 2013. http://www.w3.org/TR/cooluris/. 
-
-Correndo, Gianluca, Manuel Salvadores, Ian Millard, Hugh Glaser, and Nigel Shadbolt. “SPARQL Query Rewriting for Implementing Data Integration over Linked Data.” 1. ACM Press, 2010. doi:10.1145/1754239.1754244. 
-
-David Beckett. “Turtle.” Accessed August 6, 2013. http://www.w3.org/TR/2012/WD-turtle-20120710/. 
-
-“Debugging Semantic Web Sites with cURL | Cygri’s Notes on Web Data.” Accessed November 3, 2013. http://richard.cyganiak.de/blog/2007/02/debugging-semantic-web-sites-with-curl/. 
-
-Dunsire, Gordon, Corey Harper, Diane Hillmann, and Jon Phipps. “Linked Data Vocabulary Management: Infrastructure Support, Data Integration, and Interoperability.” Information Standards Quarterly 24, no. 2/3 (2012): 4. doi:10.3789/isqv24n2-3.2012.02. 
-
-Elliott, Thomas, Sebastian Heath, and John Muccigrosso. “Report on the Linked Ancient World Data Institute.” Information Standards Quarterly 24, no. 2/3 (2012): 43. doi:10.3789/isqv24n2-3.2012.08. 
-
-Fons, Ted, Jeff Penka, and Richard Wallis. “OCLC’s Linked Data Initiative: Using Schema.org to Make Library Data Relevant on the Web.” Information Standards Quarterly 24, no. 2/3 (2012): 29. doi:10.3789/isqv24n2-3.2012.05. 
-
-Hartig, Olaf. “Querying Trust in RDF Data with tSPARQL.” In The Semantic Web: Research and Applications, edited by Lora Aroyo, Paolo Traverso, Fabio Ciravegna, Philipp Cimiano, Tom Heath, Eero Hyvönen, Riichiro Mizoguchi, Eyal Oren, Marta Sabou, and Elena Simperl, 5554:5–20. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-02121-3_5. 
-
-Hartig, Olaf, Christian Bizer, and Johann-Christoph Freytag. “Executing SPARQL Queries over the Web of Linked Data.” In The Semantic Web - ISWC 2009, edited by Abraham Bernstein, David R. Karger, Tom Heath, Lee Feigenbaum, Diana Maynard, Enrico Motta, and Krishnaprasad Thirunarayan, 5823:293–309. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-04930-9_19. 
-
-Heath, Tom, and Christian Bizer. “Linked Data: Evolving the Web into a Global Data Space.” Synthesis Lectures on the Semantic Web: Theory and Technology 1, no. 1 (February 9, 2011): 1–136. doi:10.2200/S00334ED1V01Y201102WBE001. 
-
-Isaac, Antoine, Robina Clayphan, and Bernhard Haslhofer. “Europeana: Moving to Linked Open Data.” Information Standards Quarterly 24, no. 2/3 (2012): 34. doi:10.3789/isqv24n2-3.2012.06. 
-
-Kobilarov, Georgi, Tom Scott, Yves Raimond, Silver Oliver, Chris Sizemore, Michael Smethurst, Christian Bizer, and Robert Lee. “Media Meets Semantic Web – How the BBC Uses DBpedia and Linked Data to Make Connections.” In The Semantic Web: Research and Applications, edited by Lora Aroyo, Paolo Traverso, Fabio Ciravegna, Philipp Cimiano, Tom Heath, Eero Hyvönen, Riichiro Mizoguchi, Eyal Oren, Marta Sabou, and Elena Simperl, 5554:723–737. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-02121-3_53. 
-
-LiAM. “LiAM: Linked Archival Metadata.” Accessed July 30, 2013. http://sites.tufts.edu/liam/. 
-
-“Linked Data.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Linked_data&oldid=562554554. 
-
-“Linked Data Glossary.” Accessed January 1, 2014. http://www.w3.org/TR/ld-glossary/. 
-
-“Linked Open Data.” Europeana. Accessed September 12, 2013. http://pro.europeana.eu/web/guest;jsessionid=09A5D79E7474609AE246DF5C5A18DDD4. 
-
-“Linked Open Data in Libraries, Archives, & Museums (Google Group).” Accessed August 6, 2013. https://groups.google.com/forum/#!forum/lod-lam. 
-
-“Linking Lives | Using Linked Data to Create Biographical Resources.” Accessed August 16, 2013. http://archiveshub.ac.uk/linkinglives/.
-
-“LOCAH Linked Archives Hub Test Dataset.” Accessed August 6, 2013. http://data.archiveshub.ac.uk/. 
-
-“LODLAM - Linked Open Data in Libraries, Archives & Museums.” Accessed August 6, 2013. http://lodlam.net/. 
-
-“Notation3.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Notation3&oldid=541302540. 
-
-“OWL 2 Web Ontology Language Primer.” Accessed August 14, 2013. http://www.w3.org/TR/2009/REC-owl2-primer-20091027/. 
-
-Quilitz, Bastian, and Ulf Leser. “Querying Distributed RDF Data Sources with SPARQL.” In The Semantic Web: Research and Applications, edited by Sean Bechhofer, Manfred Hauswirth, Jörg Hoffmann, and Manolis Koubarakis, 5021:524–538. Berlin, Heidelberg: Springer Berlin Heidelberg. Accessed September 4, 2013. http://www.springerlink.com/index/10.1007/978-3-540-68234-9_39. 
-
-“RDF/XML.” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/wiki/RDF/XML. 
-
-“RDFa.” Wikipedia, the Free Encyclopedia, July 22, 2013. http://en.wikipedia.org/wiki/RDFa. 
-
-“Semantic Web.” Wikipedia, the Free Encyclopedia, August 2, 2013. http://en.wikipedia.org/w/index.php?title=Semantic_Web&oldid=566813312. 
-
-“SPARQL.” Wikipedia, the Free Encyclopedia, August 1, 2013. http://en.wikipedia.org/w/index.php?title=SPARQL&oldid=566718788.
-
-“SPARQL 1.1 Overview.” Accessed August 6, 2013. http://www.w3.org/TR/sparql11-overview/. 
-
-“Spring/Summer 2012 (v.24 No.2/3) - National Information Standards Organization.” Accessed August 6, 2013. http://www.niso.org/publications/isq/2012/v24no2-3/. 
-
-Summers, Ed, and Dorothea Salo. Linking Things on the Web: A Pragmatic Examination of Linked Data for Libraries, Archives and Museums. ArXiv e-print, February 19, 2013. http://arxiv.org/abs/1302.4591. 
-
-“The Linking Open Data Cloud Diagram.” Accessed November 3, 2013. http://lod-cloud.net/. 
-
-“The Trouble with Triples | Duke Collaboratory for Classics Computing (DC3).” Accessed November 6, 2013. http://blogs.library.duke.edu/dcthree/2013/07/27/the-trouble-with-triples/. 
-
-Tim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Accessed September 4, 2013. http://www.scientificamerican.com/article.cfm?id=the-semantic-web. 
-
-“Transforming EAD XML into RDF/XML Using XSLT.” Accessed August 16, 2013. http://archiveshub.ac.uk/locah/tag/transform/. 
-
-“Triplestore - Wikipedia, the Free Encyclopedia.” Accessed November 11, 2013. http://en.wikipedia.org/wiki/Triplestore. 
-
-“Turtle (syntax).” Wikipedia, the Free Encyclopedia, July 13, 2013. http://en.wikipedia.org/w/index.php?title=Turtle_(syntax)&oldid=542183836. 
-
-Volz, Julius, Christian Bizer, Martin Gaedke, and Georgi Kobilarov. “Discovering and Maintaining Links on the Web of Data.” In The Semantic Web - ISWC 2009, edited by Abraham Bernstein, David R. Karger, Tom Heath, Lee Feigenbaum, Diana Maynard, Enrico Motta, and Krishnaprasad Thirunarayan, 5823:650–665. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. http://www.springerlink.com/index/10.1007/978-3-642-04930-9_41. 
-
-Voss, Jon. “LODLAM State of Affairs.” Information Standards Quarterly 24, no. 2/3 (2012): 41. doi:10.3789/isqv24n2-3.2012.07. 
-
-W3C. “LinkedData.” Accessed August 4, 2013. http://www.w3.org/wiki/LinkedData. 
-
-“Welcome to Euclid.” Accessed September 4, 2013. http://www.euclid-project.eu/. 
-
-“Wiki.dbpedia.org : About.” Accessed November 3, 2013. http://dbpedia.org/About. 

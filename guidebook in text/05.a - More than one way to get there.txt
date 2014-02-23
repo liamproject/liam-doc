@@ -1,4 +1,4 @@
-2.a Linked data and archival practice: Or, There is more than one way to get there
+5.a Linked data and archival practice: Or, There is more than one way to get there
 
 Two recent experiences have taught me that — when creating some sort of information service — linked data will reside and be mixed in with data collected from any number of Internet techniques. Linked data interfaces will coexist with REST-ful interfaces, or even things as rudimentary as FTP. To the archivist, this means linked data is not the be-all and end-all of information publishing. There is no such thing. To the application programmer, this means you will need to have experience with a ever-growing number of Internet protocols. To both it means, “There is more than one way to get there.”
 

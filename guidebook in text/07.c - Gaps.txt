@@ -13,3 +13,11 @@ There needs to be easy to use tools to find URIs and insert them in to archival 
 
 Another example would be an interface to the varius linked data sets available from the Library of Congress. --http://id.loc.gov
 
+Listed in no priority order, some of the things needed, include:
+
+  * hands-on training
+  * desktop tools enabling people or machines to associate strings with URIs
+  * a simple RDF statement editor
+  * the killer app / additional demonstration applications
+  * a conceptional shift from document to statement
+
