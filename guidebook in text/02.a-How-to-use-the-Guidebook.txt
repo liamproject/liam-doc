@@ -1,4 +1,4 @@
-2.b How to use the Guidebook
+02.a How to use the Guidebook
 
 The structure of the Guidebook supports readers moving through the text in a variety of ways. Like a travel book, it provides useful high-level information for users who only need the basics, as well as in-depth information for those planning an extended stay in LOD-land. The Guidebook is intentionally named, and will draw from the genre of actual travel guides (Fodors, etc.) providing readers easy access to both high-level information (know before you go, what to see if you’re only there for a day) as well as in-depth details of for those staying in one place longer.
 
