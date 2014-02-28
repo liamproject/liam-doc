@@ -2,17 +2,19 @@
 
 This is the simplest of SPARQL tutorials. The tutorial's purpose is two-fold: 1) through a set of examples, introduce the reader to the syntax of SPARQL queries, and 2) to enable the reader to initially explore any RDF triple store which is exposed as a SPARQL endpoint.
 
-SPARQL () is a set of commands used to search RDF triple stores. It is modeled after SQL (), the set of commands used to search relational databases. If you are familiar with SQL, then SPARQL will be familiar. If not, then think of SPARQL queries as a formalized sentences used to ask a question and get back a list of answers. 
+SPARQL (SPARQL protocol and RDF query language) is a set of commands used to search RDF triple stores. It is modeled after SQL (structured query language), the set of commands used to search relational databases. If you are familiar with SQL, then SPARQL will be familiar. If not, then think of SPARQL queries as formalized sentences used to ask a question and get back a list of answers. 
 
 Also, remember, RDF is a data structure of triples: 1) subjects, 2) predicates, and 3) objects. The subjects of the triples are always URIs -- identifiers of "things". Predicates are also URIs, but these URIs are intended to denote relationships between subjects and objects. Objects are preferably URIs but they can also be literals (words or numbers). Finally, RDF objects and predicates are defined in human-created ontologies as a set of classes and properties where classes are abstract concepts and properties are characteristics of the concepts. 
 
-  1. Get an overview - A good way to begin is to get a list of all the ontological classes in the triple store. In essence, the query says, "Find all the unique objects in the triple store where any subject is a type of object, and sort the result by object." A list of classes returned by this query against the LiAM triple store is noted at end of this tutorial.
+Try the following steps with just about any SPARQL endpoint:
+
+  1. Get an overview - A good way to begin is to get a list of all the ontological classes in the triple store. In essence, the query below says, "Find all the unique objects in the triple store where any subject is a type of object, and sort the result by object."
   
     SELECT DISTINCT ?o WHERE { ?s a ?o } ORDER BY ?o
 
   2. Learn about the employed ontologies - Ideally, each of the items in the result will be an actionable URI in the form of a "cool URL". Using your Web browser, you ought to be able to go to the URL and read a thorough description of the given class, but the URLs are not always actionable. 
   
-  3. Learn more about the employed ontologies - Using the following query you can create a list of all the properties in the triple store as well as infer some of the characteristics of each class. Unfortunately, this particular query is intense. It may require a long time to process or may not return at all. In English, the query says, "Find all the unique predicates where the RDF triple has any subject, predicate, or object, and sort the result by the predicate." A list of properties returned by this query against the LiAM triple store is noted at end of this tutorial.
+  3. Learn more about the employed ontologies - Using the following query you can create a list of all the properties in the triple store as well as infer some of the characteristics of each class. Unfortunately, this particular query is intense. It may require a long time to process or may not return at all. In English, the query says, "Find all the unique predicates where the RDF triple has any subject, any predicate, or any object, and sort the result by predicate."
   
     SELECT DISTINCT ?p WHERE { ?s ?p ?o } ORDER BY ?p
   
@@ -20,205 +22,31 @@ Also, remember, RDF is a data structure of triples: 1) subjects, 2) predicates, 
   
     SELECT ?s WHERE { ?s a <http://data.archiveshub.ac.uk/def/FindingAid> }
   
-  5. Learn about a specific thing - The result of Step #4 ought to be a list of (hopefully actionable) URIs. You can learn everything about that URI with the following query. It says, "Find all the predicates and objects in the triple store where the RDF triple's subject is a given value and the predicate and object are of any value, and sort the result by the predicate". In this case, the given value is one of the items returned from Step #4.
+  5. Learn about a specific thing - The result of Step #4 ought to be a list of (hopefully actionable) URIs. You can learn everything about that URI with the following query. It says, "Find all the predicates and objects in the triple store where the RDF triple's subject is a given value and the predicate and object are of any value, and sort the result by predicate". In this case, the given value is one of the items returned from Step #4.
   
-    SELECT ?p ?o WHERE { <http://infomotions.com/sandbox/liam/id/302> ?p ?o } ORDER BY ?p
+    SELECT ?p ?o WHERE { http://infomotions.com/sandbox/liam/id/mum432> ?p ?o } ORDER BY ?p
   
   6. Repeat a few times - If the results from Step #5 returned seemingly meaningful and complete information about your selected URI, then repeat Step #5 a few times to get a better feel for some of the "things" in the triple store. If the results were not meaningful, then got to Step #4 to browser another class.
   
-  7. Read the manual - At this point, it is a good idea to go back to Step #2 and read the more formal descriptions of the underlying ontologies.
+  7. Take these hints - The first of these following two queries generates a list of ten URIs pointing to things that came from MARC records. The second query is used to return everything about a specific URI whose data came from a MARC record.
   
-  8. Browse some more - If the results of Step #3 returned successfully, then browse the objects in the triple store by selecting a predicate of interest. One of the resulting predicates is "http://purl.org/dc/terms/title" denoting some sort of title relationship, and so all the titles in the collection can be listed in sorted order:
+    SELECT ?s WHERE { ?s a <http://simile.mit.edu/2006/01/ontologies/mods3#Record> } LIMIT 1000
+    SELECT ?p ?o WHERE { <http://infomotions.com/sandbox/liam/id/shumarc681792> ?p ?o } ORDER BY ?p
 
-    SELECT ?o WHERE { ?s <http://purl.org/dc/terms/title> ?o } ORDER BY ?o
+  8. Read the manual - At this point, it is a good idea to go back to Step #2 and read the more formal descriptions of the underlying ontologies.
+  
+  9. Browse some more - If the results of Step #3 returned successfully, then browse the objects in the triple store by selecting a predicate of interest. The following queries demonstrate how to list things like titles, creators, names, and notes.
+  
+    SELECT ?s ?o WHERE { ?s <http://purl.org/dc/terms/title> ?o } ORDER BY ?o LIMIT 100
+    SELECT ?s ?o WHERE { ?s <http://simile.mit.edu/2006/01/roles#creator> ?o } ORDER BY ?o LIMIT 100
+    SELECT ?s ?o WHERE { ?s <http://xmlns.com/foaf/0.1/name> ?o } ORDER BY ?o LIMIT 100
+    SELECT ?s ?o WHERE { ?s <http://data.archiveshub.ac.uk/def/note> ?o } ORDER BY ?o LIMIT 100
 
-One of the predicates is "http://simile.mit.edu/2006/01/roles#creator" denoting the name of somebody, so all creators can be listed:
+ 10. Read about SPARQL - This was the tiniest of SPARQL tutorials. Using the LiAM data set as an example, it demonstrated how to do the all but simplest queries against a RDF triple store. There is a whole lot more to SPARQL than SELECT, DISTINCT, WHERE, ORDER BY, AND LIMIT commands. SPARQL supports a short-hand way of denoting classes and properties called PREFIX. It supports Boolean operations, limiting results based on "regular expressions", and a few mathematical functions. SPARQL can also be used to do inserts and deletes against the triple store. The next step is to read more about SPARQL. Consider reading the canonical documentation from the W3C, "SPARQL by example", and the Jena project's "SPARQL Tutorial". [1, 2, 3]
 
-    SELECT ?o WHERE { ?s <http://simile.mit.edu/2006/01/roles#creator> ?o } ORDER BY ?o
-
-There are other name-like things in the prediate list -- <http://xmlns.com/foaf/0.1/name>, and these can be listed:
-
-    SELECT ?o WHERE { ?s <http://xmlns.com/foaf/0.1/name> ?o }
-
-There are notes:
-
-    SELECT ?o WHERE { ?s <http://data.archiveshub.ac.uk/def/note> ?o } ORDER BY ?o
+Finally, don't be too intimidated about SPARQL. Yes, it is possible to submit SPARQL queries by hand, but in reality, person-friendly front-ends are expected to be created making search much easier.
 
 
-Classes and properties
-
-This is a pair of lists -- classes and properties -- returned from Steps #1 and #3 of the tutorial as if they were applied against the LiAM SPARQL endpoint. Ideally each of the item in each list ought to be an actionable URI where you can learn more about the meaning and characteristics of the given ontologies. 
-
-Classes
-
-  * http://data.archiveshub.ac.uk/def/ArchivalResource
-  * http://data.archiveshub.ac.uk/def/BiographicalHistory
-  * http://data.archiveshub.ac.uk/def/Creation
-  * http://data.archiveshub.ac.uk/def/EAD
-  * http://data.archiveshub.ac.uk/def/Extent
-  * http://data.archiveshub.ac.uk/def/FindingAid
-  * http://data.archiveshub.ac.uk/def/Level
-  * http://data.archiveshub.ac.uk/def/Repository
-  * http://erlangen-crm.org/current/E21_Person
-  * http://erlangen-crm.org/current/E52_Time-Span
-  * http://lexvo.org/ontology#Language
-  * http://linkedevents.org/ontology/Event
-  * http://purl.org/dc/dcmitype/Collection
-  * http://purl.org/dc/terms/Agent
-  * http://purl.org/dc/terms/Standard
-  * http://purl.org/NET/c4dm/event.owl#Event
-  * http://purl.org/NET/c4dm/timeline.owl#TimeLine
-  * http://purl.org/ontology/bibo/Collection
-  * http://purl.org/ontology/bibo/Document
-  * http://purl.org/ontology/bibo/DocumentPart
-  * http://simile.mit.edu/2006/01/ontologies/mods3#AlternativeTitle
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Classification
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Corporation
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Date
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Description
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Form
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Genre
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Item
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Language
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Manuscript
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Person
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Place
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Publisher
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Record
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Text
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Title
-  * http://simile.mit.edu/2006/01/ontologies/mods3#Topic
-  * http://simile.mit.edu/2006/01/ontologies/mods3#UniformTitle
-  * http://www.openarchives.org/ore/terms/Aggregation
-  * http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
-  * http://www.w3.org/2004/02/skos/core#Concept
-  * http://www.w3.org/2004/02/skos/core#ConceptScheme
-  * http://www.w3.org/2006/time#Interval
-  * http://xmlns.com/foaf/0.1/Agent
-  * http://xmlns.com/foaf/0.1/Document
-  * http://xmlns.com/foaf/0.1/Organization
-  * http://xmlns.com/foaf/0.1/Person
-
-Properties
-
-  * http://data.archiveshub.ac.uk/def/accessProvidedBy
-  * http://data.archiveshub.ac.uk/def/accessRestrictions
-  * http://data.archiveshub.ac.uk/def/acquisitions
-  * http://data.archiveshub.ac.uk/def/administers
-  * http://data.archiveshub.ac.uk/def/archbox
-  * http://data.archiveshub.ac.uk/def/associatedWith
-  * http://data.archiveshub.ac.uk/def/body
-  * http://data.archiveshub.ac.uk/def/countryCode
-  * http://data.archiveshub.ac.uk/def/dateCreatedAccumulated
-  * http://data.archiveshub.ac.uk/def/dateCreatedAccumulatedEnd
-  * http://data.archiveshub.ac.uk/def/dateCreatedAccumulatedStart
-  * http://data.archiveshub.ac.uk/def/dateCreatedAccumulatedString
-  * http://data.archiveshub.ac.uk/def/encodedAs
-  * http://data.archiveshub.ac.uk/def/encodingOf
-  * http://data.archiveshub.ac.uk/def/extent
-  * http://data.archiveshub.ac.uk/def/hasBiographicalHistory
-  * http://data.archiveshub.ac.uk/def/isAdministeredBy
-  * http://data.archiveshub.ac.uk/def/isBiographicalHistoryFor
-  * http://data.archiveshub.ac.uk/def/isOriginationOf
-  * http://data.archiveshub.ac.uk/def/isPublisherOf
-  * http://data.archiveshub.ac.uk/def/level
-  * http://data.archiveshub.ac.uk/def/maintenanceAgencyCode
-  * http://data.archiveshub.ac.uk/def/note
-  * http://data.archiveshub.ac.uk/def/origination
-  * http://data.archiveshub.ac.uk/def/otherFindingAids
-  * http://data.archiveshub.ac.uk/def/processing
-  * http://data.archiveshub.ac.uk/def/providesAccessTo
-  * http://data.archiveshub.ac.uk/def/relatedMaterial
-  * http://data.archiveshub.ac.uk/def/scopecontent
-  * http://erlangen-crm.org/current/P86_falls_within
-  * http://erlangen-crm.org/current/P86i_contains
-  * http://linkedevents.org/ontology/atTime
-  * http://linkedevents.org/ontology/involved
-  * http://purl.org/dc/terms/conformsTo
-  * http://purl.org/dc/terms/created
-  * http://purl.org/dc/terms/date
-  * http://purl.org/dc/terms/description
-  * http://purl.org/dc/terms/extent
-  * http://purl.org/dc/terms/hasPart
-  * http://purl.org/dc/terms/identifier
-  * http://purl.org/dc/terms/isPartOf
-  * http://purl.org/dc/terms/language
-  * http://purl.org/dc/terms/publisher
-  * http://purl.org/dc/terms/subject
-  * http://purl.org/dc/terms/title
-  * http://purl.org/NET/c4dm/event.owl#produced_in
-  * http://purl.org/NET/c4dm/event.owl#product
-  * http://purl.org/NET/c4dm/event.owl#time
-  * http://purl.org/NET/c4dm/timeline.owl#at
-  * http://purl.org/NET/c4dm/timeline.owl#end
-  * http://purl.org/NET/c4dm/timeline.owl#start
-  * http://purl.org/NET/c4dm/timeline.owl#timeline
-  * http://simile.mit.edu/2006/01/ontologies/mods3#abstract
-  * http://simile.mit.edu/2006/01/ontologies/mods3#address
-  * http://simile.mit.edu/2006/01/ontologies/mods3#authority
-  * http://simile.mit.edu/2006/01/ontologies/mods3#changed
-  * http://simile.mit.edu/2006/01/ontologies/mods3#classification
-  * http://simile.mit.edu/2006/01/ontologies/mods3#created
-  * http://simile.mit.edu/2006/01/ontologies/mods3#dateIssued
-  * http://simile.mit.edu/2006/01/ontologies/mods3#dates
-  * http://simile.mit.edu/2006/01/ontologies/mods3#encoding
-  * http://simile.mit.edu/2006/01/ontologies/mods3#extent
-  * http://simile.mit.edu/2006/01/ontologies/mods3#form
-  * http://simile.mit.edu/2006/01/ontologies/mods3#frequency
-  * http://simile.mit.edu/2006/01/ontologies/mods3#fullName
-  * http://simile.mit.edu/2006/01/ontologies/mods3#genre
-  * http://simile.mit.edu/2006/01/ontologies/mods3#isReferencedBy
-  * http://simile.mit.edu/2006/01/ontologies/mods3#issuance
-  * http://simile.mit.edu/2006/01/ontologies/mods3#language
-  * http://simile.mit.edu/2006/01/ontologies/mods3#location
-  * http://simile.mit.edu/2006/01/ontologies/mods3#name
-  * http://simile.mit.edu/2006/01/ontologies/mods3#nonSort
-  * http://simile.mit.edu/2006/01/ontologies/mods3#note
-  * http://simile.mit.edu/2006/01/ontologies/mods3#origin
-  * http://simile.mit.edu/2006/01/ontologies/mods3#physicalDescription
-  * http://simile.mit.edu/2006/01/ontologies/mods3#point
-  * http://simile.mit.edu/2006/01/ontologies/mods3#publisher
-  * http://simile.mit.edu/2006/01/ontologies/mods3#records
-  * http://simile.mit.edu/2006/01/ontologies/mods3#series
-  * http://simile.mit.edu/2006/01/ontologies/mods3#sub
-  * http://simile.mit.edu/2006/01/ontologies/mods3#subject
-  * http://simile.mit.edu/2006/01/ontologies/mods3#title
-  * http://simile.mit.edu/2006/01/ontologies/mods3#value
-  * http://simile.mit.edu/2006/01/roles#collector
-  * http://simile.mit.edu/2006/01/roles#creator
-  * http://simile.mit.edu/2006/01/roles#former_owner
-  * http://simile.mit.edu/2006/01/roles#printer
-  * http://simile.mit.edu/2006/01/roles#recipient
-  * http://www.openarchives.org/ore/terms/aggregates
-  * http://www.openarchives.org/ore/terms/isAggregatedBy
-  * http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-  * http://www.w3.org/2000/01/rdf-schema#label
-  * http://www.w3.org/2000/01/rdf-schema#seeAlso
-  * http://www.w3.org/2002/07/owl#sameAs
-  * http://www.w3.org/2004/02/skos/core#inScheme
-  * http://www.w3.org/2004/02/skos/core#prefLabel
-  * http://www.w3.org/2006/time#intervalDuring
-  * http://www.w3.org/2006/time#intervalEnds
-  * http://www.w3.org/2006/time#intervalStarts
-  * http://xmlns.com/foaf/0.1/focus
-  * http://xmlns.com/foaf/0.1/homepage
-  * http://xmlns.com/foaf/0.1/name
-  * http://xmlns.com/foaf/0.1/page
-  * http://xmlns.com/foaf/0.1/topic
-
-Subjects
-
-  * http://infomotions.com/sandbox/liam/id/178
-  * http://infomotions.com/sandbox/liam/id/302
-  * http://infomotions.com/sandbox/liam/id/4001abfr
-  * http://infomotions.com/sandbox/liam/id/4004affe
-  * http://infomotions.com/sandbox/liam/id/4014bysc
-  * http://infomotions.com/sandbox/liam/id/4015ceem
-  * http://infomotions.com/sandbox/liam/id/4017code
-  * http://infomotions.com/sandbox/liam/id/hou00096
-  * http://infomotions.com/sandbox/liam/id/hou00275
-  * http://infomotions.com/sandbox/liam/id/hou00300
-  * http://infomotions.com/sandbox/liam/id/httphdllocgovlocafceadafcaf007001
-  * http://infomotions.com/sandbox/liam/id/httphdllocgovlocafceadafcaf007002
-  * http://infomotions.com/sandbox/liam/id/httphdllocgovlocafceadafcaf007003
-  * http://infomotions.com/sandbox/liam/id/httphdllocgovlocafceadafcaf007004
+[1] canonical documentation - http://www.w3.org/TR/rdf-sparql-query/ 
+[2] SPARQL By Example - https://www.cambridgesemantics.com/semantic-university/sparql-by-example
+[3] SPARQL Tutorial - http://jena.apache.org/tutorials/sparql.html
