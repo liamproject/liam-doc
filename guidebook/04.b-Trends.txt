@@ -20,3 +20,20 @@ With great interest I read the Spring/Summer issue of Information Standards Quar
   * persistent URIs
   * the “chicken & egg” problem of why linked data if there is no killer application
 
+
+There are a number of challenges in the process. Some of them are listed below, and some of them have been alluded to above:
+
+  * Create useful LOD, meaning, create LOD that links to other LOD. LOD does not live in a world by itself. Remember, the "L" stands for "linked". For example, try to include URIs that are the URIs used on other LOD data sets. Sometimes this is not possible, for example, le with the names of people in archival materials. When possible, they used VIAF, but other times they needed to create their own URI denoting an individual.
+
+  * There is a level of rigor involved in creating the data model, and there may be many discussions regarding semantics. For example, what is a creator? Or, when is a term intended to be an index term as opposed reference. When does one term in one vocabulary equal a different term in a different vocabulary?
+
+  * Balance the creation of your own vocabulary with the need to speak the language of others using their vocabulary.
+
+  * Consider "fixing" the data as it comes in or goes out because it might not be consistent nor thorough.
+
+  * Provenance is an issue. People — especially scholars — will want to know where the LOD came from and whether or not it is authoritative. How to solve or address this problem? The jury is still out on this one.
+
+  * Creating and maintaining LOD is difficult because it requires the skills of a number of different types of people. Computer programmers. Database designers. Subject experts. Metadata specialists. Archivists. Etc. A team is all but necessary.
+
+
+

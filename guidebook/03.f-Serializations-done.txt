@@ -1,17 +1,15 @@
 3.b RDF serializations
 
-RDF can be expressed in many different formats, called “serializations”. 
+RDF can be expressed in many different formats, called "serializations". 
 
-RDF (Resource Description Framework) is a conceptual data model made up of “sentences” called triples — subjects, predicates, and objects. Subjects are expected to be URIs. Objects are expected to be URIs or string literals (think words, phrases, or numbers). Predicates are “verbs” establishing relationships between the subjects and the objects. Each triple is intended to denote a specific fact.
+RDF (Resource Description Framework) is a conceptual data model made up of "sentences" called triples — subjects, predicates, and objects. Subjects are expected to be URIs. Objects are expected to be URIs or string literals (think words, phrases, or numbers). Predicates are "verbs" establishing relationships between the subjects and the objects. Each triple is intended to denote a specific fact.
 
-When the idea of the Semantic Web was first articulated XML was the predominant data structure of the time. It was seen as a way to encapsulate data that was both readable by humans as well as computers. Like any data structure, XML has both its advantages as well as disadvantages. On one hand it is easy to determine whether or not XML files are well-formed, meaning they are syntactically correct. Given a DTD, or better yet, an XML schema, it is also easy determine whether or not an XML file is valid — meaning does it contain the necessary XML elements, attributes, and are they arranged and used in the agreed upon manner. XML also lends itself to transformations into other plain text documents through the generic,  platform-independent XSLT (Extensible Stylesheet Language Transformation) process. Consequently, RDF was originally manifested — made real and “serialized” — though the use of RDF/XML.
+When the idea of the Semantic Web was first articulated XML was the predominant data structure of the time. It was seen as a way to encapsulate data that was both readable by humans as well as computers. Like any data structure, XML has both its advantages as well as disadvantages. On one hand it is easy to determine whether or not XML files are well-formed, meaning they are syntactically correct. Given a DTD, or better yet, an XML schema, it is also easy to determine whether or not an XML file is valid — meaning does it contain the necessary XML elements, attributes, and are they arranged and used in the agreed upon manner. XML also lends itself to transformations into other plain text documents through the generic, platform-independent, XSLT (Extensible Stylesheet Language Transformation) process. Consequently, RDF was originally manifested — made real and "serialized" — though the use of RDF/XML.
 
 The example of RDF at the beginning of the Guidebook was an RDF/XML serialization:
 
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
   <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
     <dcterms:creator>
       <foaf:Person rdf:about="http://id.loc.gov/authorities/names/n79089957">
@@ -21,7 +19,7 @@ The example of RDF at the beginning of the Guidebook was an RDF/XML serializatio
   </rdf:Description>
 </rdf:RDF>
 
-On the other hand, XML, almost by definition, is verbose. Element names are expected to be human-readable and meaningful, not obtuse nor opaque. The judicious use of special characters (&, <, >, “, and ‘) as well as entities only adds to the difficulty of actually reading XML. Consequently, almost from the very beginning people thought RDF/XML was not the best way to express RDF, and since then a number of other syntaxes — data structures — have manifested themselves.
+On the other hand, XML, almost by definition, is verbose. Element names are expected to be human-readable and meaningful, not obtuse nor opaque. The judicious use of special characters (&, <, >, ", and ') as well as entities only adds to the difficulty of actually reading XML. Consequently, almost from the very beginning people thought RDF/XML was not the best way to express RDF, and since then a number of other syntaxes — serializations — have manifested themselves.
 
 Below is the same RDF serialized in a format called Notation 3 (N3), which is very human readable, but not extraordinarily structured enough for computer processing. It incorporates the use of a line-based data structure called N-Triples used to denote the triples themselves:
 
@@ -95,9 +93,12 @@ RDFa represents a way of expressing RDF embedded in HTML, and here is such an ex
   </div>
 </div>
 
-The purpose of publishing linked data is to make RDF triples easily accessible. This does not necessarily mean the transformation of EAD or MARC into RDF/XML, but rather making accessible the statements of RDF within the context of the reader. In this case, the reader may be a human or some sort of computer program. Each serialization has its own strengths and weaknesses. Ideally the archive would figure out ways exploit each of these RDF serializations in specific publishing purposes.
+The purpose of publishing linked data is to make RDF triples easily accessible. This does not necessarily mean the transformation of EAD or MARC into RDF/XML, but rather making accessible the statements of RDF within the context of the reader. In this case, the reader may be a human or some sort of computer program. Each serialization has its own strengths and weaknesses. Ideally an archive will have figure out ways exploit each of the RDF serializations for specific publishing purposes.
 
-For a good time, play with the RDF Translator which will convert one RDF serialization into another. 
+For a good time, play with the RDF Translator which will convert one RDF serialization into another. [1] 
 
 The RDF serialization process also highlights how data structures are moving away from a document-centric models to a statement-central models. This too has consequences for way cultural heritage institutions, like archives, think about exposing their metadata, but that is the topic of another essay.
+
+[1] RDF Translator - http://rdf-translator.appspot.com
+
 

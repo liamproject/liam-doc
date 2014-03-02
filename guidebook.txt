@@ -9,7 +9,7 @@ Linked Archival Metadata: A Guidebook
 LiAM & Eric L. Morgan
 http://sites.tufts.edu/liam/
 
-March 1, 20141. Executive Summary
+March 2, 20141. Executive Summary
 
 [The Executive Summary will list core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
 
@@ -121,52 +121,75 @@ Linked Data is a process for manifesting the ideas behind the Semantic Web. The 
 
 The history of linked data in libraries, archives, and museums is rooted in history of the Semantic Web.
 
-The canonical article describing the Semantic Web was written by Tim Berners-Lee, James Hendler, and Ora Lassila in 2001. The article described the concept of the Semantic Web -- an environment where Internet-wide information was freely available for both people and computers to access with the ultimate purpose of bringing new knowledge to light. At that time, to implement the ideas behind the Semantic Web, many people created RDF/XML files side-by-side with their HTML and saved on Web servers. Around this same time the idea of "Web services" and REST-ful computing were beginning to be articulated by the Internet community. Simply put, Web services and REST-ful computing are/were a way for computers to request and share information over the World Wide Web. Web services and REST-ful computing became popular because just about anybody can do it. All you usually have to do is submit a very long URL plus numerous variable/value pairs to a Web server, and the Web server returns some data. Many computer programmers and people who could write HTML quickly picked up on this idea, and it became popular. Besides, no Semantic Web "killer application" had been demonstrated to the wider Internet community, and many computer technologists thought RDF/XML was a poor way of serializing RDF. The idea of the Semantic Web faded for a few years.
+The canonical article describing the Semantic Web was written by Tim Berners-Lee, James Hendler, and Ora Lassila in 2001. [1] The article described the concept of the Semantic Web -- an environment where Internet-wide information was freely available for both people and computers to access with the ultimate purpose of bringing new knowledge to light. At that time, to implement the ideas behind the Semantic Web, many people created RDF/XML files side-by-side with their HTML and saved them on Web servers. Around this same time the idea of "Web services" and REST-ful computing were beginning to be articulated by the Internet community. Simply put, Web services and REST-ful computing are/were a way for computers to request and share information over the World Wide Web. Web services and REST-ful computing became popular because just about anybody can do it. All you usually have to do is submit a very long URL plus numerous variable/value pairs to a Web server, and the Web server returns some data. Many computer programmers and people who could write HTML quickly picked up on this idea, and it became popular. Besides, no Semantic Web "killer application" had been demonstrated to the wider Internet community, and many computer technologists thought RDF/XML was a poor way of serializing RDF. The idea of the Semantic Web faded for a few years.
 
-In 2006 Berners-Lee more concretely described how to make the Semantic Web a reality in a text called “Linked Data -- Design Issues”. It it he advocated a complementary way for computers to request and share information, namely, a process called "content negotiation". In this process much simpler URLs (easily human-readable "cool URLs") were sent to a Web server as well as a request for the Web server's response to be in a specified format: HTML, PDF, RDF/XML, etc. At this same time additional RDF serializations were becoming popular; RDF/XML was no longer the only way to express RDF. By this time a few entrepreneurial companies were also beginning to provide software services for creating, maintaining, and distributing RDF. These developments, plus the kinship of "all things open" (open source software, open access publishing, and open data) with the fundamental goals of the Semantic Web, probably led to the current interest in linked data.
+In 2006 Berners-Lee more concretely described how to make the Semantic Web a reality in a text called “Linked Data -- Design Issues”. [2] It it he advocated a four-step process for making content freely available on the Web. He also advocated for simple URLs to be used to describe things. At this same time additional RDF serializations were becoming popular; RDF/XML was no longer the only way to express RDF. Also a few entrepreneurial individuals were also beginning to provide software services for creating, maintaining, and distributing RDF. These developments, plus the kinship of "all things open" (open source software, open access publishing, open data, etc.) with the fundamental goals of the Semantic Web, probably led to the current interest in linked data. Since then an increasing number of specialized communities have expressed and demonstrated interest in linked data. Linked data technologies are maturing.
 
+[1] canonical article - http://www.scientificamerican.com/article/the-semantic-web/
+[2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
 
-3.d. Examples
-
-[What is the current interest? A few examples are in order. Mention the activities of OCLC and other large cultural-heritage institutions. Mention the availability of numerous RDF triple stores and data dumps. Mention a few Web services and REST-ful interfaces. Mention a few linked data implementations. Mention the growth of linked data from governments, Wikipedia, etc. Mention the growth of linked data meeting and conferences. ]
 3.b. Overview of linked data concepts and vocabulary
 
 Linked data is a standardized process for publishing and disseminating information via the Web. It represents the current "how" behind the ideas the Semantic Web.
 
-Increasingly you will hear of of linked data being qualified as "linked open data". The "open" qualifier alludes to the important distinctions between truly free data/information and licensed data/information which comes with some strings attached. Truly "open" linked data comes with no licensing restrictions.
+Increasingly you will hear of of linked data being qualified as "linked open data". The "open" qualifier alludes to the important distinctions between truly free data/information and licensed data/information coming with strings attached. Truly "open" linked data comes with no financial restrictions or restrictions on use, but there may very well be attribution requirements.
 
-When you hear of linked data and the Semantic Web, the next thing you often hear is "RDF" or "Resource Description Framework". First and foremost, RDF is a way of representing knowledge. It does this through the use of assertions (think, "sentences") with only three parts: 1) a subject, 2) a predicate, and 3) an object. Put together, these three things create things called "triples". The subject of each assertion is expected to be a Universal Resource Identifier (or URI, but think URL), and this URI is expected to represent a thing -- anything. (Really, anything.) The predicate is some sort of relationship such as equals or is a sub-part of or contains or is a description of, or is the name of, etc. Predicates are the vocabulary of linked data, and you will find an abundance of vocabularies from which to choose when creating Linked Data. Finally, objects come in two forms: 1) more URIs (pointers to things) or literal values such the names of people, places, or things. Examples of literals include "Lancaster, PA", "Thomas Jefferson", or "Musée d'Orsay".
+When you hear of linked data and the Semantic Web, the next thing you often hear is "RDF" or "Resource Description Framework". First and foremost, RDF is a way of representing knowledge. It does this through the use of assertions (think, "sentences") with only three parts: 1) a subject, 2) a predicate, and 3) an object. Put together, these three things create things called "triples". The subject of each assertion is expected to be a Universal Resource Identifier (or URI, but think URL), and this URI is expected to represent a thing -- anything. The predicate is some sort of relationship such as equals or is a sub-part of or contains or is a description of, or is the name of, etc. Predicates are the vocabulary of linked data, and you will find an abundance of vocabularies from which to choose when creating linked data. Finally, objects come in two forms: 1) more URIs (pointers to things) or literal values such the names of people, places, or things. Examples of literals include "Lancaster, PA", "Thomas Jefferson", or "Musée d'Orsay".
 
-RDF is not to be confused with RDF/XML or another other type of RDF "serialization". Remember, RDF describes triples, but it does not specify how the triples are express or written down. On the other hand, RDF/XML is an XML syntax for expressing RDF. Some people think RDF/XML is too complicated and too verbose. Consequently, other serializations have manifested themselves including N3 and Turtle.
+RDF is not to be confused with RDF/XML or any other type of RDF "serialization". Remember, RDF describes triples, but it does not specify how the triples are express or written down. On the other hand, RDF/XML is an XML syntax for expressing RDF. Some people think RDF/XML is too complicated and too verbose. Consequently, other serializations have manifested themselves including N3 and Turtle.
 
 In “Linked Data -- Design Issues” Berners-Lee outlined four often-quoted expectations for implementing the Semantic Web. Each of these expectations are listed below along with some elaborations:
 
-  * "Use URIs as names for things" - URIs (Universal Resource Identifiers) are unique identifiers, and they are expected to have the same shape as URLs (Universal Resource Locators). These identifiers are expected to represent things such as people, places, institutions, concepts, books, etc. URIs are monikers or handles for real world or imaginary objects.  
+  * "Use URIs as names for things" - URIs (Universal Resource
+    Identifiers) are unique identifiers, and they are expected to
+    have the same shape as URLs (Universal Resource Locators). These
+    identifiers are expected to represent things such as people,
+    places, institutions, concepts, books, etc. URIs are monikers or
+    handles for real world or imaginary objects.  
 
-  * "Use HTTP URIs so that people can look up those names." - The URIs are expected to look and ideally function on the World Wide Web through the Hypertext Transfer Protocol (HTTP), meaning the URI's point to things on Web servers.  
+  * "Use HTTP URIs so that people can look up those names." - The
+    URIs are expected to look and ideally function on the World Wide
+    Web through the Hypertext Transfer Protocol (HTTP), meaning the
+    URI's point to things on Web servers.  
 
-  * "When someone looks up a URI, provide useful information, using the standards (RDF, SPARQL)" - When URIs are sent to Web servers by Web browsers (or "user-agents" in HTTP parlance), the response from the server should be in a conventional, computer readable format. This format is usually a "serialization" of RDF (Resource Description Framework) -- a notation looking much like a rudimentary sentence composed of a subject, predicate, and object. 
+  * "When someone looks up a URI, provide useful information, using
+    the standards (RDF, SPARQL)" - When URIs are sent to Web servers
+    by Web browsers (or "user-agents" in HTTP parlance), the response
+    from the server should be in a conventional, computer readable
+    format. This format is usually a "serialization" of RDF (Resource
+    Description Framework) -- a notation looking much like a
+    rudimentary sentence composed of a subject, predicate, and
+    object. 
 
-  * "Include links to other URIs. So that they can discover more things." - Simply put, try very hard to use URIs that other people have have used. This way the relationships you create can literally be linked to the relationships other people have created. These links may represent new knowledge. 
+  * "Include links to other URIs. So that they can discover more
+    things." - Simply put, try very hard to use URIs other people
+    have have used. This way the relationships you create can
+    literally be linked to the relationships other people have
+    created. These links may represent new knowledge. 
 
-In the same text ("Linked Data -- Design Issues") Berners-Lee also outlined a sort of reward system -- a sets of stars -- for levels of implementation. This reward system also works very well as a strategy for publishing linked data by cultural heritage institutions such archives. A person gets:
+In the same text Berners-Lee also outlined a sort of reward system -- a sets of stars -- for levels of implementation. This reward system also works very well as a strategy for publishing linked data by cultural heritage institutions such as archives. A person gets:
 
-  * one star for making data available on the web (in whatever format) but with an open license, to be Open Data 
+  * one star for making data available on the web (in whatever
+    format) but with an open license
 
-  * two stars for making the data machine-readable structured data (e.g. excel instead of image scan of a table) 
+  * two stars for making the data machine-readable and structured
+    data (e.g. Excel instead of an image scan of a table) 
 
-  * three stars for making the data available in non-proprietary format (e.g. CSV instead of excel) 
+  * three stars for making the data available in a
+    non-proprietary format (e.g. comma-separated values instead of
+    Excel) 
 
-  * four stars for using open standards from W3C (RDF and SPARQL) to identify things, so that people can point at your stuff 
+  * four stars for using open standards from W3C (RDF and SPARQL)
+    to identify things, so that people can point at your stuff 
 
-  * five stars for linking your data to other people's data to provide context
-
+  * five stars for linking your data to other people's data to
+    provide context
 
 The whole idea works like this. Suppose I assert the following statement:
 
   The Declaration Of Independence was authored by Thomas Jefferson.
   
-This statement can be divided into three parts. The first part is a subject (Declaration Of Independence). The second part is a predicate (was authored by). The third part is an object (Thomas Jefferson). In the language of the Semantic Web and Linked Data, these combined parts are called a triple, and they are expected to denote a fact. Triples are the heart of RDF. 
+This statement can be divided into three parts. The first part is a subject (Declaration Of Independence). The second part is a predicate (was authored by). The third part is an object (Thomas Jefferson). In the language of the Semantic Web and linked data, these combined parts are called a triple, and they are expected to denote a fact. Triples are the heart of RDF. 
 
 Suppose further that the subject and object of the triple are identified using URIs (as in Expectations #1 and #2, above). This would turn our assertion into something like this with carriage returns added for readability:
 
@@ -180,15 +203,12 @@ Unfortunately, this assertion is not easily read by a computer. Believe it or no
 <rdf:RDF
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dcterms="http://purl.org/dc/terms/" >
-
   <!-- the Declaration Of Independence was authored by Thomas Jefferson -->
   <rdf:Description
   rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
     <dcterms:creator>http://id.loc.gov/authorities/names/n79089957</dcterms:creator>
   </rdf:Description>
-
 </rdf:RDF>
-
 
 Suppose we had a second assertion:
 
@@ -200,56 +220,32 @@ In this case, the subject is "Thomas Jefferson". The predicate is "was". The obj
 <rdf:RDF
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:foaf="http://xmlns.com/foaf/0.1/">
-
   <!-- Thomas Jefferson is man (a male) -->
   <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n7908995">
     <foaf:Person foaf:gender="male" />
   </rdf:Description>
-
 </rdf:RDF>
 
-
-Suppose there were smart Linked Data robot / spider. Suppose it crawled both Assertion #1 and Assertion #2, it then ought to be able to assert the following:
+Suppose there were smart linked data robot/spider. Suppose it crawled both Assertion #1 and Assertion #2. It then ought to be able to assert the following:
 
 <?xml version="1.0"?>
-<rdf:RDF
- xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:dcterms="http://purl.org/dc/terms/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/">
-
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
   <!-- the Declaration Of Independence was written by
   Thomas Jefferson, and Thomas Jefferson is a male -->
   <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
- <dcterms:creator>
- <foaf:Person rdf:about="http://id.loc.gov/authorities/names/n79089957">
- <foaf:gender>male</foaf:gender>
- </foaf:Person>
- </dcterms:creator>
+    <dcterms:creator>
+      <foaf:Person rdf:about="http://id.loc.gov/authorities/names/n79089957">
+        <foaf:gender>male</foaf:gender>
+      </foaf:Person>
+    </dcterms:creator>
   </rdf:Description>
- 
 </rdf:RDF>
 
+Looking at the two assertions, a reasonable person can deduce a third assertion, namely, the Declaration Of Independence was authored by a man. Which brings us back to the point of the Semantic Web and linked data. If everybody uses URIs (read "URLs") to describe things, if everybody denotes relationships (through the use of predicates) between URIs, if everybody makes their data available on the Web in standardized formats, and if everybody uses similar URIs, then new knowledge can be deduced from the original relationships.
 
+Unfortunately too little linked data has been made available and/or too few people have earned too few stars to really make the Semantic Web a reality. True, there are a growing number of value-added services and collections making use of linked data, but not so many that everybody is taking notice.
 
-Looking at the two assertions, a reasonable person can deduce a third assertion, namely, the Declaration Of Independence was authored by a man. Which brings us back to the point of the Semantic Web and Linked Data. If everybody uses URIs (read "URLs") to describe things, if everybody denotes relationships (through the use of predicates) between URIs, if everybody makes their data available on the Web in standardized formats, and if everybody uses similar URIs, then new knowledge can be deduced from the original relationships.
-
-Unfortunately and to-date too little Linked Data has been made available and/or too few people have earned too few stars to really make the Semantic Web a reality. The purpose of this guidebook is to provide means for archivists to do their part, make their content available on the Semantic Web through Linked Data, all in the hopes of facilitating the discovery of new knowledge. On our mark. Get set. Go!
-
-There are a number of challenges in the process. Some of them are listed below, and some of them have been alluded to above:
-
-  * Create useful LOD, meaning, create LOD that links to other LOD. LOD does not live in a world by itself. Remember, the "L" stands for "linked". For example, try to include URIs that are the URIs used on other LOD data sets. Sometimes this is not possible, for example, le with the names of people in archival materials. When possible, they used VIAF, but other times they needed to create their own URI denoting an individual.
-
-  * There is a level of rigor involved in creating the data model, and there may be many discussions regarding semantics. For example, what is a creator? Or, when is a term intended to be an index term as opposed reference. When does one term in one vocabulary equal a different term in a different vocabulary?
-
-  * Balance the creation of your own vocabulary with the need to speak the language of others using their vocabulary.
-
-  * Consider "fixing" the data as it comes in or goes out because it might not be consistent nor thorough.
-
-  * Provenance is an issue. People — especially scholars — will want to know where the LOD came from and whether or not it is authoritative. How to solve or address this problem? The jury is still out on this one.
-
-  * Creating and maintaining LOD is difficult because it requires the skills of a number of different types of people. Computer programmers. Database designers. Subject experts. Metadata specialists. Archivists. Etc. A team is all but necessary.
-
-
+The purpose of this guidebook is to provide means for archivists to do their part, make their content available on the Semantic Web through Linked Data, all in the hopes of facilitating the discovery of new knowledge. On our mark. Get set. Go!
 3.a. Vocabularies and ontologies
 
 Links describing the why’s and wherefore’s of LOHAC’s vocabulary:
@@ -280,6 +276,7 @@ The Internet, by design, is a decentralized environment. There are very few rule
 There are no “should’s” on the Internet. There is only common practice. 
 
 With this in mind, it is best for you to work with others both inside and outside your discipline to select one or more ontologies to be used in your linked data. Do not think about this too long nor too hard. It is an never-ending process that is never correct. It is only a process that approximates the best solution. 
+
  For simplicity's sake, RDF ontologies are akin to the fields in MARC records or the entities in EAD/XML files. Articulated more accurately, they are the things denoting relationships between subjects and objects in RDF triples. In this light, they are akin to the verbs in all but the most simplistic of sentences. But if they are akin to verbs, then they bring with them all of the nuance and subtlety of human written language. And human written language, in order to be an effective human communications device, comes with two equally important prerequisites: 1) a writer who can speak to an intended audience, and 2) a reader with a certain level of intelligence. A writer who does not use the language of the intended audience speaks to few, and a reader who does not "bring something to the party" goes away with little understanding. Because the effectiveness of every writer is not perfect, and because not every reader comes to the party with a certain level of understanding, written language is imperfect. Similarly, the ontologies of linked data are imperfect. There are no perfect ontologies nor absolutely correct uses of them. There are only best practices and common usages.
 
 This being the case, ontologies still need to be selected in order for linked data to be manifested. What ontologies would you suggest be used when creating linked data for archival descriptions? Here are a few possibilities, listed in no priority order:
@@ -287,7 +284,6 @@ This being the case, ontologies still need to be selected in order for linked da
   * Dublin Core Terms - This ontology is rather bibliographic in nature, and provides a decent framework for describing much of the content of archival descriptions.
 
   * FOAF - Archival collections often originate from individual people. Such is the scope of FOAF, and FOAF is used by a number of other sets of linked data.   * Friend of a Friend (http://www.foaf-project.org/) - 
-
   
   * Schema.org - This is an up-and-coming ontology heralded by the 600-pound gorillas in the room -- Google, Microsoft, Yahoo, etc. While the ontology has not been put into practice for very long, it is growing and wide ranging.
   
@@ -317,18 +313,16 @@ It is important to understand the difference between linked data and more propri
 
 3.b RDF serializations
 
-RDF can be expressed in many different formats, called “serializations”. 
+RDF can be expressed in many different formats, called "serializations". 
 
-RDF (Resource Description Framework) is a conceptual data model made up of “sentences” called triples — subjects, predicates, and objects. Subjects are expected to be URIs. Objects are expected to be URIs or string literals (think words, phrases, or numbers). Predicates are “verbs” establishing relationships between the subjects and the objects. Each triple is intended to denote a specific fact.
+RDF (Resource Description Framework) is a conceptual data model made up of "sentences" called triples — subjects, predicates, and objects. Subjects are expected to be URIs. Objects are expected to be URIs or string literals (think words, phrases, or numbers). Predicates are "verbs" establishing relationships between the subjects and the objects. Each triple is intended to denote a specific fact.
 
-When the idea of the Semantic Web was first articulated XML was the predominant data structure of the time. It was seen as a way to encapsulate data that was both readable by humans as well as computers. Like any data structure, XML has both its advantages as well as disadvantages. On one hand it is easy to determine whether or not XML files are well-formed, meaning they are syntactically correct. Given a DTD, or better yet, an XML schema, it is also easy determine whether or not an XML file is valid — meaning does it contain the necessary XML elements, attributes, and are they arranged and used in the agreed upon manner. XML also lends itself to transformations into other plain text documents through the generic,  platform-independent XSLT (Extensible Stylesheet Language Transformation) process. Consequently, RDF was originally manifested — made real and “serialized” — though the use of RDF/XML.
+When the idea of the Semantic Web was first articulated XML was the predominant data structure of the time. It was seen as a way to encapsulate data that was both readable by humans as well as computers. Like any data structure, XML has both its advantages as well as disadvantages. On one hand it is easy to determine whether or not XML files are well-formed, meaning they are syntactically correct. Given a DTD, or better yet, an XML schema, it is also easy to determine whether or not an XML file is valid — meaning does it contain the necessary XML elements, attributes, and are they arranged and used in the agreed upon manner. XML also lends itself to transformations into other plain text documents through the generic, platform-independent, XSLT (Extensible Stylesheet Language Transformation) process. Consequently, RDF was originally manifested — made real and "serialized" — though the use of RDF/XML.
 
 The example of RDF at the beginning of the Guidebook was an RDF/XML serialization:
 
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
-         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
   <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
     <dcterms:creator>
       <foaf:Person rdf:about="http://id.loc.gov/authorities/names/n79089957">
@@ -338,7 +332,7 @@ The example of RDF at the beginning of the Guidebook was an RDF/XML serializatio
   </rdf:Description>
 </rdf:RDF>
 
-On the other hand, XML, almost by definition, is verbose. Element names are expected to be human-readable and meaningful, not obtuse nor opaque. The judicious use of special characters (&, <, >, “, and ‘) as well as entities only adds to the difficulty of actually reading XML. Consequently, almost from the very beginning people thought RDF/XML was not the best way to express RDF, and since then a number of other syntaxes — data structures — have manifested themselves.
+On the other hand, XML, almost by definition, is verbose. Element names are expected to be human-readable and meaningful, not obtuse nor opaque. The judicious use of special characters (&, <, >, ", and ') as well as entities only adds to the difficulty of actually reading XML. Consequently, almost from the very beginning people thought RDF/XML was not the best way to express RDF, and since then a number of other syntaxes — serializations — have manifested themselves.
 
 Below is the same RDF serialized in a format called Notation 3 (N3), which is very human readable, but not extraordinarily structured enough for computer processing. It incorporates the use of a line-based data structure called N-Triples used to denote the triples themselves:
 
@@ -412,11 +406,14 @@ RDFa represents a way of expressing RDF embedded in HTML, and here is such an ex
   </div>
 </div>
 
-The purpose of publishing linked data is to make RDF triples easily accessible. This does not necessarily mean the transformation of EAD or MARC into RDF/XML, but rather making accessible the statements of RDF within the context of the reader. In this case, the reader may be a human or some sort of computer program. Each serialization has its own strengths and weaknesses. Ideally the archive would figure out ways exploit each of these RDF serializations in specific publishing purposes.
+The purpose of publishing linked data is to make RDF triples easily accessible. This does not necessarily mean the transformation of EAD or MARC into RDF/XML, but rather making accessible the statements of RDF within the context of the reader. In this case, the reader may be a human or some sort of computer program. Each serialization has its own strengths and weaknesses. Ideally an archive will have figure out ways exploit each of the RDF serializations for specific publishing purposes.
 
-For a good time, play with the RDF Translator which will convert one RDF serialization into another. 
+For a good time, play with the RDF Translator which will convert one RDF serialization into another. [1] 
 
 The RDF serialization process also highlights how data structures are moving away from a document-centric models to a statement-central models. This too has consequences for way cultural heritage institutions, like archives, think about exposing their metadata, but that is the topic of another essay.
+
+[1] RDF Translator - http://rdf-translator.appspot.com
+
 
 This is a beginner's glossary to linked data.
 
@@ -569,6 +566,23 @@ With great interest I read the Spring/Summer issue of Information Standards Quar
   * dirty, inconsistent, or wide varieties of data integrity
   * persistent URIs
   * the “chicken & egg” problem of why linked data if there is no killer application
+
+
+There are a number of challenges in the process. Some of them are listed below, and some of them have been alluded to above:
+
+  * Create useful LOD, meaning, create LOD that links to other LOD. LOD does not live in a world by itself. Remember, the "L" stands for "linked". For example, try to include URIs that are the URIs used on other LOD data sets. Sometimes this is not possible, for example, le with the names of people in archival materials. When possible, they used VIAF, but other times they needed to create their own URI denoting an individual.
+
+  * There is a level of rigor involved in creating the data model, and there may be many discussions regarding semantics. For example, what is a creator? Or, when is a term intended to be an index term as opposed reference. When does one term in one vocabulary equal a different term in a different vocabulary?
+
+  * Balance the creation of your own vocabulary with the need to speak the language of others using their vocabulary.
+
+  * Consider "fixing" the data as it comes in or goes out because it might not be consistent nor thorough.
+
+  * Provenance is an issue. People — especially scholars — will want to know where the LOD came from and whether or not it is authoritative. How to solve or address this problem? The jury is still out on this one.
+
+  * Creating and maintaining LOD is difficult because it requires the skills of a number of different types of people. Computer programmers. Database designers. Subject experts. Metadata specialists. Archivists. Etc. A team is all but necessary.
+
+
 
 5. Getting Started: Strategies and Steps
 
@@ -1019,45 +1033,47 @@ W3C. “LinkedData.” Accessed August 4, 2013. http://www.w3.org/wiki/LinkedDat
 “Wiki.dbpedia.org : About.” Accessed November 3, 2013. http://dbpedia.org/About. 
 Appendix A: cURL and content-negotiation
 
-This is the tiniest introduction to cURL and content-negotiation. CURL is a command-line tool making it easier for you to see the Web as data and not presentation. It is a sort of Web browser, but more specifically, it is a thing called a user-agent. Content-negotiation is an essential technique for publishing and making accessible linked data. Please don’t be afraid of the command-line though. Understanding how to use cURL  and do content-negotiation by hand will take you a long way in understanding linked data. 
+This is the tiniest introduction to cURL and content-negotiation. CURL is a command-line tool making it easier for you to see the Web as data and not presentation. It is a sort of Web browser, but more specifically, it is a thing called a user-agent. Content-negotiation is an essential technique for publishing and making accessible linked data. Please don't be afraid of the command-line though. Understanding how to use cURL and do content-negotiation by hand will take you a long way in understanding linked data. 
 
-The first step is to download and install cURL. If you have a Macintosh or a Linux computer, then it is probably already installed. If not, then give the cURL download wizard a whirl. We’ll wait.
+The first step is to download and install cURL. If you have a Macintosh or a Linux computer, then it is probably already installed. If not, then give the cURL download wizard a whirl. [1] We'll wait.
 
-Next, you need to open a terminal. On Macintosh computers a terminal application is located in the Utilities folder of your Applications folder. It is called “Terminal”. People using Windows-based computers can find the “Command” application by searching for it in the Start Menu. Once cURL has been installed and a terminal has been opened, then you can type the following command at the prompt to display a help text:
+Next, you need to open a terminal. On Macintosh computers a terminal application is located in the Utilities folder of your Applications folder. It is called "Terminal". People using Windows-based computers can find the "Command" application by searching for it in the Start Menu. Once cURL has been installed and a terminal has been opened, then you can type the following command at the prompt to display a help text:
 
   curl --help
 
-There are many options there, almost too many. It is often useful to view only one page of text at a time, and you can “pipe” the output through to a program called “more” to do this. By pressing the space bar, you can go forward in the display. By pressing “b” you can go backwards, and by pressing “q” you can quit:
+There are many options there, almost too many. It is often useful to view only one page of text at a time, and you can "pipe" the output through to a program called "more" to do this:
 
   curl --help | more
+  
+By pressing the space bar, you can go forward in the display. By pressing "b" you can go backwards, and by pressing "q" you can quit.
 
-Feed cURL  the complete URL of Google’s home page to see how much content actually goes into their “simple” presentation:
+Feed cURL  the complete URL of Google's home page to see how much content actually goes into their "simple" presentation:
 
   curl http://www.google.com/ | more
 
-The communication of the World Wide Web (the hypertext transfer protocol or HTTP)  is divided into two parts: 1) a header, and 2) a body. By default cURL displays the body content. To see the header, add the -I (for a mnemonic, think “information”) to the command:
+The communication of the World Wide Web (the hypertext transfer protocol or HTTP) is divided into two parts: 1) a header, and 2) a body. By default cURL displays the body content. To see the header, add the -I (for a mnemonic, think "information") to the command:
 
   curl -I http://www.google.com/
 
-The result will be a list of characteristics the remote Web server is using to describe this particular interaction between itself and you. The most important things to note are: 1) the status line and 2) the content type. The status line will be the first line in the result, and it will say something like “HTTP/1.1 200 OK”, meaning there were no errors. Another line will begin with “Content-Type:” and denotes the format of the data being transferred. In most cases the content type line will include something like “text/html” meaning the content being sent is in the form of an HTML document. 
+The result will be a list of characteristics the remote Web server is using to describe this particular interaction between itself and cURL. The most important things to note are: 1) the status line and 2) the content type. The status line will be the first line in the result, and it will say something like "HTTP/1.1 200 OK", meaning there were no errors. Another line will begin with "Content-Type:" and denotes the format of the data being transferred. In most cases the content type line will include something like "text/html" meaning the content being sent is in the form of an HTML document. 
 
 Now feed cURL a URI for Walt Disney, such as one from DBpedia:
 
   curl http://dbpedia.org/resource/Walt_Disney
 
-The result will be empty, but upon the use of the -I switch you can see how the status line changed to “HTTP/1.1 303 See Other”. This means there is no content at the given URI, and the line starting with “Location:” is a pointer — an instruction — to go to a different document. In the parlance of HTTP this is called redirection. Using cURL going to the recommended location results in a stream of HTML:
+The result will be empty, but upon the use of the -I switch you can see how the status line changed to "HTTP/1.1 303 See Other". This means there is no content at the given URI, and the line starting with "Location:" is a pointer — an instruction — to go to a different document. In the parlance of HTTP this is called redirection. Using cURL going to the recommended location results in a stream of HTML:
 
   curl http://dbpedia.org/page/Walt_Disney | more
 
-Most Web browsers automatically follow HTTP redirection commands, but cURL needs to be told this explicitly through the use of the -L switch. (Think “location”.) Consequently, given the original URI, the following command will display HTML even though the URI has no content:
+Most Web browsers automatically follow HTTP redirection commands, but cURL needs to be told this explicitly through the use of the -L switch. (Think "location".) Consequently, given the original URI, the following command will display HTML even though the URI has no content:
 
   curl -L http://dbpedia.org/resource/Walt_Disney | more
 
-Now remember, the Semantic Web and linked data depend on the exchange of RDF, and upon closer examination you can see there are “link” elements in the resulting HTML, and these elements point to URLs with the .rdf extension. Feed these URLs to cURL to see an RDF representation of the Walt Disney data:
+Now remember, the Semantic Web and linked data depend on the exchange of RDF, and upon closer examination you can see there are "link" elements in the resulting HTML, and these elements point to URLs with the .rdf extension. Feed these URLs to cURL to see an RDF representation of the Walt Disney data:
 
   curl http://dbpedia.org/data/Walt_Disney.rdf | more
 
-Downloading entire HTML streams, parsing them for link elements containing URLs of RDF, and then requesting the RDF is not nearly as efficient as requesting RDF from the remote server in the first place. This can be done by telling the remote server you accept RDF as a format type. This is accomplished through the use of the -H switch. (Think “header”.) For example, feed cURL the URI for Walt Disney and specify your desire for RDF/XML:
+Downloading entire HTML streams, parsing them for link elements containing URLs of RDF, and then requesting the RDF is not nearly as efficient as requesting RDF from the remote server in the first place. This can be done by telling the remote server you accept RDF as a format type. This is accomplished through the use of the -H switch. (Think "header".) For example, feed cURL the URI for Walt Disney and specify your desire for RDF/XML:
 
   curl -H "Accept: application/rdf+xml" http://dbpedia.org/resource/Walt_Disney
 
@@ -1069,7 +1085,7 @@ Finally, using the -L switch,  you can use the URI for Walt Disney to request th
 
   curl -L -H "Accept: application/rdf+xml" http://dbpedia.org/resource/Walt_Disney
 
-That is cURL and content-negotiation in a nutshell. A user-agent submits a URI to a remote HTTP server and specifies the type of content it desires. The HTTP server responds with URLs denoting the location of desired content. The user-agent then makes a more specific request. It is sort of like the movie. “One URI to rule them all.” In summary, remember:
+That is cURL and content-negotiation in a nutshell. A user-agent submits a URI to a remote HTTP server and specifies the type of content it desires. The HTTP server responds with URLs denoting the location of the desired content. The user-agent then makes a more specific request. It is sort of like the movie. "One URI to rule them all." In summary, remember:
 
   * cURL is a command-line user-agent
   * given a URL, cURL returns, by default, the body of an HTTP transaction
@@ -1084,6 +1100,8 @@ Use cURL to actually see linked data in action, and here are a few more URIs to 
   * origami via the Library of Congress - http://id.loc.gov/authorities/subjects/sh85095643
   * Paris from DBpedia - http://dbpedia.org/resource/Paris
 
+
+[1] cURL download wizard - http://curl.haxx.se/dlwiz/
 10 - SPARQL tutorial
 
 This is the simplest of SPARQL tutorials. The tutorial's purpose is two-fold: 1) through a set of examples, introduce the reader to the syntax of SPARQL queries, and 2) to enable the reader to initially explore any RDF triple store which is exposed as a SPARQL endpoint.
@@ -1094,7 +1112,7 @@ Also, remember, RDF is a data structure of triples: 1) subjects, 2) predicates, 
 
 Try the following steps with just about any SPARQL endpoint:
 
-  1. Get an overview - A good way to begin is to get a list of all the ontological classes in the triple store. In essence, the query below says, "Find all the unique objects in the triple store where any subject is a type of object, and sort the result by object."
+  1. Get an overview - A good way to begin is to get a list of all the ontological classes in the triple store. In essence, the query below says, "Find all the unique objects (classes) in the triple store where any subject is a type of object, and sort the result by object."
   
     SELECT DISTINCT ?o WHERE { ?s a ?o } ORDER BY ?o
 
@@ -1104,7 +1122,7 @@ Try the following steps with just about any SPARQL endpoint:
   
     SELECT DISTINCT ?p WHERE { ?s ?p ?o } ORDER BY ?p
   
-  4. Guess - Steps #2 and Step #3 are time intensive, and consequently it is sometimes easier just browse the triple store by selecting one of the "cool URLs" returned in Step #1. You can submit a modified version of Step #1's query. It says, "Find all the subjects where any RDF subject (URI) is a type of object (class)". Using the LiAM triple store, the following query tries to find all the things that are EAD finding aids.
+  4. Guess - Steps #2 and Step #3 are time intensive, and consequently it is sometimes easier just browse the triple store by selecting one of the "cool URLs" returned in Step #1. Submit a modified version of Step #1's query. It says, "Find all the subjects where any RDF subject (URI) is a type of object (class)". Using the LiAM triple store, the following query tries to find all the things that are EAD finding aids.
   
     SELECT ?s WHERE { ?s a <http://data.archiveshub.ac.uk/def/FindingAid> }
   
@@ -1116,7 +1134,7 @@ Try the following steps with just about any SPARQL endpoint:
   
   7. Take these hints - The first of these following two queries generates a list of ten URIs pointing to things that came from MARC records. The second query is used to return everything about a specific URI whose data came from a MARC record.
   
-    SELECT ?s WHERE { ?s a <http://simile.mit.edu/2006/01/ontologies/mods3#Record> } LIMIT 1000
+    SELECT ?s WHERE { ?s a <http://simile.mit.edu/2006/01/ontologies/mods3#Record> } LIMIT 10
     SELECT ?p ?o WHERE { <http://infomotions.com/sandbox/liam/id/shumarc681792> ?p ?o } ORDER BY ?p
 
   8. Read the manual - At this point, it is a good idea to go back to Step #2 and read the more formal descriptions of the underlying ontologies.
@@ -1128,7 +1146,7 @@ Try the following steps with just about any SPARQL endpoint:
     SELECT ?s ?o WHERE { ?s <http://xmlns.com/foaf/0.1/name> ?o } ORDER BY ?o LIMIT 100
     SELECT ?s ?o WHERE { ?s <http://data.archiveshub.ac.uk/def/note> ?o } ORDER BY ?o LIMIT 100
 
- 10. Read about SPARQL - This was the tiniest of SPARQL tutorials. Using the LiAM data set as an example, it demonstrated how to do the all but simplest queries against a RDF triple store. There is a whole lot more to SPARQL than SELECT, DISTINCT, WHERE, ORDER BY, AND LIMIT commands. SPARQL supports a short-hand way of denoting classes and properties called PREFIX. It supports Boolean operations, limiting results based on "regular expressions", and a few mathematical functions. SPARQL can also be used to do inserts and deletes against the triple store. The next step is to read more about SPARQL. Consider reading the canonical documentation from the W3C, "SPARQL by example", and the Jena project's "SPARQL Tutorial". [1, 2, 3]
+ 10. Read about SPARQL - This was the tiniest of SPARQL tutorials. Using the LiAM data set as an example, it demonstrated how to do the all but simplest queries against an RDF triple store. There is a whole lot more to SPARQL than SELECT, DISTINCT, WHERE, ORDER BY, and LIMIT commands. SPARQL supports a short-hand way of denoting classes and properties called PREFIX. It supports Boolean operations, limiting results based on "regular expressions", and a few mathematical functions. SPARQL can also be used to do inserts and deletes against triple stores. The next step is to read more about SPARQL. Consider reading the canonical documentation from the W3C, "SPARQL by example", and the Jena project's "SPARQL Tutorial". [1, 2, 3]
 
 Finally, don't be too intimidated about SPARQL. Yes, it is possible to submit SPARQL queries by hand, but in reality, person-friendly front-ends are expected to be created making search much easier.
 

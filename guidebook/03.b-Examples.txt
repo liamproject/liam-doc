@@ -1,3 +1,0 @@
-3.d. Examples
-
-[What is the current interest? A few examples are in order. Mention the activities of OCLC and other large cultural-heritage institutions. Mention the availability of numerous RDF triple stores and data dumps. Mention a few Web services and REST-ful interfaces. Mention a few linked data implementations. Mention the growth of linked data from governments, Wikipedia, etc. Mention the growth of linked data meeting and conferences. ]
