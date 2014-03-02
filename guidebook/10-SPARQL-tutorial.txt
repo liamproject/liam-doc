@@ -24,7 +24,7 @@ Try the following steps with just about any SPARQL endpoint:
   
   5. Learn about a specific thing - The result of Step #4 ought to be a list of (hopefully actionable) URIs. You can learn everything about that URI with the following query. It says, "Find all the predicates and objects in the triple store where the RDF triple's subject is a given value and the predicate and object are of any value, and sort the result by predicate". In this case, the given value is one of the items returned from Step #4.
   
-    SELECT ?p ?o WHERE { http://infomotions.com/sandbox/liam/id/mum432> ?p ?o } ORDER BY ?p
+    SELECT ?p ?o WHERE { <http://infomotions.com/sandbox/liam/id/mum432> ?p ?o } ORDER BY ?p
   
   6. Repeat a few times - If the results from Step #5 returned seemingly meaningful and complete information about your selected URI, then repeat Step #5 a few times to get a better feel for some of the "things" in the triple store. If the results were not meaningful, then got to Step #4 to browser another class.
   

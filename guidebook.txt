@@ -9,7 +9,7 @@ Linked Archival Metadata: A Guidebook
 LiAM & Eric L. Morgan
 http://sites.tufts.edu/liam/
 
-February 27, 20141. Executive Summary
+March 1, 20141. Executive Summary
 
 [The Executive Summary will list core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
 
@@ -51,7 +51,7 @@ Much of the rest of the Guidebook, while providing a concise overview of today�
 
   2. Create a union catalog - If you make your data available as linked data, and if you find at least one other archive who is making their data available as linked data, then you can find a third somebody who will combine them into a triple store and implement a rudimentary SPARQL interface against the union. Once this is done a researcher could conceivably search the interface for a URI to see what is in both collections. The absolute imperative key to success for this to work is the judicious inclusion of URIs in both data sets. This scenario becomes even more enticing with the inclusion of two additional things. First, the more collections in the triple store the better. You can not have enough collections in the store. Second, the scenario will be even more enticing when each archive publishes their data using similar ontologies as everybody else. Success does not hinge on similar ontologies, but success is significantly enhanced. Just like the relational databases of today, nobody will be expected to query them using their native query language (SQL or SPARQL). Instead the interfaces will be much more user-friendly. The properties of classes in ontologies will become facets for searching and browsing. Free text as well as fielded searching via drop-down menus will become available. As time goes on and things mature, the output from these interfaces will be increasingly informative, easy-to-read, and computable. This means the output will answer questions, be visually appealing, as well as be available in one or more formats for other computer programs to operate upon.  
   
-  3. Tell a story - You and your hosting institution(s) have something significant to offer. It is not just about you and your archive but also about libraries, museums, the local municipality, etc. As a whole you are a local geographic entity. You represent something significant with a story to tell. Combine your linked data with the linked data of others in your immediate area. The ontologies will be a total hodgepodge, at least at first. Now provide a search engine against the result. Maybe you begin with local libraries or museums. Allow people to search the interface and bring together the content of everybody involved. Do not just provide lists of links in search results, but instead create knowledge graphs. Supplement the output of search results with the linked data from Wikipedia, Flickr, etc. You don’t have to be a purist. In a federated search sort of way, supplement the output with content from other data feeds such as (licensed) bibliographic indexes or content harvested from OAI-PMH repositories. Creating these sorts of things on-the-fly will be challenging. On the other hand, you might implement something that is more iterative and less immediate, but more thorough and curated if you were to select a topic or theme of interest, and do your own searching and story telling. The result would be something that is at once a Web page, a document designed for printing, or something importable into another computer program. 
+  3. Tell a story - You and your hosting institution(s) have something significant to offer. It is not just about you and your archive but also about libraries, museums, the local municipality, etc. As a whole you are a local geographic entity. You represent something significant with a story to tell. Combine your linked data with the linked data of others in your immediate area. The ontologies will be a total hodgepodge, at least at first. Now provide a search engine against the result. Maybe you begin with local libraries or museums. Allow people to search the interface and bring together the content of everybody involved. Do not just provide lists of links in search results, but instead create knowledge graphs. Supplement the output of search results with the linked data from Wikipedia, Flickr, etc. You don’t have to be a purist. In a federated search sort of way, supplement the output with content from other data feeds such as (licensed) bibliographic indexes or content harvested from OAI-PMH repositories. Identify complementary content from further afield. Figure out a way for you and they to work together to create a newer, more complete set of content. Creating these sorts of things on-the-fly will be challenging. On the other hand, you might implement something that is more iterative and less immediate, but more thorough and curated if you were to select a topic or theme of interest, and do your own searching and story telling. The result would be something that is at once a Web page, a document designed for printing, or something importable into another computer program. 
 
 2.a Why linked data, and why now?
 
@@ -490,75 +490,62 @@ For a more complete and exhaustive glossary, see the W3C's Linked Data Glossary.
 
 4.a. Projects: Brief descriptions with an emphasis on tangible benefits and outcomes of each
 
+While the number of linked data websites is less than the worldwide total number, it is really not possible to list every linked data project but only things that will presently useful to the archivist and computer technologist working in cultural heritage institutions. And even then the list of sites will not be complete. Instead, listed below are a number of websites of interest today.
 
-Directories
-
-  * Datahub (http://datahub.io/) - 
-  * LODLAM (http://lodlam.net/) - "LODLAM is Linked Open Data in Libraries, Archives, and Museums.  LODLAM.net is an informal, borderless network of enthusiasts, technicians, professionals and any number of other people who are interested in or working with Linked Open Data pertaining to galleries, libraries, archives, and museums. Linked refers to Linked Data, or the concept of connecting data using W3C standards.  Open refers to the use of open licenses, such as the Public Domain Mark, Creative Commons 0, Creative Commons Attribution, and Creative Commons Attribution-Alike. Data can be raw data, metadata, descriptive data, bibliographic data, etc. The LODLAM acronym was coined in the fall of 2010 by Jon Voss in attempt to begin gathering interest from like-minded individuals, largely in the United States (the acronym initially had a hyphen, LOD-LAM, but was removed as the community became active on Twitter).  Voss joined forces with Kris Carpenter Negulescu to organize the first global gathering that reached across the GLAM sector (galleries, libraries, archives and museums).  Thanks to funding by the National Endowment of the Humanities Office of Digital Humanities, the Alfred P. Sloan Foundation, and the Internet Archive, more than 100 individuals from 17 countries and 85 organizations gathered in San Francisco in June of 2011 for the first International LODLAM Summit. LODLAM.net is designed to be a central place for sharing resources and connecting and collaborating with other interested individuals.  There is also a Google Group, and the #LODLAM hashtag is used extensively on Twitter for shared news, questions, and projects regarding LODLAM."
-  * Data Sets & Services (http://www.oclc.org/data/)
+The list is divided into three parts: introductions, data sets, and "projects". The introductions are are akin to directories or initial guilds. The data sets are collections of RDF available for harvesting. The projects have used content in data sets to provide value-added information services. 
 
 
-Projects
+Introductions
 
-  * 20th Century Press Archives (http://zbw.eu/beta/p20) - "I’ve (Neubert Joachim <J.Neubert@zbw.eu>) published the persons and company part of the 20th Century Press Archives (http://zbw.eu/beta/p20) as a linked data application. It uses RDFa and OAI-ORE extensively to give every dossier, every article and every page a citable URI, and on the other hand consumes linked data from various linked data sources to enrich the web pages and to provide context to the rather plain scanned article images. See http://challenge.semanticweb.org/submissions/swc2010_submission_6.pdf for more detail."
-  * Linking Lives (http://archiveshub.ac.uk/linkinglives/) - Linking Lives is exploring ways to present Linked Data. We aim to show that archives can benefit from being presented as a part of the diverse data sources on the Web to create full biographical pictures, enabling researchers to make connections between people and events. Linking Lives builds upon the Locah project. Locah was a JISC-funded project to expose the Archives Hub descriptions as Linked Data.
-  * LOCAH Project (http://archiveshub.ac.uk/locah/) - Mimas and UKOLN worked together on an exciting JISC funded project to make Archives Hub data available as structured Linked Data, for the benefit of education and research. We worked in partnership with Eduserv, Talis and OCLC, leading experts within their fields. The aim was put archival and bibliographic data at the heart of the Linked Data Web, enabling new links to be made between diverse content sources and enabling the free and flexible exploration of data so that researchers can make new connections between subjects, people, organisations and places to reveal more about our history and society.
-  * OpenCat (http://demo.cubicweb.org/opencatfresnes/) - Another common theme / application demonstrated at the conference were variations of the venerable library catalog. OpenCat, presented by Agnes Simon (Bibliothéque Nationale de France), was an additional example of this trend. Combining authority data (available as RDF) provided by the National Library of France with works of a second library (Fresnes Public Library), the OpenCat prototype provides quite an interesting interface to library holdings.
-  * ReLoad (http://labs.regesta.com/progettoReload/en) - an Italian experimentation started in 2012 and supported by Central State Archive, Cultural Heritage Institute of Emilia Romagna Region and regesta.exe, published the first version of OAD ontology (ontology for archival description) based on ISAD (G) standard and EAD schema, in 2013. The project team define a specific ontology for archival description domain because there isn't yet something useful to describe all significant classes and properties necessary in archival description and we integrated OAD with other "Lightweight ontologies" (like foaf or dublin core) to encode the most common metadata. Within Reload project, to describe authority records in Linked Data we use EAC-CPF ontology, published in 2012 by Cultural Heritage Institute of Emilia Romagna Region. From the website: "The ReLoad project (Repository for Linked open archival data) will foster experimentation with the technology and methods of linked open data for archival resources. Its goal is the creation of a web of linked archival data."
+  * Datahub (http://datahub.io/) - This is a directory of data sets. It includes descriptions of hundreds of data collections. Some of them are linked data sets. Some of them are not. 
+  
+  * LODLAM (http://lodlam.net/) - LODLAM is an acronym for Linked Open Data in Libraries Archives and Museums. LODLAM.net is community, both virtual and real, of linked data aficionados in cultural heritage institutions. It, like OpenGLAM, is a good place to discuss linked data in general.
+  
+  * OpenGLAM http://openglam.org) - GLAM is an acronym for Galleries, Libraries, Archives, and Museums. OpenGLAM is a community fostered by the Open Knowledge Foundation and a place to to discuss linked data that is "free". for It, like LODLAM, is a good place to discuss linked data in general.
 
 
 Data sets
 
   * D2R Server for the CIA Factbook (http://wifo5-03.informatik.uni-mannheim.de/factbook/) - The content of the World Fact Book distributed as linked data.
 
-  * D2R Server for the Gutenberg Project (http://wifo5-03.informatik.uni-mannheim.de/gutendata/) - This is a data set of Project Gutenburgh content -- a list of digitized public domain works (books).
+  * D2R Server for the Gutenberg Project (http://wifo5-03.informatik.uni-mannheim.de/gutendata/) - This is a data set of Project Gutenburgh content -- a list of digitized public domain works, mostly books.
   
-  * Getty Vocabularies (http://vocab.getty.edu) - A set of data sets generally used for visual materials description: subjects, names, etc.
+  * Getty Vocabularies (http://vocab.getty.edu) - A set of data sets used to "categorize, describe, and index cultural heritage objects and information". 
    
   * Library of Congress Linked Data Service (http://id.loc.gov/) - A set of data sets used for bibliographic classification: subjects, names, genres, formats, etc.
   
-  * Linked Archives Hub Test Dataset (http://data.archiveshub.ac.uk) - The dataset describes archives held by UK institutions. The data is derived from a sample of the archival finding aids held by the UK Archives Hub.
+  * Linked Archives Hub Test Dataset (http://data.archiveshub.ac.uk) - The data set is RDF generated from a selection of archival finding aids harvested by the Archives Hub in the United Kingdom.
 
-  * Linked Movie Data Base (http://linkedmdb.org/) - A data set of movies.
+  * Linked Movie Data Base (http://linkedmdb.org/) - A data set of movie information.
   
-  * Linked Open Data at Europeana (http://pro.europeana.eu/datasets) - "data.europeana.eu started as an experimental pilot  in February 2012 with a small number of data providers who committed at an early stage to Europeana's initiative of promoting more open data. The current version of the pilot contains metadata on 20 million texts, images, videos and sounds gathered by Europeana. They cover a great variety of heritage objects, such as this slovenian version of "O Sole Mio" from the National Library of Slovenia, or Neil Robson's memories of the herring business from the Tyne and Wear Archives & Museums."
-
+  * Linked Open Data at Europeana (http://pro.europeana.eu/datasets) - A growing set of RDF generated from the descriptions of content in Europeana. 
+  
   * Linked Open Vocabularies (http://lov.okfn.org/dataset/lov/) - A linked data set of linked data sets.
   
   * New York Times (http://data.nytimes.com/) - A list of New York Times subject headings.
   
+  * OCLC Data Sets & Services (http://www.oclc.org/data/) - Here you will find a number of freely available bibliographic data sets and services. Some are available as RDF and linked data. Others are Web services. 
+
   * PELAGIOS (http://pelagios-project.blogspot.com/p/about-pelagios.html) - A data set of ancient places.
   
   * VIAF (http://viaf.org/) - This data set functions as a name authority file.
   
-  * Web Data Commons (http://webdatacommons.org/) - 
-  * Wiki.dbpedia.org (http://dbpedia.org/About) - 
+  * Wiki.dbpedia.org (http://dbpedia.org/About) - In the simplest terms, this is the content of Wikipedia made accessible as RDF. 
   
   * World Bank Linked Data (http://worldbank.270a.info/.html) - A data set of World Bank indicators, climate change information, finances, etc. 
 
---
 
-Not Linked data
+Projects
 
-  * Data.gov (http://www.data.gov/) - 
-  * ISBNdb - A Unique Book & ISBN Database (http://isbndb.com/) - 
-  * MusicBrainz (http://musicbrainz.org/) - 
-  * Open Library (https://openlibrary.org/) - 
-  * Freebase (http://www.freebase.com/) - 
-  * Data.gov.uk (http://data.gov.uk/) - 
+  * 20th Century Press Archives (http://zbw.eu/beta/p20) - "I’ve (Neubert Joachim <J.Neubert@zbw.eu>) published the persons and company part of the 20th Century Press Archives (http://zbw.eu/beta/p20) as a linked data application. It uses RDFa and OAI-ORE extensively to give every dossier, every article and every page a citable URI, and on the other hand consumes linked data from various linked data sources to enrich the web pages and to provide context to the rather plain scanned article images. See http://challenge.semanticweb.org/submissions/swc2010_submission_6.pdf for more detail."
 
------
+  * Linking Lives (http://archiveshub.ac.uk/linkinglives/) - Linking Lives is exploring ways to present Linked Data. We aim to show that archives can benefit from being presented as a part of the diverse data sources on the Web to create full biographical pictures, enabling researchers to make connections between people and events. Linking Lives builds upon the Locah project. Locah was a JISC-funded project to expose the Archives Hub descriptions as Linked Data.
 
+  * LOCAH Project (http://archiveshub.ac.uk/locah/) - Mimas and UKOLN worked together on an exciting JISC funded project to make Archives Hub data available as structured Linked Data, for the benefit of education and research. We worked in partnership with Eduserv, Talis and OCLC, leading experts within their fields. The aim was put archival and bibliographic data at the heart of the Linked Data Web, enabling new links to be made between diverse content sources and enabling the free and flexible exploration of data so that researchers can make new connections between subjects, people, organisations and places to reveal more about our history and society.
 
+  * OpenCat (http://demo.cubicweb.org/opencatfresnes/) - Another common theme / application demonstrated at the conference were variations of the venerable library catalog. OpenCat, presented by Agnes Simon (Bibliothéque Nationale de France), was an additional example of this trend. Combining authority data (available as RDF) provided by the National Library of France with works of a second library (Fresnes Public Library), the OpenCat prototype provides quite an interesting interface to library holdings.
 
-
-
-
-
-
-
-
-
+  * ReLoad (http://labs.regesta.com/progettoReload/en) - an Italian experimentation started in 2012 and supported by Central State Archive, Cultural Heritage Institute of Emilia Romagna Region and regesta.exe, published the first version of OAD ontology (ontology for archival description) based on ISAD (G) standard and EAD schema, in 2013. The project team define a specific ontology for archival description domain because there isn't yet something useful to describe all significant classes and properties necessary in archival description and we integrated OAD with other "Lightweight ontologies" (like foaf or dublin core) to encode the most common metadata. Within Reload project, to describe authority records in Linked Data we use EAC-CPF ontology, published in 2012 by Cultural Heritage Institute of Emilia Romagna Region. From the website: "The ReLoad project (Repository for Linked open archival data) will foster experimentation with the technology and methods of linked open data for archival resources. Its goal is the creation of a web of linked archival data."
 
 
 4.b. Trends in LOD-LAM
@@ -1123,7 +1110,7 @@ Try the following steps with just about any SPARQL endpoint:
   
   5. Learn about a specific thing - The result of Step #4 ought to be a list of (hopefully actionable) URIs. You can learn everything about that URI with the following query. It says, "Find all the predicates and objects in the triple store where the RDF triple's subject is a given value and the predicate and object are of any value, and sort the result by predicate". In this case, the given value is one of the items returned from Step #4.
   
-    SELECT ?p ?o WHERE { http://infomotions.com/sandbox/liam/id/mum432> ?p ?o } ORDER BY ?p
+    SELECT ?p ?o WHERE { <http://infomotions.com/sandbox/liam/id/mum432> ?p ?o } ORDER BY ?p
   
   6. Repeat a few times - If the results from Step #5 returned seemingly meaningful and complete information about your selected URI, then repeat Step #5 a few times to get a better feel for some of the "things" in the triple store. If the results were not meaningful, then got to Step #4 to browser another class.
   
