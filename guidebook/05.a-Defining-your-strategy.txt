@@ -1,5 +1,13 @@
 5.a. Defining your strategy: Articulate goals, objectives, and metrics to measure success.
 
+The building blocks of linked data include:
+
+  * URIs pointing to real-world objects: people, places, or things where things can be ideas or just about anything on the Web 
+  * Ontologies, the language(s) of relationships between the URIs 
+  * Content to share with the wider world 
+  * People to do the work 
+  * Computer technology to manifest the work
+
 
 With this in mind, articulate some goals — broad targets of things you would like to accomplish. Some of them might include:
 
