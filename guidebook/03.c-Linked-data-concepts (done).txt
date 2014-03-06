@@ -1,4 +1,4 @@
-3.b. Overview of linked data concepts and vocabulary
+3.b. Overview of linked data concepts and vocabulary (done)
 
 Linked data is a standardized process for publishing and disseminating information via the Web. It represents the current "how" behind the ideas the Semantic Web.
 

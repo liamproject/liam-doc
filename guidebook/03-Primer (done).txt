@@ -1,0 +1,4 @@
+3. Linked Data for Archives: a Primer (done)
+
+Linked Data is a process for manifesting the ideas behind the Semantic Web. The Semantic Web is about encoding data, information, and knowledge in computer-readable fashions, making these encodings accessible on the World Wide Web, allowing computers to crawl the encodings, and finally, employing reasoning engines against them for the purpose of discovering and creating new knowledge. The following section are a primer to the principles and practices of linked data. 
+

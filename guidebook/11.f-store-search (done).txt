@@ -1,6 +1,6 @@
-10.5 store-search.pl - query a triple store
-# Eric Lease Morgan <eric_morgan@infomotions.com>
+11.f  store-search.pl - Perl script to query a triple store (done)
 
+# Eric Lease Morgan <eric_morgan@infomotions.com>
 # December 14, 2013 - after wrestling with wilson for most of the day
 
 
@@ -37,9 +37,9 @@ my $db    = $ARGV[ 0 ];
 my $query = $ARGV[ 1 ];
 if ( ! $db or ! $query ) {
 
-  print "Usage: $0 <db> <query>\n";
-  exit;
-  
+	print "Usage: $0 <db> <query>\n";
+	exit;
+	
 }
 
 # sanity check #2 - store exists

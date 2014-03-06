@@ -1,4 +1,4 @@
-3.c. Brief overview of the history of LOD-LAM
+3.c. Brief overview of the history of LOD-LAM (done)
 
 The history of linked data in libraries, archives, and museums is rooted in history of the Semantic Web.
 

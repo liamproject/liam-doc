@@ -1,0 +1,5 @@
+5.e. What you can do now if you have (done)
+
+Each of the sections below outline how you can participate in linked data if currently have any number of metadata file formats (MARC, EAD, etc.).
+
+Please remember, RDF is really about sets of triples, and these sets do not neatly correspond to document structures like MARC or EAD. Using MARC and/or EAD to publish linked data is functional but not necessarily optimal. At the same time, there does not currently exist a method for people writing archival description to directly publish the fruits of their labors as RDF. Until such methods present themselves, transforming present dauy metadata file formats is a viable option.

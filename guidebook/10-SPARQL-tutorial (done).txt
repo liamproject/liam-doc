@@ -1,4 +1,4 @@
-10 - SPARQL tutorial
+10 - SPARQL tutorial (done)
 
 This is the simplest of SPARQL tutorials. The tutorial's purpose is two-fold: 1) through a set of examples, introduce the reader to the syntax of SPARQL queries, and 2) to enable the reader to initially explore any RDF triple store which is exposed as a SPARQL endpoint.
 

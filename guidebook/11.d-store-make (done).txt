@@ -1,7 +1,6 @@
-10.3 store-make.pl - simply initialize an RDF triple store
+11.d  store-make.pl - a Perl script to simply initialize an RDF triple store (done)
 
 # Eric Lease Morgan <eric_morgan@infomotions.com>
-#
 # December 14, 2013 - after wrestling with wilson for most of the day
 
 
@@ -16,9 +15,9 @@ use RDF::Redland;
 my $db = $ARGV[ 0 ];
 if ( ! $db ) {
 
-  print "Usage: $0 <db>\n";
-  exit;
-  
+	print "Usage: $0 <db>\n";
+	exit;
+	
 }
 
 # do the work; brain-dead

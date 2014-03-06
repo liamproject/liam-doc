@@ -1,13 +1,16 @@
-This is a beginner's glossary to linked data.
+03.g  Glossary - This is a beginner's glossary to linked data. (done)
 
   * API - (see application programmer interface)
 
   * application programmer interface (API) - an abstracted set of functions and commands used to get output from remote computer applications. These functions and commands are not necessarily tied to any specific programming language and therefore allow programmers to use a programming language of their choice.
 
-  * content negotiation - a process whereby a user-agent and HTTP server mutually decide what data format will be exchanged during an HTTP request. In the world of linked data, content negotiation is very important when URIs are requested by user-agents because content negotiation helps determine whether or not HTML or serialized RDF will be returned.
+  * cool URL - a relatively short, human-readable pointer to Internet accessible content. Cool URLs are expected to be constant, in that they don't change. Additionally and in general, cool URLs do not include question marks (?) nor name/value pairs denoting queries.
+  
+  * content negotiation - a process whereby a user-agent and HTTP server mutually decide what data format will be exchanged during an HTTP request. In the world of linked data, content negotiation is very important when URIs are requested because content negotiation helps determine whether or not HTML or serialized RDF will be returned.
 
   * extensible markup language (XML) - a standardized data structure made up of a minimum of rules and can be easily used to represent everything from tiny bits of data to long narrative texts. XML is designed to be read my people as well as computers, but because of this it is often considered verbose, and ironically, difficult to read.  
-  * file transfer protocol (FTP) -  
+  
+  * file transfer protocol (FTP) -  A Internet standard for copying files from one Internet host to another.
 
   * FTP - (see file transfer protocol) 
 
@@ -17,27 +20,27 @@ This is a beginner's glossary to linked data.
 
   * hypertext markup language (HTML) - an XML-like data structure intended to be rendered by user-agents whose output is for people to read. For the most part, HTML is used to markup text and denote a text's stylistic characteristics such as headers, paragraphs, and list items. It is also used do markup the hypertext links (URLs) between documents.
 
-  * hypertext transfer protocol (HTTP) - the formal name for the way the World Wide Web operates. It begins with one computer program (a user-agent) requesting content from another computer program (a server) and getting back a response. Once received, the response is formatted for reading by a person or for processing by a computer program. The shape and content of both the request and the response are what make-up the protocol. 
+  * hypertext transfer protocol (HTTP) - the formal name for the way the World Wide Web operates. It begins with one computer program (a user-agent) requesting content from another computer program (a server) and getting back a response. Once received, the response is formatted for reading or for processing by a computer program. The shape and content of both the request and the response are what make-up the protocol. 
 
-  * Javascript object notation (JSON) - like XML, a data structure enabling allowing arbitrarily large sets of values to associated with an arbitrarily large set of names (variables). JSON was first natively implemented as a part of the Javascript language, but has since become popular in other computer languages.
+  * Javascript object notation (JSON) - like XML, a data structure allowing arbitrarily large sets of values to be associated with an arbitrarily large set of names (variables). JSON was first natively implemented as a part of the Javascript computer language, but has since become popular in other computer languages as well.
 
   * JSON - (see Javascript object notation)
 
-  * linked data - the stuff and technical process for making real the ideas behind the Semantic Web. It begins with the creation of serialized RDF and making the serialization available via HTTP. User agents are then expected to harvest the RDF, combine it with other harvested RDF, and ideally use it to bring to light new or existing relationships between real world objects -- people, places, and things -- thus creating and enhancing human knowledge. 
+  * linked data - the content and technical process for making real the ideas behind the Semantic Web. It begins with the creation of serialized RDF and making the serialization available via HTTP. User agents are then expected to harvest the RDF, combine it with other harvested RDF, and ideally use it to bring to light new or existing relationships between real world objects -- people, places, and things -- thus creating and enhancing human knowledge. 
 
   * linked open data - a qualification of linked data whereby the information being exchanged is expected to be "free" as in gratis. 
 
   * OAI - (see Open Archives Initiative-Protocol for Metadata Harvesting) 
 
-  * ontology - a highly structured vocabulary, and in the parlance of linked data, used to denote, describe, and qualify the predicates of RDF triples. Ontologies have been defined for a very wide range of human domains, everything from bibliography (Dublin Core or MODS), to people (FOAF), to sounds (Audio Features). 
+  * ontology - a highly structured vocabulary, and in the parlance of linked data, used to denote, describe, relate, and qualify the predicates of RDF triples. Ontologies have been defined for a very wide range of human domains, everything from bibliography (Dublin Core or MODS), to people (FOAF), to sounds (Audio Features). 
 
-  * Open Archives Initiative-Protocol for Metadata Harvesting (OAI-PMH)
+  * Open Archives Initiative-Protocol for Metadata Harvesting (OAI-PMH) - a metadata publishing standard consisting of a set commands whereby information is listed, requested, and exchanged between two computers in the Internet. OAI-PMH is complementary to the principles and practices of linked data.
 
   * RDF - (see resource description framework)
 
   * representational state transfer (REST) - a process for querying remote HTTP servers and getting back computer-readable results. The process usually employs denoting name-value pairs in a URL and getting back something like XML or JSON. 
 
-  * resource description framework - the conceptual model for describing the knowledge of the Semantic Web. It is rooted in the notion of triples whose subjects and objects are literally linked with other triples through the use of actionable URIs.
+  * resource description framework - the conceptual model for describing the knowledge of the Semantic Web. It is rooted in the notion of triples whose subjects and objects are literally linked with other triples through the use of URIs.
 
   * REST - (see representational state transfer)
 
@@ -60,9 +63,12 @@ This is a beginner's glossary to linked data.
   * URI - (see universal resource identifier) 
 
   * URL - (see universal resource locator) 
-user agent - this is the formal name for what is commonly called a "Web browser", but Web browsers usually denote applications where people are viewing the results. User agents are usually "Web browsers" whose readers are computer programs.  
+  
+  * user agent - this is the formal name for what is commonly called a "Web browser", but Web browsers usually denote applications where people are viewing the results. User agents are usually "Web browsers" whose readers are computer programs.  
 
   * XML - (see extensible markup language)
 
-For a more complete and exhaustive glossary, see the W3C's Linked Data Glossary. 
+For a more complete and exhaustive glossary, see the W3C's Linked Data Glossary. [1]
+
+[1] W3C's Linked Data Glossary - http://www.w3.org/TR/ld-glossary/
 

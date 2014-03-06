@@ -1,4 +1,4 @@
-3.b RDF serializations
+3.b RDF serializations (done)
 
 RDF can be expressed in many different formats, called "serializations". 
 

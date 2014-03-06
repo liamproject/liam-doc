@@ -9,7 +9,7 @@ Linked Archival Metadata: A Guidebook
 LiAM & Eric L. Morgan
 http://sites.tufts.edu/liam/
 
-March 3, 20141. Executive Summary
+March 5, 20141. Executive Summary
 
 [The Executive Summary will list core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
 
@@ -113,11 +113,11 @@ Without the "benefits" side of the equation, it's difficult to make a case for t
 Suggestions?   Please feel free to contact me off list. 
 Thanks!
 Jody L. DeRidder Head, Digital Services University of Alabama Libraries Tuscaloosa, AL 35487 Phone: 205.348.0511  "Hope lies in dreams, in imagination, and in the courage of those who dare to make dreams into reality." --Jonas Salk 
-3. Linked Data for Archives: a Primer
+3. Linked Data for Archives: a Primer (done)
 
-Linked Data is a process for manifesting the ideas behind the Semantic Web. The Semantic Web is about encoding data, information, and knowledge in computer-readable fashions, making these encodings accessible on the World Wide Web, allowing computers to crawl the encodings, and finally, employing reasoning engines against them for the purpose of discovering and creating new knowledge.
+Linked Data is a process for manifesting the ideas behind the Semantic Web. The Semantic Web is about encoding data, information, and knowledge in computer-readable fashions, making these encodings accessible on the World Wide Web, allowing computers to crawl the encodings, and finally, employing reasoning engines against them for the purpose of discovering and creating new knowledge. The following section are a primer to the principles and practices of linked data. 
 
-3.c. Brief overview of the history of LOD-LAM
+3.c. Brief overview of the history of LOD-LAM (done)
 
 The history of linked data in libraries, archives, and museums is rooted in history of the Semantic Web.
 
@@ -128,7 +128,7 @@ In 2006 Berners-Lee more concretely described how to make the Semantic Web a rea
 [1] canonical article - http://www.scientificamerican.com/article/the-semantic-web/
 [2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
 
-3.b. Overview of linked data concepts and vocabulary
+3.b. Overview of linked data concepts and vocabulary (done)
 
 Linked data is a standardized process for publishing and disseminating information via the Web. It represents the current "how" behind the ideas the Semantic Web.
 
@@ -299,7 +299,7 @@ This being the case, ontologies still need to be selected in order for linked da
 
 [1] LOHAC blog postings, parts #1 and #2 - http://archiveshub.ac.uk/locah/2011/03/describing-the-things-the-rdf-terms-used-part-1/ , http://archiveshub.ac.uk/locah/2011/03/describing-the-things-the-rdf-terms-used-part-2/
 
-3.b RDF serializations
+3.b RDF serializations (done)
 
 RDF can be expressed in many different formats, called "serializations". 
 
@@ -403,16 +403,19 @@ The RDF serialization process also highlights how data structures are moving awa
 [1] RDF Translator - http://rdf-translator.appspot.com
 
 
-This is a beginner's glossary to linked data.
+03.g  Glossary - This is a beginner's glossary to linked data. (done)
 
   * API - (see application programmer interface)
 
   * application programmer interface (API) - an abstracted set of functions and commands used to get output from remote computer applications. These functions and commands are not necessarily tied to any specific programming language and therefore allow programmers to use a programming language of their choice.
 
-  * content negotiation - a process whereby a user-agent and HTTP server mutually decide what data format will be exchanged during an HTTP request. In the world of linked data, content negotiation is very important when URIs are requested by user-agents because content negotiation helps determine whether or not HTML or serialized RDF will be returned.
+  * cool URL - a relatively short, human-readable pointer to Internet accessible content. Cool URLs are expected to be constant, in that they don't change. Additionally and in general, cool URLs do not include question marks (?) nor name/value pairs denoting queries.
+  
+  * content negotiation - a process whereby a user-agent and HTTP server mutually decide what data format will be exchanged during an HTTP request. In the world of linked data, content negotiation is very important when URIs are requested because content negotiation helps determine whether or not HTML or serialized RDF will be returned.
 
   * extensible markup language (XML) - a standardized data structure made up of a minimum of rules and can be easily used to represent everything from tiny bits of data to long narrative texts. XML is designed to be read my people as well as computers, but because of this it is often considered verbose, and ironically, difficult to read.  
-  * file transfer protocol (FTP) -  
+  
+  * file transfer protocol (FTP) -  A Internet standard for copying files from one Internet host to another.
 
   * FTP - (see file transfer protocol) 
 
@@ -422,27 +425,27 @@ The RDF serialization process also highlights how data structures are moving awa
 
   * hypertext markup language (HTML) - an XML-like data structure intended to be rendered by user-agents whose output is for people to read. For the most part, HTML is used to markup text and denote a text's stylistic characteristics such as headers, paragraphs, and list items. It is also used do markup the hypertext links (URLs) between documents.
 
-  * hypertext transfer protocol (HTTP) - the formal name for the way the World Wide Web operates. It begins with one computer program (a user-agent) requesting content from another computer program (a server) and getting back a response. Once received, the response is formatted for reading by a person or for processing by a computer program. The shape and content of both the request and the response are what make-up the protocol. 
+  * hypertext transfer protocol (HTTP) - the formal name for the way the World Wide Web operates. It begins with one computer program (a user-agent) requesting content from another computer program (a server) and getting back a response. Once received, the response is formatted for reading or for processing by a computer program. The shape and content of both the request and the response are what make-up the protocol. 
 
-  * Javascript object notation (JSON) - like XML, a data structure enabling allowing arbitrarily large sets of values to associated with an arbitrarily large set of names (variables). JSON was first natively implemented as a part of the Javascript language, but has since become popular in other computer languages.
+  * Javascript object notation (JSON) - like XML, a data structure allowing arbitrarily large sets of values to be associated with an arbitrarily large set of names (variables). JSON was first natively implemented as a part of the Javascript computer language, but has since become popular in other computer languages as well.
 
   * JSON - (see Javascript object notation)
 
-  * linked data - the stuff and technical process for making real the ideas behind the Semantic Web. It begins with the creation of serialized RDF and making the serialization available via HTTP. User agents are then expected to harvest the RDF, combine it with other harvested RDF, and ideally use it to bring to light new or existing relationships between real world objects -- people, places, and things -- thus creating and enhancing human knowledge. 
+  * linked data - the content and technical process for making real the ideas behind the Semantic Web. It begins with the creation of serialized RDF and making the serialization available via HTTP. User agents are then expected to harvest the RDF, combine it with other harvested RDF, and ideally use it to bring to light new or existing relationships between real world objects -- people, places, and things -- thus creating and enhancing human knowledge. 
 
   * linked open data - a qualification of linked data whereby the information being exchanged is expected to be "free" as in gratis. 
 
   * OAI - (see Open Archives Initiative-Protocol for Metadata Harvesting) 
 
-  * ontology - a highly structured vocabulary, and in the parlance of linked data, used to denote, describe, and qualify the predicates of RDF triples. Ontologies have been defined for a very wide range of human domains, everything from bibliography (Dublin Core or MODS), to people (FOAF), to sounds (Audio Features). 
+  * ontology - a highly structured vocabulary, and in the parlance of linked data, used to denote, describe, relate, and qualify the predicates of RDF triples. Ontologies have been defined for a very wide range of human domains, everything from bibliography (Dublin Core or MODS), to people (FOAF), to sounds (Audio Features). 
 
-  * Open Archives Initiative-Protocol for Metadata Harvesting (OAI-PMH)
+  * Open Archives Initiative-Protocol for Metadata Harvesting (OAI-PMH) - a metadata publishing standard consisting of a set commands whereby information is listed, requested, and exchanged between two computers in the Internet. OAI-PMH is complementary to the principles and practices of linked data.
 
   * RDF - (see resource description framework)
 
   * representational state transfer (REST) - a process for querying remote HTTP servers and getting back computer-readable results. The process usually employs denoting name-value pairs in a URL and getting back something like XML or JSON. 
 
-  * resource description framework - the conceptual model for describing the knowledge of the Semantic Web. It is rooted in the notion of triples whose subjects and objects are literally linked with other triples through the use of actionable URIs.
+  * resource description framework - the conceptual model for describing the knowledge of the Semantic Web. It is rooted in the notion of triples whose subjects and objects are literally linked with other triples through the use of URIs.
 
   * REST - (see representational state transfer)
 
@@ -465,11 +468,14 @@ The RDF serialization process also highlights how data structures are moving awa
   * URI - (see universal resource identifier) 
 
   * URL - (see universal resource locator) 
-user agent - this is the formal name for what is commonly called a "Web browser", but Web browsers usually denote applications where people are viewing the results. User agents are usually "Web browsers" whose readers are computer programs.  
+  
+  * user agent - this is the formal name for what is commonly called a "Web browser", but Web browsers usually denote applications where people are viewing the results. User agents are usually "Web browsers" whose readers are computer programs.  
 
   * XML - (see extensible markup language)
 
-For a more complete and exhaustive glossary, see the W3C's Linked Data Glossary. 
+For a more complete and exhaustive glossary, see the W3C's Linked Data Glossary. [1]
+
+[1] W3C's Linked Data Glossary - http://www.w3.org/TR/ld-glossary/
 
 4. Linked Data Today
 
@@ -648,71 +654,79 @@ Is your archival description LOD-ready? Now? The simple, straight-forward answer
 
 5.d. Readiness: Making small changes in practice to make your description LOD-ready.
 
-5.e. What you can do now if you have:
+5.e. What you can do now if you have (done)
 
-5.e.i. EAD
+Each of the sections below outline how you can participate in linked data if currently have any number of metadata file formats (MARC, EAD, etc.).
+
+Please remember, RDF is really about sets of triples, and these sets do not neatly correspond to document structures like MARC or EAD. Using MARC and/or EAD to publish linked data is functional but not necessarily optimal. At the same time, there does not currently exist a method for people writing archival description to directly publish the fruits of their labors as RDF. Until such methods present themselves, transforming present dauy metadata file formats is a viable option.5.e.i. EAD (done)
 
 If you have used EAD to describe your collections, then you can easily make your descriptions available as valid linked data, but the result will be less than optimal. This is true not for a lack of technology but rather from the inherent purpose and structure of EAD files.
 
-A few years ago an organisation in the United Kingdom called the Archive’s Hub was funded by a granting agency called JISC to explore the publishing of archival descriptions as linked data. One of the outcomes of this effort was the creation of an XSL stylesheet transforming EAD into RDF/XML. The terms used in the stylesheet originate from quite a number of standardized, widely accepted ontologies, and with only the tiniest bit configuration / customization the stylesheet can transform a generic EAD file into valid RDF/XML. The resulting XML files can then be made available on a Web server or incorporated into a triple store. This goes a long way to publishing archival descriptions as linked data. The only additional things needed are a transformation of EAD into HTML and the configuration of a Web server to do content-negotiation between the XML and HTML. 
+A few years ago an organisation in the United Kingdom called the Archive's Hub was funded by a granting agency called JISC to explore the publishing of archival descriptions as linked data. One of the outcomes of this effort was the creation of an XSL stylesheet transforming EAD into RDF/XML. The terms used in the stylesheet originate from quite a number of standardized, widely accepted ontologies, and with only the tiniest bit configuration / customization the stylesheet can transform a generic EAD file into valid RDF/XML. The resulting XML files can then be made available on a Web server or incorporated into a triple store. This goes a long way to publishing archival descriptions as linked data. The only additional things needed are a transformation of EAD into HTML and the configuration of a Web server to do content negotiation between the XML and HTML. 
 
-For the smaller archive with only a few hundred EAD files whose content does not change very quickly, this is a simple, feasible, and practical solution to publishing archival descriptions as linked data. With the exception of doing some content-negotiation, this solution does not require any computer technology that is not already being used in archives, and it only requires a few small tweaks to a given workflow:
+For the smaller archive with only a few hundred EAD files whose content does not change very quickly, this is a simple, feasible, and practical solution to publishing archival descriptions as linked data. With the exception of doing some content negotiation, this solution does not require any computer technology that is not already being used in archives, and it only requires a few small tweaks to a given workflow:
 
-  * implement a content-negotiation solution 
-  * edit EAD file 
-  * transform EAD into RDF/XML 
-  * transform EAD into HTML 
-  * save the resulting XML and HTML files on a Web server 
-  * go to step #2
+  1. implement a content negotiation solution 
+  2. create and maintain EAD file 
+  3. transform EAD into RDF/XML 
+  4. transform EAD into HTML 
+  5. save the resulting XML and HTML files on a Web server 
+  6. go to step #2
 
-On the other hand an EAD file is the combination of a narrative description with a hierarchal inventory list, and this data structure does not lend itself very well to the triples of linked data. For example, EAD headers are full of controlled vocabularies terms but there is no way to link these terms with specific inventory items. This is because the vocabulary terms are expected to describe the collection as a whole, not individual things. This problem could be overcome if each individual component of the EAD were associated with controlled vocabulary terms, but this would significantly increase the amount of work needed to create the EAD files in the first place.
+EAD is a combination of narrative description and a hierarchal inventory list, and this data structure does not lend itself very well to the triples of linked data. For example, EAD headers are full of controlled vocabularies terms but there is no way to link these terms with specific inventory items. This is because the vocabulary terms are expected to describe the collection as a whole, not individual things. This problem could be overcome if each individual component of the EAD were associated with controlled vocabulary terms, but this would significantly increase the amount of work needed to create the EAD files in the first place.
 
-The common practice of using literals (“strings”) to denote the names of people, places, and things in EAD files would also need to be changed in order to fully realize the vision of linked data. Specifically, it would be necessary for archivists to supplement their EAD files with commonly used URIs denoting subject headings and named authorities. These URIs could be inserted into id attributes throughout an EAD file, and the resulting RDF would be more linkable, but the labor to do so would increase, especially since many of the named authorities will not exist in standardized authority lists.
+The common practice of using literals ("strings") to denote the names of people, places, and things in EAD files would also need to be changed in order to fully realize the vision of linked data. Specifically, it would be necessary for archivists to supplement their EAD files with commonly used URIs denoting subject headings and named authorities. These URIs could be inserted into id attributes throughout an EAD file, and the resulting RDF would be more linkable, but the labor to do so would increase, especially since many of the named items will not exist in standardized authority lists.
 
-Despite these short comings, transforming EAD files into some sort of serialized RDF goes a long way towards publishing archival descriptions as linked data. This particular process is a good beginning and outputs valid information, just information that is not as accurate as possible. This process lends itself to iterative improvements, and outputting something is better than outputting nothing. But this particular proces is not for everybody. The archive whose content changes quickly, the archive with copious numbers of collections, or the archive wishing to publish the most accurate linked data possible will probably not want to use EAD files as the root of their publishing system. Instead some sort of database application is probably the best solution.
+Despite these short comings, transforming EAD files into some sort of serialized RDF goes a long way towards publishing archival descriptions as linked data. This particular process is a good beginning and outputs valid information, just information that is not as linkable as possible. This process lends itself to iterative improvements, and outputting something is better than outputting nothing. But this particular proces is not for everybody. The archive whose content changes quickly, the archive with copious numbers of collections, or the archive wishing to publish the most compliant linked data possible will probably not want to use EAD files as the root of their publishing system. Instead some sort of database application is probably the best solution.
 
 5.e.ii. EAC-CPF
 
-Encoded Archival Context for Corporate Bodies, Persons, and Families (EAC-CPF) goes a long way to implementing a named authority database that could be linked from archival descriptions. These XML files could easily be transformed into serialized RDF and therefore linked data. The resulting URIs could then be incorporated into archival descriptions making them richer and complete.
+Encoded Archival Context for Corporate Bodies, Persons, and Families (EAC-CPF) goes a long way to implementing a named authority database that could be linked from archival descriptions. These XML files could easily be transformed into serialized RDF and therefore linked data. The resulting URIs could then be incorporated into archival descriptions making the descriptions richer and more complete.
 
-For example the FindAndConnect site in Australia uses EAC-CPF under the hood to disseminate information about people in its collection -- http://www.findandconnect.gov.au. Similarly, “SNAC aims to not only make the [EAC-CPF] records more easily discovered and accessed but also, and at the same time, build an unprecedented resource that provides access to the socio-historical contexts (which includes people, families, and corporate bodies) in which the records were created” -- http://socialarchive.iath.virginia.edu  More than a thousand EAC-CPF records are available from the RAMP project -- http://demo.rampeditor.info/export.php
+For example the FindAndConnect site in Australia uses EAC-CPF under the hood to disseminate information about people in its collection. [1] Similarly, “SNAC aims to not only make the [EAC-CPF] records more easily discovered and accessed but also, and at the same time, build an unprecedented resource that provides access to the socio-historical contexts (which includes people, families, and corporate bodies) in which the records were created” -- u  More than a thousand EAC-CPF records are available from the RAMP project -- http://demo.rampeditor.info/export.php
 
 
-5.e.iii. MARC
+[1] FindAndConnect - http://www.findandconnect.gov.au
+[2] SNAC - http://socialarchive.iath.virginia.ed5.e.iii. MARC (done)
 
 In some ways MARC lends it self very well to being published via linked data, but in the long run it is not really a feasible data structure.
 
-Converting MARC into serialized RDF through XSLT is at least a two step process. The first step is to convert MARC into MARCXML. This can be done with any number of scripting languages and toolboxes. The second step is to use a stylesheet such as the one provided by the Library of Congress to transform the MARCXML into RDF/XML. From there a person could save the resulting XML files on a Web server, enhance access via content negotiation, and called it linked data.
+Converting MARC into serialized RDF through XSLT is at least a two step process. The first step is to convert MARC into MARCXML. This can be done with any number of scripting languages and toolboxes. The second step is to use a stylesheet such as the one created by Stefano Mazzocchi to transform the MARCXML into RDF/XML. [1] From there a person could save the resulting XML files on a Web server, enhance access via content negotiation, and called it linked data.
 
-Unfortunately, this particular approach has a number of drawbacks. First and foremost, the MARC format had no place to denote URIs; MARC records are made up almost entirely of literals. Sure, URIs can be constructed from various control numbers, but things like authors, titles, subject headings, and added entries will most certainly be strings (“Mark Twain”, “Adventures of Huckleberry Finn”, “Bildungsroman”, or “Samuel Clemans”), not URIs. This issue can be overcome if the MARCXML were first converted into MODS and URIs were inserted into id or xlink attributes of bibliographic elements, but this is extra work. If an archive were to take this approach, then it would also behoove them to use MODS as their data structure of choice, not MARC. Continually converting from MARC to MARCXML to MODS would be expensive in terms of time. Moreover, with each new conversion the URIs from previous iterations would need to be re-created.
+Unfortunately, this particular approach has a number of drawbacks. First and foremost, the MARC format had no place to denote URIs; MARC records are made up almost entirely of literals. Sure, URIs can be constructed from various control numbers, but things like authors, titles, subject headings, and added entries will most certainly be strings ("Mark Twain", "Adventures of Huckleberry Finn", "Bildungsroman", or "Samuel Clemans"), not URIs. This issue can be overcome if the MARCXML were first converted into MODS and URIs were inserted into id or xlink attributes of bibliographic elements, but this is extra work. If an archive were to take this approach, then it would also behoove them to use MODS as their data structure of choice, not MARC. Continually converting from MARC to MARCXML to MODS would be expensive in terms of time. Moreover, with each new conversion the URIs from previous iterations would need to be re-created.
 
-5.e.iv. METS, MODS, and perhaps more.
+[1] stylesheet by Mazzocchi - https://github.com/dltj/MARC-MODS-RDFizer/blob/master/stylesheets/mods2rdf.xslt
+5.e.iv. METS, MODS, and perhaps more. (done)
 
-If you have archival descriptions in either of the METS or MODS formats, then transforming them into RDF is as far away as your XSLT processor and a content negotiation implementation. As of this writing there do not seem to be any METS to RDF stylesheets, but there are a couple stylesheets for MODS. The biggest issue with these sorts of implementations are the URIs. It will be necessary for archivists to include URIs into as many MODS id or xlink attributes as possible. The same thing holds true for METS files except the id attribute is not designed to hold external 
-
-5.e.v. Databases
+If you have archival descriptions in either of the METS or MODS formats, then transforming them into RDF is as far away as your XSLT processor and a content negotiation implementation. As of this writing there do not seem to be any METS to RDF stylesheets, but there are a couple stylesheets for MODS. The biggest issue with these sorts of implementations are the URIs. It will be necessary for archivists to include URIs into as many MODS id or xlink attributes as possible. The same thing holds true for METS files except the id attribute is not designed to hold pointers to external sites.5.e.v. Databases (done)
 
 Publishing linked data through XML transformation is functional but not optimal. Publishing linked data from a database comes closer to the ideal but requires a greater amount of technical computer infrastructure and expertise. 
 
-Databases -- specifically, relational databases -- are the current best practice for organizing data. As you may or may not know, relational databases are made up of many tables of data joined with keys. For example, a book may be assigned a unique identifier. The book has many characteristics such as a title, number of pages, size, descriptive note, etc. Some of the characteristics are shared by other books, like authors and subjects. In a relational database these shared characteristics would be saved in additional tables, and they would be joined to a specific book through the use of unique identifiers (keys). Given this sort of data structure, reports can be created from the database describing its content. Similarly, queries can be applied against the database to uncover relationships that may not be apparent at first glance or buried in reports. The power of relational databases lay in the use of keys to make relationships between rows in one table and rows in other tables.
+Databases -- specifically, relational databases -- are the current best practice for organizing data. As you may or may not know, relational databases are made up of many tables of data joined together with keys. For example, a book may be assigned a unique identifier. The book has many characteristics such as a title, number of pages, size, descriptive note, etc. Some of the characteristics are shared by other books, like authors and subjects. In a relational database these shared characteristics would be saved in additional tables, and they would be joined to a specific book through the use of unique identifiers (keys). Given this sort of data structure, reports can be created from the database describing its content. Similarly, queries can be applied against the database to uncover relationships that may not be apparent at first glance or buried in reports. The power of relational databases lies in the use of keys to make relationships between rows in one table and rows in other tables.
 
 Not coincidently, this is very much the way linked data is expected to be implemented. In the linked data world, the subjects of triples are URIs (think database keys). Each URI is associated with one or more predicates (think the characteristics in the book example). Each triple then has an object, and these objects take the form of literals or other URIs. In the book example, the object could be “Adventures Of Huckleberry Finn” or a URI pointing to Mark Twain. The reports of relational databases are analogous to RDF serializations, and SQL (the relational database query language) is analogous to SPARQL, the query language of RDF triple stores. Because of the close similarity between well-designed relational databases and linked data principles, the publishing of linked data directly from relational databases makes whole lot of sense, but the process requires the combined time and skills of a number of different people: content specialists, database designers, and computer programmers. Consequently, the process of publishing linked data from relational databases may be optimal, but it is more expensive.
 
 Thankfully, most archivists probably use some sort of database to manage their collections and create their finding aids. Moreover, archivists probably use one of three or four tools for this purpose: Archivist’s Toolkit, Archon, ArchivesSpace, or PastPerfect. Each of these systems have a relational database at their heart. Reports could be written against the underlying databases to generate serialized RDF and thus begin the process of publishing linked data. Doing this from scratch would be difficult, as well as inefficient because many people would be starting out with the same database structure but creating a multitude of varying outputs. Consequently, there are two alternatives. The first is to use a generic database application to RDF publishing platform called D2RQ. The second is for the community to join together and create a holistic RDF publishing system based on the database(s) used in archives.
 
-D2RQ is a wonderful software system. It is supported, well-documented, executable on just about any computing platform, open source, focused, functional, and at the same time does not try to be all things to all people. Using D2RQ it is more than possible to quickly and easily publish a well-designed relational database as RDF. The process is relatively simple:
+D2RQ is a very powerful software system. [1] It is supported, well-documented, executable on just about any computing platform, open source, focused, functional, and at the same time does not try to be all things to all people. Using D2RQ it is more than possible to quickly and easily publish a well-designed relational database as RDF. The process is relatively simple:
 
   * download the software 
-  * use a command-line utility to map the database structure to a configuration file 
+  * use a command-line utility to map the database
+    structure to a configuration file 
   * season the configuration file to taste 
-  * run the D2RQ server using the configuration file as input thus allowing people or RDF user-agents to search and browse the database using linked data principles 
-  * alternatively, dump the contents of the database to an RDF serialization and upload the result into your favorite RDF triple store
+  * run the D2RQ server using the configuration file
+    as input thus allowing people or RDF user-agents
+    to search and browse the database using linked
+    data principles 
+  * alternatively, dump the contents of the database
+    to an RDF serialization and upload the result
+    into your favorite RDF triple store
 
 The downside of D2RQ is its generic nature. It will create an RDF ontology whose terms correspond to the names of database fields. These field names do not map to widely accepted ontologies and therefore will not interact well with communities outside the ones using a specific database structure. Still, the use of D2RQ is quick, easy, and accurate.
 
-The second alternative to using databases of archival content to published linked data requires community effort and coordination. The databases of Archivist’s Toolkit, Archon, ArchivesSpace, or Past Perfect could be assumed. The community could then get together and create and decide on an RDF ontology to use for archival descriptions. The database structure(s) could then be mapped to this ontology. Next, programs could be written against the database(s) to create serialized RDF thus beginning the process of publishing linked data. Once that was complete, the archival community would need to come together again to ensure it uses as many shared URIs as possible thus creating the most functional sets of linked data. This second alternative requires a significant amount of community involvement and wide-spread education. It represents a never-ending process.
+The second alternative requires community effort and coordination. The databases of Archivist’s Toolkit, Archon, ArchivesSpace, or Past Perfect could be assumed. The community could then get together and decide on an RDF ontology to use for archival descriptions. The database structure(s) could then be mapped to this ontology. Next, programs could be written against the database(s) to create serialized RDF thus beginning the process of publishing linked data. Once that was complete, the archival community would need to come together again to ensure it uses as many shared URIs as possible thus creating the most functional sets of linked data. This second alternative requires a significant amount of community involvement and wide-spread education. It represents a never-ending process.
 
-6. On Your Way: Next Steps
+[1] D2RQ - http://d2rq.org6. On Your Way: Next Steps
 
 6.a. Integration into daily practice
 
@@ -1104,7 +1118,7 @@ Use cURL to actually see linked data in action, and here are a few more URIs to 
 
 
 [1] cURL download wizard - http://curl.haxx.se/dlwiz/
-10 - SPARQL tutorial
+10 - SPARQL tutorial (done)
 
 This is the simplest of SPARQL tutorials. The tutorial's purpose is two-fold: 1) through a set of examples, introduce the reader to the syntax of SPARQL queries, and 2) to enable the reader to initially explore any RDF triple store which is exposed as a SPARQL endpoint.
 
@@ -1155,8 +1169,118 @@ Finally, don't be too intimidated about SPARQL. Yes, it is possible to submit SP
 
 [1] canonical documentation - http://www.w3.org/TR/rdf-sparql-query/ 
 [2] SPARQL By Example - https://www.cambridgesemantics.com/semantic-university/sparql-by-example
-[3] SPARQL Tutorial - http://jena.apache.org/tutorials/sparql.html10 Scripts
-10.1 marc2rdf.pl - make MARC records accessible via linked data
+[3] SPARQL Tutorial - http://jena.apache.org/tutorials/sparql.html11 Scripts (done)
+
+This section lists a set of computer source code implementing a simple linked data publishing system. Assuming the (Perl) developer has on hand a set of EAD finding aids and/or sets of MARC records, this system can:
+
+  * transform EAD into RDF/XML
+  * transform EAD into HTML
+  * convert MARC into RDF/XML
+  * convert MARC into HTML
+  * support content negotiation against the RDF/XML and HTML
+  * initialize a triple store
+  * batch load RDF/XML into the triple store
+  * search the triple store
+  * dump the entire triple store as RDF/XML
+  * support a SPARQL endpoint against the triple store
+
+This publishing system is more than a toy and ought to be able to support the needs of many archives with small- to medium-sized collections. 11.a ead2rdf.pl - Perl script to make EAD files accessible via linked data (done)
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# December 6, 2013 - based on marc2linkedata.pl
+
+
+# configure
+use constant ROOT     => '/disk01/www/html/main/sandbox/liam';
+use constant EAD      => ROOT . '/src/ead/';
+use constant DATA     => ROOT . '/data/';
+use constant PAGES    => ROOT . '/pages/';
+use constant EAD2HTML => ROOT . '/etc/ead2html.xsl';
+use constant EAD2RDF  => ROOT . '/etc/ead2rdf.xsl';
+use constant SAXON    => 'java -jar /disk01/www/html/main/sandbox/liam/bin/saxon.jar -s:##SOURCE## -xsl:##XSL## -o:##OUTPUT##';
+
+# require
+use strict;
+use XML::XPath;
+use XML::LibXML;
+use XML::LibXSLT;
+
+# initialize
+my $saxon  = '';
+my $xsl    = '';
+my $parser = XML::LibXML->new;
+my $xslt   = XML::LibXSLT->new;
+
+# process each record in the EAD directory
+my @files = glob EAD . "*.xml";
+for ( 0 .. $#files ) {
+
+	# re-initialize
+	my $ead = $files[ $_ ];
+	print "         EAD: $ead\n";
+
+	# get the identifier
+	my $xpath      = XML::XPath->new( filename => $ead );
+	my $identifier = $xpath->findvalue( '/ead/eadheader/eadid' );
+	$identifier    =~ s/[^\w ]//g;
+	print "  identifier: $identifier\n";
+	print "         URI: http://infomotions.com/sandbox/liam/id/$identifier\n";
+		
+	# re-initialize and sanity check
+	my $output = PAGES . "$identifier.html";
+	if ( ! -e $output or -s $output == 0 ) {
+	
+		# transform marcxml into html
+		print "        HTML: $output\n";
+		my $source     = $parser->parse_file( $ead )  or warn $!;
+		my $style      = $parser->parse_file( EAD2HTML )   or warn $!;
+		my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
+		my $results    = $stylesheet->transform( $source )  or warn $!;
+		my $html       = $stylesheet->output_string( $results );
+	
+		&save( $output, $html );
+
+	}
+	else { print "        HTML: skipping\n" }
+	
+	# re-initialize and sanity check
+	my $output = DATA . "$identifier.rdf";
+	if ( ! -e $output or -s $output == 0 ) {
+	
+		# create saxon command, and save rdf
+		print "         RDF: $output\n";
+		$saxon  =  SAXON;
+		$xsl    =  EAD2RDF;
+		$saxon  =~ s/##SOURCE##/$ead/e;
+		$saxon  =~ s/##XSL##/$xsl/e;
+		$saxon  =~ s/##OUTPUT##/$output/e;
+		system $saxon;
+	
+	}
+	else { print "         RDF: skipping\n" }
+	
+	# prettify
+	print "\n";
+	
+}
+
+# done
+exit;
+
+
+sub save {
+
+	open F, ' > ' . shift or die $!;
+	binmode( F, ':utf8' );
+	print F shift;
+	close F;
+	return;
+
+}
+
+
+
+11.b  marc2rdf.pl - Perl script to make MARC records accessible via linked data (done)
 
 # Eric Lease Morgan <eric_morgan@infomotions.com>
 # December 5, 2013 - first cut;
@@ -1188,78 +1312,78 @@ my $xslt   = XML::LibXSLT->new;
 my @files = glob MARC . "*.marc";
 for ( 0 .. $#files ) {
 
-  # re-initialize
-  my $marc = $files[ $_ ];
-  my $handle = IO::File->new( $marc );
-  binmode( STDOUT, ':utf8' );
-  binmode( $handle, ':bytes' );
-  my $batch  = MARC::Batch->new( 'USMARC', $handle );
-  $batch->warnings_off;
-  $batch->strict_off;
-  my $index = 0;
+	# re-initialize
+	my $marc = $files[ $_ ];
+	my $handle = IO::File->new( $marc );
+	binmode( STDOUT, ':utf8' );
+	binmode( $handle, ':bytes' );
+	my $batch  = MARC::Batch->new( 'USMARC', $handle );
+	$batch->warnings_off;
+	$batch->strict_off;
+	my $index = 0;
 
-  # process each record in the batch
-  while ( my $record = $batch->next ) {
+	# process each record in the batch
+	while ( my $record = $batch->next ) {
 
-    # get marcxml
-    my $marcxml =  $record->as_xml_record;
-    my $_001    =  $record->field( '001' )->as_string;
-    $_001       =~ s/_//;
-    $_001       =~ s/ +//;
-    $_001       =~ s/-+//;
-    print "        marc: $marc\n";
-    print "  identifier: $_001\n";
-    print "         URI: http://infomotions.com/sandbox/liam/id/$_001\n";
+		# get marcxml
+		my $marcxml =  $record->as_xml_record;
+		my $_001    =  $record->field( '001' )->as_string;
+		$_001       =~ s/_//;
+		$_001       =~ s/ +//;
+		$_001       =~ s/-+//;
+		print "        marc: $marc\n";
+		print "  identifier: $_001\n";
+		print "         URI: http://infomotions.com/sandbox/liam/id/$_001\n";
 
-    # re-initialize and sanity check
-    my $output = PAGES . "$_001.html";
-    if ( ! -e $output or -s $output == 0 ) {
-  
-      # transform marcxml into html
-      print "        HTML: $output\n";
-      my $source     = $parser->parse_string( $marcxml )  or warn $!;
-      my $style      = $parser->parse_file( MARC2HTML )   or warn $!;
-      my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
-      my $results    = $stylesheet->transform( $source )  or warn $!;
-      my $html       = $stylesheet->output_string( $results );
-  
-      &save( $output, $html );
+		# re-initialize and sanity check
+		my $output = PAGES . "$_001.html";
+		if ( ! -e $output or -s $output == 0 ) {
+	
+			# transform marcxml into html
+			print "        HTML: $output\n";
+			my $source     = $parser->parse_string( $marcxml )  or warn $!;
+			my $style      = $parser->parse_file( MARC2HTML )   or warn $!;
+			my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
+			my $results    = $stylesheet->transform( $source )  or warn $!;
+			my $html       = $stylesheet->output_string( $results );
+	
+			&save( $output, $html );
 
-    }
-    else { print "        HTML: skipping\n" }
+		}
+		else { print "        HTML: skipping\n" }
 
-    # re-initialize and sanity check
-    my $output = DATA . "$_001.rdf";
-    if ( ! -e $output or -s $output == 0 ) {
+		# re-initialize and sanity check
+		my $output = DATA . "$_001.rdf";
+		if ( ! -e $output or -s $output == 0 ) {
 
-      # transform marcxml into mods
-      my $source     = $parser->parse_string( $marcxml )  or warn $!;
-      my $style      = $parser->parse_file( MARC2MODS )   or warn $!;
-      my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
-      my $results    = $stylesheet->transform( $source )  or warn $!;
-      my $mods       = $stylesheet->output_string( $results );
-  
-      # transform mods into rdf
-      print "         RDF: $output\n";
-      $source        = $parser->parse_string( $mods )     or warn $!;
-      my $style      = $parser->parse_file( MODS2RDF )    or warn $!;
-      my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
-      my $results    = $stylesheet->transform( $source )  or warn $!;
-      my $rdf        = $stylesheet->output_string( $results );
-  
-      &save( $output, $rdf );
-      
-    }
-    else { print "         RDF: skipping\n" }
-  
-    # prettify
-    print "\n";
-    
-    # increment and check
-    $index++;
-    last if ( $index > MAXINDEX )
-    
-  }
+			# transform marcxml into mods
+			my $source     = $parser->parse_string( $marcxml )  or warn $!;
+			my $style      = $parser->parse_file( MARC2MODS )   or warn $!;
+			my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
+			my $results    = $stylesheet->transform( $source )  or warn $!;
+			my $mods       = $stylesheet->output_string( $results );
+	
+			# transform mods into rdf
+			print "         RDF: $output\n";
+			$source        = $parser->parse_string( $mods )     or warn $!;
+			my $style      = $parser->parse_file( MODS2RDF )    or warn $!;
+			my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
+			my $results    = $stylesheet->transform( $source )  or warn $!;
+			my $rdf        = $stylesheet->output_string( $results );
+	
+			&save( $output, $rdf );
+			
+		}
+		else { print "         RDF: skipping\n" }
+	
+		# prettify
+		print "\n";
+		
+		# increment and check
+		$index++;
+		last if ( $index > MAXINDEX )
+		
+	}
 
 }
 
@@ -1269,111 +1393,79 @@ exit;
 
 sub save {
 
-  open F, ' > ' . shift or die $!;
-  binmode( F, ':utf8' );
-  print F shift;
-  close F;
-  return;
+	open F, ' > ' . shift or die $!;
+	binmode( F, ':utf8' );
+	print F shift;
+	close F;
+	return;
 
 }
 
-10.2 ead2rdf.pl - make EAD files accessible via linked data
+
+11.c  Dereference.pm - mod_perl module facilitate content negotiation (done)
+
+# Dereference.pm - Redirect user-agents based on value of URI.
 
 # Eric Lease Morgan <eric_morgan@infomotions.com>
-# December 6, 2013 - based on marc2linkedata.pl
+# December 7, 2013 - first investigations; based on Apache2::Alex::Dereference
+# January  7, 2014  - by default return HTML, not RDF
 
 
 # configure
-use constant ROOT     => '/disk01/www/html/main/sandbox/liam';
-use constant EAD      => ROOT . '/src/ead/';
-use constant DATA     => ROOT . '/data/';
-use constant PAGES    => ROOT . '/pages/';
-use constant EAD2HTML => ROOT . '/etc/ead2html.xsl';
-use constant EAD2RDF  => ROOT . '/etc/ead2rdf.xsl';
-use constant SAXON    => 'java -jar /disk01/www/html/main/sandbox/liam/bin/saxon.jar -s:##SOURCE## -xsl:##XSL## -o:##OUTPUT##';
+use constant PAGES => 'http://infomotions.com/sandbox/liam/pages/';
+use constant DATA  => 'http://infomotions.com/sandbox/liam/data/';
 
 # require
+use Apache2::Const -compile => qw( OK );
+use CGI;
 use strict;
-use XML::XPath;
-use XML::LibXML;
-use XML::LibXSLT;
 
-# initialize
-my $saxon  = '';
-my $xsl    = '';
-my $parser = XML::LibXML->new;
-my $xslt   = XML::LibXSLT->new;
+# main
+sub handler {
 
-# process each record in the EAD directory
-my @files = glob EAD . "*.xml";
-for ( 0 .. $#files ) {
+	# initialize
+	my $r   = shift;
+	my $cgi = CGI->new;
+	my $id  = substr( $r->uri, length $r->location );
+	
+	# wants html
+	if ( $cgi->Accept( 'text/html' ) ) {
+	
+		print $cgi->header( -status => '303 See Other', 
+		-Location => PAGES . $id . '.html', 
+		-Vary     => 'Accept' , 
+		"Content-Type" => 'text/html' )
+		
+	}
 
-  # re-initialize
-  my $ead = $files[ $_ ];
-  print "         EAD: $ead\n";
+	# check for rdf
+	elsif ( $cgi->Accept( 'application/rdf+xml' ) ) {
+	
+		print $cgi->header( -status => '303 See Other', 
+		-Location      => DATA . $id . '.rdf', 
+		-Vary          => 'Accept', 
+		"Content-Type" => 'application/rdf+xml' )
 
-  # get the identifier
-  my $xpath      = XML::XPath->new( filename => $ead );
-  my $identifier = $xpath->findvalue( '/ead/eadheader/eadid' );
-  $identifier    =~ s/[^\w ]//g;
-  print "  identifier: $identifier\n";
-  print "         URI: http://infomotions.com/sandbox/liam/id/$identifier\n";
-    
-  # re-initialize and sanity check
-  my $output = PAGES . "$identifier.html";
-  if ( ! -e $output or -s $output == 0 ) {
-  
-    # transform marcxml into html
-    print "        HTML: $output\n";
-    my $source     = $parser->parse_file( $ead )  or warn $!;
-    my $style      = $parser->parse_file( EAD2HTML )   or warn $!;
-    my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
-    my $results    = $stylesheet->transform( $source )  or warn $!;
-    my $html       = $stylesheet->output_string( $results );
-  
-    &save( $output, $html );
-
-  }
-  else { print "        HTML: skipping\n" }
-  
-  # re-initialize and sanity check
-  my $output = DATA . "$identifier.rdf";
-  if ( ! -e $output or -s $output == 0 ) {
-  
-    # create saxon command, and save rdf
-    print "         RDF: $output\n";
-    $saxon  =  SAXON;
-    $xsl    =  EAD2RDF;
-    $saxon  =~ s/##SOURCE##/$ead/e;
-    $saxon  =~ s/##XSL##/$xsl/e;
-    $saxon  =~ s/##OUTPUT##/$output/e;
-    system $saxon;
-  
-  }
-  else { print "         RDF: skipping\n" }
-  
-  # prettify
-  print "\n";
-  
-}
-
-# done
-exit;
-
-
-sub save {
-
-  open F, ' > ' . shift or die $!;
-  binmode( F, ':utf8' );
-  print F shift;
-  close F;
-  return;
+	}
+	
+	# give them html, anyway 
+	else {
+	
+		print $cgi->header( -status => '303 See Other', 
+		-Location => PAGES . $id . '.html', 
+		-Vary     => 'Accept' , 
+		"Content-Type" => 'text/html' )
+		
+	}
+	# done
+	return Apache2::Const::OK;
 
 }
-10.3 store-make.pl - simply initialize an RDF triple store
+
+1; # return true or die
+11.d  store-make.pl - a Perl script to simply initialize an RDF triple store (done)
 
 # Eric Lease Morgan <eric_morgan@infomotions.com>
-#
 # December 14, 2013 - after wrestling with wilson for most of the day
 
 
@@ -1388,9 +1480,9 @@ use RDF::Redland;
 my $db = $ARGV[ 0 ];
 if ( ! $db ) {
 
-  print "Usage: $0 <db>\n";
-  exit;
-  
+	print "Usage: $0 <db>\n";
+	exit;
+	
 }
 
 # do the work; brain-dead
@@ -1407,10 +1499,9 @@ $model = undef;
 # done
 exit;
 
-10.4 store-add.pl - add items to an RDF triple store
+11.e  store-add.pl - a Perl script to add items to an RDF triple store (done)
 
 # Eric Lease Morgan <eric_morgan@infomotions.com>
-#
 # December 14, 2013 - after wrestling with wilson for most of the day
 
 
@@ -1426,10 +1517,13 @@ my $db   = $ARGV[ 0 ];
 my $file = $ARGV[ 1 ];
 if ( ! $db or ! $file ) {
 
-  print "Usage: $0 <db> <file>\n";
-  exit;
-  
+	print "Usage: $0 <db> <file>\n";
+	exit;
+	
 }
+
+# echo
+warn "$file\n";
 
 # sanity check #2 - store exists
 die "Error: po2s file not found. Make a store?\n" if ( ! -e ETC . $db . '-po2s.db' );
@@ -1454,23 +1548,24 @@ my $stream = $parser->parse_as_stream( $uri, $uri );
 my $count  = 0;
 while ( ! $stream->end ) {
 
-  $model->add_statement( $stream->current );
-  $count++;
-  $stream->next;
+	$model->add_statement( $stream->current );
+	$count++;
+	$stream->next;
 
 }
 
 # echo the result
-warn "Namespaces:\n";
-my %namespaces = $parser->namespaces_seen;
-while ( my ( $prefix, $uri ) = each %namespaces ) {
-
-  warn " prefix: $prefix\n";
-  warn '    uri: ' . $uri->as_string . "\n";
-  warn "\n";
-
-}
+#warn "Namespaces:\n";
+#my %namespaces = $parser->namespaces_seen;
+#while ( my ( $prefix, $uri ) = each %namespaces ) {
+#
+#	warn " prefix: $prefix\n";
+#	warn '    uri: ' . $uri->as_string . "\n";
+#	warn "\n";
+#
+#}
 warn "Added $count statements\n";
+warn "\n";
 
 # "save"
 $store = undef;
@@ -1479,9 +1574,9 @@ $model = undef;
 # done
 exit;
 
-10.5 store-search.pl - query a triple store
-# Eric Lease Morgan <eric_morgan@infomotions.com>
+11.f  store-search.pl - Perl script to query a triple store (done)
 
+# Eric Lease Morgan <eric_morgan@infomotions.com>
 # December 14, 2013 - after wrestling with wilson for most of the day
 
 
@@ -1518,9 +1613,9 @@ my $db    = $ARGV[ 0 ];
 my $query = $ARGV[ 1 ];
 if ( ! $db or ! $query ) {
 
-  print "Usage: $0 <db> <query>\n";
-  exit;
-  
+	print "Usage: $0 <db> <query>\n";
+	exit;
+	
 }
 
 # sanity check #2 - store exists
@@ -1544,9 +1639,99 @@ print $results->to_string;
 # done
 exit;
 
-10.6 store-dump.pl - output the content of store as RDF/XML
+11.g  sparql.pl - a Perl-based, brain-dead, half-baked SPARQL endpoint (done)
+
 # Eric Lease Morgan <eric_morgan@infomotions.com>
-#
+# December 15, 2013 - first investigations
+
+
+# require
+use CGI;
+use CGI::Carp qw( fatalsToBrowser );
+use RDF::Redland;
+use strict;
+
+# initialize
+my $cgi   = CGI->new;
+my $query = $cgi->param( 'query' );
+
+if ( ! $query ) {
+
+	print $cgi->header;
+	print &home;
+
+}
+
+else {
+
+	# open the store for business
+	my $store = RDF::Redland::Storage->new( 'hashes', 'store', "new='no', hash-type='bdb', dir='/disk01/www/html/main/sandbox/liam/etc'" );
+	my $model = RDF::Redland::Model->new( $store, '' );
+
+	# search
+	my $results = $model->query_execute( RDF::Redland::Query->new( $query, undef, undef, 'sparql' ) );
+
+	# return the results
+	print $cgi->header( -type => 'application/xml' );
+	print $results->to_string;
+
+}
+
+# done
+exit;
+
+
+sub home {
+
+	# return a home page
+	return <<EOF
+<html>
+<head>
+<title>LiAM SPARQL Endpoint</title>
+</head>
+<body style='margin: 7%'>
+<h1>LiAM SPARQL Endpoint</h1>
+<p>This is a brain-dead and half-baked SPARQL endpoint to a subset of LiAM linked data. Enter a query, but there is the disclaimer. Errors will probably happen because of SPARQL syntax errors. Remember, the interface is brain-dead. Your milage <em>will</em> vary.</p>
+<form method='GET' action='./'>
+<textarea style='font-size: large' rows='5' cols='65' name='query' />
+SELECT ?p ?o
+WHERE { &lt;http://infomotions.com/sandbox/liam/id/mum432&gt; ?p ?o }
+ORDER BY ?p
+</textarea><br />
+<input type='submit' value='Search' />
+</form>
+<p>Sample queries:</p>
+<ul>
+	<li>All the classes in the triple store - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+DISTINCT+%3Fo+WHERE+%7B+%3Fs+a+%3Fo+%7D+ORDER+BY+%3Fo" target="_blank">SELECT DISTINCT ?o WHERE { ?s a ?o } ORDER BY ?o</a></code></li>
+	<li>All the properties in the triple store - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+DISTINCT+%3Fp+WHERE+%7B+%3Fs+%3Fp+%3Fo+%7D+ORDER+BY+%3Fp" target="_blank">SELECT DISTINCT ?p WHERE { ?s ?p ?o } ORDER BY ?p</a></code></li>
+	<li>All the things things that are archival finding aids - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+WHERE+%7B+%3Fs+a+%3Chttp%3A%2F%2Fdata.archiveshub.ac.uk%2Fdef%2FFindingAid%3E+%7D" target="_blank">SELECT ?s WHERE { ?s a &lt;http://data.archiveshub.ac.uk/def/FindingAid&gt; }</a></code></li>
+	<li>Everything about a specific actionable URI (finding aid) - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fp+%3Fo+WHERE+%7B+%3Chttp%3A%2F%2Finfomotions.com%2Fsandbox%2Fliam%2Fid%2Fmum432%3E+%3Fp+%3Fo+%7D+ORDER+BY+%3Fp" target="_blank">SELECT ?p ?o WHERE { &lt;http://infomotions.com/sandbox/liam/id/mum432&gt; ?p ?o } ORDER BY ?p</a></code></li>
+	<li>Ten things that are MARC records - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+WHERE+%7B+%3Fs+a+%3Chttp%3A%2F%2Fsimile.mit.edu%2F2006%2F01%2Fontologies%2Fmods3%23Record%3E+%7D+LIMIT+10" target="_blank">SELECT ?s WHERE { ?s a &lt;http://simile.mit.edu/2006/01/ontologies/mods3#Record&gt; } LIMIT 10</a></code></li>
+	<li>Everything about a specific actionable URI - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fp+%3Fo+WHERE+%7B+%3Chttp%3A%2F%2Finfomotions.com%2Fsandbox%2Fliam%2Fid%2Fshumarc681792%3E+%3Fp+%3Fo+%7D+ORDER+BY+%3Fp" target="_blank">SELECT ?p ?o WHERE { &lt;http://infomotions.com/sandbox/liam/id/shumarc681792&gt; ?p ?o } ORDER BY ?p</a></code></li>
+	<li>One hundred things with titles - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+%3Fo+WHERE+%7B+%3Fs+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Ftitle%3E+%3Fo+%7D+ORDER+BY+%3Fo+LIMIT+100" target="_blank">SELECT ?s ?o WHERE { ?s &lt;http://purl.org/dc/terms/title&gt; ?o } ORDER BY ?o LIMIT 100</a></code></li>
+	<li>One hundred things with creators - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+%3Fo+WHERE+%7B+%3Fs+%3Chttp%3A%2F%2Fsimile.mit.edu%2F2006%2F01%2Froles%23creator%3E+%3Fo+%7D+ORDER+BY+%3Fo+LIMIT+100" target="_blank">SELECT ?s ?o WHERE { ?s &lt;http://simile.mit.edu/2006/01/roles#creator&gt; ?o } ORDER BY ?o LIMIT 100</a></code></li>
+	<li>One hundred things with names - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+%3Fo+WHERE+%7B+%3Fs+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%3E+%3Fo+%7D+ORDER+BY+%3Fo+LIMIT+100" target="_blank">SELECT ?s ?o WHERE { ?s &lt;http://xmlns.com/foaf/0.1/name&gt; ?o } ORDER BY ?o LIMIT 100</a></code></li>
+	<li>One hundred things with notes - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+%3Fo+WHERE+%7B+%3Fs+%3Chttp%3A%2F%2Fdata.archiveshub.ac.uk%2Fdef%2Fnote%3E+%3Fo+%7D+ORDER+BY+%3Fo+LIMIT+100" target="_blank">SELECT ?s ?o WHERE { ?s &lt;http://data.archiveshub.ac.uk/def/note&gt; ?o } ORDER BY ?o LIMIT 100</a></code></li>
+</ul>
+<p>For more information about SPARQL, see:</p>
+<ol>
+	<li><a href="http://www.w3.org/TR/rdf-sparql-query/" target="_blank">SPARQL Query Language for RDF</a> from the W3C</li>
+	<li><a href="http://en.wikipedia.org/wiki/SPARQL" target="_blank">SPARQL</a> from Wikipedia</li>
+</ol>
+<p>Source code -- <a href="http://infomotions.com/sandbox/liam/bin/sparql.pl">sparql.pl</a> -- is available online.</p>
+<hr />
+<p>
+<a href="mailto:eric_morgan\@infomotions.com">Eric Lease Morgan &lt;eric_morgan\@infomotions.com&gt;</a><br />
+March 5, 2014
+</p>
+</body>
+</html>
+EOF
+}
+
+11.h  store-dump.pl - Perl script to output the content of store as RDF/XML (done)
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
 # December 14, 2013 - after wrestling with wilson for most of the day
 
 
@@ -1559,12 +1744,11 @@ use RDF::Redland;
 
 # sanity check #1 - command line arguments
 my $db  = $ARGV[ 0 ];
-my $uri = $ARGV[ 1 ];
 if ( ! $db ) {
 
-  print "Usage: $0 <db> <uri>\n";
-  exit;
-  
+	print "Usage: $0 <db>\n";
+	exit;
+	
 }
 
 # sanity check #2 - store exists
@@ -1585,56 +1769,6 @@ print $serializer->serialize_model_to_string( RDF::Redland::URI->new, $model );
 
 # done
 exit;
-10.8 Apache2::LiAM::Dereference;
-
-# Dereference.pm - Redirect user-agents based on value of URI.
-
-# Eric Lease Morgan <eric_morgan@infomotions.com>
-# December 7, 2013 - first investigations; based on Apache2::Alex::Dereference
-
-
-# configure
-use constant PAGES => 'http://infomotions.com/sandbox/liam/pages/';
-use constant DATA  => 'http://infomotions.com/sandbox/liam/data/';
-
-# require
-use Apache2::Const -compile => qw( OK );
-use CGI;
-use strict;
-
-# main
-sub handler {
-
-  # initialize
-  my $r   = shift;
-  my $cgi = CGI->new;
-  my $id  = substr( $r->uri, length $r->location );
-  
-  # wants RDF
-  if ( $cgi->Accept( 'text/html' )) {
-  
-    print $cgi->header( -status => '303 See Other', 
-    -Location => PAGES . $id . '.html', 
-    -Vary     => 'Accept' )
-    
-  }
-
-  # give them RDF
-  else {
-  
-    print $cgi->header( -status => '303 See Other', 
-    -Location      => DATA . $id . '.rdf', 
-    -Vary          => 'Accept', 
-    "Content-Type" => 'application/rdf+xml' )
-    
-  }
-  
-  # done
-  return Apache2::Const::OK;
-
-}
-
-1; # return true or die
 
 11 A question from a library school student
 

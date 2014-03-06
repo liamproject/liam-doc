@@ -1,6 +1,6 @@
-10.6 store-dump.pl - output the content of store as RDF/XML
+11.h  store-dump.pl - Perl script to output the content of store as RDF/XML (done)
+
 # Eric Lease Morgan <eric_morgan@infomotions.com>
-#
 # December 14, 2013 - after wrestling with wilson for most of the day
 
 
@@ -13,12 +13,11 @@ use RDF::Redland;
 
 # sanity check #1 - command line arguments
 my $db  = $ARGV[ 0 ];
-my $uri = $ARGV[ 1 ];
 if ( ! $db ) {
 
-  print "Usage: $0 <db> <uri>\n";
-  exit;
-  
+	print "Usage: $0 <db>\n";
+	exit;
+	
 }
 
 # sanity check #2 - store exists
@@ -39,3 +38,4 @@ print $serializer->serialize_model_to_string( RDF::Redland::URI->new, $model );
 
 # done
 exit;
+
