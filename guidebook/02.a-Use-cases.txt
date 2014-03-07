@@ -2,9 +2,92 @@
 
  What can you do with linked data once it is created? Here are three use cases:
 
-  1. Do simple publishing - At its very root, linked data is about making your data available for others to harvest and use. While the “killer linked data application” has seemingly not reared its head, this does not mean you ought not make your data available at linked data. You won’t see the benefits immediately, but sooner or later (less than 5 years from now), you will see your content creeping into the search results of Internet indexes, into the work of both computational humanists and scientists, and into the hands of esoteric hackers creating one-off applications. Internet search engines will create “knowledge graphs”, and they will include links to your content. The humanists and scientists will operate on your data similarly. Both will create visualizations illustrating trends. They will both quantifiably analyze your content looking for patterns and anomalies. Both will probably create network diagrams demonstrating the flow and interconnection of knowledge and ideas through time and space. The humanist might do all this in order to bring history to life or demonstrate how one writer influenced another. The scientist might study ways to efficiently store your data, easily move it around the Internet, or connect it with data set created by their apparatus. The hacker (those are the good guys) will create flashy-looking applications that many will think are weird and useless, but the applications will demonstrate how the technology can be exploited. These applications will inspire others, be here one day and gone the next, and over time, become more useful and sophisticated. 
+1. Do simple publishing - At its very root, linked data is about making your data available for others to harvest and use. While the “killer linked data application” has seemingly not reared its head, this does not mean you ought not make your data available at linked data. You won’t see the benefits immediately, but sooner or later (less than 5 years from now), you will see your content creeping into the search results of Internet indexes, into the work of both computational humanists and scientists, and into the hands of esoteric hackers creating one-off applications. Internet search engines will create “knowledge graphs”, and they will include links to your content. The humanists and scientists will operate on your data similarly. Both will create visualizations illustrating trends. They will both quantifiably analyze your content looking for patterns and anomalies. Both will probably create network diagrams demonstrating the flow and interconnection of knowledge and ideas through time and space. The humanist might do all this in order to bring history to life or demonstrate how one writer influenced another. The scientist might study ways to efficiently store your data, easily move it around the Internet, or connect it with data set created by their apparatus. The hacker (those are the good guys) will create flashy-looking applications that many will think are weird and useless, but the applications will demonstrate how the technology can be exploited. These applications will inspire others, be here one day and gone the next, and over time, become more useful and sophisticated. 
 
-  2. Create a union catalog - If you make your data available as linked data, and if you find at least one other archive who is making their data available as linked data, then you can find a third somebody who will combine them into a triple store and implement a rudimentary SPARQL interface against the union. Once this is done a researcher could conceivably search the interface for a URI to see what is in both collections. The absolute imperative key to success for this to work is the judicious inclusion of URIs in both data sets. This scenario becomes even more enticing with the inclusion of two additional things. First, the more collections in the triple store the better. You can not have enough collections in the store. Second, the scenario will be even more enticing when each archive publishes their data using similar ontologies as everybody else. Success does not hinge on similar ontologies, but success is significantly enhanced. Just like the relational databases of today, nobody will be expected to query them using their native query language (SQL or SPARQL). Instead the interfaces will be much more user-friendly. The properties of classes in ontologies will become facets for searching and browsing. Free text as well as fielded searching via drop-down menus will become available. As time goes on and things mature, the output from these interfaces will be increasingly informative, easy-to-read, and computable. This means the output will answer questions, be visually appealing, as well as be available in one or more formats for other computer programs to operate upon.  
-  
-  3. Tell a story - You and your hosting institution(s) have something significant to offer. It is not just about you and your archive but also about libraries, museums, the local municipality, etc. As a whole you are a local geographic entity. You represent something significant with a story to tell. Combine your linked data with the linked data of others in your immediate area. The ontologies will be a total hodgepodge, at least at first. Now provide a search engine against the result. Maybe you begin with local libraries or museums. Allow people to search the interface and bring together the content of everybody involved. Do not just provide lists of links in search results, but instead create knowledge graphs. Supplement the output of search results with the linked data from Wikipedia, Flickr, etc. You don’t have to be a purist. In a federated search sort of way, supplement the output with content from other data feeds such as (licensed) bibliographic indexes or content harvested from OAI-PMH repositories. Identify complementary content from further afield. Figure out a way for you and they to work together to create a newer, more complete set of content. Creating these sorts of things on-the-fly will be challenging. On the other hand, you might implement something that is more iterative and less immediate, but more thorough and curated if you were to select a topic or theme of interest, and do your own searching and story telling. The result would be something that is at once a Web page, a document designed for printing, or something importable into another computer program. 
+2. Create a union catalog - If you make your data available as linked data, and if you find at least one other archive who is making their data available as linked data, then you can find a third somebody who will combine them into a triple store and implement a rudimentary SPARQL interface against the union. Once this is done a researcher could conceivably search the interface for a URI to see what is in both collections. The absolute imperative key to success for this to work is the judicious inclusion of URIs in both data sets. This scenario becomes even more enticing with the inclusion of two additional things. First, the more collections in the triple store the better. You can not have enough collections in the store. Second, the scenario will be even more enticing when each archive publishes their data using similar ontologies as everybody else. Success does not hinge on similar ontologies, but success is significantly enhanced. Just like the relational databases of today, nobody will be expected to query them using their native query language (SQL or SPARQL). Instead the interfaces will be much more user-friendly. The properties of classes in ontologies will become facets for searching and browsing. Free text as well as fielded searching via drop-down menus will become available. As time goes on and things mature, the output from these interfaces will be increasingly informative, easy-to-read, and computable. This means the output will answer questions, be visually appealing, as well as be available in one or more formats for other computer programs to operate upon.  
+
+3. Tell a story - You and your hosting institution(s) have something significant to offer. It is not just about you and your archive but also about libraries, museums, the local municipality, etc. As a whole you are a local geographic entity. You represent something significant with a story to tell. Combine your linked data with the linked data of others in your immediate area. The ontologies will be a total hodgepodge, at least at first. Now provide a search engine against the result. Maybe you begin with local libraries or museums. If you work in an academic setting, then maybe you begin with other academic departments across campus. Allow people to search the interface and bring together the content of everybody involved. Do not just provide lists of links in search results, but instead create knowledge graphs. Supplement the output of search results with the linked data from Wikipedia, Flickr, etc. In a federated search sort of way, supplement the output with content from other data feeds such as (licensed) bibliographic indexes or content harvested from OAI-PMH repositories. Identify complementary content from further afield. Figure out a way for you and they to work together to create a newer, more complete set of content. Creating these sorts of things on-the-fly will be challenging. On the other hand, you might implement something that is more iterative and less immediate, but more thorough and curated if you were to select a topic or theme of interest, and do your own searching and story telling. The result would be something that is at once a Web page, a document designed for printing, or something importable into another computer program. 
+
+4. Create new knowledge - Create an inference engine, turn it against your triple store, and look for relationships between distinct sets of URIs that weren't previously apparent. Here's one way how: 
+
+  1. allow the reader to select an actionable URI of personal
+     interest, ideally a URI from the set of URIs you curate
+
+  2. submit it an HTTP server or SPARQL endpoint and request RDF as
+     output
+
+  3. save the output to a local store
+
+  4. for each subject and object URI found the output, go to
+     Step #2
+
+  5. go to step #2 n times for each newly harvested URI in the store
+     where n is a reader-defined integer greater than 1; in other
+     words, harvest more and more URIs, predicates, and literals
+     based on the previously harvested URIs
+
+  6. create a set of human readable services/reports against the
+     content of the store, and think of these services/reports akin to
+     finding aids, reference materials, or museum exhibits of the
+     future: Example services/reports might include:
+
+      * hierarchal lists of all classes and properties - This
+        would be a sort of semantic map. Each item on the map
+        would be clickable allowing the reader to read more and
+        drill down.
+
+      * text mining reports - collect into a single "bag of
+        words" all the literals saved in the store and create:
+        word clouds, alphabetical lists, concordances,
+        bibliographies, directories, gazetteers, tabulations of
+        parts of speech, named entities, sentiment analyses,
+        topic models, etc.
+
+      * maps - use place names and geographic coordinates to
+        implement a geographic information service
+
+      * audio-visual mash-ups - bring together all the media
+        information and create things like slideshows, movies,
+        analyses of colors, shapes, patterns, etc.
+
+      * search interfaces - implement a search interface
+        against the result, SPARQL or otherwise
+
+      * facts - remember SPARQL queries can return more than
+        just lists. They can return mathematical results such
+        as sums, ratios, standard deviations, etc. It can also
+        return Boolean values helpful in answering yes/no
+        questions. You could have a set of canned fact queries
+        such as, how many ontologies are represented in the
+        store. Is the number of ontologies greater than 3? Are
+        there more than 100 names represented in this set? The
+        count of languages used in the set, etc.
+
+  7. Allow the reader to identify a new URI of personal interest,
+     specifically one garnered from the reports generated in Step #5.
+
+  8. Go to Step #2, but this time have the inference engine be more
+     selective by having it try to crawl back to your namespace and
+     set of locally curated URIs.
+
+  9. Return to the reader the URIs identified in Step #7, and by
+     consequence, these URIs ought to share some of the same
+     characteristics as the very first URI; you have implemented a
+     "find more like this one" tool. You, as curator of the collection
+     of URIs might have thought the relations between the first URI
+     and set of final URIs was obvious, but those relationships would
+     not necessarily be obvious to the reader, and therefore new
+     knowledge would have been created or brought to light.
+
+ 10. If there are no new URIs from Step #7, then go to Step #6
+     using the newly harvested content.
+
+ 11. Done - if a system were created such as the one above, then
+     the reader would quite likely have acquired some new knowledge,
+     and this would be especially true the greater the size of n in
+     Step #5. 
+
+
+
+
 

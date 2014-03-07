@@ -21,3 +21,10 @@ Listed in no priority order, some of the things needed, include:
   * the killer app / additional demonstration applications
   * a conceptional shift from document to statement
 
+A "real" RDF editing tool is a gap. 
+
+A [insert your favorite tool here, such as Archivist's Toolkit, Archon, ArchiveSpace, etc.] to RDF publishing system tool to a gap.
+
+Write "add-ons" to existing systems that output to CIDOC Conceptual Reference Model (CRM)
+
+

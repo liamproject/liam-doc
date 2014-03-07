@@ -13,6 +13,8 @@ Introductions
   
   * OpenGLAM http://openglam.org) - GLAM is an acronym for Galleries, Libraries, Archives, and Museums. OpenGLAM is a community fostered by the Open Knowledge Foundation and a place to to discuss linked data that is "free". for It, like LODLAM, is a good place to discuss linked data in general.
 
+  * Datahub (http://datahub.io/) - the free, powerful data management platform from the Open Knowledge Foundation
+
 
 Data sets
 

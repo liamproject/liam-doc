@@ -1,9 +1,3 @@
 6.c. Tools
 
-
-  * Fusion Tables (http://www.google.com/drive/apps.html) - Bust your data out of its silo! Combine it with other data on the web. Collaborate, visualize and share.
-
-  * OpenRefine (https://github.com/OpenRefine/) - OpenRefine is a free, open source power tool for working with messy data and improving it
-
-  * cURL - curl -L -H ‘Accept: application/rdf+xml’ http://infomotions.com/sandbox/liam/id/ctumarc15567
-
+[INSERT HERE A FEW PARAGRAPHS DESCRIBING THE TYPES OF TOOLS NEEDED TO DO THE WORK.]
