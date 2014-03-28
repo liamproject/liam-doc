@@ -9,11 +9,14 @@ Linked Archival Metadata: A Guidebook
 LiAM & Eric L. Morgan
 http://sites.tufts.edu/liam/
 
-March 6, 20141. Executive Summary
+March 27, 20141. Executive Summary
 
 [The Executive Summary will list core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
 
 2. Introduction
+
+For the archivist, linked data is about universally publishing and repurposing sets of facts (assertions, metadata, statements, sentences, "triples", etc.) about your collections. As you publish these fact you will be able not only to maintain more flexible Web presences but also Web presences that are richer, more complete, and better integrated with complementary collections.
+
 
 This is a travel guide — a set of itineraries for getting from here to linked data and the Semantic Web. It outlines the sorts of things you may want to know if you want to get from here to someplace else. There are many ways to get there. None of them are perfect. Each of them have their own particular strengths & weaknesses, opportunities & impediments. If you want to go on this journey at a cost of, say, $10 per day, then there are a number of options for you. If you want to spend $25 dollars per day, then a number of other options available. If you want to spend as much as $50 day, then there are quite a number of other options. This guide book will use this metaphor throughout the text so you can evaluate your options. 
 
@@ -335,6 +338,9 @@ RDF and linked data is about making relationships between things. These relation
 
 Probably one of the more difficult intellectual tasks you will have when it comes to making your content available as linked data will be the selection of one or more ontologies used to make your RDF. Probably the easiest -- but not the most precise -- way to think about ontologies is as if they were fields in a MARC record or an EAD file. Such an analogy is useful, but not 100% correct. Probably the best way to think of the ontologies is as if they were verbs in a sentence denoting relationships between things — subjects and objects. A very interesting read on the subject of ontology selection and archival description are a couple of blog postings from the LOHAC blogs. [1]
 
+See also OWL @ Manchester (http://owl.cs.manchester.ac.uk) - The University of Manchester has a rich tradition of developing ontology languages, tools, methodologies, and applications. Historically, several lines of research at Manchester contributed directly to the development of OWL as a W3C standard and the School of Computer Science continues to be recognized as an international centre of OWL and OWL related research.
+
+
 But if ontologies are sets of “verbs”, then they are akin to human language, and human language is ambiguous. Therein lies the difficulty with ontologies. There is no “right” way to implement them. Instead, there is only best or common practice. There are no hard and fast rules. Everything comes with a bit of interpretation. The application and use of ontologies is very much like the application and use of written language in general. In order for written language to work well two equally important things need to happen. First, the writer needs to be able to write. They need to be able to choose the most appropriate language for their intended audience. Shakespeare is not “right” with his descriptions of love, but instead his descriptions of love (and many other human emotions) resinate with a very large number of people. Second, written language requires the reader to have a particular adeptness as well. Shakespeare can not be expected to write one thing and communicate to everybody. The reader needs to understand English, or the translation from English into another language needs to be compete and accurate. 
 
 The Internet, by design, is a decentralized environment. There are very few rules on how it is expected to be used. To a great extent it relies on sets of behavior that are more common practice as opposed to articulated rules. For example, what “rules” exist for tweets on Twitter? What rules exist for Facebook or blog postings. Creating sets of rules will not fly on the Internet because there is no over-arching governing body to enforce any rules.  Sure, there are things like Dublin Core with their definitions, but those definitions are left to interpretation, and there are no judges nor courts nor laws determining whether or not any particular application of Dublin Core is “correct”. Only the common use of Dublin Core is correct, and its use is not set in stone. 
@@ -349,10 +355,25 @@ While some or all of these ontologies may be useful for linked data of archival 
 
 This being the case, ontologies still need to be selected in order for linked data to be manifested. What ontologies would you suggest be used when creating linked data for archival descriptions? Here are a few possibilities, listed in no priority order:
 
-  * Archival Collections Ontology (http://gslis.simmons.edu/archival/arch/) - Authored by Aaron Rubinstiens...
 
+Directory of ontologies
+
+  * LOV (http://lov.okfn.org/dataset/lov/) - Look for vocabularies at Linked Open Vocabularies (LOV) — 
+
+  * Open Metadata Registry (http://metadataregistry.net) - 
+
+  
+  
+Ontologies
+
+  * Archival Collections Ontology (https://github.com/rubinsztajn/archival) - 
+
+  * Bibo (http://purl.org/ontology/bibo/) - 
+  
   * Bibframe (http://bibframe.org) - The Bibliographic Framework Initiative (BIBFRAME) is an undertaking by the Library of Congress and the community to better accommodate future needs of the library community. A major focus of the initiative will be to determine a transition path for the MARC 21 exchange format to more Web based, Linked Data standards. Zepheira and The Library of Congress are working together to develop a Linked Data model, vocabulary and enabling tools / services for supporting this Initiative.
 
+  * CIDOC Conceptual Reference Model (http://www.cidoc-crm.org) - 
+  
   * Dublin Core Terms (http://dublincore.org/documents/dcmi-terms/) - This ontology is rather bibliographic in nature, and provides a decent framework for describing much of the content of archival descriptions.
 
   * Europeneana (http://ontogenealogy.com/europeana-data-model-edm/) - Another approach is to the data model from other oganizations. Since Europeneana’s data is intended to be available as linked data, then it might be a good model to explore — http://pro.europeana.eu/edm-documentation  Specifically: For the archival community, collection level descriptions such as EAD play a major role.They fit neatly under the EDM,in particular the notion of ore:aggregration allows for describing archival “fonds”. The International Council of Archives just started the discussion about a common conceptual model similar to FRBR or the CRM. In the meanwhile, with the CRM historical facts associated with archival contents can be described in more detail than just on the EDM level (Stasinopoulou et. al. 2007). Further, collection-level descriptions in Dublin Core are quite convenient and becoming popular for archival descriptions. — 
@@ -363,8 +384,8 @@ This being the case, ontologies still need to be selected in order for linked da
 
   * LOCAH RDF Vocabulary (http://data.archiveshub.ac.uk/def/) - 
 
-  * LOV (http://lov.okfn.org/dataset/lov/) - Look for vocabularies at Linked Open Vocabularies (LOV) — 
-
+  * MARC21 Vocabularies from Metadata Management Associates (http://marc21rdf.info) - 
+  
   * OAD Vocabulary - (http://labs.regesta.com/progettoReload/wp-content/uploads/2013/08/oadNew.html) - "[Google translation] The definition of an ontology of archival description is needed in order to test the potential of the web of data to archival descriptions. The archival description aims at the representation of a unit of description by collecting, analyzing, organizing and recording the information needed to identify, manage, locate and explain the context and documentary material and the storage systems that produced (ISAD (G)). The ontology of archival description (SRO) has as its goal the formal representation of the descriptions of the individual units of description - understood as objects of their archival descriptions. In particular, the SRO waiver to take into account all the individual elements of these descriptions, in endless variations they present as part of the archival systems in which they are hinged, but instead seeks only to explain the elements of information deemed necessary for the exposure the web of data units of archival description to ensure integration with other datasets published also in format Linked Open Data. SROs, in beta, is expressed in OWL (Ontology Web Language): it takes into account all the elements of archival description in the standard ISAD (G): general international standard archival description, adopted by the ICA (International Council on Archives) integrating them with other information elements not covered by the standard mentioned - as the index entries - and with links to creators and conservative. The formal mechanisms provided by the standard RDF and OWL have made it possible to bring the information elements of archival descriptions expressed in an ontology SROs to "external" concepts representative of traditional archival descriptive and based on the international standard ISAD (G). Since the experiments conducted by the partners of the project ReLoad had as object data encoded on the basis of the framework EAD (Encoded Archival Description), the ontology provides for a specific class OAD "eadElement" designed to encode the information on the element or attribute of the EAD scheme used by the organization that provides data archival description, which is also attributed to the ISAD (G) on the basis of official mapping ISAD (G) - EAD 
 
   * OWL (http://www.w3.org/2001/sw/wiki/OWL) - 
@@ -564,69 +585,140 @@ For a more complete and exhaustive glossary, see the W3C's Linked Data Glossary.
 
 4. Linked Data Today
 
-4.a. Projects: Brief descriptions with an emphasis on tangible benefits and outcomes of each
+4.a. Projects: Brief descriptions with an emphasis on tangible benefits and outcomes of each (done)
 
 While the number of linked data websites is less than the worldwide total number, it is really not possible to list every linked data project but only things that will presently useful to the archivist and computer technologist working in cultural heritage institutions. And even then the list of sites will not be complete. Instead, listed below are a number of websites of interest today.
 
-The list is divided into three parts: introductions, data sets, and "projects". The introductions are are akin to directories or initial guilds. The data sets are collections of RDF available for harvesting. The projects have used content in data sets to provide value-added information services. 
+The list is divided into two parts: introductions, data sets and projects. The introductions are akin to directories or initial guilds filled with pointers to information about RDF especially meaningful to archivists (and other cultural heritage workers). The data sets and projects range from simple RDF dumps to full-blown discovery systems. In between some simple browsable lists and raw SPARQL endpoints.
 
 
 Introductions
 
-  * Datahub (http://datahub.io/) - This is a directory of data sets. It includes descriptions of hundreds of data collections. Some of them are linked data sets. Some of them are not. 
-  
-  * LODLAM (http://lodlam.net/) - LODLAM is an acronym for Linked Open Data in Libraries Archives and Museums. LODLAM.net is community, both virtual and real, of linked data aficionados in cultural heritage institutions. It, like OpenGLAM, is a good place to discuss linked data in general.
-  
-  * OpenGLAM http://openglam.org) - GLAM is an acronym for Galleries, Libraries, Archives, and Museums. OpenGLAM is a community fostered by the Open Knowledge Foundation and a place to to discuss linked data that is "free". for It, like LODLAM, is a good place to discuss linked data in general.
+  * Datahub (http://datahub.io/) - This is a directory of data sets. It
+	includes descriptions of hundreds of data collections. Some of them are
+	linked data sets. Some of them are not.
 
-  * Datahub (http://datahub.io/) - the free, powerful data management platform from the Open Knowledge Foundation
+  * LODLAM (http://lodlam.net/) - LODLAM is an acronym for Linked Open
+	Data in Libraries Archives and Museums. LODLAM.net is a community, both
+	virtual and real, of linked data aficionados in cultural heritage
+	institutions. It, like OpenGLAM, is a good place to discuss linked data
+	in general.
 
+  * OpenGLAM http://openglam.org) - GLAM is an acronym for Galleries,
+	Libraries, Archives, and Museums. OpenGLAM is a community fostered by
+	the Open Knowledge Foundation and a place to to discuss linked data that
+	is "free". for It, like LODLAM, is a good place to discuss linked data
+	in general.
 
-Data sets
-
-  * D2R Server for the CIA Factbook (http://wifo5-03.informatik.uni-mannheim.de/factbook/) - The content of the World Fact Book distributed as linked data.
-
-  * D2R Server for the Gutenberg Project (http://wifo5-03.informatik.uni-mannheim.de/gutendata/) - This is a data set of Project Gutenburgh content -- a list of digitized public domain works, mostly books.
-  
-  * Getty Vocabularies (http://vocab.getty.edu) - A set of data sets used to "categorize, describe, and index cultural heritage objects and information". 
-   
-  * Library of Congress Linked Data Service (http://id.loc.gov/) - A set of data sets used for bibliographic classification: subjects, names, genres, formats, etc.
-  
-  * Linked Archives Hub Test Dataset (http://data.archiveshub.ac.uk) - The data set is RDF generated from a selection of archival finding aids harvested by the Archives Hub in the United Kingdom.
-
-  * Linked Movie Data Base (http://linkedmdb.org/) - A data set of movie information.
-  
-  * Linked Open Data at Europeana (http://pro.europeana.eu/datasets) - A growing set of RDF generated from the descriptions of content in Europeana. 
-  
-  * Linked Open Vocabularies (http://lov.okfn.org/dataset/lov/) - A linked data set of linked data sets.
-  
-  * New York Times (http://data.nytimes.com/) - A list of New York Times subject headings.
-  
-  * OCLC Data Sets & Services (http://www.oclc.org/data/) - Here you will find a number of freely available bibliographic data sets and services. Some are available as RDF and linked data. Others are Web services. 
-
-  * PELAGIOS (http://pelagios-project.blogspot.com/p/about-pelagios.html) - A data set of ancient places.
-  
-  * VIAF (http://viaf.org/) - This data set functions as a name authority file.
-  
-  * Wiki.dbpedia.org (http://dbpedia.org/About) - In the simplest terms, this is the content of Wikipedia made accessible as RDF. 
-  
-  * World Bank Linked Data (http://worldbank.270a.info/.html) - A data set of World Bank indicators, climate change information, finances, etc. 
+  * semanticweb.org (http://semanticweb.org) - semanticweb.org is a portal
+	for publishing information on research and development related to the
+	topics Semantic Web and Wikis. Includes data.semanticweb.org and
+	data.semanticweb.org/snorql.
 
 
-Projects
+Data sets and projects
 
-  * 20th Century Press Archives (http://zbw.eu/beta/p20) - "I’ve (Neubert Joachim <J.Neubert@zbw.eu>) published the persons and company part of the 20th Century Press Archives (http://zbw.eu/beta/p20) as a linked data application. It uses RDFa and OAI-ORE extensively to give every dossier, every article and every page a citable URI, and on the other hand consumes linked data from various linked data sources to enrich the web pages and to provide context to the rather plain scanned article images. See http://challenge.semanticweb.org/submissions/swc2010_submission_6.pdf for more detail."
+  * 20th Century Press Archives (http://zbw.eu/beta/p20) - This is an
+	archive of digitized newspaper articles which is made accessible not
+	only as HTML but a number of other metadata formats such as RDFa,
+	METS/MODS and OAI-ORE. It is a good example of how metadata publishing
+	can be mixed and matched in a single publishing system.
 
-  * Linking Lives (http://archiveshub.ac.uk/linkinglives/) - Linking Lives is exploring ways to present Linked Data. We aim to show that archives can benefit from being presented as a part of the diverse data sources on the Web to create full biographical pictures, enabling researchers to make connections between people and events. Linking Lives builds upon the Locah project. Locah was a JISC-funded project to expose the Archives Hub descriptions as Linked Data.
+  * AGRIS (http://agris.fao.org/openagris/) - Here you will find a very
+	large collection of bibliographic information from the field of
+	agriculture. It is accessible via quite a number of methods including
+    linked data.
 
-  * LOCAH Project (http://archiveshub.ac.uk/locah/) - Mimas and UKOLN worked together on an exciting JISC funded project to make Archives Hub data available as structured Linked Data, for the benefit of education and research. We worked in partnership with Eduserv, Talis and OCLC, leading experts within their fields. The aim was put archival and bibliographic data at the heart of the Linked Data Web, enabling new links to be made between diverse content sources and enabling the free and flexible exploration of data so that researchers can make new connections between subjects, people, organisations and places to reveal more about our history and society.
+  * D2R Server for the CIA Factbook
+	(http://wifo5-03.informatik.uni-mannheim.de/factbook/) - The content
+	of the World Fact Book distributed as linked data.
 
-  * OpenCat (http://demo.cubicweb.org/opencatfresnes/) - Another common theme / application demonstrated at the conference were variations of the venerable library catalog. OpenCat, presented by Agnes Simon (Bibliothéque Nationale de France), was an additional example of this trend. Combining authority data (available as RDF) provided by the National Library of France with works of a second library (Fresnes Public Library), the OpenCat prototype provides quite an interesting interface to library holdings.
+  * D2R Server for the Gutenberg Project
+	(http://wifo5-03.informatik.uni-mannheim.de/gutendata/) - This is a
+	data set of Project Gutenburgh content -- a list of digitized public
+	domain works, mostly books.
 
-  * ReLoad (http://labs.regesta.com/progettoReload/en) - an Italian experimentation started in 2012 and supported by Central State Archive, Cultural Heritage Institute of Emilia Romagna Region and regesta.exe, published the first version of OAD ontology (ontology for archival description) based on ISAD (G) standard and EAD schema, in 2013. The project team define a specific ontology for archival description domain because there isn't yet something useful to describe all significant classes and properties necessary in archival description and we integrated OAD with other "Lightweight ontologies" (like foaf or dublin core) to encode the most common metadata. Within Reload project, to describe authority records in Linked Data we use EAC-CPF ontology, published in 2012 by Cultural Heritage Institute of Emilia Romagna Region. From the website: "The ReLoad project (Repository for Linked open archival data) will foster experimentation with the technology and methods of linked open data for archival resources. Its goal is the creation of a web of linked archival data."
+  * Dbpedia (http://dbpedia.org/About) - In the simplest terms, this is
+	the content of Wikipedia made accessible as RDF.
 
+  * Getty Vocabularies (http://vocab.getty.edu) - A set of data sets
+	used to "categorize, describe, and index cultural heritage objects and
+	information".
 
-4.b. Trends in LOD-LAM
+  * Library of Congress Linked Data Service (http://id.loc.gov/) - A set
+	of data sets used for bibliographic classification: subjects, names,
+	genres, formats, etc.
+
+  * LIBRIS (http://libris.kb.se) - This is the joint catalog of the
+	Swedish academic and research libraries. Search results are presented
+	in HTML, but the URLs pointing to individual items are really
+	actionable URIs resolvable via content negotiation, thus support
+	distribution of bibliographic information as RDF. This initiative is
+	very similar to OpenCat.
+
+  * Linked Archives Hub Test Dataset (http://data.archiveshub.ac.uk) -
+	This data set is RDF generated from a selection of archival finding
+	aids harvested by the Archives Hub in the United Kingdom.
+
+  * Linked Movie Data Base (http://linkedmdb.org/) - A data set of movie
+    information.
+
+  * Linked Open Data at Europeana (http://pro.europeana.eu/datasets) - A
+	growing set of RDF generated from the descriptions of content in
+	Europeana.
+
+  * Linked Open Vocabularies (http://lov.okfn.org/dataset/lov/) - A
+    linked data set of linked data sets.
+
+  * Linking Lives (http://archiveshub.ac.uk/linkinglives/) - While this
+	project has had no working interface, it is a good read on the
+	challenges of presenting link data people (as opposed to computers).
+	Its blog site enumerates and discusses issues from provenance to
+	unique identifiers, from data clean up to interface design.
+
+  * LOCAH Project (http://archiveshub.ac.uk/locah/) - This is/was a
+	joint project between Mimas and UKOLN to make Archives Hub data
+	available as structured Linked Data. (All three organizations are
+	located in the United Kingdom.). EAD files were aggregated. Using
+	XSLT, they were transformed into RDF/XML, and the RDF/XML was saved in
+	a triple store. The triple store was then dumped as a file as well as
+	made searchable via a SPARQL endpoint.
+
+  * New York Times (http://data.nytimes.com/) - A list of New York Times
+    subject headings.
+
+  * OCLC Data Sets & Services (http://www.oclc.org/data/) - Here you
+	will find a number of freely available bibliographic data sets and
+	services. Some are available as RDF and linked data. Others are Web
+	services.
+
+  * OpenCat (http://demo.cubicweb.org/opencatfresnes/) - This is a
+	library catalog combining the authority data (available as RDF)
+	provided by the National Library of France with works of a second
+	library (Fresnes Public Library). Item level search results have URIs
+	whose RDF is available via content negotiation. This project is
+	similar to LIBRIS.
+
+  * PELAGIOS
+	(http://pelagios-project.blogspot.com/p/about-pelagios.html) - A data
+	set of ancient places.
+
+  * ReLoad (http://labs.regesta.com/progettoReload/en) - This is a
+	collaboration between the Central State Archive of Italy, the Cultural
+	Heritage Institute of Emilia Romagna Region, and Regesta.exe. It is
+	the aggregation of EAD files from a number of archives which have been
+	transformed into RDF and made available as linked data. Its purpose
+	and intent are very similar to the the purpose and intent of the
+	combined LOCAH Project and Linking Lives.
+
+  * VIAF (http://viaf.org/) - This data set functions as a name
+    authority file.
+
+  * World Bank Linked Data (http://worldbank.270a.info/.html) - A data
+	set of World Bank indicators, climate change information, finances,
+	etc.
+
+  4.b. Trends in LOD-LAM
 
   * Mash ups
   * Harvesting along side other protocols
@@ -711,6 +803,25 @@ When
 
 The say, “Work expands to fill the available space.” If this is true, and no deadlines are articulated for each objective, then the allotted amount of time for any given task is all but infinite, but this it not true. Time is one of the most limited resources you have. When thinking about a given objective, ask yourself how much time you think it will take, multiply the time by one and a half. Ask yourself when the task can begin and document the beginning point as well as the estimated ending point. Do this all of your objectives and the result will be a Gantt chart. It will now be easy to look at the chart on a regular basis to see who things are progressing. 
 
+
+--------------
+
+
+  1. Create and maintain RDF - Generate, save, and update sets of RDF statements describing your content. 
+
+  2. Publish RDF - No matter what kind of RDF you are able to create, make it available on the Web.
+
+  3. Articulate and implement best practices for publishing RDF - Work with your friends to articulate and document an "application profile". As guidelines and best practices get articulated, implement them by going back to Step #1. In the meantime, continue on to Step #4.
+
+  4. Harvest RDF - Collect RDF from the Web, and some of the collection may be some of your own content.
+
+  5. Develop services against harvested RDF - Evaluate (curate) the collection. 
+
+  6. Go to Step #1 - This is a never-ending process. 
+
+
+
+--
 2.a Lots of ways to participate
 
   * finding URIs
@@ -771,6 +882,9 @@ Despite these short comings, transforming EAD files into some sort of serialized
 Encoded Archival Context for Corporate Bodies, Persons, and Families (EAC-CPF) goes a long way to implementing a named authority database that could be linked from archival descriptions. These XML files could easily be transformed into serialized RDF and therefore linked data. The resulting URIs could then be incorporated into archival descriptions making the descriptions richer and more complete.
 
 For example the FindAndConnect site in Australia uses EAC-CPF under the hood to disseminate information about people in its collection. [1] Similarly, “SNAC aims to not only make the [EAC-CPF] records more easily discovered and accessed but also, and at the same time, build an unprecedented resource that provides access to the socio-historical contexts (which includes people, families, and corporate bodies) in which the records were created” -- u  More than a thousand EAC-CPF records are available from the RAMP project -- http://demo.rampeditor.info/export.php
+
+
+  * Library, The standard EAC-CPF is maintained by the Society of American Archivists in partnership with the Berlin State. “Society of American Archivists and the Berlin State Library (http://eac.staatsbibliothek-berlin.de/) - 
 
 
 [1] FindAndConnect - http://www.findandconnect.gov.au
@@ -855,69 +969,160 @@ Cleanup, conversion, and consistency means many things. Does all of your metadat
 
 [INSERT HERE A FEW PARAGRAPHS DESCRIBING THE TYPES OF TOOLS NEEDED TO DO THE WORK.]7. Looking Ahead: Advanced Tools and Visualizations
 
-7.a. Tools for archivists (data preparation, cleanup, management)
+7.a. Tools for archivists (done)
+
+This section lists various tools for archivists and computer technologists wanting to participate in various aspects of linked data. Here you will find pointers to creating, editing, storing, publishing, and searching linked data. 
+
 
 Directories
 
-  * Linked Data Tools (http://linkeddata.org/tools) - 
-  * openRDF.org (http://www.openrdf.org/) - 
-  * RDFImportersAndAdapters (http://www.w3.org/wiki/RDFImportersAndAdapters) - Tools and applications that can convert from other data and file formats to RDF.
-  * SparqlImplementations (http://www.w3.org/wiki/SparqlImplementations) - This page lists some implementations of SPARQL, a query language and protocol for RDF acccess released by the W3C RDF Data Access Working Group - DAWG.
-  * Tools (http://www.w3.org/2001/sw/wiki/Tools) - 
+The sites listed in this section enumerate linked data and RDF tools. They are jumping off places to other sites:
 
-ead editors
+  * ConverterToRdf (http://www.w3.org/wiki/ConverterToRdf) - Hosted by the
+	W3C this is a long list links pointing to applications that will convert
+	varius forms of data into RDF. The list is long, and defunct tools may
+	not be updated as such.
 
-  * eaditor (https://github.com/ewg118/eaditor) - EADitor is an XForms framework for the creation and editing of Encoded Archival Description (EAD) finding aids using Orbeon, an enterprise-level XForms Java application, which runs in Apache Tomcat.
-  * Ewg118/eaditor (https://github.com/ewg118/eaditor) - 
+  * Linked Data Tools (http://linkeddata.org/tools) - Linkeddata.org is
+	the home of the famous linked data "cloud" image, and LinkedData.org
+	also includes a number of directory-like pages on linked data in
+	general. One of those pages is a list of linked data tools.
 
-converters / validators tools / editors
-  * Behas/oai2lod (https://github.com/behas/oai2lod) - 
-  * ConverterToRdf (http://www.w3.org/wiki/ConverterToRdf) - 
-  * ead2rdf (http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl) - The “transform” process is currently performed using XSLT to read an EAD XML document and output RDF/XML, and the current version of the stylesheet is now available:
-  * Fusion Tables (http://www.google.com/drive/apps.html) - Bust your data out of its silo! Combine it with other data on the web. Collaborate, visualize and share.
-  * oai2lod (https://github.com/behas/oai2lod) - exposes OAI-PMH data sources as Linked Data
-  * OpenRefine (https://github.com/OpenRefine/) - 
-  * OpenRefine (https://github.com/OpenRefine/) - OpenRefine is a free, open source power tool for working with messy data and improving it
-  * Protégé (http://protege.stanford.edu) - Protégé is a free, open source ontology editor and knowledge-base framework The Protégé platform supports modeling ontologies via a web client or a desktop client. Protégé ontologies can be developed in a variety of formats including OWL, RDF(S), and XML Schema Protégé is based on Java, is extensible, and provides a plug-and-play environment that makes it a flexible base for rapid prototyping and application development.
-  * RDF2RDF (http://www.l3s.de/~minack/rdf2rdf/) - 
-  * RDFizers - SIMILE (http://simile.mit.edu/wiki/RDFizers) - 
-  * Tabulator (http://www.w3.org/2005/ajar/tab) - 
-  * Vapour, a Linked Data Validator (http://validator.linkeddata.org/vapour) - 
-  * W3C RDF Validation Service (http://www.w3.org/RDF/Validator/) - Enter a URI or paste an RDF/XML document into the text field above. A 3-tuple (triple) representation of the corresponding data model as well as an optional graphical visualization of the data model will be displayed.
-  * W3c/rdfvalidator-ng (https://github.com/w3c/rdfvalidator-ng) - 
+  * SemWebClients
+	(http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/
+	SemWebClients) - Hosted by the W3C, this is a list of Semantic Web
+	clients and applications.
 
+  * RDFImportersAndAdapters
+	(http://www.w3.org/wiki/RDFImportersAndAdapters) - A list of tools and
+	applications for converting various data and file formats into
+	serialized RDF.
 
-clients
-  * Curl (http://curl.haxx.se) - curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks.
-  * Disco - Hyperdata Browser (http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/) - The Disco - Hyperdata Browser is a simple browser for navigating the Semantic Web as an unbound set of data sources. The browser renders all information, that it can find on the Semantic Web about a specific resource, as an HTML page. This resource description contains hyperlinks that allow you to navigate between resources. While you move from resource to resource, the browser dynamically retrieves information by dereferencing HTTP URIs and by following rdfs:seeAlso links.
-  * Disco Hyperdata Browser (http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/) - 
-  * Gephi (http://gephi.org) - Gephi is an interactive visualization and exploration platform for all kinds of networks and complex systems, dynamic and hierarchical graphs.
-  * OpenLink Data Explorer Extension (http://ode.openlinksw.com) - The OpenLink Data Explorer (ODE) is a browser extension (currently available for Firefox, Safari, Chrome, Opera, and Internet Explorer with additional browser support to follow) that adds a new option to the realm of Web User Agent functionality, in the form of new menu options for viewing Data Sources associated with Web Pages.
-  * Sematic Web Client Library (http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/semwebclient/) - The Sematic Web Client Library represents the complete Semantic Web as a single RDF graph. The library enables applications to query this global graph using SPARQL- and find(SPO) queries. To answer queries, the library dynamically retrieves information from the Semantic Web by dereferencing HTTP URIs, by following rdfs:seeAlso links, and by querying the Sindice search engine. The library is written in Java and is based on the Jena framework.
-  * SemWebClients (http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/SemWebClients) - 
+  * SIMILE RDFizers (http://simile.mit.edu/wiki/RDFizers) - Another list
+    of tools for converting data and files into RDF.
+
+  * SparqlImplementations (http://www.w3.org/wiki/SparqlImplementations) -
+    Another page hosted by the W3C, and listing SPARQL clients and tools.
+
+  * Tools (http://www.w3.org/2001/sw/wiki/Tools) - Hosted by the W3C, this
+	page is a sort of directory of directories for all sort of linked data
+	and RDF tools: editors, converters, SPARQL clients, triple stores, etc.
 
 
-servers
-  * D2RQ (http://d2rq.org) - The D2RQ Platform is a system for accessing relational databases as virtual, read-only RDF graphs. It offers RDF-based access to the content of relational databases without having to replicate it into an RDF store. Using D2RQ you can: query a non-RDF database using SPARQL, access the content of the database as Linked Data over the Web, create custom dumps of the database in RDF formats for loading into an RDF store, access information in a non-RDF database using the Apache Jena API
-  * Linked Media Framework (https://code.google.com/p/lmf/) - The Linked Media Framework is an easy-to-setup server application that bundles together some key open source projects to offer some advanced services for linked media management.
-  * VirtuosoUniversalServer (http://www.w3.org/wiki/VirtuosoUniversalServer) - OpenLink Virtuoso is a multi-purpose and multi-protocol (Hybrid) Data Server from OpenLink Software that includes SQL Object-Relational, RDF, XML, and Free Text data management, alongside Web Application (HTTP, SOAP, WebDAV), SyncML, and Discussion Server functionality, in a single server.
+RDF converters, validators, etc.
+
+  * ead2rdf (http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl) - This is the
+	XST stylesheet previously used by the Archives Hub in their LOCAH Linked
+	Archives Hub project. It transforms EAD files into RDF/XML. A slightly
+	modified version of this stylesheet was used to create the LiAM
+	"sandbox".
+
+  * Protégé (http://protege.stanford.edu) - Install this well-respected
+	tool locally or use it as a hosted Web application to create OWL
+	ontologies.
+
+  * RDF2RDF (http://www.l3s.de/~minack/rdf2rdf/) - A handy Java jar file
+	enabling you to convert various versions of serialized RDF into other
+	versions of serialized RDF.
+
+  * Vapour, a Linked Data Validator
+	(http://validator.linkeddata.org/vapour) - Much like the W3C validator,
+	this online tool will validate the RDF at the other end of a URI. Unlike
+	the W3C validator, it echoes back and forth the results of the content
+	negotiation process.
+
+  * W3C RDF Validation Service (http://www.w3.org/RDF/Validator/) - Enter
+	a URI or paste an RDF/XML document into the text field, and a triple
+	representation of the corresponding data model as well as an optional
+	graphical visualization of the data model will be displayed.
+  
+
+Linked data frameworks and publishing systems
+
+  * 4store (http://4store.org/) - A linked data publishing framework for
+	managing triple stores, querying them locally, querying them via SPARQL,
+	dumping their contents to files, as well as providing support via a
+	number of scripting languages (PHP, Ruby, Python, Java, etc.).
+
+  * Apache Jena (http://jena.apache.org/) - This is a set of tools for
+	creating, maintaining, and publishing linked data complete a SPARQL
+	engine, a flexible triple store application, and inference engine.
+
+  * D2RQ (http://d2rq.org/) - Use this application to provide a linked
+	data front-end to any (well-designed) relational database. It supports
+	SPARQL, content negotiation, and RDF dumps for direct HTTP access or
+	uploading into triple store.
+
+  * oai2lod (https://github.com/behas/oai2lod) - This is a particular
+	implementation D2RQ Server. More specifically, this tool is an
+	intermediary between a OAI-PMH data providers and a linked data
+	publishing system. Configure oai2lod to point to your OAI-PMH server and
+	it will publish the server's metadata as linked data.
+
+  * OpenLink Virtuoso Open-Source Edition
+	(https://github.com/openlink/virtuoso-opensource/) - An open source
+	version of OpenLink Virtuoso. Feature-rich and well-documented.
+
+  * OpenLink Virtuoso Universal Server (http://virtuoso.openlinksw.com) -
+	This is a commercial version of OpenLink Virtuoso Open-Source Edition.
+	It seems to be a platform for modeling and accessing data in a wide
+	variety of forms: relational databases, RDF triples stores, etc. Again,
+	feature-rich and well-documented.
+
+  * openRDF (http://www.openrdf.org/) - This is a Java-based framework for
+	implementing linked data publishing including the establishment of a
+	triple store and a SPARQL endpoint. 
 
 
-storage Tools
-  * 4store - Scalable RDF Storage (http://4store.org/) - 
-  * Apache Jena - Home (http://jena.apache.org/) - 
-  * ckan (http://ckan.org) - The open source data portal software 
-  * CouchDB (http://couchdb.apache.org) - CouchDB is a database that completely embraces the web. Store your data with JSON documents. Access your documents with your web browser, via HTTP. Query, combine, and transform your documents with JavaScript. CouchDB works well with modern web and mobile apps. You can even serve web apps directly out of CouchDB. And you can distribute your data, or your apps, efficiently using CouchDB’s incremental replication. CouchDB supports master-master setups with automatic conflict detection. 
-  * Library, The standard EAC-CPF is maintained by the Society of American Archivists in partnership with the Berlin State. “Society of American Archivists and the Berlin State Library (http://eac.staatsbibliothek-berlin.de/) - 
-  * Parrot, a RIF and OWL Documentation Service.” Accessed November 11, 2013. http://ontorule-project.eu/parrot/parrot) - 
-  * Semantic Web Development Tools (http://www.w3.org/2001/sw/wiki/Tools) - This Wiki contains a collection of tool references that can help in developing Semantic Web applications. These include complete development environments, editors, libraries or modules for various programming languages, specialized browsers, etc. The goal is to list such tools and not Semantic Web applications in general (the interested reader may consider looking at the W3C SW Use Case Collection for those.) 
-  * Tableau Public (http://www.tableausoftware.com/public) - With Tableau Public you can create interactive graphs, dashboards, maps and tables from virtually any data and embed them on your website or blog in minutes. 
-  * Tabulator (http://www.w3.org/2005/ajar/tab) - The Tabulator project is a generic data browser and editor. Using outline and table modes, it provides a way to browse RDF data on the web. RDF is the standard for inter-application data exchange. 
-  * TemaTres (http://www.vocabularyserver.com) - The open source way to manage formal representations of knowledge 
+7.b. Semantic Web browsers (done)
 
+This is a small set of Semantic Web browsers. Give them URIs and they allow you to follow and describe the links they include.
 
+  * Inspector (http://inspector.sindice.com) - Creates graphs,
+    lists ontologies, generates a full-text report from literals, and
+    lists triples found at the other end of URIs.
 
-7.b. Tools for users (visualizations, interfaces)
+  * LinkSailor (http://linksailor.com) - Feed this interface a
+    URI that points to many other actionable URIs, and it will
+    return an interesting mash-up including images, paragraphs of
+    texts, and hyperlinks to more content.
+  
+  * LOD Browser Switch (http://browse.semanticweb.org) - This is
+    really a gateway to other Semantic Web browsers. Feed it a URI
+    and it will create lists of URLs pointing to Semantic Web
+    interfaces, but many of the URLs (Semantic Web interfaces) do not
+    seem to work. Some of the resulting URLs point to RDF\
+    serialization converters
+
+  * LodLive (http://en.lodlive.it) - This Semantic Web browser
+    allows you to feed it a URI and interactively follow the links
+    associated with it. URIs can come from DBedia, Freebase, or one
+    of your own.
+
+  * Open Link Data Explorer
+    (http://demo.openlinksw.com/rdfbrowser2/) - The most
+    sophisticated Semantic Web browser in this set. Given a URI it
+    creates various views of the resulting triples associated with
+    including lists of all its properties and objects, networks
+    graphs, tabular views, and maps (if the data includes geographic
+    points).
+
+  * Quick and Dirty RDF browser
+    (http://graphite.ecs.soton.ac.uk/browser/) - Given the URL
+    pointing to a file of RDF statements, this tool returns all the
+    triples in the file and verbosely lists each of their predicate
+    and object values. Quick and easy.  This is a good for reading
+    everything about a particular resource. The tool does not seem
+    to support content negotiation.
+
+If you need some URIs to begin with, then try some of these:
+
+  * Ray Family Papers - http://infomotions.com/sandbox/liam/data/mum432.rdf
+  * Catholics and Jews - http://infomotions.com/sandbox/liam/data/shumarc681792.rdf
+  * Walt Disney via VIAF - http://viaf.org/viaf/36927108/
+  * origami via the Library of Congress - http://id.loc.gov/authorities/subjects/sh85095643
+  * Paris from DBpedia - http://dbpedia.org/resource/Paris
+
 
 7.a.ii. Gaps: What is needed
 
@@ -1782,9 +1987,9 @@ print $serializer->serialize_model_to_string( RDF::Redland::URI->new, $model );
 # done
 exit;
 
-11 A question from a library school student
+11 A question from a library school student (done)
 
-In January of 2014 I received the following email message from a library school student. The questions they asked were apropos to the Guide, so I thought I’d include my responseggt here, but the names have been changed to protect the innocent.
+In January of 2014 I received the following email message from a library school student. The questions they asked were apropos to the Guide, so I thought I’d include my response here, but the names have been changed to protect the innocent.
 
 From: Eric Lease Morgan <emorgan@nd.edu>
 Subject: Re: RDF ontologies discussion on Code4Lib Listserv

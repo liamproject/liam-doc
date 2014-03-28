@@ -1,5 +1,8 @@
 2. Introduction
 
+For the archivist, linked data is about universally publishing and repurposing sets of facts (assertions, metadata, statements, sentences, "triples", etc.) about your collections. As you publish these fact you will be able not only to maintain more flexible Web presences but also Web presences that are richer, more complete, and better integrated with complementary collections.
+
+
 This is a travel guide — a set of itineraries for getting from here to linked data and the Semantic Web. It outlines the sorts of things you may want to know if you want to get from here to someplace else. There are many ways to get there. None of them are perfect. Each of them have their own particular strengths & weaknesses, opportunities & impediments. If you want to go on this journey at a cost of, say, $10 per day, then there are a number of options for you. If you want to spend $25 dollars per day, then a number of other options available. If you want to spend as much as $50 day, then there are quite a number of other options. This guide book will use this metaphor throughout the text so you can evaluate your options. 
 
 ------

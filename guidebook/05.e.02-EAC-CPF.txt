@@ -5,5 +5,8 @@ Encoded Archival Context for Corporate Bodies, Persons, and Families (EAC-CPF) g
 For example the FindAndConnect site in Australia uses EAC-CPF under the hood to disseminate information about people in its collection. [1] Similarly, “SNAC aims to not only make the [EAC-CPF] records more easily discovered and accessed but also, and at the same time, build an unprecedented resource that provides access to the socio-historical contexts (which includes people, families, and corporate bodies) in which the records were created” -- u  More than a thousand EAC-CPF records are available from the RAMP project -- http://demo.rampeditor.info/export.php
 
 
+  * Library, The standard EAC-CPF is maintained by the Society of American Archivists in partnership with the Berlin State. “Society of American Archivists and the Berlin State Library (http://eac.staatsbibliothek-berlin.de/) - 
+
+
 [1] FindAndConnect - http://www.findandconnect.gov.au
 [2] SNAC - http://socialarchive.iath.virginia.ed

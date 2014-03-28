@@ -1,0 +1,134 @@
+4.a. Projects: Brief descriptions with an emphasis on tangible benefits and outcomes of each (done)
+
+While the number of linked data websites is less than the worldwide total number, it is really not possible to list every linked data project but only things that will presently useful to the archivist and computer technologist working in cultural heritage institutions. And even then the list of sites will not be complete. Instead, listed below are a number of websites of interest today.
+
+The list is divided into two parts: introductions, data sets and projects. The introductions are akin to directories or initial guilds filled with pointers to information about RDF especially meaningful to archivists (and other cultural heritage workers). The data sets and projects range from simple RDF dumps to full-blown discovery systems. In between some simple browsable lists and raw SPARQL endpoints.
+
+
+Introductions
+
+  * Datahub (http://datahub.io/) - This is a directory of data sets. It
+	includes descriptions of hundreds of data collections. Some of them are
+	linked data sets. Some of them are not.
+
+  * LODLAM (http://lodlam.net/) - LODLAM is an acronym for Linked Open
+	Data in Libraries Archives and Museums. LODLAM.net is a community, both
+	virtual and real, of linked data aficionados in cultural heritage
+	institutions. It, like OpenGLAM, is a good place to discuss linked data
+	in general.
+
+  * OpenGLAM http://openglam.org) - GLAM is an acronym for Galleries,
+	Libraries, Archives, and Museums. OpenGLAM is a community fostered by
+	the Open Knowledge Foundation and a place to to discuss linked data that
+	is "free". for It, like LODLAM, is a good place to discuss linked data
+	in general.
+
+  * semanticweb.org (http://semanticweb.org) - semanticweb.org is a portal
+	for publishing information on research and development related to the
+	topics Semantic Web and Wikis. Includes data.semanticweb.org and
+	data.semanticweb.org/snorql.
+
+
+Data sets and projects
+
+  * 20th Century Press Archives (http://zbw.eu/beta/p20) - This is an
+	archive of digitized newspaper articles which is made accessible not
+	only as HTML but a number of other metadata formats such as RDFa,
+	METS/MODS and OAI-ORE. It is a good example of how metadata publishing
+	can be mixed and matched in a single publishing system.
+
+  * AGRIS (http://agris.fao.org/openagris/) - Here you will find a very
+	large collection of bibliographic information from the field of
+	agriculture. It is accessible via quite a number of methods including
+    linked data.
+
+  * D2R Server for the CIA Factbook
+	(http://wifo5-03.informatik.uni-mannheim.de/factbook/) - The content
+	of the World Fact Book distributed as linked data.
+
+  * D2R Server for the Gutenberg Project
+	(http://wifo5-03.informatik.uni-mannheim.de/gutendata/) - This is a
+	data set of Project Gutenburgh content -- a list of digitized public
+	domain works, mostly books.
+
+  * Dbpedia (http://dbpedia.org/About) - In the simplest terms, this is
+	the content of Wikipedia made accessible as RDF.
+
+  * Getty Vocabularies (http://vocab.getty.edu) - A set of data sets
+	used to "categorize, describe, and index cultural heritage objects and
+	information".
+
+  * Library of Congress Linked Data Service (http://id.loc.gov/) - A set
+	of data sets used for bibliographic classification: subjects, names,
+	genres, formats, etc.
+
+  * LIBRIS (http://libris.kb.se) - This is the joint catalog of the
+	Swedish academic and research libraries. Search results are presented
+	in HTML, but the URLs pointing to individual items are really
+	actionable URIs resolvable via content negotiation, thus support
+	distribution of bibliographic information as RDF. This initiative is
+	very similar to OpenCat.
+
+  * Linked Archives Hub Test Dataset (http://data.archiveshub.ac.uk) -
+	This data set is RDF generated from a selection of archival finding
+	aids harvested by the Archives Hub in the United Kingdom.
+
+  * Linked Movie Data Base (http://linkedmdb.org/) - A data set of movie
+    information.
+
+  * Linked Open Data at Europeana (http://pro.europeana.eu/datasets) - A
+	growing set of RDF generated from the descriptions of content in
+	Europeana.
+
+  * Linked Open Vocabularies (http://lov.okfn.org/dataset/lov/) - A
+    linked data set of linked data sets.
+
+  * Linking Lives (http://archiveshub.ac.uk/linkinglives/) - While this
+	project has had no working interface, it is a good read on the
+	challenges of presenting link data people (as opposed to computers).
+	Its blog site enumerates and discusses issues from provenance to
+	unique identifiers, from data clean up to interface design.
+
+  * LOCAH Project (http://archiveshub.ac.uk/locah/) - This is/was a
+	joint project between Mimas and UKOLN to make Archives Hub data
+	available as structured Linked Data. (All three organizations are
+	located in the United Kingdom.). EAD files were aggregated. Using
+	XSLT, they were transformed into RDF/XML, and the RDF/XML was saved in
+	a triple store. The triple store was then dumped as a file as well as
+	made searchable via a SPARQL endpoint.
+
+  * New York Times (http://data.nytimes.com/) - A list of New York Times
+    subject headings.
+
+  * OCLC Data Sets & Services (http://www.oclc.org/data/) - Here you
+	will find a number of freely available bibliographic data sets and
+	services. Some are available as RDF and linked data. Others are Web
+	services.
+
+  * OpenCat (http://demo.cubicweb.org/opencatfresnes/) - This is a
+	library catalog combining the authority data (available as RDF)
+	provided by the National Library of France with works of a second
+	library (Fresnes Public Library). Item level search results have URIs
+	whose RDF is available via content negotiation. This project is
+	similar to LIBRIS.
+
+  * PELAGIOS
+	(http://pelagios-project.blogspot.com/p/about-pelagios.html) - A data
+	set of ancient places.
+
+  * ReLoad (http://labs.regesta.com/progettoReload/en) - This is a
+	collaboration between the Central State Archive of Italy, the Cultural
+	Heritage Institute of Emilia Romagna Region, and Regesta.exe. It is
+	the aggregation of EAD files from a number of archives which have been
+	transformed into RDF and made available as linked data. Its purpose
+	and intent are very similar to the the purpose and intent of the
+	combined LOCAH Project and Linking Lives.
+
+  * VIAF (http://viaf.org/) - This data set functions as a name
+    authority file.
+
+  * World Bank Linked Data (http://worldbank.270a.info/.html) - A data
+	set of World Bank indicators, climate change information, finances,
+	etc.
+
+  

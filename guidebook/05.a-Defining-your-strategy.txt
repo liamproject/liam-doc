@@ -38,3 +38,22 @@ When
 
 The say, “Work expands to fill the available space.” If this is true, and no deadlines are articulated for each objective, then the allotted amount of time for any given task is all but infinite, but this it not true. Time is one of the most limited resources you have. When thinking about a given objective, ask yourself how much time you think it will take, multiply the time by one and a half. Ask yourself when the task can begin and document the beginning point as well as the estimated ending point. Do this all of your objectives and the result will be a Gantt chart. It will now be easy to look at the chart on a regular basis to see who things are progressing. 
 
+
+--------------
+
+
+  1. Create and maintain RDF - Generate, save, and update sets of RDF statements describing your content. 
+
+  2. Publish RDF - No matter what kind of RDF you are able to create, make it available on the Web.
+
+  3. Articulate and implement best practices for publishing RDF - Work with your friends to articulate and document an "application profile". As guidelines and best practices get articulated, implement them by going back to Step #1. In the meantime, continue on to Step #4.
+
+  4. Harvest RDF - Collect RDF from the Web, and some of the collection may be some of your own content.
+
+  5. Develop services against harvested RDF - Evaluate (curate) the collection. 
+
+  6. Go to Step #1 - This is a never-ending process. 
+
+
+
+--

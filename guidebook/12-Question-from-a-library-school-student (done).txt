@@ -1,6 +1,6 @@
-11 A question from a library school student
+11 A question from a library school student (done)
 
-In January of 2014 I received the following email message from a library school student. The questions they asked were apropos to the Guide, so I thought I’d include my responseggt here, but the names have been changed to protect the innocent.
+In January of 2014 I received the following email message from a library school student. The questions they asked were apropos to the Guide, so I thought I’d include my response here, but the names have been changed to protect the innocent.
 
 From: Eric Lease Morgan <emorgan@nd.edu>
 Subject: Re: RDF ontologies discussion on Code4Lib Listserv

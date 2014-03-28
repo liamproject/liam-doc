@@ -1,0 +1,105 @@
+7.a. Tools for archivists (done)
+
+This section lists various tools for archivists and computer technologists wanting to participate in various aspects of linked data. Here you will find pointers to creating, editing, storing, publishing, and searching linked data. 
+
+
+Directories
+
+The sites listed in this section enumerate linked data and RDF tools. They are jumping off places to other sites:
+
+  * ConverterToRdf (http://www.w3.org/wiki/ConverterToRdf) - Hosted by the
+	W3C this is a long list links pointing to applications that will convert
+	varius forms of data into RDF. The list is long, and defunct tools may
+	not be updated as such.
+
+  * Linked Data Tools (http://linkeddata.org/tools) - Linkeddata.org is
+	the home of the famous linked data "cloud" image, and LinkedData.org
+	also includes a number of directory-like pages on linked data in
+	general. One of those pages is a list of linked data tools.
+
+  * SemWebClients
+	(http://www.w3.org/wiki/TaskForces/CommunityProjects/LinkingOpenData/
+	SemWebClients) - Hosted by the W3C, this is a list of Semantic Web
+	clients and applications.
+
+  * RDFImportersAndAdapters
+	(http://www.w3.org/wiki/RDFImportersAndAdapters) - A list of tools and
+	applications for converting various data and file formats into
+	serialized RDF.
+
+  * SIMILE RDFizers (http://simile.mit.edu/wiki/RDFizers) - Another list
+    of tools for converting data and files into RDF.
+
+  * SparqlImplementations (http://www.w3.org/wiki/SparqlImplementations) -
+    Another page hosted by the W3C, and listing SPARQL clients and tools.
+
+  * Tools (http://www.w3.org/2001/sw/wiki/Tools) - Hosted by the W3C, this
+	page is a sort of directory of directories for all sort of linked data
+	and RDF tools: editors, converters, SPARQL clients, triple stores, etc.
+
+
+RDF converters, validators, etc.
+
+  * ead2rdf (http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl) - This is the
+	XST stylesheet previously used by the Archives Hub in their LOCAH Linked
+	Archives Hub project. It transforms EAD files into RDF/XML. A slightly
+	modified version of this stylesheet was used to create the LiAM
+	"sandbox".
+
+  * Protégé (http://protege.stanford.edu) - Install this well-respected
+	tool locally or use it as a hosted Web application to create OWL
+	ontologies.
+
+  * RDF2RDF (http://www.l3s.de/~minack/rdf2rdf/) - A handy Java jar file
+	enabling you to convert various versions of serialized RDF into other
+	versions of serialized RDF.
+
+  * Vapour, a Linked Data Validator
+	(http://validator.linkeddata.org/vapour) - Much like the W3C validator,
+	this online tool will validate the RDF at the other end of a URI. Unlike
+	the W3C validator, it echoes back and forth the results of the content
+	negotiation process.
+
+  * W3C RDF Validation Service (http://www.w3.org/RDF/Validator/) - Enter
+	a URI or paste an RDF/XML document into the text field, and a triple
+	representation of the corresponding data model as well as an optional
+	graphical visualization of the data model will be displayed.
+  
+
+Linked data frameworks and publishing systems
+
+  * 4store (http://4store.org/) - A linked data publishing framework for
+	managing triple stores, querying them locally, querying them via SPARQL,
+	dumping their contents to files, as well as providing support via a
+	number of scripting languages (PHP, Ruby, Python, Java, etc.).
+
+  * Apache Jena (http://jena.apache.org/) - This is a set of tools for
+	creating, maintaining, and publishing linked data complete a SPARQL
+	engine, a flexible triple store application, and inference engine.
+
+  * D2RQ (http://d2rq.org/) - Use this application to provide a linked
+	data front-end to any (well-designed) relational database. It supports
+	SPARQL, content negotiation, and RDF dumps for direct HTTP access or
+	uploading into triple store.
+
+  * oai2lod (https://github.com/behas/oai2lod) - This is a particular
+	implementation D2RQ Server. More specifically, this tool is an
+	intermediary between a OAI-PMH data providers and a linked data
+	publishing system. Configure oai2lod to point to your OAI-PMH server and
+	it will publish the server's metadata as linked data.
+
+  * OpenLink Virtuoso Open-Source Edition
+	(https://github.com/openlink/virtuoso-opensource/) - An open source
+	version of OpenLink Virtuoso. Feature-rich and well-documented.
+
+  * OpenLink Virtuoso Universal Server (http://virtuoso.openlinksw.com) -
+	This is a commercial version of OpenLink Virtuoso Open-Source Edition.
+	It seems to be a platform for modeling and accessing data in a wide
+	variety of forms: relational databases, RDF triples stores, etc. Again,
+	feature-rich and well-documented.
+
+  * openRDF (http://www.openrdf.org/) - This is a Java-based framework for
+	implementing linked data publishing including the establishment of a
+	triple store and a SPARQL endpoint. 
+
+
