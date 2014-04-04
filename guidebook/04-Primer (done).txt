@@ -14,7 +14,76 @@ In 2006 Berners-Lee more concretely described how to make the Semantic Web a rea
 [1] canonical article - http://www.scientificamerican.com/article/the-semantic-web/
 [2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
 
+---
 
+linked open Data
+
+For all intents and contexts, linked data and linked open data are synonymous, but the subtle difference does need to be  discussed. Linked open data is a qualification of linked data.  Linked open data comes with  an explicit  license agreement denoting  how the accessible data can  be “freely” used. In this case, the words “free” and “open” are analogous to free “open source software”. Just as open source software is available for use and re-use, linked open data is free for use and re-use. Attribution needs to be made. The data can be freely used. While copyrights may still be in place when it comes to linked open data, the copyrights allow for the use, re-use, and re-distribution. The intent of linked open data is to use the content in ways that it canb e used in many ways for many purposes. While the distinction between linked data and linked open data are may be large in the eyes of some people, for simplicities sake, the phrase linked data is synonymous with linked open data, even though some feel the distinction needs to be delineated to a greater degree.
+
+--
+
+about linked Data
+
+Implementing linked data represents a different, more modern way of accomplishing some of the same goals of archival science. It is a process of making more people aware of your content. It is not the only way to make more people aware, but it represents a way that will be wide spread, thorough, and complete.
+
+
+Linked data, or more recently referred to as “linked open data” for reasons to be explained later, is a proposed technique for generating new knowledge. It is intended to be a synergy between people and sets of agreed upon computer systems that when combined will enable both people and computers to discover and build relationships between seemingly disparate data and information to create and discover new knowledge.
+
+In a nutshell, this is how it works. People possess data and information. They encode that data and information in any number of formats easily readable by computers. They then make the encoded data and information available on the Web. Computers are then employed to systematically harvested the encoded data. Since the data is easily readable, the computers store the data locally and look for similarly encoded things in other locally stored data sets. When similar items are identified relationships can be inferred between the items as well as the other items in the data set. To people, some of these relationships may seem obvious and “old hat”. On the other hand, since the data sets can be massive, relationships that were never observed previously may come to light, thus new knowledge is created.
+
+Some of this knowledge may be trivial. For example, there might be a data set of places -- places from all over the world including things like geographic coordinates, histories of the places, images, etc. There might be another data set of poeple. Each person may be described using their name, their place of birth, and a short biography. These data sets may contain ten’s of thousands of items each. Using linked data it would be possible to cross reference the people with the places to discover who might have met whom when and where. Some people may have similar ideas, and those ideas may have been generated in a particular place. Linked data may help in discovering who was in the same place at the same time and the researcher may be better able to figure out how a particular idea came to fruition. 
+
+Here’s an example hitting closer to the home of archives and archivists. Suppose most archival finding aids were written in a format easily readable by computers. Let’s call this format Encoded Archival Description. Let’s suppose these finding aids were made available on the Web. Let’s suppose one or more computers crawled these archival sites harvesting the finding aids. Once done a computer program could be used to find all the occurrences of particular name and generate a virtual finding aid that is more complete and more comprehensible than any single finding aid on that particular person. 
+
+The amount of data and information accessible today is greater in size than it has ever been in human history. Using our traditional techniques of reading, re-reading, writing, discussing, etc. is more than possible to learn new things about the state of the world, the universe, and the human condition. By exploiting the current state of computer technology is possible to expand upon our traditional techniques and possibly accelerate the mass of knowledge. 
+
+-----
+
+outtakes
+
+2.a Benefits
+
+
+Archives are about collecting, organizing, preserving, and disseminating original, unique, and primary literature. These are the whats of archival practice, but the hows of archival practice evolve with the changing technology. With the advent of ubiquitous networked computing, people’s expectations regarding access to information and knowledge have changed significantly. Unless institutions like archives change with the times, then the needs previously filled by archives will be filled by other institutions. Linked data is a how of archival practice, and it is one of those changes behooving archives to adopt. It is a standards-based technique for making data and information available on the Web. It is rooted in the very fabric of the Web and therefore is not beholden to any particular constituency. It is a long lasting standard and practice that will last as long as the hypertext transfer protocol is operational.
+
+Making archival descriptions and collection available via linked data will increase the use of those descriptions and collections. It is a form of benign advertising. Commercial search engines will harvest the linked data content and make it available it their search engines. Search engines will return hits to your descriptions and collections driving traffic to you and your site. Digital humanists will harvest your content, perform analysis against it, and create new knowledge or bring hidden knowledge to light. Computer scientist will collect your data, amalgamate it with the data of others, and discover relationship previously unconceived.
+
+You can divide your combined collections and services into two tangible parts: 1) the collections  themselves, and 2) the metadata describing them. It is usually possible to digitize your collections, but the result is rarely 100% satisfactory. Digitization is almost always a useful surrogate not a complete replacement. In this way, your collections as physical objects will always be a draw to all types of learners and researchers. The metadata, on the other hand, is 100% digitizable, and therefore lends itself very well to dissemination on the Internet. Linked data represents one way to make this happen. 
+
+Few archival collections are 100% complete. There are always pieces missing, and some of those missing pieced will be owned by others. Your collections will have relationship with other collection, but you will not have direct access to those other collections. Some of these relationships are explicit. Some of them are implicit. If everybody were to expose their metadata then those explicit and implicit relationships can become more apparent. Once these relationships are strengthened and become more obvious, interest in the collections will increase accordingly, and the collections will be used to a greater degree. With this increased use will come increased attention, and in turn, a greater measure of success for the collections and services it provides. 
+
+----- 
+From: Ingrid Mason <ingrid.b.mason@gmail.com>
+Subject: Re: [LODLAM] quick benefits to hosting instutitions
+Date: January 22, 2014 at 9:49:47 PM EST
+To: lod-lam@googlegroups.com
+Reply-To: lod-lam@googlegroups.com
+
+Hi Jody,
+
+If I understand correctly, you're keen to find examples of value generated.  I'll give this a whirl... and see if I'm being helpful.  
+
+Converting data that already exists, >> providing a data service that a user community seeks to reuse and contribute to (access value).  
+
+PeopleAustralia (National Library of Australia) provides permanent, resolvable unique identifiers that link to records about parties, i.e. people or organisations.  The authority file at the Library already had, was reused.  This data source was enhanced as a result of ANDS funding to identify parties that manage or own research data collections.  You'll see that this has increased the capacity for discovery (through collaboration with other data providers).  Key contact: Tim Sherratt @wragge  
+
+Collaborating with custodians of primary material (collection managers), using third party data (Dbpedia), and finding, identifying and linking entities in the data >> brought to light information that was previously unknown (research value).
+
+LinkedJazz at the Pratt Institute.  Finalist in the LODLAM 2013 summit award along with some other folks (for being generally super clever with LOD things).  Key contact: Cristina Patuelli @cristinapattuel 
+
+Providing insights into the links in your own data >>  improve data quality (data value).   
+
+Check out Chris McDowall's post on linking data in digitalNZ.  @fogonwater 
+
+There are other kinds of value in all that.  Guess benefits depend on what the strategic goals of the organisation are, and what the research community needs in terms of access.    
+
+Hope that helps?
+
+Ingrid 
+
+
+-=---
+---
 3.b. Overview of linked data concepts and vocabulary (done)
 
 Linked data is a standardized process for publishing and disseminating information via the Web. It represents the current "how" behind the ideas the Semantic Web.
