@@ -1,3 +1,7 @@
+6. On Your Way: Next Steps
+
+6.a. Integration into daily practice
+
 6.b. Three Cs: Cleanup, Conversion, Consistency
 
 The article entitled Recipes for Enhancing Digital Collections with Linked Data

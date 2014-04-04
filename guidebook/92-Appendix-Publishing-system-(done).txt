@@ -1,0 +1,609 @@
+11 Scripts (done)
+
+This section lists a set of computer source code implementing a simple linked data publishing system. Assuming the (Perl) developer has on hand a set of EAD finding aids and/or sets of MARC records, this system can:
+
+  * transform EAD into RDF/XML
+  * transform EAD into HTML
+  * convert MARC into RDF/XML
+  * convert MARC into HTML
+  * support content negotiation against the RDF/XML and HTML
+  * initialize a triple store
+  * batch load RDF/XML into the triple store
+  * search the triple store
+  * dump the entire triple store as RDF/XML
+  * support a SPARQL endpoint against the triple store
+
+This publishing system is more than a toy and ought to be able to support the needs of many archives with small- to medium-sized collections.
+
+
+11.a ead2rdf.pl - Perl script to make EAD files accessible via linked data (done)
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# December 6, 2013 - based on marc2linkedata.pl
+
+
+# configure
+use constant ROOT     => '/disk01/www/html/main/sandbox/liam';
+use constant EAD      => ROOT . '/src/ead/';
+use constant DATA     => ROOT . '/data/';
+use constant PAGES    => ROOT . '/pages/';
+use constant EAD2HTML => ROOT . '/etc/ead2html.xsl';
+use constant EAD2RDF  => ROOT . '/etc/ead2rdf.xsl';
+use constant SAXON    => 'java -jar /disk01/www/html/main/sandbox/liam/bin/saxon.jar -s:##SOURCE## -xsl:##XSL## -o:##OUTPUT##';
+
+# require
+use strict;
+use XML::XPath;
+use XML::LibXML;
+use XML::LibXSLT;
+
+# initialize
+my $saxon  = '';
+my $xsl    = '';
+my $parser = XML::LibXML->new;
+my $xslt   = XML::LibXSLT->new;
+
+# process each record in the EAD directory
+my @files = glob EAD . "*.xml";
+for ( 0 .. $#files ) {
+
+	# re-initialize
+	my $ead = $files[ $_ ];
+	print "         EAD: $ead\n";
+
+	# get the identifier
+	my $xpath      = XML::XPath->new( filename => $ead );
+	my $identifier = $xpath->findvalue( '/ead/eadheader/eadid' );
+	$identifier    =~ s/[^\w ]//g;
+	print "  identifier: $identifier\n";
+	print "         URI: http://infomotions.com/sandbox/liam/id/$identifier\n";
+		
+	# re-initialize and sanity check
+	my $output = PAGES . "$identifier.html";
+	if ( ! -e $output or -s $output == 0 ) {
+	
+		# transform marcxml into html
+		print "        HTML: $output\n";
+		my $source     = $parser->parse_file( $ead )  or warn $!;
+		my $style      = $parser->parse_file( EAD2HTML )   or warn $!;
+		my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
+		my $results    = $stylesheet->transform( $source )  or warn $!;
+		my $html       = $stylesheet->output_string( $results );
+	
+		&save( $output, $html );
+
+	}
+	else { print "        HTML: skipping\n" }
+	
+	# re-initialize and sanity check
+	my $output = DATA . "$identifier.rdf";
+	if ( ! -e $output or -s $output == 0 ) {
+	
+		# create saxon command, and save rdf
+		print "         RDF: $output\n";
+		$saxon  =  SAXON;
+		$xsl    =  EAD2RDF;
+		$saxon  =~ s/##SOURCE##/$ead/e;
+		$saxon  =~ s/##XSL##/$xsl/e;
+		$saxon  =~ s/##OUTPUT##/$output/e;
+		system $saxon;
+	
+	}
+	else { print "         RDF: skipping\n" }
+	
+	# prettify
+	print "\n";
+	
+}
+
+# done
+exit;
+
+
+sub save {
+
+	open F, ' > ' . shift or die $!;
+	binmode( F, ':utf8' );
+	print F shift;
+	close F;
+	return;
+
+}
+
+
+11.b  marc2rdf.pl - Perl script to make MARC records accessible via linked data (done)
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# December 5, 2013 - first cut;
+
+
+# configure
+use constant ROOT      => '/disk01/www/html/main/sandbox/liam';
+use constant MARC      => ROOT . '/src/marc/';
+use constant DATA      => ROOT . '/data/';
+use constant PAGES     => ROOT . '/pages/';
+use constant MARC2HTML => ROOT . '/etc/MARC21slim2HTML.xsl';
+use constant MARC2MODS => ROOT . '/etc/MARC21slim2MODS3.xsl';
+use constant MODS2RDF  => ROOT . '/etc/mods2rdf.xsl';
+use constant MAXINDEX  => 100;
+
+# require
+use IO::File;
+use MARC::Batch;
+use MARC::File::XML;
+use strict;
+use XML::LibXML;
+use XML::LibXSLT;
+
+# initialize
+my $parser = XML::LibXML->new;
+my $xslt   = XML::LibXSLT->new;
+
+# process each record in the MARC directory
+my @files = glob MARC . "*.marc";
+for ( 0 .. $#files ) {
+
+	# re-initialize
+	my $marc = $files[ $_ ];
+	my $handle = IO::File->new( $marc );
+	binmode( STDOUT, ':utf8' );
+	binmode( $handle, ':bytes' );
+	my $batch  = MARC::Batch->new( 'USMARC', $handle );
+	$batch->warnings_off;
+	$batch->strict_off;
+	my $index = 0;
+
+	# process each record in the batch
+	while ( my $record = $batch->next ) {
+
+		# get marcxml
+		my $marcxml =  $record->as_xml_record;
+		my $_001    =  $record->field( '001' )->as_string;
+		$_001       =~ s/_//;
+		$_001       =~ s/ +//;
+		$_001       =~ s/-+//;
+		print "        marc: $marc\n";
+		print "  identifier: $_001\n";
+		print "         URI: http://infomotions.com/sandbox/liam/id/$_001\n";
+
+		# re-initialize and sanity check
+		my $output = PAGES . "$_001.html";
+		if ( ! -e $output or -s $output == 0 ) {
+	
+			# transform marcxml into html
+			print "        HTML: $output\n";
+			my $source     = $parser->parse_string( $marcxml )  or warn $!;
+			my $style      = $parser->parse_file( MARC2HTML )   or warn $!;
+			my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
+			my $results    = $stylesheet->transform( $source )  or warn $!;
+			my $html       = $stylesheet->output_string( $results );
+	
+			&save( $output, $html );
+
+		}
+		else { print "        HTML: skipping\n" }
+
+		# re-initialize and sanity check
+		my $output = DATA . "$_001.rdf";
+		if ( ! -e $output or -s $output == 0 ) {
+
+			# transform marcxml into mods
+			my $source     = $parser->parse_string( $marcxml )  or warn $!;
+			my $style      = $parser->parse_file( MARC2MODS )   or warn $!;
+			my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
+			my $results    = $stylesheet->transform( $source )  or warn $!;
+			my $mods       = $stylesheet->output_string( $results );
+	
+			# transform mods into rdf
+			print "         RDF: $output\n";
+			$source        = $parser->parse_string( $mods )     or warn $!;
+			my $style      = $parser->parse_file( MODS2RDF )    or warn $!;
+			my $stylesheet = $xslt->parse_stylesheet( $style )  or warn $!;
+			my $results    = $stylesheet->transform( $source )  or warn $!;
+			my $rdf        = $stylesheet->output_string( $results );
+	
+			&save( $output, $rdf );
+			
+		}
+		else { print "         RDF: skipping\n" }
+	
+		# prettify
+		print "\n";
+		
+		# increment and check
+		$index++;
+		last if ( $index > MAXINDEX )
+		
+	}
+
+}
+
+# done
+exit;
+
+
+sub save {
+
+	open F, ' > ' . shift or die $!;
+	binmode( F, ':utf8' );
+	print F shift;
+	close F;
+	return;
+
+}
+
+
+11.c  Dereference.pm - mod_perl module facilitate content negotiation (done)
+
+# Dereference.pm - Redirect user-agents based on value of URI.
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# December 7, 2013 - first investigations; based on Apache2::Alex::Dereference
+# January  7, 2014  - by default return HTML, not RDF
+
+
+# configure
+use constant PAGES => 'http://infomotions.com/sandbox/liam/pages/';
+use constant DATA  => 'http://infomotions.com/sandbox/liam/data/';
+
+# require
+use Apache2::Const -compile => qw( OK );
+use CGI;
+use strict;
+
+# main
+sub handler {
+
+	# initialize
+	my $r   = shift;
+	my $cgi = CGI->new;
+	my $id  = substr( $r->uri, length $r->location );
+	
+	# wants html
+	if ( $cgi->Accept( 'text/html' ) ) {
+	
+		print $cgi->header( -status => '303 See Other', 
+		-Location => PAGES . $id . '.html', 
+		-Vary     => 'Accept' , 
+		"Content-Type" => 'text/html' )
+		
+	}
+
+	# check for rdf
+	elsif ( $cgi->Accept( 'application/rdf+xml' ) ) {
+	
+		print $cgi->header( -status => '303 See Other', 
+		-Location      => DATA . $id . '.rdf', 
+		-Vary          => 'Accept', 
+		"Content-Type" => 'application/rdf+xml' )
+
+	}
+	
+	# give them html, anyway 
+	else {
+	
+		print $cgi->header( -status => '303 See Other', 
+		-Location => PAGES . $id . '.html', 
+		-Vary     => 'Accept' , 
+		"Content-Type" => 'text/html' )
+		
+	}
+	# done
+	return Apache2::Const::OK;
+
+}
+
+1; # return true or die
+
+
+11.d  store-make.pl - a Perl script to simply initialize an RDF triple store (done)
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# December 14, 2013 - after wrestling with wilson for most of the day
+
+
+# configure
+use constant ETC => '/disk01/www/html/main/sandbox/liam/etc/';
+
+# require
+use strict;
+use RDF::Redland;
+
+# sanity check
+my $db = $ARGV[ 0 ];
+if ( ! $db ) {
+
+	print "Usage: $0 <db>\n";
+	exit;
+	
+}
+
+# do the work; brain-dead
+my $etc = ETC;
+my $store = RDF::Redland::Storage->new( 'hashes', $db, "new='yes', hash-type='bdb', dir='$etc'" );
+die "Unable to create store ($!)" unless $store;
+my $model = RDF::Redland::Model->new( $store, '' );
+die "Unable to create model ($!)" unless $model;
+
+# "save"
+$store = undef;
+$model = undef;
+
+# done
+exit;
+
+
+11.e  store-add.pl - a Perl script to add items to an RDF triple store (done)
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# December 14, 2013 - after wrestling with wilson for most of the day
+
+
+# configure
+use constant ETC => '/disk01/www/html/main/sandbox/liam/etc/';
+
+# require
+use strict;
+use RDF::Redland;
+
+# sanity check #1 - command line arguments
+my $db   = $ARGV[ 0 ];
+my $file = $ARGV[ 1 ];
+if ( ! $db or ! $file ) {
+
+	print "Usage: $0 <db> <file>\n";
+	exit;
+	
+}
+
+# echo
+warn "$file\n";
+
+# sanity check #2 - store exists
+die "Error: po2s file not found. Make a store?\n" if ( ! -e ETC . $db . '-po2s.db' );
+die "Error: so2p file not found. Make a store?\n" if ( ! -e ETC . $db . '-so2p.db' );
+die "Error: sp2o file not found. Make a store?\n" if ( ! -e ETC . $db . '-sp2o.db' );
+
+# open the store
+my $etc = ETC;
+my $store = RDF::Redland::Storage->new( 'hashes', $db, "new='no', hash-type='bdb', dir='$etc'" );
+die "Error: Unable to open store ($!)" unless $store;
+my $model = RDF::Redland::Model->new( $store, '' );
+die "Error: Unable to create model ($!)" unless $model;
+
+# sanity check #3 - file exists
+die "Error: $file not found.\n" if ( ! -e $file );
+
+# parse a file and add it to the store
+my $uri    = RDF::Redland::URI->new( "file:$file" );
+my $parser = RDF::Redland::Parser->new( 'rdfxml', 'application/rdf+xml' );
+die "Error: Failed to find parser ($!)\n" if ( ! $parser );
+my $stream = $parser->parse_as_stream( $uri, $uri );
+my $count  = 0;
+while ( ! $stream->end ) {
+
+	$model->add_statement( $stream->current );
+	$count++;
+	$stream->next;
+
+}
+
+# echo the result
+#warn "Namespaces:\n";
+#my %namespaces = $parser->namespaces_seen;
+#while ( my ( $prefix, $uri ) = each %namespaces ) {
+#
+#	warn " prefix: $prefix\n";
+#	warn '    uri: ' . $uri->as_string . "\n";
+#	warn "\n";
+#
+#}
+warn "Added $count statements\n";
+warn "\n";
+
+# "save"
+$store = undef;
+$model = undef;
+
+# done
+exit;
+
+
+11.f  store-search.pl - Perl script to query a triple store (done)
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# December 14, 2013 - after wrestling with wilson for most of the day
+
+
+# configure
+use constant ETC => '/disk01/www/html/main/sandbox/liam/etc/';
+my %namespaces = (
+
+  "crm"       => "http://erlangen-crm.org/current/",
+  "dc"        => "http://purl.org/dc/elements/1.1/",
+  "dcterms"   => "http://purl.org/dc/terms/",
+  "event"     => "http://purl.org/NET/c4dm/event.owl#",
+  "foaf"      => "http://xmlns.com/foaf/0.1/",
+  "lode"      => "http://linkedevents.org/ontology/",
+  "lvont"     => "http://lexvo.org/ontology#",
+  "modsrdf"   => "http://simile.mit.edu/2006/01/ontologies/mods3#",
+  "ore"       => "http://www.openarchives.org/ore/terms/",
+  "owl"       => "http://www.w3.org/2002/07/owl#",
+  "rdf"       => "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "rdfs"      => "http://www.w3.org/2000/01/rdf-schema#",
+  "role"      => "http://simile.mit.edu/2006/01/roles#",
+  "skos"      => "http://www.w3.org/2004/02/skos/core#",
+  "time"      => "http://www.w3.org/2006/time#",
+  "timeline"  => "http://purl.org/NET/c4dm/timeline.owl#",
+  "wgs84_pos" => "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  
+);
+
+# require
+use strict;
+use RDF::Redland;
+
+# sanity check #1 - command line arguments
+my $db    = $ARGV[ 0 ];
+my $query = $ARGV[ 1 ];
+if ( ! $db or ! $query ) {
+
+	print "Usage: $0 <db> <query>\n";
+	exit;
+	
+}
+
+# sanity check #2 - store exists
+die "Error: po2s file not found. Make a store?\n" if ( ! -e ETC . $db . '-po2s.db' );
+die "Error: so2p file not found. Make a store?\n" if ( ! -e ETC . $db . '-so2p.db' );
+die "Error: sp2o file not found. Make a store?\n" if ( ! -e ETC . $db . '-sp2o.db' );
+
+# open the store
+my $etc = ETC;
+my $store = RDF::Redland::Storage->new( 'hashes', $db, "new='no', hash-type='bdb', dir='$etc'" );
+die "Error: Unable to open store ($!)" unless $store;
+my $model = RDF::Redland::Model->new( $store, '' );
+die "Error: Unable to create model ($!)" unless $model;
+
+# search
+#my $sparql  = RDF::Redland::Query->new( "CONSTRUCT { ?a ?b ?c } WHERE { ?a ?b ?c }", undef, undef, "sparql" );
+my $sparql = RDF::Redland::Query->new( "PREFIX modsrdf: <http://simile.mit.edu/2006/01/ontologies/mods3#>\nSELECT ?a ?b ?c WHERE {  ?a  modsrdf:$query ?c }", undef, undef, 'sparql' );
+my $results = $model->query_execute( $sparql );
+print $results->to_string;
+
+# done
+exit;
+
+
+11.g  sparql.pl - a Perl-based, brain-dead, half-baked SPARQL endpoint (done)
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# December 15, 2013 - first investigations
+
+
+# require
+use CGI;
+use CGI::Carp qw( fatalsToBrowser );
+use RDF::Redland;
+use strict;
+
+# initialize
+my $cgi   = CGI->new;
+my $query = $cgi->param( 'query' );
+
+if ( ! $query ) {
+
+	print $cgi->header;
+	print &home;
+
+}
+
+else {
+
+	# open the store for business
+	my $store = RDF::Redland::Storage->new( 'hashes', 'store', "new='no', hash-type='bdb', dir='/disk01/www/html/main/sandbox/liam/etc'" );
+	my $model = RDF::Redland::Model->new( $store, '' );
+
+	# search
+	my $results = $model->query_execute( RDF::Redland::Query->new( $query, undef, undef, 'sparql' ) );
+
+	# return the results
+	print $cgi->header( -type => 'application/xml' );
+	print $results->to_string;
+
+}
+
+# done
+exit;
+
+
+sub home {
+
+	# return a home page
+	return <<EOF
+<html>
+<head>
+<title>LiAM SPARQL Endpoint</title>
+</head>
+<body style='margin: 7%'>
+<h1>LiAM SPARQL Endpoint</h1>
+<p>This is a brain-dead and half-baked SPARQL endpoint to a subset of LiAM linked data. Enter a query, but there is the disclaimer. Errors will probably happen because of SPARQL syntax errors. Remember, the interface is brain-dead. Your milage <em>will</em> vary.</p>
+<form method='GET' action='./'>
+<textarea style='font-size: large' rows='5' cols='65' name='query' />
+SELECT ?p ?o
+WHERE { &lt;http://infomotions.com/sandbox/liam/id/mum432&gt; ?p ?o }
+ORDER BY ?p
+</textarea><br />
+<input type='submit' value='Search' />
+</form>
+<p>Sample queries:</p>
+<ul>
+	<li>All the classes in the triple store - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+DISTINCT+%3Fo+WHERE+%7B+%3Fs+a+%3Fo+%7D+ORDER+BY+%3Fo" target="_blank">SELECT DISTINCT ?o WHERE { ?s a ?o } ORDER BY ?o</a></code></li>
+	<li>All the properties in the triple store - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+DISTINCT+%3Fp+WHERE+%7B+%3Fs+%3Fp+%3Fo+%7D+ORDER+BY+%3Fp" target="_blank">SELECT DISTINCT ?p WHERE { ?s ?p ?o } ORDER BY ?p</a></code></li>
+	<li>All the things things that are archival finding aids - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+WHERE+%7B+%3Fs+a+%3Chttp%3A%2F%2Fdata.archiveshub.ac.uk%2Fdef%2FFindingAid%3E+%7D" target="_blank">SELECT ?s WHERE { ?s a &lt;http://data.archiveshub.ac.uk/def/FindingAid&gt; }</a></code></li>
+	<li>Everything about a specific actionable URI (finding aid) - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fp+%3Fo+WHERE+%7B+%3Chttp%3A%2F%2Finfomotions.com%2Fsandbox%2Fliam%2Fid%2Fmum432%3E+%3Fp+%3Fo+%7D+ORDER+BY+%3Fp" target="_blank">SELECT ?p ?o WHERE { &lt;http://infomotions.com/sandbox/liam/id/mum432&gt; ?p ?o } ORDER BY ?p</a></code></li>
+	<li>Ten things that are MARC records - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+WHERE+%7B+%3Fs+a+%3Chttp%3A%2F%2Fsimile.mit.edu%2F2006%2F01%2Fontologies%2Fmods3%23Record%3E+%7D+LIMIT+10" target="_blank">SELECT ?s WHERE { ?s a &lt;http://simile.mit.edu/2006/01/ontologies/mods3#Record&gt; } LIMIT 10</a></code></li>
+	<li>Everything about a specific actionable URI - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fp+%3Fo+WHERE+%7B+%3Chttp%3A%2F%2Finfomotions.com%2Fsandbox%2Fliam%2Fid%2Fshumarc681792%3E+%3Fp+%3Fo+%7D+ORDER+BY+%3Fp" target="_blank">SELECT ?p ?o WHERE { &lt;http://infomotions.com/sandbox/liam/id/shumarc681792&gt; ?p ?o } ORDER BY ?p</a></code></li>
+	<li>One hundred things with titles - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+%3Fo+WHERE+%7B+%3Fs+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Ftitle%3E+%3Fo+%7D+ORDER+BY+%3Fo+LIMIT+100" target="_blank">SELECT ?s ?o WHERE { ?s &lt;http://purl.org/dc/terms/title&gt; ?o } ORDER BY ?o LIMIT 100</a></code></li>
+	<li>One hundred things with creators - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+%3Fo+WHERE+%7B+%3Fs+%3Chttp%3A%2F%2Fsimile.mit.edu%2F2006%2F01%2Froles%23creator%3E+%3Fo+%7D+ORDER+BY+%3Fo+LIMIT+100" target="_blank">SELECT ?s ?o WHERE { ?s &lt;http://simile.mit.edu/2006/01/roles#creator&gt; ?o } ORDER BY ?o LIMIT 100</a></code></li>
+	<li>One hundred things with names - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+%3Fo+WHERE+%7B+%3Fs+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2Fname%3E+%3Fo+%7D+ORDER+BY+%3Fo+LIMIT+100" target="_blank">SELECT ?s ?o WHERE { ?s &lt;http://xmlns.com/foaf/0.1/name&gt; ?o } ORDER BY ?o LIMIT 100</a></code></li>
+	<li>One hundred things with notes - <code><a href="http://infomotions.com/sandbox/liam/sparql/?query=SELECT+%3Fs+%3Fo+WHERE+%7B+%3Fs+%3Chttp%3A%2F%2Fdata.archiveshub.ac.uk%2Fdef%2Fnote%3E+%3Fo+%7D+ORDER+BY+%3Fo+LIMIT+100" target="_blank">SELECT ?s ?o WHERE { ?s &lt;http://data.archiveshub.ac.uk/def/note&gt; ?o } ORDER BY ?o LIMIT 100</a></code></li>
+</ul>
+<p>For more information about SPARQL, see:</p>
+<ol>
+	<li><a href="http://www.w3.org/TR/rdf-sparql-query/" target="_blank">SPARQL Query Language for RDF</a> from the W3C</li>
+	<li><a href="http://en.wikipedia.org/wiki/SPARQL" target="_blank">SPARQL</a> from Wikipedia</li>
+</ol>
+<p>Source code -- <a href="http://infomotions.com/sandbox/liam/bin/sparql.pl">sparql.pl</a> -- is available online.</p>
+<hr />
+<p>
+<a href="mailto:eric_morgan\@infomotions.com">Eric Lease Morgan &lt;eric_morgan\@infomotions.com&gt;</a><br />
+March 5, 2014
+</p>
+</body>
+</html>
+EOF
+}
+
+
+11.h  store-dump.pl - Perl script to output the content of store as RDF/XML (done)
+
+# Eric Lease Morgan <eric_morgan@infomotions.com>
+# December 14, 2013 - after wrestling with wilson for most of the day
+
+
+# configure
+use constant ETC => '/disk01/www/html/main/sandbox/liam/etc/';
+
+# require
+use strict;
+use RDF::Redland;
+
+# sanity check #1 - command line arguments
+my $db  = $ARGV[ 0 ];
+if ( ! $db ) {
+
+	print "Usage: $0 <db>\n";
+	exit;
+	
+}
+
+# sanity check #2 - store exists
+die "Error: po2s file not found. Make a store?\n" if ( ! -e ETC . $db . '-po2s.db' );
+die "Error: so2p file not found. Make a store?\n" if ( ! -e ETC . $db . '-so2p.db' );
+die "Error: sp2o file not found. Make a store?\n" if ( ! -e ETC . $db . '-sp2o.db' );
+
+# open the store
+my $etc = ETC;
+my $store = RDF::Redland::Storage->new( 'hashes', $db, "new='no', hash-type='bdb', dir='$etc'" );
+die "Error: Unable to open store ($!)" unless $store;
+my $model = RDF::Redland::Model->new( $store, '' );
+die "Error: Unable to create model ($!)" unless $model;
+
+# do the work
+my $serializer = RDF::Redland::Serializer->new;
+print $serializer->serialize_model_to_string( RDF::Redland::URI->new, $model );
+
+# done
+exit;
+

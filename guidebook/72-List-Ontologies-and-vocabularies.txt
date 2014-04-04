@@ -1,0 +1,66 @@
+
+Directories of ontologies
+
+  * Linked Open Vocabularies (http://lov.okfn.org/dataset/lov/) - This is
+	a list of more than 400 RDF ontologies with both a searchable/browsable
+	interface. It is als accessible via linked data publishing principles.
+
+  * Open Metadata Registry (http://metadataregistry.net) - This is a list
+	of more than 300 RDF ontologies. The Registry was originally conceived
+	of as a National Science Foundation project called the National Science
+	Foundation Digital Library (NSDL) Registry. The Registry seems heavy on
+  sets of controlled vocabularies of a bibliographic nature 
+
+ 
+Vocabularies
+
+  * Getty Vocabularies (http://vocab.getty.edu) - A set of thesari
+	used to "categorize, describe, and index cultural heritage objects and
+	information".
+
+  * Library of Congress Linked Data Service (http://id.loc.gov/) - A set
+	of data sets used for bibliographic classification: subjects, names,
+	genres, formats, etc.
+
+  * New York Times (http://data.nytimes.com/) - A list of New York Times
+    subject headings.
+
+  * VIAF (http://viaf.org/) - This data set functions as a name
+    authority file. The human-readable interface is quite nice.
+
+
+Ontologies
+
+  * Archival Collections Ontology (https://github.com/rubinsztajn/archival) - Created by Aaron Rubinstein (University of Massachusetts) is small ontology specifically designed for archival collections.
+
+  * Bibo (http://purl.org/ontology/bibo/) - Just as the name infers, this ontology is intended to model bibliographic citations. 
+  
+  * Bibframe (http://bibframe.org) - Another ontology which is bibliographic in nature and includes an abundance of properties for various identifiers. 
+  
+  * CIDOC Conceptual Reference Model (http://www.cidoc-crm.org) - Intended for cultural heritage institutions, this model includes quite a number of subclass items surrounding two primary concepts: things and time. 
+  
+  * Dublin Core Terms (http://dublincore.org/documents/dcmi-terms/) - This ontology is rather bibliographic in nature, and provides a framework for describing many of ht of archival descriptions.
+
+  * Europeneana (http://ontogenealogy.com/europeana-data-model-edm/) - Another approach is to the data model from other oganizations. Since Europeneana’s data is intended to be available as linked data, then it might be a good model to explore — http://pro.europeana.eu/edm-documentation  Specifically: For the archival community, collection level descriptions such as EAD play a major role.They fit neatly under the EDM,in particular the notion of ore:aggregration allows for describing archival “fonds”. The International Council of Archives just started the discussion about a common conceptual model similar to FRBR or the CRM. In the meanwhile, with the CRM historical facts associated with archival contents can be described in more detail than just on the EDM level (Stasinopoulou et. al. 2007). Further, collection-level descriptions in Dublin Core are quite convenient and becoming popular for archival descriptions. — 
+
+  * FOAF (http://www.foaf-project.org/) - Friend Of A Friend (FOAF) is a popular and often-quoted ontology for modeling people and the social networks they create: names, email address, social network account identifiers, etc. 
+
+  * LOCAH RDF Vocabulary (http://data.archiveshub.ac.uk/def/) - This is the model designed for the LOCAH Project from the Archives Hub in the United Kingdom. It is the model underpinning the transformed EAD files of the LiAM "sandbox". 
+
+  * MARC21 Vocabularies from Metadata Management Associates (http://marc21rdf.info) - 
+
+  * OAD Vocabulary - (http://labs.regesta.com/progettoReload/wp-content/uploads/2013/08/oadNew.html) - "[Google translation] The definition of an ontology of archival description is needed in order to test the potential of the web of data to archival descriptions. The archival description aims at the representation of a unit of description by collecting, analyzing, organizing and recording the information needed to identify, manage, locate and explain the context and documentary material and the storage systems that produced (ISAD (G)). The ontology of archival description (SRO) has as its goal the formal representation of the descriptions of the individual units of description - understood as objects of their archival descriptions. In particular, the SRO waiver to take into account all the individual elements of these descriptions, in endless variations they present as part of the archival systems in which they are hinged, but instead seeks only to explain the elements of information deemed necessary for the exposure the web of data units of archival description to ensure integration with other datasets published also in format Linked Open Data. SROs, in beta, is expressed in OWL (Ontology Web Language): it takes into account all the elements of archival description in the standard ISAD (G): general international standard archival description, adopted by the ICA (International Council on Archives) integrating them with other information elements not covered by the standard mentioned - as the index entries - and with links to creators and conservative. The formal mechanisms provided by the standard RDF and OWL have made it possible to bring the information elements of archival descriptions expressed in an ontology SROs to "external" concepts representative of traditional archival descriptive and based on the international standard ISAD (G). Since the experiments conducted by the partners of the project ReLoad had as object data encoded on the basis of the framework EAD (Encoded Archival Description), the ontology provides for a specific class OAD "eadElement" designed to encode the information on the element or attribute of the EAD scheme used by the organization that provides data archival description, which is also attributed to the ISAD (G) on the basis of official mapping ISAD (G) - EAD 
+
+  * OWL (http://www.w3.org/2001/sw/wiki/OWL) - 
+  
+  * PROV (http://www.w3.org/TR/prov-overview/) - for provenance information.
+
+  * RDF - This ontology is necessary because linked data is manifested as... RDF
+
+  * RDFS (http://www.w3.org/TR/rdf-schema/) - This ontology may be necessary because the archival community may be creating some of its own ontologies.
+
+  * Schema.org (http://schema.org) - Originally sponsored by Google, Microsoft, Yahoo, etc. this ontology is advocated by the major Internet search engines. It is a growing, well-supported ontology, and it is seemingly designed for just about anything under the sun.
+  
+  * SKOS (http://www.w3.org/2004/02/skos/) - This ontology is used to create thesauri. 
+
+  * VoID (http://semanticweb.org/wiki/VoID) - This relatively simple data model is used to describe RDF data sets with things like their location, size, licensing terms, frequency of updates, etc.

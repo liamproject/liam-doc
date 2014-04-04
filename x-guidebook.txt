@@ -48,9 +48,8 @@ Linked Archival Metadata: A Guidebook provides archivists with an overview of th
 The Guidebook is a product of the Linked Archival Metadata planning project (LiAM), led by the Digital Collections and Archives at Tufts University and funded by the Institute of Museum and Library Services (IMLS). LiAM’s goals include defining use cases for linked data in archives and providing a roadmap to describe options for archivists intending to share their description using linked data techniques.
 
 
-
+2.a Why linked data, and why now?
 
-What is linked data, and why should I care?
 
 For all intents and contexts, linked data and linked open data are synonymous, but the subtle difference does need to be  discussed. Linked open data is a qualification of linked data.  Linked open data comes with  an explicit  license agreement denoting  how the accessible data can  be “freely” used. In this case, the words “free” and “open” are analogous to free “open source software”. Just as open source software is available for use and re-use, linked open data is free for use and re-use. Attribution needs to be made. The data can be freely used. While copyrights may still be in place when it comes to linked open data, the copyrights allow for the use, re-use, and re-distribution. The intent of linked open data is to use the content in ways that it canb e used in many ways for many purposes. While the distinction between linked data and linked open data are may be large in the eyes of some people, for simplicities sake, the phrase linked data is synonymous with linked open data, even though some feel the distinction needs to be delineated to a greater degree.
 

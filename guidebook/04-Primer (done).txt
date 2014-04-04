@@ -1,0 +1,318 @@
+3. Linked Data for Archives: a Primer (done)
+
+Linked Data is a process for manifesting the ideas behind the Semantic Web. The Semantic Web is about encoding data, information, and knowledge in computer-readable fashions, making these encodings accessible on the World Wide Web, allowing computers to crawl the encodings, and finally, employing reasoning engines against them for the purpose of discovering and creating new knowledge. The following section are a primer to the principles and practices of linked data. 
+
+
+3.c. Brief overview of the history of LOD-LAM (done)
+
+The history of linked data in libraries, archives, and museums is rooted in history of the Semantic Web.
+
+The canonical article describing the Semantic Web was written by Tim Berners-Lee, James Hendler, and Ora Lassila in 2001. [1] The article described the concept of the Semantic Web -- an environment where Internet-wide information was freely available for both people and computers to access with the ultimate purpose of bringing new knowledge to light. At that time, to implement the ideas behind the Semantic Web, many people created RDF/XML files side-by-side with their HTML and saved them on Web servers. Around this same time the idea of "Web services" and REST-ful computing were beginning to be articulated by the Internet community. Simply put, Web services and REST-ful computing are/were a way for computers to request and share information over the World Wide Web. Web services and REST-ful computing became popular because just about anybody can do it. All you usually have to do is submit a very long URL plus numerous variable/value pairs to a Web server, and the Web server returns some data. Many computer programmers and people who could write HTML quickly picked up on this idea, and it became popular. Besides, no Semantic Web "killer application" had been demonstrated to the wider Internet community, and many computer technologists thought RDF/XML was a poor way of serializing RDF. The idea of the Semantic Web faded for a few years.
+
+In 2006 Berners-Lee more concretely described how to make the Semantic Web a reality in a text called “Linked Data -- Design Issues”. [2] It it he advocated a four-step process for making content freely available on the Web. He also advocated for simple URLs to be used to describe things. At this same time additional RDF serializations were becoming popular; RDF/XML was no longer the only way to express RDF. Also a few entrepreneurial individuals were also beginning to provide software services for creating, maintaining, and distributing RDF. These developments, plus the kinship of "all things open" (open source software, open access publishing, open data, etc.) with the fundamental goals of the Semantic Web, probably led to the current interest in linked data. Since then an increasing number of specialized communities have expressed and demonstrated interest in linked data. Linked data technologies are maturing.
+
+[1] canonical article - http://www.scientificamerican.com/article/the-semantic-web/
+[2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
+
+
+3.b. Overview of linked data concepts and vocabulary (done)
+
+Linked data is a standardized process for publishing and disseminating information via the Web. It represents the current "how" behind the ideas the Semantic Web.
+
+Increasingly you will hear of of linked data being qualified as "linked open data". The "open" qualifier alludes to the important distinctions between truly free data/information and licensed data/information coming with strings attached. Truly "open" linked data comes with no financial restrictions or restrictions on use, but there may very well be attribution requirements.
+
+When you hear of linked data and the Semantic Web, the next thing you often hear is "RDF" or "Resource Description Framework". First and foremost, RDF is a way of representing knowledge. It does this through the use of assertions (think, "sentences") with only three parts: 1) a subject, 2) a predicate, and 3) an object. Put together, these three things create things called "triples". The subject of each assertion is expected to be a Universal Resource Identifier (or URI, but think URL), and this URI is expected to represent a thing -- anything. The predicate is some sort of relationship such as equals or is a sub-part of or contains or is a description of, or is the name of, etc. Predicates are the vocabulary of linked data, and you will find an abundance of vocabularies from which to choose when creating linked data. Finally, objects come in two forms: 1) more URIs (pointers to things) or literal values such the names of people, places, or things. Examples of literals include "Lancaster, PA", "Thomas Jefferson", or "Musée d'Orsay".
+
+RDF is not to be confused with RDF/XML or any other type of RDF "serialization". Remember, RDF describes triples, but it does not specify how the triples are express or written down. On the other hand, RDF/XML is an XML syntax for expressing RDF. Some people think RDF/XML is too complicated and too verbose. Consequently, other serializations have manifested themselves including N3 and Turtle.
+
+In “Linked Data -- Design Issues” Berners-Lee outlined four often-quoted expectations for implementing the Semantic Web. Each of these expectations are listed below along with some elaborations:
+
+  * "Use URIs as names for things" - URIs (Universal Resource
+    Identifiers) are unique identifiers, and they are expected to
+    have the same shape as URLs (Universal Resource Locators). These
+    identifiers are expected to represent things such as people,
+    places, institutions, concepts, books, etc. URIs are monikers or
+    handles for real world or imaginary objects.  
+
+  * "Use HTTP URIs so that people can look up those names." - The
+    URIs are expected to look and ideally function on the World Wide
+    Web through the Hypertext Transfer Protocol (HTTP), meaning the
+    URI's point to things on Web servers.  
+
+  * "When someone looks up a URI, provide useful information, using
+    the standards (RDF, SPARQL)" - When URIs are sent to Web servers
+    by Web browsers (or "user-agents" in HTTP parlance), the response
+    from the server should be in a conventional, computer readable
+    format. This format is usually a "serialization" of RDF (Resource
+    Description Framework) -- a notation looking much like a
+    rudimentary sentence composed of a subject, predicate, and
+    object. 
+
+  * "Include links to other URIs. So that they can discover more
+    things." - Simply put, try very hard to use URIs other people
+    have have used. This way the relationships you create can
+    literally be linked to the relationships other people have
+    created. These links may represent new knowledge. 
+
+In the same text Berners-Lee also outlined a sort of reward system -- a sets of stars -- for levels of implementation. This reward system also works very well as a strategy for publishing linked data by cultural heritage institutions such as archives. A person gets:
+
+  * one star for making data available on the web (in whatever
+    format) but with an open license
+
+  * two stars for making the data machine-readable and structured
+    data (e.g. Excel instead of an image scan of a table) 
+
+  * three stars for making the data available in a
+    non-proprietary format (e.g. comma-separated values instead of
+    Excel) 
+
+  * four stars for using open standards from W3C (RDF and SPARQL)
+    to identify things, so that people can point at your stuff 
+
+  * five stars for linking your data to other people's data to
+    provide context
+
+The whole idea works like this. Suppose I assert the following statement:
+
+  The Declaration Of Independence was authored by Thomas Jefferson.
+  
+This statement can be divided into three parts. The first part is a subject (Declaration Of Independence). The second part is a predicate (was authored by). The third part is an object (Thomas Jefferson). In the language of the Semantic Web and linked data, these combined parts are called a triple, and they are expected to denote a fact. Triples are the heart of RDF. 
+
+Suppose further that the subject and object of the triple are identified using URIs (as in Expectations #1 and #2, above). This would turn our assertion into something like this with carriage returns added for readability:
+
+  http://en.wikipedia.org/wiki/Declaration_of_Independence
+  was authored by
+  http://www.worldcat.org/identities/lccn-n79-89957
+
+Unfortunately, this assertion is not easily read by a computer. Believe it or not, something like the XML below is much more amenable, and if it were the sort of content returned by a Web server to a Web browser (read "user-agent"), then it would satisfy Expectations #3 and #4 because the notation is standardized and because it points to other people's content:
+
+<?xml version="1.0"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/" >
+  <!-- the Declaration Of Independence was authored by Thomas Jefferson -->
+  <rdf:Description
+  rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
+    <dcterms:creator>http://id.loc.gov/authorities/names/n79089957</dcterms:creator>
+  </rdf:Description>
+</rdf:RDF>
+
+Suppose we had a second assertion:
+
+  Thomas Jefferson was a man.
+
+In this case, the subject is "Thomas Jefferson". The predicate is "was". The object is "man". This assertion can be expressed in a more computer-readable fashion like this:
+
+<?xml version="1.0"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <!-- Thomas Jefferson is man (a male) -->
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n7908995">
+    <foaf:Person foaf:gender="male" />
+  </rdf:Description>
+</rdf:RDF>
+
+Suppose there were smart linked data robot/spider. Suppose it crawled both Assertion #1 and Assertion #2. It then ought to be able to assert the following:
+
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <!-- the Declaration Of Independence was written by
+  Thomas Jefferson, and Thomas Jefferson is a male -->
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
+    <dcterms:creator>
+      <foaf:Person rdf:about="http://id.loc.gov/authorities/names/n79089957">
+        <foaf:gender>male</foaf:gender>
+      </foaf:Person>
+    </dcterms:creator>
+  </rdf:Description>
+</rdf:RDF>
+
+Looking at the two assertions, a reasonable person can deduce a third assertion, namely, the Declaration Of Independence was authored by a man. Which brings us back to the point of the Semantic Web and linked data. If everybody uses URIs (read "URLs") to describe things, if everybody denotes relationships (through the use of predicates) between URIs, if everybody makes their data available on the Web in standardized formats, and if everybody uses similar URIs, then new knowledge can be deduced from the original relationships.
+
+Unfortunately too little linked data has been made available and/or too few people have earned too few stars to really make the Semantic Web a reality. True, there are a growing number of value-added services and collections making use of linked data, but not so many that everybody is taking notice.
+
+The purpose of this guidebook is to provide means for archivists to do their part, make their content available on the Semantic Web through Linked Data, all in the hopes of facilitating the discovery of new knowledge. On our mark. Get set. Go!
+
+
+3.b RDF serializations (done)
+
+RDF can be expressed in many different formats, called "serializations". 
+
+RDF (Resource Description Framework) is a conceptual data model made up of "sentences" called triples — subjects, predicates, and objects. Subjects are expected to be URIs. Objects are expected to be URIs or string literals (think words, phrases, or numbers). Predicates are "verbs" establishing relationships between the subjects and the objects. Each triple is intended to denote a specific fact.
+
+When the idea of the Semantic Web was first articulated XML was the predominant data structure of the time. It was seen as a way to encapsulate data that was both readable by humans as well as computers. Like any data structure, XML has both its advantages as well as disadvantages. On one hand it is easy to determine whether or not XML files are well-formed, meaning they are syntactically correct. Given a DTD, or better yet, an XML schema, it is also easy to determine whether or not an XML file is valid — meaning does it contain the necessary XML elements, attributes, and are they arranged and used in the agreed upon manner. XML also lends itself to transformations into other plain text documents through the generic, platform-independent, XSLT (Extensible Stylesheet Language Transformation) process. Consequently, RDF was originally manifested — made real and "serialized" — though the use of RDF/XML.
+
+The example of RDF at the beginning of the Guidebook was an RDF/XML serialization:
+
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
+    <dcterms:creator>
+      <foaf:Person rdf:about="http://id.loc.gov/authorities/names/n79089957">
+        <foaf:gender>male</foaf:gender>
+      </foaf:Person>
+    </dcterms:creator>
+  </rdf:Description>
+</rdf:RDF>
+
+On the other hand, XML, almost by definition, is verbose. Element names are expected to be human-readable and meaningful, not obtuse nor opaque. The judicious use of special characters (&, <, >, ", and ') as well as entities only adds to the difficulty of actually reading XML. Consequently, almost from the very beginning people thought RDF/XML was not the best way to express RDF, and since then a number of other syntaxes — serializations — have manifested themselves.
+
+Below is the same RDF serialized in a format called Notation 3 (N3), which is very human readable, but not extraordinarily structured enough for computer processing. It incorporates the use of a line-based data structure called N-Triples used to denote the triples themselves:
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+<http://en.wikipedia.org/wiki/Declaration_of_Independence> dcterms:creator <http://id.loc.gov/authorities/names/n79089957>.
+<http://id.loc.gov/authorities/names/n79089957> a foaf:Person;
+	foaf:gender "male".
+
+JSON (JavaScript Object Notation) is a popular data structure inherent to the use of JavaScript and Web browsers, and RDF can be expressed in a JSON format as well:
+
+{
+  "http://en.wikipedia.org/wiki/Declaration_of_Independence": {
+    "http://purl.org/dc/terms/creator": [
+      {
+        "type": "uri", 
+        "value": "http://id.loc.gov/authorities/names/n79089957"
+      }
+    ]
+  }, 
+  "http://id.loc.gov/authorities/names/n79089957": {
+    "http://xmlns.com/foaf/0.1/gender": [
+      {
+        "type": "literal", 
+        "value": "male"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ]
+  }
+}
+
+Just about the newest RDF serialization is an embellishment of JSON called JSON-LD. Compare & contrasts the serialization below to the one above:
+
+{
+  "@graph": [
+    {
+      "@id": "http://en.wikipedia.org/wiki/Declaration_of_Independence",
+      "http://purl.org/dc/terms/creator": {
+        "@id": "http://id.loc.gov/authorities/names/n79089957"
+      }
+    },
+    {
+      "@id": "http://id.loc.gov/authorities/names/n79089957",
+      "@type": "http://xmlns.com/foaf/0.1/Person",
+      "http://xmlns.com/foaf/0.1/gender": "male"
+    }
+  ]
+}
+
+RDFa represents a way of expressing RDF embedded in HTML, and here is such an expression:
+
+<div xmlns="http://www.w3.org/1999/xhtml"
+  prefix="
+    foaf: http://xmlns.com/foaf/0.1/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    dcterms: http://purl.org/dc/terms/
+    rdfs: http://www.w3.org/2000/01/rdf-schema#"
+  >
+  <div typeof="rdfs:Resource" about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
+    <div rel="dcterms:creator">
+      <div typeof="foaf:Person" about="http://id.loc.gov/authorities/names/n79089957">
+        <div property="foaf:gender" content="male"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+The purpose of publishing linked data is to make RDF triples easily accessible. This does not necessarily mean the transformation of EAD or MARC into RDF/XML, but rather making accessible the statements of RDF within the context of the reader. In this case, the reader may be a human or some sort of computer program. Each serialization has its own strengths and weaknesses. Ideally an archive will have figure out ways exploit each of the RDF serializations for specific publishing purposes.
+
+For a good time, play with the RDF Translator which will convert one RDF serialization into another. [1] 
+
+The RDF serialization process also highlights how data structures are moving away from a document-centric models to a statement-central models. This too has consequences for way cultural heritage institutions, like archives, think about exposing their metadata, but that is the topic of another essay.
+
+[1] RDF Translator - http://rdf-translator.appspot.com
+
+
+
+
+4. Linked Data Today
+
+4.b. Trends in LOD-LAM
+
+  * Mash ups
+  * Harvesting along side other protocols
+  * Increased interest
+  * Increased number of RDF serializations
+  * Governments making their content available
+  * Using them to enhance online catalogs
+  * Creating timelines
+  * Creating “named graphs”
+  * Increased number of programming toolkits
+  * Emphasis on “open” linked data and linked data in museums and archives
+  * Making RDF dumps available
+  * Interest in schema.org
+
+With great interest I read the Spring/Summer issue of Information Standards Quarterly where there were a number of articles pertaining to linked open data in cultural heritage institutions. [0] Of particular interest to me where the various loosely enumerated challenges of linked open data. Some of them included:
+
+  * the apparent Tower Of Babel when it comes to vocabularies used to describe content, and the same time we need to have “ontology mindfulness”. 
+  * dirty, inconsistent, or wide varieties of data integrity
+  * persistent URIs
+  * the “chicken & egg” problem of why linked data if there is no killer application
+
+
+There are a number of challenges in the process. Some of them are listed below, and some of them have been alluded to above:
+
+  * Create useful LOD, meaning, create LOD that links to other LOD. LOD does not live in a world by itself. Remember, the "L" stands for "linked". For example, try to include URIs that are the URIs used on other LOD data sets. Sometimes this is not possible, for example, le with the names of people in archival materials. When possible, they used VIAF, but other times they needed to create their own URI denoting an individual.
+
+  * There is a level of rigor involved in creating the data model, and there may be many discussions regarding semantics. For example, what is a creator? Or, when is a term intended to be an index term as opposed reference. When does one term in one vocabulary equal a different term in a different vocabulary?
+
+  * Balance the creation of your own vocabulary with the need to speak the language of others using their vocabulary.
+
+  * Consider "fixing" the data as it comes in or goes out because it might not be consistent nor thorough.
+
+  * Provenance is an issue. People — especially scholars — will want to know where the LOD came from and whether or not it is authoritative. How to solve or address this problem? The jury is still out on this one.
+
+  * Creating and maintaining LOD is difficult because it requires the skills of a number of different types of people. Computer programmers. Database designers. Subject experts. Metadata specialists. Archivists. Etc. A team is all but necessary.
+
+
+
+3.a. Ontologies and vocabularies
+
+RDF and linked data is about making relationships between things. These relationships are denoted in the predicates of RDF triples, and the types of relationships are defined in ontologies. These ontologies are sometimes called schema. In the world of bibliography (think "Dublin Core"), these relationship types include things such "has title", "has subject", or "has author". In other ontologies, such as Friend of a Friend (FOAF), there are relationship types such as "has home page", "has email address", or "has name". Obviously there are similarities between things like "has author" and "has name", and consequently there are other ontologies (schemas) allowing equivocation, similarity, or hierarchy to be denoted. 
+
+In the world of archives, collections and their items are described. Think metadata. Some of this metadata comes from name authority lists and controlled vocabulary terms. Many of the authority lists and controlled vocabulary terms used by archives exist as linked data. Thus, when implementing RDF in archives it is expected to state things such as "This particular item was authored by this particular URI", or "This particular collection has a subject of this particular URI" where the URIs are values pointing to items in named authority lists or controlled vocabularies. 
+
+This section lists a set of RDF ontologies and linked data vocabularies of interest to the archivist. It is not necessarily an exhaustive list but instead represents some of the more popular and well-established items:
+
+, and this section enumerates and outlines some of the more useful and interesting ontologies for archival (and cultural heritage institution) description.
+
+Probably one of the more difficult intellectual tasks you will have when it comes to making your content available as linked data will be the selection of one or more ontologies used to make your RDF. Probably the easiest -- but not the most precise -- way to think about ontologies is as if they were fields in a MARC record or an EAD file. Such an analogy is useful, but not 100% correct. Probably the best way to think of the ontologies is as if they were verbs in a sentence denoting relationships between things — subjects and objects. A very interesting read on the subject of ontology selection and archival description are a couple of blog postings from the LOHAC blogs. [1]
+
+See also OWL @ Manchester (http://owl.cs.manchester.ac.uk) - The University of Manchester has a rich tradition of developing ontology languages, tools, methodologies, and applications. Historically, several lines of research at Manchester contributed directly to the development of OWL as a W3C standard and the School of Computer Science continues to be recognized as an international centre of OWL and OWL related research.
+
+
+But if ontologies are sets of “verbs”, then they are akin to human language, and human language is ambiguous. Therein lies the difficulty with ontologies. There is no “right” way to implement them. Instead, there is only best or common practice. There are no hard and fast rules. Everything comes with a bit of interpretation. The application and use of ontologies is very much like the application and use of written language in general. In order for written language to work well two equally important things need to happen. First, the writer needs to be able to write. They need to be able to choose the most appropriate language for their intended audience. Shakespeare is not “right” with his descriptions of love, but instead his descriptions of love (and many other human emotions) resinate with a very large number of people. Second, written language requires the reader to have a particular adeptness as well. Shakespeare can not be expected to write one thing and communicate to everybody. The reader needs to understand English, or the translation from English into another language needs to be compete and accurate. 
+
+The Internet, by design, is a decentralized environment. There are very few rules on how it is expected to be used. To a great extent it relies on sets of behavior that are more common practice as opposed to articulated rules. For example, what “rules” exist for tweets on Twitter? What rules exist for Facebook or blog postings. Creating sets of rules will not fly on the Internet because there is no over-arching governing body to enforce any rules.  Sure, there are things like Dublin Core with their definitions, but those definitions are left to interpretation, and there are no judges nor courts nor laws determining whether or not any particular application of Dublin Core is “correct”. Only the common use of Dublin Core is correct, and its use is not set in stone. 
+
+There are no “should’s” on the Internet. There is only common practice. 
+
+With this in mind, it is best for you to work with others both inside and outside your discipline to select one or more ontologies to be used in your linked data. Do not think about this too long nor too hard. It is an never-ending process that is never correct. It is only a process that approximates the best solution. 
+
+ For simplicity's sake, RDF ontologies are akin to the fields in MARC records or the entities in EAD/XML files. Articulated more accurately, they are the things denoting relationships between subjects and objects in RDF triples. In this light, they are akin to the verbs in all but the most simplistic of sentences. But if they are akin to verbs, then they bring with them all of the nuance and subtlety of human written language. And human written language, in order to be an effective human communications device, comes with two equally important prerequisites: 1) a writer who can speak to an intended audience, and 2) a reader with a certain level of intelligence. A writer who does not use the language of the intended audience speaks to few, and a reader who does not "bring something to the party" goes away with little understanding. Because the effectiveness of every writer is not perfect, and because not every reader comes to the party with a certain level of understanding, written language is imperfect. Similarly, the ontologies of linked data are imperfect. There are no perfect ontologies nor absolutely correct uses of them. There are only best practices and common usages.
+
+While some or all of these ontologies may be useful for linked data of archival descriptions, what might some other ontologies include? (Remember, it is often "better" to select existing ontologies rather than inventing, unless there is something distinctly unique about a particular domain.) For example, how about an ontology denoting times? Or how about one for places? FOAF is good for people, but what about organizations or institutions?
+
+This being the case, ontologies still need to be selected in order for linked data to be manifested. What ontologies would you suggest be used when creating linked data for archival descriptions? Here are a few possibilities, listed in no priority order:
+
+
+
+[1] LOHAC blog postings, parts #1 and #2 - http://archiveshub.ac.uk/locah/2011/03/describing-the-things-the-rdf-terms-used-part-1/ , http://archiveshub.ac.uk/locah/2011/03/describing-the-things-the-rdf-terms-used-part-2/
+
+

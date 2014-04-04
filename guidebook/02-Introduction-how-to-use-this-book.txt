@@ -1,0 +1,33 @@
+
+
+Introduction
+
+  "Let's go to Rome!"
+
+The purpose of this guidebook is to describe in detail what linked data is, why it is important, how you can publish it to the Web, how you can take advantage of your linked data, and how you can exploit the linked data of others. For the archivist, linked data is about universally making accessible and repurposing sets of facts about you and your collections. As you publish these fact you will be able to maintain a more flexible Web presence as well as a Web presence that is richer, more complete, and better integrated with complementary collections. The principles behind linked data are inextricably bound to the inner workings of the Web. It is standard of practice that will last as long as the Web lasts, and that will be long into the foreseeable future. The process of publishing linked data in no way changes the what of archival practice, but it does shift how archival practice is accomplished. Linked data enables you to tell the stories of your collections, and it does in a way enabling you to reach much wider and more global audiences.  
+
+Linked Archival Metadata: A Guidebook provides archivists with an overview of the current linked data landscape, define basic concepts, identify practical strategies for adoption, and emphasize the tangible payoffs for archives implementing linked data. It focuses on clarifying why archives and archival users can benefit from linked data and will identify a graduated approach to applying linked data methods to archival description.
+
+"Let's go to Rome!" This book uses the metaphor of a guidebook, specifically a guidebook describing a trip to Rome. Any trip abroad requires an understanding of the place where you intend to go, some planning, some budgeting, and some room for adventure. You will need to know how you are going to get there, where you are going to stay, what you are going to eat, what you want to see and do once you arrive, and what you might want to bring back as souvenirs. You behooves you to know a bit of the history, customs, and language. This is also true of your adventure to Linked Data Land. To that end, this guidebook is divided into the following sections:
+
+  * What is linked data and why should I care? - A description of
+    the beauty of Rome and why you should want to go there
+
+  * Linked data: A Primer - A history of Rome, an outline of its
+    culture, its language, its food, its customs, and what it is all
+    about today
+
+  * Strategies - Sets of things you ought to be aware of and plan
+    for before embarking on your adventure
+
+  * Doing the work - Itineraries for immersing yourself and
+    enjoying everything the Eternal City has to offer once you have
+    arrived
+
+  * Details - Lists of where to eat, what to do depending on your
+    particular interests, and how to get around the city in case you
+    need help 
+
+The Guidebook is a product of the Linked Archival Metadata planning project (LiAM), led by the Digital Collections and Archives at Tufts University and funded by the Institute of Museum and Library Services (IMLS). LiAM’s goals include defining use cases for linked data in archives and providing a roadmap to describe options for archivists intending to share their description using linked data techniques.
+
+
