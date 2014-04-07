@@ -133,8 +133,55 @@ Ontologies & vocabularies
 
 If RDF is built on "sentences" called triples, then by analogy ontologies & vocabularies are the "languages" of RDF. This section describes the role of ontologies & vocabularies in linked data.
 
+Linked data is about putting data in the form of RDF on the Web. RDF is a data model for describing things (resources), and it made up of three parts: 1) subjects, 2) predicates, and 3) objects. The things being described are the subjects of RDF triples. They represent the things you own. The combined use of predicates and objects form the descriptions of the resources. These descriptions are akin to a language, or in the parlance of RDF, they are ontologies & vocabularies. While it is perfectly fine to create your own language to describe your own things, it behooves you to use one or more ontologies & vocabularies of others. Otherwise your descriptions will exist in a virtual silo with no interaction with outside resources; otherwise you will defeat the purpose of the linking in linked data.
 
- 
+Ontologies & vocabularies are comprised of classes of objects and properties of those objects. The classes of objects denote abstractions of things. They might be the class of all people, places, events, concepts, etc. Properties are characteristics of the classes. For example, people might have names, birth dates, professions, email addresses, etc. Places might have names and geographic coordinates. Events might have names, intended audiences, dates, times, descriptions, etc. Concepts might be classified in different ways, have been articulated by particular people, or be applicable to different domains.
+
+
+
+
+
+RDF and linked data is about making relationships between things. These relationships are denoted in the predicates of RDF triples, and the types of relationships are defined in ontologies. These ontologies are sometimes called schema. In the world of bibliography (think "Dublin Core"), these relationship types include things such "has title", "has subject", or "has author". In other ontologies, such as Friend of a Friend (FOAF), there are relationship types such as "has home page", "has email address", or "has name". Obviously there are similarities between things like "has author" and "has name", and consequently there are other ontologies (schemas) allowing equivocation, similarity, or hierarchy to be denoted. 
+
+In the world of archives, collections and their items are described. Think metadata. Some of this metadata comes from name authority lists and controlled vocabulary terms. Many of the authority lists and controlled vocabulary terms used by archives exist as linked data. Thus, when implementing RDF in archives it is expected to state things such as "This particular item was authored by this particular URI", or "This particular collection has a subject of this particular URI" where the URIs are values pointing to items in named authority lists or controlled vocabularies. 
+
+This section lists a set of RDF ontologies and linked data vocabularies of interest to the archivist. It is not necessarily an exhaustive list but instead represents some of the more popular and well-established items:
+
+, and this section enumerates and outlines some of the more useful and interesting ontologies for archival (and cultural heritage institution) description.
+
+Probably one of the more difficult intellectual tasks you will have when it comes to making your content available as linked data will be the selection of one or more ontologies used to make your RDF. Probably the easiest -- but not the most precise -- way to think about ontologies is as if they were fields in a MARC record or an EAD file. Such an analogy is useful, but not 100% correct. Probably the best way to think of the ontologies is as if they were verbs in a sentence denoting relationships between things — subjects and objects. A very interesting read on the subject of ontology selection and archival description are a couple of blog postings from the LOHAC blogs. [1]
+
+See also OWL @ Manchester (http://owl.cs.manchester.ac.uk) - The University of Manchester has a rich tradition of developing ontology languages, tools, methodologies, and applications. Historically, several lines of research at Manchester contributed directly to the development of OWL as a W3C standard and the School of Computer Science continues to be recognized as an international centre of OWL and OWL related research.
+
+
+But if ontologies are sets of "verbs", then they are akin to human language, and human language is ambiguous. Therein lies the difficulty with ontologies. There is no "right" way to implement them. Instead, there is only best or common practice. There are no hard and fast rules. Everything comes with a bit of interpretation. The application and use of ontologies is very much like the application and use of written language in general. In order for written language to work well two equally important things need to happen. First, the writer needs to be able to write. They need to be able to choose the most appropriate language for their intended audience. Shakespeare is not "right" with his descriptions of love, but instead his descriptions of love (and many other human emotions) resinate with a very large number of people. Second, written language requires the reader to have a particular adeptness as well. Shakespeare can not be expected to write one thing and communicate to everybody. The reader needs to understand English, or the translation from English into another language needs to be compete and accurate. 
+
+The Internet, by design, is a decentralized environment. There are very few rules on how it is expected to be used. To a great extent it relies on sets of behavior that are more common practice as opposed to articulated rules. For example, what "rules" exist for tweets on Twitter? What rules exist for Facebook or blog postings. Creating sets of rules will not fly on the Internet because there is no over-arching governing body to enforce any rules.  Sure, there are things like Dublin Core with their definitions, but those definitions are left to interpretation, and there are no judges nor courts nor laws determining whether or not any particular application of Dublin Core is "correct". Only the common use of Dublin Core is correct, and its use is not set in stone. 
+
+There are no "should's" on the Internet. There is only common practice. 
+
+With this in mind, it is best for you to work with others both inside and outside your discipline to select one or more ontologies to be used in your linked data. Do not think about this too long nor too hard. It is an never-ending process that is never correct. It is only a process that approximates the best solution. 
+
+ For simplicity's sake, RDF ontologies are akin to the fields in MARC records or the entities in EAD/XML files. Articulated more accurately, they are the things denoting relationships between subjects and objects in RDF triples. In this light, they are akin to the verbs in all but the most simplistic of sentences. But if they are akin to verbs, then they bring with them all of the nuance and subtlety of human written language. And human written language, in order to be an effective human communications device, comes with two equally important prerequisites: 1) a writer who can speak to an intended audience, and 2) a reader with a certain level of intelligence. A writer who does not use the language of the intended audience speaks to few, and a reader who does not "bring something to the party" goes away with little understanding. Because the effectiveness of every writer is not perfect, and because not every reader comes to the party with a certain level of understanding, written language is imperfect. Similarly, the ontologies of linked data are imperfect. There are no perfect ontologies nor absolutely correct uses of them. There are only best practices and common usages.
+
+While some or all of these ontologies may be useful for linked data of archival descriptions, what might some other ontologies include? (Remember, it is often "better" to select existing ontologies rather than inventing, unless there is something distinctly unique about a particular domain.) For example, how about an ontology denoting times? Or how about one for places? FOAF is good for people, but what about organizations or institutions?
+
+This being the case, ontologies still need to be selected in order for linked data to be manifested. What ontologies would you suggest be used when creating linked data for archival descriptions? Here are a few possibilities, listed in no priority order:
+
+
+
+[1] LOHAC blog postings, parts #1 and #2 - http://archiveshub.ac.uk/locah/2011/03/describing-the-things-the-rdf-terms-used-part-1/ , http://archiveshub.ac.uk/locah/2011/03/describing-the-things-the-rdf-terms-used-part-2/
+
+
+Links
+
+[1] canonical article - http://csis.pace.edu/~marchese/CS835/Lec9/112_SemWeb.pdf
+[2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
+
+
+===
+
+
 The whole idea works like this. Suppose I assert the following statement:
 
   The Declaration Of Independence was authored by Thomas Jefferson.
@@ -466,42 +513,6 @@ There are a number of challenges in the process. Some of them are listed below, 
 
 3.a. Ontologies and vocabularies
 
-RDF and linked data is about making relationships between things. These relationships are denoted in the predicates of RDF triples, and the types of relationships are defined in ontologies. These ontologies are sometimes called schema. In the world of bibliography (think "Dublin Core"), these relationship types include things such "has title", "has subject", or "has author". In other ontologies, such as Friend of a Friend (FOAF), there are relationship types such as "has home page", "has email address", or "has name". Obviously there are similarities between things like "has author" and "has name", and consequently there are other ontologies (schemas) allowing equivocation, similarity, or hierarchy to be denoted. 
-
-In the world of archives, collections and their items are described. Think metadata. Some of this metadata comes from name authority lists and controlled vocabulary terms. Many of the authority lists and controlled vocabulary terms used by archives exist as linked data. Thus, when implementing RDF in archives it is expected to state things such as "This particular item was authored by this particular URI", or "This particular collection has a subject of this particular URI" where the URIs are values pointing to items in named authority lists or controlled vocabularies. 
-
-This section lists a set of RDF ontologies and linked data vocabularies of interest to the archivist. It is not necessarily an exhaustive list but instead represents some of the more popular and well-established items:
-
-, and this section enumerates and outlines some of the more useful and interesting ontologies for archival (and cultural heritage institution) description.
-
-Probably one of the more difficult intellectual tasks you will have when it comes to making your content available as linked data will be the selection of one or more ontologies used to make your RDF. Probably the easiest -- but not the most precise -- way to think about ontologies is as if they were fields in a MARC record or an EAD file. Such an analogy is useful, but not 100% correct. Probably the best way to think of the ontologies is as if they were verbs in a sentence denoting relationships between things — subjects and objects. A very interesting read on the subject of ontology selection and archival description are a couple of blog postings from the LOHAC blogs. [1]
-
-See also OWL @ Manchester (http://owl.cs.manchester.ac.uk) - The University of Manchester has a rich tradition of developing ontology languages, tools, methodologies, and applications. Historically, several lines of research at Manchester contributed directly to the development of OWL as a W3C standard and the School of Computer Science continues to be recognized as an international centre of OWL and OWL related research.
-
-
-But if ontologies are sets of "verbs", then they are akin to human language, and human language is ambiguous. Therein lies the difficulty with ontologies. There is no "right" way to implement them. Instead, there is only best or common practice. There are no hard and fast rules. Everything comes with a bit of interpretation. The application and use of ontologies is very much like the application and use of written language in general. In order for written language to work well two equally important things need to happen. First, the writer needs to be able to write. They need to be able to choose the most appropriate language for their intended audience. Shakespeare is not "right" with his descriptions of love, but instead his descriptions of love (and many other human emotions) resinate with a very large number of people. Second, written language requires the reader to have a particular adeptness as well. Shakespeare can not be expected to write one thing and communicate to everybody. The reader needs to understand English, or the translation from English into another language needs to be compete and accurate. 
-
-The Internet, by design, is a decentralized environment. There are very few rules on how it is expected to be used. To a great extent it relies on sets of behavior that are more common practice as opposed to articulated rules. For example, what "rules" exist for tweets on Twitter? What rules exist for Facebook or blog postings. Creating sets of rules will not fly on the Internet because there is no over-arching governing body to enforce any rules.  Sure, there are things like Dublin Core with their definitions, but those definitions are left to interpretation, and there are no judges nor courts nor laws determining whether or not any particular application of Dublin Core is "correct". Only the common use of Dublin Core is correct, and its use is not set in stone. 
-
-There are no "should's" on the Internet. There is only common practice. 
-
-With this in mind, it is best for you to work with others both inside and outside your discipline to select one or more ontologies to be used in your linked data. Do not think about this too long nor too hard. It is an never-ending process that is never correct. It is only a process that approximates the best solution. 
-
- For simplicity's sake, RDF ontologies are akin to the fields in MARC records or the entities in EAD/XML files. Articulated more accurately, they are the things denoting relationships between subjects and objects in RDF triples. In this light, they are akin to the verbs in all but the most simplistic of sentences. But if they are akin to verbs, then they bring with them all of the nuance and subtlety of human written language. And human written language, in order to be an effective human communications device, comes with two equally important prerequisites: 1) a writer who can speak to an intended audience, and 2) a reader with a certain level of intelligence. A writer who does not use the language of the intended audience speaks to few, and a reader who does not "bring something to the party" goes away with little understanding. Because the effectiveness of every writer is not perfect, and because not every reader comes to the party with a certain level of understanding, written language is imperfect. Similarly, the ontologies of linked data are imperfect. There are no perfect ontologies nor absolutely correct uses of them. There are only best practices and common usages.
-
-While some or all of these ontologies may be useful for linked data of archival descriptions, what might some other ontologies include? (Remember, it is often "better" to select existing ontologies rather than inventing, unless there is something distinctly unique about a particular domain.) For example, how about an ontology denoting times? Or how about one for places? FOAF is good for people, but what about organizations or institutions?
-
-This being the case, ontologies still need to be selected in order for linked data to be manifested. What ontologies would you suggest be used when creating linked data for archival descriptions? Here are a few possibilities, listed in no priority order:
-
-
-
-[1] LOHAC blog postings, parts #1 and #2 - http://archiveshub.ac.uk/locah/2011/03/describing-the-things-the-rdf-terms-used-part-1/ , http://archiveshub.ac.uk/locah/2011/03/describing-the-things-the-rdf-terms-used-part-2/
-
-
-Links
-
-[1] canonical article - http://csis.pace.edu/~marchese/CS835/Lec9/112_SemWeb.pdf
-[2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
 
 
 
