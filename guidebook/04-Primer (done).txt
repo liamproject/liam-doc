@@ -133,13 +133,23 @@ Ontologies & vocabularies
 
 If RDF is built on "sentences" called triples, then by analogy ontologies & vocabularies are the "languages" of RDF. This section describes the role of ontologies & vocabularies in linked data.
 
-Linked data is about putting data in the form of RDF on the Web. RDF is a data model for describing things (resources), and it made up of three parts: 1) subjects, 2) predicates, and 3) objects. The things being described are the subjects of RDF triples. They represent the things you own. The combined use of predicates and objects form the descriptions of the resources. These descriptions are akin to a language, or in the parlance of RDF, they are ontologies & vocabularies. While it is perfectly fine to create your own language to describe your own things, it behooves you to use one or more ontologies & vocabularies of others. Otherwise your descriptions will exist in a virtual silo with no interaction with outside resources; otherwise you will defeat the purpose of the linking in linked data.
+Linked data is about putting data in the form of RDF on the Web. RDF is a data model for describing things (resources), and it made up of three parts: 1) subjects, 2) predicates, and 3) objects. The things being described are the subjects of RDF triples. They represent the things you own. The combined use of predicates and objects form the descriptions of the resources. These descriptions are akin to a language, or in the parlance of RDF, they are ontologies & vocabularies. While it is perfectly fine to create your own language to describe your own things, it behooves you to use one or more ontologies & vocabularies of others. Otherwise your descriptions will exist in a virtual silo with no interaction with outside resources. When outside ontologies & vocabularies are not employed in RDF, then the purpose of the linking in linked data gets defeated.
 
-Ontologies & vocabularies are comprised of classes of objects and properties of those objects. The classes of objects denote abstractions of things. They might be the class of all people, places, events, concepts, etc. Properties are characteristics of the classes. For example, people might have names, birth dates, professions, email addresses, etc. Places might have names and geographic coordinates. Events might have names, intended audiences, dates, times, descriptions, etc. Concepts might be classified in different ways, have been articulated by particular people, or be applicable to different domains.
+RDF ontologies & vocabularies are comprised of classes of objects and properties of those objects. The classes of objects posit the existence of things. They might posit the class of all people, places, events, etc. Properties are characteristics of the classes. People might have names and birth dates. Places have geographic coordinates. Events have dates, times, and descriptions.
 
+There are quite a number of existing ontologies & vocabularies. Some of them of interest to readers of this guide are listed in another section, but a few are briefly discussed here. The first is FOAF (Friend Of A Friend). [3]. This ontology/vocabulary is used to describe people. It defines a number of classes, including but not limited to: agent, person, and document. Agents have properties such as mboxes (email addresses), various identifiers, topics of interest, etc. A person, which is a subclass of Agents inherits all of the properties of an agent, but also has a few of its own such as family names, various types of home pages, and images. Documents have properties such as topics and primary interests. If the resources you were describing were people (or agents), then it might want to draw on the FOAF ontology/vocabulary. If the entity named Rome had an email address, then its RDF arced graph might look like this:
 
+  [ http://example.org/rome ] --- has mbox ---> [ mailto:info@rome.it ]
 
+Another ontology/vocabulary is DCMI Metadata Terms ("Dublin Core"). [4] It posits the existence of things like: agent, rights statement, standard, and physical resource. It includes properties such as creator, title, description, various types of dates, etc. While the "Dublin Core" standard was originally used to describe bibliographic materials, it has matured and been widely adopted by a growing number of ontologists. 
 
+In a project called Linking Lives at the Archives Hub, an ontology/vocabulary for archival description was created. [5, 6] This ontology includes a few classes from FOAF (document, agent, etc.) but also has classes such as repository, archival resource, biographical history, and finding aid. Properties include various dates, extent, title, or has biographical history. 
+
+A final example is VIAF (Virtual International Authority File). [7] This "ontology" is more akin to a "controlled vocabulary", and it is a list of people's names and URIs associated with them. VIAF is intended to be used in conjunction with things like DCMI's creator property. For example, if Romulus, one of the mythical twins and founders of Rome were associated with the entity of Rome, then the resulting arched graph might look like this:
+
+  [ http://example.org/rome ] --- has creator ---> [ http://viaf.org/viaf/231063554/ ]
+
+There are other controlled vocabularies of interest to the readers of this book, including additional name authority files, subject headings, language codes, country listings, etc. These and other ontologies & vocabularies are listed later in the guidebook. 
 
 RDF and linked data is about making relationships between things. These relationships are denoted in the predicates of RDF triples, and the types of relationships are defined in ontologies. These ontologies are sometimes called schema. In the world of bibliography (think "Dublin Core"), these relationship types include things such "has title", "has subject", or "has author". In other ontologies, such as Friend of a Friend (FOAF), there are relationship types such as "has home page", "has email address", or "has name". Obviously there are similarities between things like "has author" and "has name", and consequently there are other ontologies (schemas) allowing equivocation, similarity, or hierarchy to be denoted. 
 
@@ -177,7 +187,11 @@ Links
 
 [1] canonical article - http://csis.pace.edu/~marchese/CS835/Lec9/112_SemWeb.pdf
 [2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
-
+[3] FOAF - http://www.foaf-project.org
+[4] DCMI Metadata Terms - http://dublincore.org/documents/dcmi-terms/
+[5] Linking Lives project - http://archiveshub.ac.uk/linkinglives/ - 
+[6] Linking Lives ontology - http://data.archiveshub.ac.uk/def/
+[7] VIAF - http://viaf.org
 
 ===
 
