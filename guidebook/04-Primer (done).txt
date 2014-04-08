@@ -273,84 +273,54 @@ For a good time, play with the RDF Translator which will convert one RDF seriali
 The RDF serialization process also highlights how data structures are moving away from a document-centric models to a statement-central models. This too has consequences for way cultural heritage institutions, like archives, think about exposing their metadata, but that is the topic of another essay.
 
 
+Publishing linked data
+
+  "Rome is a place of many neighborhoods, each with its own
+  flavor, but in each of the neighborhoods you will experience an
+  essence of what it means to be Roman."
+  
+Just as there are many ontologies & vocabularies, just as there are many ways to express RDF, there are many ways to publish RDF. This section introduces many of them, and they are discussed in greater detail later in the book.
+
+Once your data has been modeled as RDF, it will be time to make it accessible on the Web. There are many ways to do this, and each of the rely on how your data/information is locally stored. Your data/information is probably already modeled in some sort of store, and it will be the job of somebody to transform that data into RDF. For example, the store might be a simple spreadsheet -- a flat file or rows & columns of information. In this model, each row in the spreadsheet will need to have a URI "minted" for it. That URI will then have predicates denoting the names of each column. Finally, the object of each RDF triple will be the value of each item in the row. The result will be set of RDF in the form of some serialization. This can be put on the Web directly, or saved in a triple store, described below.
+
+If the data/information is modeled in a relational database, then the process of manifesting it as RDF is very similar to the process of transforming a flat file for rows & columns. There are two other options as well. One is the use of R2RML, a relational database to RDF modeling language. [9] Another option is to use a piece of open source software called D2RQ which will convert a well-designed relational database into RDF. [10]. In either case, the resulting RDF could be saved as one or more files on a Web server or shared dynamically directly from the database.
+
+Many people use some sort of document to model their data/information. In the world of archives, this document may be an EAD file or a set of MARC records. While not ideal, it is possible to use XSL to transform the EAD or MARC into a RDF serializations. This is the process employed by the Guidebook's "sandbox" application. This is the same process used by a number of more formal projects including Linking Lives and ReLoad. [5, 11].
+
+If RDF serializations are saved as files on the Web, as in the examples outlined above, then those files may be simple dumps of data which are large files consisting of huge numbers of triples. The URLs of those files are then listed in some sort of Web page intended for people to read. Sometimes the locations of these RDF files are listed in a different type of file called a VOID file. [12]
+
+Alternatively, RDF might be published side-by-side their human readable HTML counter-parts. The VIAF URIs are good examples. If this method is employed, then a process called "content negotiation" is expected to be implemented. Content negotiation is an integral part of the way the World Wide Web operates. It is method for one computer to request a specific form of data/information from a server. In terms of linked data, a computer can request the content of a URI in the form of HTML or RDF, and the remote server will provide the information in the desired format, if available. Content negotiation is described in greater detail later in the Guidebook.
+
+Some people's data/information may be modeled in a content management system, like Drupal. These systems generate HTML on-the-fly. In these cases it is a good idea embed RDF into the HTML using RDFa. [13] RDFa is also an option when generating HTML out of databases on-the-fly.
+
+Finally, there exist "databases" specifically designed to store RDF triples. These "databases" are called "triple stores". Along side these triple stores are methods for searching their contents. This searching mechanism is called SPARQL, and SPARQL "endpoints" may be available on the Web. A number of triple stores are lists later in the Guidebook, and a SPARQL tutorial is available as well.
+
+In summary, there are many ways of publishing linked data. At first glance, it may seem as if there are too many choice and difficult to implement, but in reality modeling your data as RDF is much more challenging. 
+
+  "Rome has many places to eat. Food is available in cafes, open
+  air markets, family owned grocery stores, and commercial
+  conglomerates. There are may ways to get food to the consumer."
+
+
 Links
 
 [1] canonical article - http://csis.pace.edu/~marchese/CS835/Lec9/112_SemWeb.pdf
 [2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
 [3] FOAF - http://www.foaf-project.org
 [4] DCMI Metadata Terms - http://dublincore.org/documents/dcmi-terms/
-[5] Linking Lives project - http://archiveshub.ac.uk/linkinglives/ - 
+[5] Linking Lives project - http://archiveshub.ac.uk/linkinglives/
 [6] Linking Lives ontology - http://data.archiveshub.ac.uk/def/
 [7] VIAF - http://viaf.org
 [8] RDF Translator - http://rdf-translator.appspot.com
+[9] R2RML - http://www.w3.org/TR/r2rml/
+[10] D2RQ - http://d2rq.org/
+[11] ReLoad - http://labs.regesta.com/progettoReload/en
+[12] VOID - http://www.w3.org/TR/void/
+[13] RDFa - http://www.w3.org/TR/xhtml-rdfa-primer/
 
 ===
 
 
-The whole idea works like this. Suppose I assert the following statement:
-
-  The Declaration Of Independence was authored by Thomas Jefferson.
-  
-This statement can be divided into three parts. The first part is the subject (Declaration Of Independence). The second part is the predicate (was authored by). The third part is the object (Thomas Jefferson). 
-
-Suppose further that the subject and object can be associated URIs. This turns our assertion into rthe following form, with carriage returns added for readability:
-
-  http://en.wikipedia.org/wiki/Declaration_of_Independence
-  was authored by
-  http://www.worldcat.org/identities/lccn-n79-89957
-
-Unfortunately, this assertion is not easily read by a computer. Believe it or not, something like the XML below is much more amenable, and if it were the sort of content returned by a Web server to a Web browser (read "user-agent"), then it would satisfy Expectations #3 and #4 because the notation is standardized and because it points to other people's content:
-
-<?xml version="1.0"?>
-<rdf:RDF
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:dcterms="http://purl.org/dc/terms/" >
-  <!-- the Declaration Of Independence was authored by Thomas Jefferson -->
-  <rdf:Description
-  rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
-    <dcterms:creator>http://id.loc.gov/authorities/names/n79089957</dcterms:creator>
-  </rdf:Description>
-</rdf:RDF>
-
-Suppose we had a second assertion:
-
-  Thomas Jefferson was a man.
-
-In this case, the subject is "Thomas Jefferson". The predicate is "was". The object is "man". This assertion can be expressed in a more computer-readable fashion like this:
-
-<?xml version="1.0"?>
-<rdf:RDF
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/">
-  <!-- Thomas Jefferson is man (a male) -->
-  <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n7908995">
-    <foaf:Person foaf:gender="male" />
-  </rdf:Description>
-</rdf:RDF>
-
-Suppose there were smart linked data robot/spider. Suppose it crawled both Assertion #1 and Assertion #2. It then ought to be able to assert the following:
-
-<?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
-  <!-- the Declaration Of Independence was written by
-  Thomas Jefferson, and Thomas Jefferson is a male -->
-  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Declaration_of_Independence">
-    <dcterms:creator>
-      <foaf:Person rdf:about="http://id.loc.gov/authorities/names/n79089957">
-        <foaf:gender>male</foaf:gender>
-      </foaf:Person>
-    </dcterms:creator>
-  </rdf:Description>
-</rdf:RDF>
-
-Looking at the two assertions, a reasonable person can deduce a third assertion, namely, the Declaration Of Independence was authored by a man. Which brings us back to the point of the Semantic Web and linked data. If everybody uses URIs (read "URLs") to describe things, if everybody denotes relationships (through the use of predicates) between URIs, if everybody makes their data available on the Web in standardized formats, and if everybody uses similar URIs, then new knowledge can be deduced from the original relationships.
-
-Unfortunately too little linked data has been made available and/or too few people have earned too few stars to really make the Semantic Web a reality. True, there are a growing number of value-added services and collections making use of linked data, but not so many that everybody is taking notice.
-
-The purpose of this guidebook is to provide means for archivists to do their part, make their content available on the Semantic Web through Linked Data, all in the hopes of facilitating the discovery of new knowledge. On our mark. Get set. Go!
-
-
-The predicate also takes the form of a URI, but it is expec some sort of relationship such as equals or is a sub-part of or contains or is a description of, or is the name of, etc. Predicates are the vocabulary of linked data, and you will find an abundance of vocabularies from which to choose when creating linked data. Finally, objects come in two forms: 1) more URIs (pointers to things) or literal values such the names of people, places, or things. Examples of literals include "Lancaster, PA", "Thomas Jefferson", or "Musée d'Orsay".
 
 --
 
@@ -468,13 +438,6 @@ In the same text Berners-Lee also outlined a sort of reward system -- a sets of 
     provide context
 
 
-
-3.b RDF serializations (done)
-
-
-
-
-
 4. Linked Data Today
 
 4.b. Trends in LOD-LAM
@@ -513,12 +476,6 @@ There are a number of challenges in the process. Some of them are listed below, 
   * Provenance is an issue. People — especially scholars — will want to know where the LOD came from and whether or not it is authoritative. How to solve or address this problem? The jury is still out on this one.
 
   * Creating and maintaining LOD is difficult because it requires the skills of a number of different types of people. Computer programmers. Database designers. Subject experts. Metadata specialists. Archivists. Etc. A team is all but necessary.
-
-
-
-3.a. Ontologies and vocabularies
-
-
 
 
   "Rome is a large city that keeps getting larger. It is built on

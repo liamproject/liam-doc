@@ -102,7 +102,13 @@ Linked data frameworks and publishing systems
 	implementing linked data publishing including the establishment of a
 	triple store and a SPARQL endpoint. 
 
+  * openRDF (http://www.openrdf.org/) - This is a Java-based framework for
+	implementing linked data publishing including the establishment of a
+	triple store and a SPARQL endpoint. 
 
+  * R2RML (http://www.w3.org/TR/r2rml/) - 
+  
+  
 Semantic Web browsers
 
 This is a small set of Semantic Web browsers. Give them URIs and they allow you to follow and describe the links they include.
