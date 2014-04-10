@@ -323,30 +323,34 @@ No primer on linked data would be complete without the inclusion of the famous L
 
   [INSERT LOD CLOUD DIAGRAM HERE.]
 
-While the diagram has not been updated in a few years, it represents the sets of published linked data available. It also illustrates how they relate to each other. As you can see DBedia is at the center of the cloud and illustrates how other data sets rely on it for (some) content. Many, if not all, of the sets of RDF have been registered in a directory called Datahub. [16] There one can search and browse for all sorts of data sets access via linked data standards as well as other protocols. Datahub is a good place to look for complementary data sets to your own.
+While the diagram has not been updated in a few years, it represents the sets of published linked data available. It also illustrates how they relate to each other. As you can see DBedia is at the center of the cloud and illustrates how other data sets rely on it for (some) content. Many, if not all, of these sets of RDF have been registered in a directory called Datahub. [16] There one can search and browse for all sorts of data sets access via linked data standards as well as other protocols. Datahub is a good place to look for complementary data sets to your own.
 
-It is not possible for anybody to completely describe any collection of data. All data and information is inextricably linked to other data and information. There is not enough time nor energy in the world for any individual nor discrete group to do all the work. By harnessing the collective power of the Web (and linked data), it is possible to create more complete collections and more thorough description. These more complete collections and more complete descriptions can be created in two different ways. The first has already been described -- through the judicious use of shared URIs. The second is by harvesting linked data from other locations, combining it with your own, and producing value-added services against the result.
+It is not possible for anybody to completely describe any collection of data. All data and information is inextricably linked to other data and information. There is not enough time nor energy in the world for any individual nor discrete group to do all the work. By harnessing the collective power of the Web (and linked data), it is possible to create more complete collections and more thorough description. These more complete collections and more complete descriptions can be created in two different ways. The first has already been described -- through the judicious use of shared URIs. The second is by harvesting linked data from other locations, combining it with your own, and producing value-added services against the result. Two excellent examples come to mind:
+
+  * LIBRIS (http://libris.kb.se) - This is the joint catalog of the
+	Swedish academic and research libraries. Search results are presented
+	in HTML, but the URLs pointing to individual items are really
+	actionable URIs resolvable via content negotiation, thus support
+	distribution of bibliographic information as RDF.
+
+  * ReLoad (http://labs.regesta.com/progettoReload/en) - This is a
+	collaboration between the Central State Archive of Italy, the Cultural
+	Heritage Institute of Emilia Romagna Region, and Regesta.exe. It is
+	the aggregation of EAD files from a number of archives which have been
+	transformed into RDF and made available as linked data. Its purpose
+	and intent are very similar to the the purpose and intent of the
+	combined LOCAH Project and Linking Lives.
+
+A number of other example projects are listed in one of the Guidebooks's appendices. 
 
 
 About linked data, a review
 
-Implementing linked data represents a different, more modern way of accomplishing some of the same goals of archival science. It is a process of making more people aware of your content. It is not the only way to make more people aware, but it represents a way that will be wide spread, thorough, and complete.
+  "About Rome, a review"
+  
+Many guidebooks about linked data and RDF start out with an elaboration of Tim Berner-Lee's guidelines, but providing it now, in this part of the guide, may be more useful now that some of underlying principles have been described.
 
-Linked data, or more recently referred to as "linked open data" for reasons to be explained later, is a proposed technique for generating new knowledge. It is intended to be a synergy between people and sets of agreed upon computer systems that when combined will enable both people and computers to discover and build relationships between seemingly disparate data and information to create and discover new knowledge.
-
-In a nutshell, this is how it works. People possess data and information. They encode that data and information in any number of formats easily readable by computers. They then make the encoded data and information available on the Web. Computers are then employed to systematically harvested the encoded data. Since the data is easily readable, the computers store the data locally and look for similarly encoded things in other locally stored data sets. When similar items are identified relationships can be inferred between the items as well as the other items in the data set. To people, some of these relationships may seem obvious and "old hat". On the other hand, since the data sets can be massive, relationships that were never observed previously may come to light, thus new knowledge is created.
-
-Some of this knowledge may be trivial. For example, there might be a data set of places -- places from all over the world including things like geographic coordinates, histories of the places, images, etc. There might be another data set of poeple. Each person may be described using their name, their place of birth, and a short biography. These data sets may contain ten's of thousands of items each. Using linked data it would be possible to cross reference the people with the places to discover who might have met whom when and where. Some people may have similar ideas, and those ideas may have been generated in a particular place. Linked data may help in discovering who was in the same place at the same time and the researcher may be better able to figure out how a particular idea came to fruition. 
-
-Here's an example hitting closer to the home of archives and archivists. Suppose most archival finding aids were written in a format easily readable by computers. Let's call this format Encoded Archival Description. Let's suppose these finding aids were made available on the Web. Let's suppose one or more computers crawled these archival sites harvesting the finding aids. Once done a computer program could be used to find all the occurrences of particular name and generate a virtual finding aid that is more complete and more comprehensible than any single finding aid on that particular person. 
-
-The amount of data and information accessible today is greater in size than it has ever been in human history. Using our traditional techniques of reading, re-reading, writing, discussing, etc. is more than possible to learn new things about the state of the world, the universe, and the human condition. By exploiting the current state of computer technology is possible to expand upon our traditional techniques and possibly accelerate the mass of knowledge. 
-
-When you hear of linked data and the Semantic Web, the next thing you often hear is "RDF" or "Resource Description Framework". First and foremost, RDF is a way of representing knowledge. It does this through the use of assertions (think, "sentences") with only three parts: 1) a subject, 2) a predicate, and 3) an object. Put together, these three things create things called "triples". T
-
-RDF is not to be confused with RDF/XML or any other type of RDF "serialization". Remember, RDF describes triples, but it does not specify how the triples are express or written down. On the other hand, RDF/XML is an XML syntax for expressing RDF. Some people think RDF/XML is too complicated and too verbose. Consequently, other serializations have manifested themselves including N3 and Turtle.
-
-In "Linked Data -- Design Issues" Berners-Lee outlined four often-quoted expectations for implementing the Semantic Web. Each of these expectations are listed below along with some elaborations:
+In "Linked Data -- Design Issues" Berners-Lee outlined four often-quoted expectations for implementing the Semantic Web. [2] Each of these expectations are listed below along with some elaborations:
 
   * "Use URIs as names for things" - URIs (Universal Resource
     Identifiers) are unique identifiers, and they are expected to
@@ -392,6 +396,22 @@ In the same text Berners-Lee also outlined a sort of reward system -- a sets of 
 
   * five stars for linking your data to other people's data to
     provide context
+
+Implementing linked data represents a different, more modern way of accomplishing some of the same goals of archival science. It is a process of making more people aware of your content. It is not the only way to make more people aware, but it represents a way that will be wide spread, thorough, and complete.
+
+Linked data, or more recently referred to as "linked open data", is a proposed technique for generating new knowledge. It is intended to be a synergy between people and sets of agreed upon computer systems that when combined will enable both people and computers to discover and build relationships between seemingly disparate data and information to create and discover new knowledge.
+
+In a nutshell, this is how it works. People possess data and information. They encode that data and information in any number of formats easily readable by computers. They then make the encoded data and information available on the Web. Computers are then employed to systematically harvested the encoded data. Since the data is easily readable, the computers store the data locally and look for similarly encoded things in other locally stored data sets. When similar items are identified relationships can be inferred between the items as well as the other items in the data set. To people, some of these relationships may seem obvious and "old hat". On the other hand, since the data sets can be massive, relationships that were never observed previously may come to light, thus new knowledge is created.
+
+Some of this knowledge may be trivial. For example, there might be a data set of places -- places from all over the world including things like geographic coordinates, histories of the places, images, etc. There might be another data set of poeple. Each person may be described using their name, their place of birth, and a short biography. These data sets may contain ten's of thousands of items each. Using linked data it would be possible to cross reference the people with the places to discover who might have met whom when and where. Some people may have similar ideas, and those ideas may have been generated in a particular place. Linked data may help in discovering who was in the same place at the same time and the researcher may be better able to figure out how a particular idea came to fruition. 
+
+The amount of data and information accessible today is greater in size than it has ever been in human history. Using our traditional techniques of reading, re-reading, writing, discussing, etc. is more than possible to learn new things about the state of the world, the universe, and the human condition. By exploiting the current state of computer technology is possible to expand upon our traditional techniques and possibly accelerate the mass of knowledge. 
+
+When you hear of linked data and the Semantic Web, the next thing you often hear is "RDF" or "Resource Description Framework". First and foremost, RDF is a way of representing information -- a data model. It does this through the use of assertions (think, "sentences") with only three parts: 1) a subject, 2) a predicate, and 3) an object. Put together, these three things create things called "triples". 
+
+RDF is not to be confused with RDF/XML or any other type of RDF "serialization". Remember, RDF describes triples, but it does not specify how the triples are express or written down. On the other hand, RDF/XML is an XML syntax for expressing RDF. Some people think RDF/XML is too complicated and too verbose. Consequently, other serializations have manifested themselves including N3 and Turtle.
+
+Linked data is a process. It is a process of making information easily accessible and inextricably tied to the way the Web works. By making information available as linked data, you will more easily make your available to others and vice versa. The result will be value-added services and increased visibility.
 
 
 Linked data, today
@@ -443,36 +463,6 @@ Making archival descriptions and collection available via linked data will incre
 You can divide your combined collections and services into two tangible parts: 1) the collections  themselves, and 2) the metadata describing them. It is usually possible to digitize your collections, but the result is rarely 100% satisfactory. Digitization is almost always a useful surrogate not a complete replacement. In this way, your collections as physical objects will always be a draw to all types of learners and researchers. The metadata, on the other hand, is 100% digitizable, and therefore lends itself very well to dissemination on the Internet. Linked data represents one way to make this happen. 
 
 Few archival collections are 100% complete. There are always pieces missing, and some of those missing pieced will be owned by others. Your collections will have relationship with other collection, but you will not have direct access to those other collections. Some of these relationships are explicit. Some of them are implicit. If everybody were to expose their metadata then those explicit and implicit relationships can become more apparent. Once these relationships are strengthened and become more obvious, interest in the collections will increase accordingly, and the collections will be used to a greater degree. With this increased use will come increased attention, and in turn, a greater measure of success for the collections and services it provides. 
-
------ 
-From: Ingrid Mason <ingrid.b.mason@gmail.com>
-Subject: Re: [LODLAM] quick benefits to hosting instutitions
-Date: January 22, 2014 at 9:49:47 PM EST
-To: lod-lam@googlegroups.com
-Reply-To: lod-lam@googlegroups.com
-
-Hi Jody,
-
-If I understand correctly, you're keen to find examples of value generated.  I'll give this a whirl... and see if I'm being helpful.  
-
-Converting data that already exists, >> providing a data service that a user community seeks to reuse and contribute to (access value).  
-
-PeopleAustralia (National Library of Australia) provides permanent, resolvable unique identifiers that link to records about parties, i.e. people or organisations.  The authority file at the Library already had, was reused.  This data source was enhanced as a result of ANDS funding to identify parties that manage or own research data collections.  You'll see that this has increased the capacity for discovery (through collaboration with other data providers).  Key contact: Tim Sherratt @wragge  
-
-Collaborating with custodians of primary material (collection managers), using third party data (Dbpedia), and finding, identifying and linking entities in the data >> brought to light information that was previously unknown (research value).
-
-LinkedJazz at the Pratt Institute.  Finalist in the LODLAM 2013 summit award along with some other folks (for being generally super clever with LOD things).  Key contact: Cristina Patuelli @cristinapattuel 
-
-Providing insights into the links in your own data >>  improve data quality (data value).   
-
-Check out Chris McDowall's post on linking data in digitalNZ.  @fogonwater 
-
-There are other kinds of value in all that.  Guess benefits depend on what the strategic goals of the organisation are, and what the research community needs in terms of access.    
-
-Hope that helps?
-
-Ingrid 
-
 
   "Rome is a large city that keeps getting larger. It is built on
   rich traditions, and the city continues to evolve. The language

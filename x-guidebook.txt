@@ -368,32 +368,35 @@ In summary, there are many ways of publishing linked data. At first glance, it m
   conglomerates. There are may ways to get food to the consumer."
 
 
-Links
+Linked open data
 
-[1] canonical article - http://csis.pace.edu/~marchese/CS835/Lec9/112_SemWeb.pdf
-[2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
-[3] FOAF - http://www.foaf-project.org
-[4] DCMI Metadata Terms - http://dublincore.org/documents/dcmi-terms/
-[5] Linking Lives project - http://archiveshub.ac.uk/linkinglives/
-[6] Linking Lives ontology - http://data.archiveshub.ac.uk/def/
-[7] VIAF - http://viaf.org
-[8] RDF Translator - http://rdf-translator.appspot.com
-[9] R2RML - http://www.w3.org/TR/r2rml/
-[10] D2RQ - http://d2rq.org/
-[11] ReLoad - http://labs.regesta.com/progettoReload/en
-[12] VOID - http://www.w3.org/TR/void/
-[13] RDFa - http://www.w3.org/TR/xhtml-rdfa-primer/
+  "Rome has long understood the benefits of common areas, hence freely accessible squares, fountains, and market places."
 
-===
+Some people make a distinction between linked data and linked open data (LOD). Linked data is what has been described so far in this guidebook. It is a process for making data and metadata available on the Web using RDF as the underlying data model and incorporating into it as many links (URIs) as possible. This process does not necessarily stipulate any intellectual property claims on the published data and metadata. (Intellectual property claims can be explicitly stated through the use of VOID files -- sets of triples using the VOID ontology and published along side RDF files.) For the most part data and metadata accessible via linked data is assumed to free, as in gratis and without financial obligation. At the same time, consumers of linked data are expected to acknowledge the time and effort others have spent in the creation of the consumed data, and consumers are not expected to call the data their own. This is an unspoken courtesy. 
+
+LOD is linked data that is explicitly denoted as free, as in gratis and without financial obligation. The idea seems to have been born from the idea of all things open (open source software and open access publishing). There is a strong community of LOD advocates in libraries, archives, and museums. The community is called LODLAM and has sponsored a few summits. [14] The Open Knowledge Foundation is also a ver strong advocate for LOD. [15]
+
+Strictly speaking linked data is a process, and linked open data is a thing. For all intents and purposes, this guidebook assumes the data and information made accessible via linked data is linked open data, but there might come a time in the future when access controls are places against some linked data. The data and information of linked data is not necessarily provided gratis.
 
 
+Consuming linked data
 
---
+  "Rome, like any other city, is full of give and take."
 
-about linked Data
+Publishing linked data is only half of the equation. Consuming linked data is the other half. Without considering the consuming part of linked data, it is not possible to reap all of the benefits linked data has to offer.
+
+No primer on linked data would be complete without the inclusion of the famous LOD cloud diagram, below:
+
+  [INSERT LOD CLOUD DIAGRAM HERE.]
+
+While the diagram has not been updated in a few years, it represents the sets of published linked data available. It also illustrates how they relate to each other. As you can see DBedia is at the center of the cloud and illustrates how other data sets rely on it for (some) content. Many, if not all, of the sets of RDF have been registered in a directory called Datahub. [16] There one can search and browse for all sorts of data sets access via linked data standards as well as other protocols. Datahub is a good place to look for complementary data sets to your own.
+
+It is not possible for anybody to completely describe any collection of data. All data and information is inextricably linked to other data and information. There is not enough time nor energy in the world for any individual nor discrete group to do all the work. By harnessing the collective power of the Web (and linked data), it is possible to create more complete collections and more thorough description. These more complete collections and more complete descriptions can be created in two different ways. The first has already been described -- through the judicious use of shared URIs. The second is by harvesting linked data from other locations, combining it with your own, and producing value-added services against the result.
+
+
+About linked data, a review
 
 Implementing linked data represents a different, more modern way of accomplishing some of the same goals of archival science. It is a process of making more people aware of your content. It is not the only way to make more people aware, but it represents a way that will be wide spread, thorough, and complete.
-
 
 Linked data, or more recently referred to as "linked open data" for reasons to be explained later, is a proposed technique for generating new knowledge. It is intended to be a synergy between people and sets of agreed upon computer systems that when combined will enable both people and computers to discover and build relationships between seemingly disparate data and information to create and discover new knowledge.
 
@@ -404,53 +407,6 @@ Some of this knowledge may be trivial. For example, there might be a data set of
 Here's an example hitting closer to the home of archives and archivists. Suppose most archival finding aids were written in a format easily readable by computers. Let's call this format Encoded Archival Description. Let's suppose these finding aids were made available on the Web. Let's suppose one or more computers crawled these archival sites harvesting the finding aids. Once done a computer program could be used to find all the occurrences of particular name and generate a virtual finding aid that is more complete and more comprehensible than any single finding aid on that particular person. 
 
 The amount of data and information accessible today is greater in size than it has ever been in human history. Using our traditional techniques of reading, re-reading, writing, discussing, etc. is more than possible to learn new things about the state of the world, the universe, and the human condition. By exploiting the current state of computer technology is possible to expand upon our traditional techniques and possibly accelerate the mass of knowledge. 
-
------
-
-2.a Benefits
-
-
-Archives are about collecting, organizing, preserving, and disseminating original, unique, and primary literature. These are the whats of archival practice, but the hows of archival practice evolve with the changing technology. With the advent of ubiquitous networked computing, people's expectations regarding access to information and knowledge have changed significantly. Unless institutions like archives change with the times, then the needs previously filled by archives will be filled by other institutions. Linked data is a how of archival practice, and it is one of those changes behooving archives to adopt. It is a standards-based technique for making data and information available on the Web. It is rooted in the very fabric of the Web and therefore is not beholden to any particular constituency. It is a long lasting standard and practice that will last as long as the hypertext transfer protocol is operational.
-
-Making archival descriptions and collection available via linked data will increase the use of those descriptions and collections. It is a form of benign advertising. Commercial search engines will harvest the linked data content and make it available it their search engines. Search engines will return hits to your descriptions and collections driving traffic to you and your site. Digital humanists will harvest your content, perform analysis against it, and create new knowledge or bring hidden knowledge to light. Computer scientist will collect your data, amalgamate it with the data of others, and discover relationship previously unconceived.
-
-You can divide your combined collections and services into two tangible parts: 1) the collections  themselves, and 2) the metadata describing them. It is usually possible to digitize your collections, but the result is rarely 100% satisfactory. Digitization is almost always a useful surrogate not a complete replacement. In this way, your collections as physical objects will always be a draw to all types of learners and researchers. The metadata, on the other hand, is 100% digitizable, and therefore lends itself very well to dissemination on the Internet. Linked data represents one way to make this happen. 
-
-Few archival collections are 100% complete. There are always pieces missing, and some of those missing pieced will be owned by others. Your collections will have relationship with other collection, but you will not have direct access to those other collections. Some of these relationships are explicit. Some of them are implicit. If everybody were to expose their metadata then those explicit and implicit relationships can become more apparent. Once these relationships are strengthened and become more obvious, interest in the collections will increase accordingly, and the collections will be used to a greater degree. With this increased use will come increased attention, and in turn, a greater measure of success for the collections and services it provides. 
-
------ 
-From: Ingrid Mason <ingrid.b.mason@gmail.com>
-Subject: Re: [LODLAM] quick benefits to hosting instutitions
-Date: January 22, 2014 at 9:49:47 PM EST
-To: lod-lam@googlegroups.com
-Reply-To: lod-lam@googlegroups.com
-
-Hi Jody,
-
-If I understand correctly, you're keen to find examples of value generated.  I'll give this a whirl... and see if I'm being helpful.  
-
-Converting data that already exists, >> providing a data service that a user community seeks to reuse and contribute to (access value).  
-
-PeopleAustralia (National Library of Australia) provides permanent, resolvable unique identifiers that link to records about parties, i.e. people or organisations.  The authority file at the Library already had, was reused.  This data source was enhanced as a result of ANDS funding to identify parties that manage or own research data collections.  You'll see that this has increased the capacity for discovery (through collaboration with other data providers).  Key contact: Tim Sherratt @wragge  
-
-Collaborating with custodians of primary material (collection managers), using third party data (Dbpedia), and finding, identifying and linking entities in the data >> brought to light information that was previously unknown (research value).
-
-LinkedJazz at the Pratt Institute.  Finalist in the LODLAM 2013 summit award along with some other folks (for being generally super clever with LOD things).  Key contact: Cristina Patuelli @cristinapattuel 
-
-Providing insights into the links in your own data >>  improve data quality (data value).   
-
-Check out Chris McDowall's post on linking data in digitalNZ.  @fogonwater 
-
-There are other kinds of value in all that.  Guess benefits depend on what the strategic goals of the organisation are, and what the research community needs in terms of access.    
-
-Hope that helps?
-
-Ingrid 
-
-
--=---
----
-3.b. Overview of linked data concepts and vocabulary (done)
 
 When you hear of linked data and the Semantic Web, the next thing you often hear is "RDF" or "Resource Description Framework". First and foremost, RDF is a way of representing knowledge. It does this through the use of assertions (think, "sentences") with only three parts: 1) a subject, 2) a predicate, and 3) an object. Put together, these three things create things called "triples". T
 
@@ -504,7 +460,7 @@ In the same text Berners-Lee also outlined a sort of reward system -- a sets of 
     provide context
 
 
-4. Linked Data Today
+Linked data, today
 
 4.b. Trends in LOD-LAM
 
@@ -544,6 +500,46 @@ There are a number of challenges in the process. Some of them are listed below, 
   * Creating and maintaining LOD is difficult because it requires the skills of a number of different types of people. Computer programmers. Database designers. Subject experts. Metadata specialists. Archivists. Etc. A team is all but necessary.
 
 
+Benefits
+
+Archives are about collecting, organizing, preserving, and disseminating original, unique, and primary literature. These are the whats of archival practice, but the hows of archival practice evolve with the changing technology. With the advent of ubiquitous networked computing, people's expectations regarding access to information and knowledge have changed significantly. Unless institutions like archives change with the times, then the needs previously filled by archives will be filled by other institutions. Linked data is a how of archival practice, and it is one of those changes behooving archives to adopt. It is a standards-based technique for making data and information available on the Web. It is rooted in the very fabric of the Web and therefore is not beholden to any particular constituency. It is a long lasting standard and practice that will last as long as the hypertext transfer protocol is operational.
+
+Making archival descriptions and collection available via linked data will increase the use of those descriptions and collections. It is a form of benign advertising. Commercial search engines will harvest the linked data content and make it available it their search engines. Search engines will return hits to your descriptions and collections driving traffic to you and your site. Digital humanists will harvest your content, perform analysis against it, and create new knowledge or bring hidden knowledge to light. Computer scientist will collect your data, amalgamate it with the data of others, and discover relationship previously unconceived.
+
+You can divide your combined collections and services into two tangible parts: 1) the collections  themselves, and 2) the metadata describing them. It is usually possible to digitize your collections, but the result is rarely 100% satisfactory. Digitization is almost always a useful surrogate not a complete replacement. In this way, your collections as physical objects will always be a draw to all types of learners and researchers. The metadata, on the other hand, is 100% digitizable, and therefore lends itself very well to dissemination on the Internet. Linked data represents one way to make this happen. 
+
+Few archival collections are 100% complete. There are always pieces missing, and some of those missing pieced will be owned by others. Your collections will have relationship with other collection, but you will not have direct access to those other collections. Some of these relationships are explicit. Some of them are implicit. If everybody were to expose their metadata then those explicit and implicit relationships can become more apparent. Once these relationships are strengthened and become more obvious, interest in the collections will increase accordingly, and the collections will be used to a greater degree. With this increased use will come increased attention, and in turn, a greater measure of success for the collections and services it provides. 
+
+----- 
+From: Ingrid Mason <ingrid.b.mason@gmail.com>
+Subject: Re: [LODLAM] quick benefits to hosting instutitions
+Date: January 22, 2014 at 9:49:47 PM EST
+To: lod-lam@googlegroups.com
+Reply-To: lod-lam@googlegroups.com
+
+Hi Jody,
+
+If I understand correctly, you're keen to find examples of value generated.  I'll give this a whirl... and see if I'm being helpful.  
+
+Converting data that already exists, >> providing a data service that a user community seeks to reuse and contribute to (access value).  
+
+PeopleAustralia (National Library of Australia) provides permanent, resolvable unique identifiers that link to records about parties, i.e. people or organisations.  The authority file at the Library already had, was reused.  This data source was enhanced as a result of ANDS funding to identify parties that manage or own research data collections.  You'll see that this has increased the capacity for discovery (through collaboration with other data providers).  Key contact: Tim Sherratt @wragge  
+
+Collaborating with custodians of primary material (collection managers), using third party data (Dbpedia), and finding, identifying and linking entities in the data >> brought to light information that was previously unknown (research value).
+
+LinkedJazz at the Pratt Institute.  Finalist in the LODLAM 2013 summit award along with some other folks (for being generally super clever with LOD things).  Key contact: Cristina Patuelli @cristinapattuel 
+
+Providing insights into the links in your own data >>  improve data quality (data value).   
+
+Check out Chris McDowall's post on linking data in digitalNZ.  @fogonwater 
+
+There are other kinds of value in all that.  Guess benefits depend on what the strategic goals of the organisation are, and what the research community needs in terms of access.    
+
+Hope that helps?
+
+Ingrid 
+
+
   "Rome is a large city that keeps getting larger. It is built on
   rich traditions, and the city continues to evolve. The language
   of the Romans expressive, and people speak with more than just
@@ -551,6 +547,29 @@ There are a number of challenges in the process. Some of them are listed below, 
   enjoy Rome. Different areas will appeal to different people, but
   to really understand Rome as a whole, a person need to visit and
   appreciate each of them in turn." 
+
+
+Links
+
+[1] canonical article - http://csis.pace.edu/~marchese/CS835/Lec9/112_SemWeb.pdf
+[2] design issues - http://www.w3.org/DesignIssues/LinkedData.html
+[3] FOAF - http://www.foaf-project.org
+[4] DCMI Metadata Terms - http://dublincore.org/documents/dcmi-terms/
+[5] Linking Lives project - http://archiveshub.ac.uk/linkinglives/
+[6] Linking Lives ontology - http://data.archiveshub.ac.uk/def/
+[7] VIAF - http://viaf.org
+[8] RDF Translator - http://rdf-translator.appspot.com
+[9] R2RML - http://www.w3.org/TR/r2rml/
+[10] D2RQ - http://d2rq.org/
+[11] ReLoad - http://labs.regesta.com/progettoReload/en
+[12] VOID - http://www.w3.org/TR/void/
+[13] RDFa - http://www.w3.org/TR/xhtml-rdfa-primer/
+[14] LODLAM - http://lodlam.net
+[15] Open Knowledge Foundation - http://okfn.org
+[16] Datahub - http://datahub.io
+
+
+
 
 
 5. Getting Started: Strategies and Steps
