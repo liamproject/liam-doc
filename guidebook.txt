@@ -1,15 +1,22 @@
-00 - Title page
 
 
-Linked Archival Metadata: A Guidebook
 
-  draft Draft Draft! Draft!!! DRAFT!!!  D R A F T ! ! ! 
+
+
+
+
+
+
+
+                         Linked Archival Metadata: A Guidebook
+
+                   draft Draft Draft! Draft!!! DRAFT!!!  D R A F T ! ! ! 
   
---
-LiAM & Eric L. Morgan
-http://sites.tufts.edu/liam/
+                                                                      --
+                                                   LiAM & Eric L. Morgan
+                                            http://sites.tufts.edu/liam/
 
-April 11, 2014
+                                                          April 15, 2014
 
 1. Executive Summary
 
@@ -562,13 +569,71 @@ Links
 
 
 
-5. Getting Started: Strategies and Steps
+
 
+Strategies for putting linked data into practice for the archivist
+
+  "If you to go to Rome for a day, then walk to the Colosseum and
+  Vatican City. Everything you see along the way will be extra. If
+  you to go to Rome for a few days, do everything you would do in a
+  single day, eat and drink in a few cafes, see a few fountains,
+  and go to a museum of your choice. For a week, do everything you
+  would do in a few days, and make one or two day-trips outside
+  Rome in order to get a flavor of the wider community. If you can
+  afford two weeks, then do everything you would do in a week, and
+  in addition befriend somebody in the hopes of establishing a
+  life-long friendship." 
+
+When you read a guidebook on Rome -- or any travel guidebook -- there are simply too many listed things to see & do. Nobody can see all the sites, visit all the museums, walk all the tours, nor eat at all the restaurants. It is literally impossible to experience everything a place like Rome has to offer. So it is with linked data. Despite this fact, if you were to do everything linked data had to offer, then you would do all of things on the following list starting at the first item, going all the way down to evaluation, and repeating the process over and over:
+
+  1. design the structure your URIs
+  2. select/design your ontology & vocabularies -- model your data
+  3. map and/or migrate your existing data to RDF
+  4. publish your RDF as linked data
+  5. create a linked data application
+  6. harvest other people's data and create another application
+  7. evaluate
+  8. repeat
+
+Given that it is quite possible you do not plan to immediately dive head-first into linked data, you might begin by getting your feet wet or dabbling in a bit of experimentation. That being the case, here are a number of different "itineraries" for linked data implementation. Think of them as strategies. They are ordered from least costly and most modest to greatest expense and completest execution: 
+  
+  1. Rome in a day - Maybe you can't afford to do anything right now, but if you have gotten this far in the guidebook, then you know something about linked data. Discuss (evaluate) linked data with with your colleagues, and consider revisiting the topic a year.
+  
+  2. Rome in three days - If you want something relatively quick and easy, but with the understanding that your implementation will not be complete, begin migrating your existing data to RDF. Use XSLT to transform your MARC or EAD files into RDF serializations, and publish them on the Web. Use something like OAI2RDF to make your OAI repositories (if you have them) available as linked data. Use something like D2RQ to make your archival description stored in databases accessible as linked data. Create a triple store and implement a SPARQL endpoint. As before, discuss linked data with your colleagues. 
+  
+  3. Rome in week - Being publishing RDF, but at the same time think hard about and document the structure of your future RDF's URIs as well as the ontologies & vocabularies you are going to use. Discuss it with your colleagues. Migrate and re-publish your existing data as RDF using the documentation as a guide. Re-implement your SPARQL endpoint. Discuss linked data not only with your colleagues but with people outside archival practice. 
+  
+  4. Rome in two weeks - First, do everything you would do in one week. Second, supplement your triple store with the RDF of others'. Third, write an application against the triple store that goes beyond search. In short, tell stories and you will be discussing linked data with the world, literally.
+
+
+Strategies
 
 Linked data represents a modern way of making your archival descriptions accessible to the wider world. In that light, it represents a different way of doing things but not necessary a different what of doing things. You will still be doing inventory. You will still be curating collections. You will still be prioritizing what goes and what stays.
 
-On the other hand, linked data changes the way your descriptions get expressed and distributed. It is a lot like taking a trip across country. The goal was always to get to the coast to see the ocean, but instead of walking, going by stage coach, taking a train, or driving a car, you will be flying. Along the way you may visit a few cities and have a few layovers. Bad weather may even get in the way, but sooner or later you will get to your destination. Take a deep breath. Understand that the process will be one of learning, and that learning will be applicable in other aspects of your work. The result will be two-fold. First, a greater number of people will have access to your collections, and consequently, more people will will be using your collections. 
-5.a. Defining your strategy: Articulate goals, objectives, and metrics to measure success.
+5.a Linked data and archival practice: Or, There is more than one way to get there
+
+Two recent experiences have taught me that — when creating some sort of information service — linked data will reside and be mixed in with data collected from any number of Internet techniques. Linked data interfaces will coexist with REST-ful interfaces, or even things as rudimentary as FTP. To the archivist, this means linked data is not the be-all and end-all of information publishing. There is no such thing. To the application programmer, this means you will need to have experience with a ever-growing number of Internet protocols. To both it means, “There is more than one way to get there.”
+
+In October of 2013 I had the opportunity to attend the Semantic Web In Libraries conference.   It was a three-day event attended by approximately three hundred people who could roughly be divided into two equally sized groups: computer scientists and cultural heritage institution employees. The bulk of the presentations fell into two categories: 1) publishing linked data, and 2) creating information services. The publishers talked about ontologies, human-computer interfaces for data creation/maintenance, and systems exposing RDF to the wider world. The people creating information services were invariably collecting, homogenizing, and adding value to data gathered from a diverse set of information services. These information services were not limited to sets of linked data. They also included services accessible via REST-ful computing techniques, OAI-PMH interfaces, and there were probably a few locally developed file transfers or relational database dumps described as well. These people where creating lists of information services, regularly harvesting content from the services, writing cross-walks, locally storing the content, indexing it, providing services against the result, and sometimes republishing any number of “stories” based on the data. For the second group of people, linked data was certainly not the only game in town.
+
+In February of 2014 I had the opportunity to attend a hackathon called GLAM Hack Philly.  A wide variety of data sets were presented for “hacking” against. Some where TEI files describing Icelandic manuscripts. Some was linked data published from the British museum. Some was XML describing digitized journals created by a vendor-based application. Some of it resided in proprietary database applications describing the location of houses in Philadelphia. Some of it had little or no computer-readable structure at all and described plants. Some of it was the wiki mark-up for local municipalities. After the attendees (there were about two dozen of us) learned about each of the data sets we self-selected and hacked away at projects of our own design. The results fell into roughly three categories: geo-referencing objects, creating searchable/browsable interfaces, and data enhancement. With the exception of the resulting hack repurposing journal content to create new art, the results were pretty typical for cultural heritage institutions. But what fascinated me was way us hackers selected our data sets. Namely, the more complete and well-structured the data was the more hackers gravitated towards it. Of all the data sets, the TEI files were the most complete, accurate, and computer-readable. Three or four projects were done against the TEI. (Heck, I even hacked on the TEI files.) The linked data from the British Museum — very well structured but not quite as through at the TEI — attracted a large number of hackers who worked together for a common goal. All the other data sets had only one or two people working on them. What is the moral to the story? There are two of them. First, archivists, if you want people to process your data and do “kewl” things against it, then make sure the data is thorough, complete, and computer-readable. Second, computer programmers, you will need to know a variety of data formats. Linked data is not the only game in town.
+
+In summary, the technologies described in this Guidebook are not the only way to accomplish the goals of archivists wishing to make their content more accessible. Instead, linked data is just one of many protocols in the toolbox. It is open, standards-based, and simpler rather than more complex. On the other hand, other protocols exist which have a different set of strengths and weaknesses. Computer technologists will need to have a larger rather than smaller knowledge of various Internet tools. For archivists, the core of the problem is still the collection and description of content. This — a what of archival practice — continues to remain constant. It is the how of archival practice — the technology — that changes at a much faster pace.
+
+
+2.a Lots of ways to participate
+
+  * finding URIs
+  * associating URIs with predicates
+  * publishing serialized RDF with: 1) pure HTTP, and/or 2) SPARQL
+  * harvesting RDF
+  * storing RDF
+  * analyzing RDF
+  * providing services against RDF
+  * leading groups of people
+  * articulating policies
+  * allocating resources
+
 
 The building blocks of linked data include:
 
@@ -577,7 +642,6 @@ The building blocks of linked data include:
   * Content to share with the wider world 
   * People to do the work 
   * Computer technology to manifest the work
-
 
 With this in mind, articulate some goals — broad targets of things you would like to accomplish. Some of them might include:
 
@@ -589,6 +653,8 @@ With this in mind, articulate some goals — broad targets of things you would l
   * increasing the computer technology skills of fellow archivists
 
 How might you go about accomplishing these goals? What are your objectives? (What method of transportation are you going to use to get where you are going?) How am I going to measure success? In other words, you will need to create an plan, and each item in the plan answers a simple question — Who is going to do what by when? In other word, what people will be responsible for accomplishing the particular objective. Exactly what will they be doing, and by what time will they have it accomplished. Each of these components are described in greater detail below
+
+On the other hand, linked data changes the way your descriptions get expressed and distributed. It is a lot like taking a trip across country. The goal was always to get to the coast to see the ocean, but instead of walking, going by stage coach, taking a train, or driving a car, you will be flying. Along the way you may visit a few cities and have a few layovers. Bad weather may even get in the way, but sooner or later you will get to your destination. Take a deep breath. Understand that the process will be one of learning, and that learning will be applicable in other aspects of your work. The result will be two-fold. First, a greater number of people will have access to your collections, and consequently, more people will will be using your collections. 
 
 Who
 
@@ -609,153 +675,78 @@ When
 The say, “Work expands to fill the available space.” If this is true, and no deadlines are articulated for each objective, then the allotted amount of time for any given task is all but infinite, but this it not true. Time is one of the most limited resources you have. When thinking about a given objective, ask yourself how much time you think it will take, multiply the time by one and a half. Ask yourself when the task can begin and document the beginning point as well as the estimated ending point. Do this all of your objectives and the result will be a Gantt chart. It will now be easy to look at the chart on a regular basis to see who things are progressing. 
 
 
---------------
+  * Structure your URIs
+  * Select/design your ontology & vocabularies -- model your data
+  * Map and/or migrate your existing data to RDF
+  * Publish your RDF
+  * Create an RDF application
+  * Harvest other people's data and create an application
+  * Evaluate
+  * Repeat
 
 
-  1. Create and maintain RDF - Generate, save, and update sets of RDF statements describing your content. 
+Structure your URIs
 
-  2. Publish RDF - No matter what kind of RDF you are able to create, make it available on the Web.
+
+Select/design your ontology & vocabularies -- model your data
 
   3. Articulate and implement best practices for publishing RDF - Work with your friends to articulate and document an "application profile". As guidelines and best practices get articulated, implement them by going back to Step #1. In the meantime, continue on to Step #4.
 
-  4. Harvest RDF - Collect RDF from the Web, and some of the collection may be some of your own content.
-
-  5. Develop services against harvested RDF - Evaluate (curate) the collection. 
-
-  6. Go to Step #1 - This is a never-ending process. 
 
 
+Map and/or migrate your existing data to RDF
+  1. Create and maintain RDF - Generate, save, and update sets of RDF statements describing your content. 
 
---
-2.a Lots of ways to participate
+Three Cs: Cleanup, Conversion, Consistency
 
-  * finding URIs
-  * associating URIs with predicates
-  * publishing serialized RDF with: 1) pure HTTP, and/or 2) SPARQL
-  * harvesting RDF
-  * storing RDF
-  * analyzing RDF
-  * providing services against RDF
-  * leading groups of people
-  * articulating policies
-  * allocating resources
-3.a. Objectives: management, access, and use and linked data affordances
+The article entitled Recipes for Enhancing Digital Collections with Linked Data
+by Thomas Johnson and Karen Estlund (http://journal.code4lib.org/articles/9214) outlines a number of ways of cleaning up data in content management systems by way of RDF statements. 
 
-[Management, access, and use and linked data affordances]
+clean up steps include:
+
+	1.	Remove noise
+	2.	Normalize presentation
+	3.	Assign URIs for curation objects
+	4.	Map legacy elements to Linked Data vocabularies
+
+As stated by Hillman, the process of moving to linked data is The key to this aug- mentation process involves changing the basic metadata unit from “record” to “statement.” — http://dcpapers.dublincore.org/pubs/article/view/770/766
+
+Problems with data, again from hillman an:
+
+  1. missing data – metadata elements not present in supplied metadata
+  2. incorrect data – metadata values not con- forming to standard element use 
+  3. confusing data – multiple values crammed into a single metadata element, embedded html tags, etc. 
+  4. insufficient data – e.g., no indication of controlled vocabularies used 
+
+Safe transformations include:
+
+  1. remove “noise” – a partial solution to the “incorrect data” problem. For example, we remove metadata with no information value, such as empty metadata elements, metadata elements with values such as “unknown” or “n/a” or consisting entirely of dashes or other punctuation.
+
+  2. detect and identify controlled vocabular- ies in use whenever possible – a partial solution to the “insufficient data” prob- lem. For example, the DCMIType encod- ing scheme is applied to DC “Type” elements when their value is one of the allowed DCMITypes [10]. This works well for small controlled vocabularies; however, it does not scale well to large vocabularies such as LCSH.
+
+  3. normalize metadata presentation – clean up the values: remove double XML en- codings (“&amp;lt;” becomes “&lt;”), extra whitespace (a tab followed by five spaces becomes a single space), etc.
 
 
-5.a Linked data and archival practice: Or, There is more than one way to get there
+Creating and maintaining metadata is a never-ending process. The items being described can always use elaboration. Collections may increase is size. Rights applied against content may change. Things become digitized, or digitized things are migrated from one format to another. Because of these sorts of things and many others, cleanup, conversion, and consistency are something every metadata specialist needs to keep in mind. 
 
-Two recent experiences have taught me that — when creating some sort of information service — linked data will reside and be mixed in with data collected from any number of Internet techniques. Linked data interfaces will coexist with REST-ful interfaces, or even things as rudimentary as FTP. To the archivist, this means linked data is not the be-all and end-all of information publishing. There is no such thing. To the application programmer, this means you will need to have experience with a ever-growing number of Internet protocols. To both it means, “There is more than one way to get there.”
-
-In October of 2013 I had the opportunity to attend the Semantic Web In Libraries conference.   It was a three-day event attended by approximately three hundred people who could roughly be divided into two equally sized groups: computer scientists and cultural heritage institution employees. The bulk of the presentations fell into two categories: 1) publishing linked data, and 2) creating information services. The publishers talked about ontologies, human-computer interfaces for data creation/maintenance, and systems exposing RDF to the wider world. The people creating information services were invariably collecting, homogenizing, and adding value to data gathered from a diverse set of information services. These information services were not limited to sets of linked data. They also included services accessible via REST-ful computing techniques, OAI-PMH interfaces, and there were probably a few locally developed file transfers or relational database dumps described as well. These people where creating lists of information services, regularly harvesting content from the services, writing cross-walks, locally storing the content, indexing it, providing services against the result, and sometimes republishing any number of “stories” based on the data. For the second group of people, linked data was certainly not the only game in town.
-
-In February of 2014 I had the opportunity to attend a hackathon called GLAM Hack Philly.  A wide variety of data sets were presented for “hacking” against. Some where TEI files describing Icelandic manuscripts. Some was linked data published from the British museum. Some was XML describing digitized journals created by a vendor-based application. Some of it resided in proprietary database applications describing the location of houses in Philadelphia. Some of it had little or no computer-readable structure at all and described plants. Some of it was the wiki mark-up for local municipalities. After the attendees (there were about two dozen of us) learned about each of the data sets we self-selected and hacked away at projects of our own design. The results fell into roughly three categories: geo-referencing objects, creating searchable/browsable interfaces, and data enhancement. With the exception of the resulting hack repurposing journal content to create new art, the results were pretty typical for cultural heritage institutions. But what fascinated me was way us hackers selected our data sets. Namely, the more complete and well-structured the data was the more hackers gravitated towards it. Of all the data sets, the TEI files were the most complete, accurate, and computer-readable. Three or four projects were done against the TEI. (Heck, I even hacked on the TEI files.) The linked data from the British Museum — very well structured but not quite as through at the TEI — attracted a large number of hackers who worked together for a common goal. All the other data sets had only one or two people working on them. What is the moral to the story? There are two of them. First, archivists, if you want people to process your data and do “kewl” things against it, then make sure the data is thorough, complete, and computer-readable. Second, computer programmers, you will need to know a variety of data formats. Linked data is not the only game in town.
-
-In summary, the technologies described in this Guidebook are not the only way to accomplish the goals of archivists wishing to make their content more accessible. Instead, linked data is just one of many protocols in the toolbox. It is open, standards-based, and simpler rather than more complex. On the other hand, other protocols exist which have a different set of strengths and weaknesses. Computer technologists will need to have a larger rather than smaller knowledge of various Internet tools. For archivists, the core of the problem is still the collection and description of content. This — a what of archival practice — continues to remain constant. It is the how of archival practice — the technology — that changes at a much faster pace.
-
-2.a Use cases
-
- What can you do with linked data once it is created? Here are three use cases:
-
-1. Do simple publishing - At its very root, linked data is about making your data available for others to harvest and use. While the “killer linked data application” has seemingly not reared its head, this does not mean you ought not make your data available at linked data. You won’t see the benefits immediately, but sooner or later (less than 5 years from now), you will see your content creeping into the search results of Internet indexes, into the work of both computational humanists and scientists, and into the hands of esoteric hackers creating one-off applications. Internet search engines will create “knowledge graphs”, and they will include links to your content. The humanists and scientists will operate on your data similarly. Both will create visualizations illustrating trends. They will both quantifiably analyze your content looking for patterns and anomalies. Both will probably create network diagrams demonstrating the flow and interconnection of knowledge and ideas through time and space. The humanist might do all this in order to bring history to life or demonstrate how one writer influenced another. The scientist might study ways to efficiently store your data, easily move it around the Internet, or connect it with data set created by their apparatus. The hacker (those are the good guys) will create flashy-looking applications that many will think are weird and useless, but the applications will demonstrate how the technology can be exploited. These applications will inspire others, be here one day and gone the next, and over time, become more useful and sophisticated. 
-
-2. Create a union catalog - If you make your data available as linked data, and if you find at least one other archive who is making their data available as linked data, then you can find a third somebody who will combine them into a triple store and implement a rudimentary SPARQL interface against the union. Once this is done a researcher could conceivably search the interface for a URI to see what is in both collections. The absolute imperative key to success for this to work is the judicious inclusion of URIs in both data sets. This scenario becomes even more enticing with the inclusion of two additional things. First, the more collections in the triple store the better. You can not have enough collections in the store. Second, the scenario will be even more enticing when each archive publishes their data using similar ontologies as everybody else. Success does not hinge on similar ontologies, but success is significantly enhanced. Just like the relational databases of today, nobody will be expected to query them using their native query language (SQL or SPARQL). Instead the interfaces will be much more user-friendly. The properties of classes in ontologies will become facets for searching and browsing. Free text as well as fielded searching via drop-down menus will become available. As time goes on and things mature, the output from these interfaces will be increasingly informative, easy-to-read, and computable. This means the output will answer questions, be visually appealing, as well as be available in one or more formats for other computer programs to operate upon.  
-
-3. Tell a story - You and your hosting institution(s) have something significant to offer. It is not just about you and your archive but also about libraries, museums, the local municipality, etc. As a whole you are a local geographic entity. You represent something significant with a story to tell. Combine your linked data with the linked data of others in your immediate area. The ontologies will be a total hodgepodge, at least at first. Now provide a search engine against the result. Maybe you begin with local libraries or museums. If you work in an academic setting, then maybe you begin with other academic departments across campus. Allow people to search the interface and bring together the content of everybody involved. Do not just provide lists of links in search results, but instead create knowledge graphs. Supplement the output of search results with the linked data from Wikipedia, Flickr, etc. In a federated search sort of way, supplement the output with content from other data feeds such as (licensed) bibliographic indexes or content harvested from OAI-PMH repositories. Identify complementary content from further afield. Figure out a way for you and they to work together to create a newer, more complete set of content. Creating these sorts of things on-the-fly will be challenging. On the other hand, you might implement something that is more iterative and less immediate, but more thorough and curated if you were to select a topic or theme of interest, and do your own searching and story telling. The result would be something that is at once a Web page, a document designed for printing, or something importable into another computer program. 
-
-4. Create new knowledge - Create an inference engine, turn it against your triple store, and look for relationships between distinct sets of URIs that weren't previously apparent. Here's one way how: 
-
-  1. allow the reader to select an actionable URI of personal
-     interest, ideally a URI from the set of URIs you curate
-
-  2. submit it an HTTP server or SPARQL endpoint and request RDF as
-     output
-
-  3. save the output to a local store
-
-  4. for each subject and object URI found the output, go to
-     Step #2
-
-  5. go to step #2 n times for each newly harvested URI in the store
-     where n is a reader-defined integer greater than 1; in other
-     words, harvest more and more URIs, predicates, and literals
-     based on the previously harvested URIs
-
-  6. create a set of human readable services/reports against the
-     content of the store, and think of these services/reports akin to
-     finding aids, reference materials, or museum exhibits of the
-     future: Example services/reports might include:
-
-      * hierarchal lists of all classes and properties - This
-        would be a sort of semantic map. Each item on the map
-        would be clickable allowing the reader to read more and
-        drill down.
-
-      * text mining reports - collect into a single "bag of
-        words" all the literals saved in the store and create:
-        word clouds, alphabetical lists, concordances,
-        bibliographies, directories, gazetteers, tabulations of
-        parts of speech, named entities, sentiment analyses,
-        topic models, etc.
-
-      * maps - use place names and geographic coordinates to
-        implement a geographic information service
-
-      * audio-visual mash-ups - bring together all the media
-        information and create things like slideshows, movies,
-        analyses of colors, shapes, patterns, etc.
-
-      * search interfaces - implement a search interface
-        against the result, SPARQL or otherwise
-
-      * facts - remember SPARQL queries can return more than
-        just lists. They can return mathematical results such
-        as sums, ratios, standard deviations, etc. It can also
-        return Boolean values helpful in answering yes/no
-        questions. You could have a set of canned fact queries
-        such as, how many ontologies are represented in the
-        store. Is the number of ontologies greater than 3? Are
-        there more than 100 names represented in this set? The
-        count of languages used in the set, etc.
-
-  7. Allow the reader to identify a new URI of personal interest,
-     specifically one garnered from the reports generated in Step #5.
-
-  8. Go to Step #2, but this time have the inference engine be more
-     selective by having it try to crawl back to your namespace and
-     set of locally curated URIs.
-
-  9. Return to the reader the URIs identified in Step #7, and by
-     consequence, these URIs ought to share some of the same
-     characteristics as the very first URI; you have implemented a
-     "find more like this one" tool. You, as curator of the collection
-     of URIs might have thought the relations between the first URI
-     and set of final URIs was obvious, but those relationships would
-     not necessarily be obvious to the reader, and therefore new
-     knowledge would have been created or brought to light.
-
- 10. If there are no new URIs from Step #7, then go to Step #6
-     using the newly harvested content.
-
- 11. Done - if a system were created such as the one above, then
-     the reader would quite likely have acquired some new knowledge,
-     and this would be especially true the greater the size of n in
-     Step #5. 
+Cleanup, conversion, and consistency means many things. Does all of your metadata use the same set of one or more vocabularies? Are things spelled correctly? Maybe you used abbreviations in one document but spelled things out in another? Have you migrated your JPEG images to JPEG2000 or TIFF formats? Maybe the EAD DTD has been updated, and you want (need) to migrate your finding aids from one XML format to another? Do all of your finding aids exhibit the same level of detail; are some “thinner” than others? Have you used one form of a person’s name in one document but used another form in a different document? The answers to these sorts of questions point to the need for cleanup, conversion, and consistency. 
 
 
 
-
-
-5.b. Is your archival description LOD-ready?
+5.b. Is your archival description LOD-ready?
 
 Is your archival description LOD-ready? Now? The simple, straight-forward answer is, "Yes." The longer and more complicated answer is, "No. Your data is never 100% linked data ready because the process of archival description is never finished." That said, the balance of the Guide describes what you can do going forward. 
 
-5.c. Identify building blocks: metadata components in archival description that are (or nearly are) ready for linking.
+5.c. Identify building blocks: metadata components in archival description that are (or nearly are) ready for linking.
 
-5.d. Readiness: Making small changes in practice to make your description LOD-ready.
+5.d. Readiness: Making small changes in practice to make your description LOD-ready.
 
-5.e. What you can do now if you have (done)
+
+Publish your RDF
+  2. Publish RDF - No matter what kind of RDF you are able to create, make it available on the Web.
+1. Do simple publishing - At its very root, linked data is about making your data available for others to harvest and use. While the “killer linked data application” has seemingly not reared its head, this does not mean you ought not make your data available at linked data. You won’t see the benefits immediately, but sooner or later (less than 5 years from now), you will see your content creeping into the search results of Internet indexes, into the work of both computational humanists and scientists, and into the hands of esoteric hackers creating one-off applications. Internet search engines will create “knowledge graphs”, and they will include links to your content. The humanists and scientists will operate on your data similarly. Both will create visualizations illustrating trends. They will both quantifiably analyze your content looking for patterns and anomalies. Both will probably create network diagrams demonstrating the flow and interconnection of knowledge and ideas through time and space. The humanist might do all this in order to bring history to life or demonstrate how one writer influenced another. The scientist might study ways to efficiently store your data, easily move it around the Internet, or connect it with data set created by their apparatus. The hacker (those are the good guys) will create flashy-looking applications that many will think are weird and useless, but the applications will demonstrate how the technology can be exploited. These applications will inspire others, be here one day and gone the next, and over time, become more useful and sophisticated. 
+
+5.e. What you can do now if you have (done)
 
 Each of the sections below outline how you can participate in linked data if currently have any number of metadata file formats (MARC, EAD, etc.).
 
@@ -842,43 +833,246 @@ The downside of D2RQ is its generic nature. It will create an RDF ontology whose
 
 The second alternative requires community effort and coordination. The databases of Archivist’s Toolkit, Archon, ArchivesSpace, or Past Perfect could be assumed. The community could then get together and decide on an RDF ontology to use for archival descriptions. The database structure(s) could then be mapped to this ontology. Next, programs could be written against the database(s) to create serialized RDF thus beginning the process of publishing linked data. Once that was complete, the archival community would need to come together again to ensure it uses as many shared URIs as possible thus creating the most functional sets of linked data. This second alternative requires a significant amount of community involvement and wide-spread education. It represents a never-ending process.
 
-[1] D2RQ - http://d2rq.org6. On Your Way: Next Steps
-
-6.a. Integration into daily practice
-
-6.b. Three Cs: Cleanup, Conversion, Consistency
-
-The article entitled Recipes for Enhancing Digital Collections with Linked Data
-by Thomas Johnson and Karen Estlund (http://journal.code4lib.org/articles/9214) outlines a number of ways of cleaning up data in content management systems by way of RDF statements. 
-
-clean up steps include:
-
-	1.	Remove noise
-	2.	Normalize presentation
-	3.	Assign URIs for curation objects
-	4.	Map legacy elements to Linked Data vocabularies
-
-As stated by Hillman, the process of moving to linked data is The key to this aug- mentation process involves changing the basic metadata unit from “record” to “statement.” — http://dcpapers.dublincore.org/pubs/article/view/770/766
-
-Problems with data, again from hillman an:
-
-  1. missing data – metadata elements not present in supplied metadata
-  2. incorrect data – metadata values not con- forming to standard element use 
-  3. confusing data – multiple values crammed into a single metadata element, embedded html tags, etc. 
-  4. insufficient data – e.g., no indication of controlled vocabularies used 
-
-Safe transformations include:
-
-  1. remove “noise” – a partial solution to the “incorrect data” problem. For example, we remove metadata with no information value, such as empty metadata elements, metadata elements with values such as “unknown” or “n/a” or consisting entirely of dashes or other punctuation.
-
-  2. detect and identify controlled vocabular- ies in use whenever possible – a partial solution to the “insufficient data” prob- lem. For example, the DCMIType encod- ing scheme is applied to DC “Type” elements when their value is one of the allowed DCMITypes [10]. This works well for small controlled vocabularies; however, it does not scale well to large vocabularies such as LCSH.
-
-  3. normalize metadata presentation – clean up the values: remove double XML en- codings (“&amp;lt;” becomes “&lt;”), extra whitespace (a tab followed by five spaces becomes a single space), etc.
+[1] D2RQ - http://d2rq.org
 
 
-Creating and maintaining metadata is a never-ending process. The items being described can always use elaboration. Collections may increase is size. Rights applied against content may change. Things become digitized, or digitized things are migrated from one format to another. Because of these sorts of things and many others, cleanup, conversion, and consistency are something every metadata specialist needs to keep in mind. 
+Create an RDF application
+  5. Develop services against harvested RDF - Evaluate (curate) the collection. 
 
-Cleanup, conversion, and consistency means many things. Does all of your metadata use the same set of one or more vocabularies? Are things spelled correctly? Maybe you used abbreviations in one document but spelled things out in another? Have you migrated your JPEG images to JPEG2000 or TIFF formats? Maybe the EAD DTD has been updated, and you want (need) to migrate your finding aids from one XML format to another? Do all of your finding aids exhibit the same level of detail; are some “thinner” than others? Have you used one form of a person’s name in one document but used another form in a different document? The answers to these sorts of questions point to the need for cleanup, conversion, and consistency. 
+ What can you do with linked data once it is created? Here are three use cases:
+
+2. Create a union catalog - If you make your data available as linked data, and if you find at least one other archive who is making their data available as linked data, then you can find a third somebody who will combine them into a triple store and implement a rudimentary SPARQL interface against the union. Once this is done a researcher could conceivably search the interface for a URI to see what is in both collections. The absolute imperative key to success for this to work is the judicious inclusion of URIs in both data sets. This scenario becomes even more enticing with the inclusion of two additional things. First, the more collections in the triple store the better. You can not have enough collections in the store. Second, the scenario will be even more enticing when each archive publishes their data using similar ontologies as everybody else. Success does not hinge on similar ontologies, but success is significantly enhanced. Just like the relational databases of today, nobody will be expected to query them using their native query language (SQL or SPARQL). Instead the interfaces will be much more user-friendly. The properties of classes in ontologies will become facets for searching and browsing. Free text as well as fielded searching via drop-down menus will become available. As time goes on and things mature, the output from these interfaces will be increasingly informative, easy-to-read, and computable. This means the output will answer questions, be visually appealing, as well as be available in one or more formats for other computer programs to operate upon.  
+
+3. Tell a story - You and your hosting institution(s) have something significant to offer. It is not just about you and your archive but also about libraries, museums, the local municipality, etc. As a whole you are a local geographic entity. You represent something significant with a story to tell. Combine your linked data with the linked data of others in your immediate area. The ontologies will be a total hodgepodge, at least at first. Now provide a search engine against the result. Maybe you begin with local libraries or museums. If you work in an academic setting, then maybe you begin with other academic departments across campus. Allow people to search the interface and bring together the content of everybody involved. Do not just provide lists of links in search results, but instead create knowledge graphs. Supplement the output of search results with the linked data from Wikipedia, Flickr, etc. In a federated search sort of way, supplement the output with content from other data feeds such as (licensed) bibliographic indexes or content harvested from OAI-PMH repositories. Identify complementary content from further afield. Figure out a way for you and they to work together to create a newer, more complete set of content. Creating these sorts of things on-the-fly will be challenging. On the other hand, you might implement something that is more iterative and less immediate, but more thorough and curated if you were to select a topic or theme of interest, and do your own searching and story telling. The result would be something that is at once a Web page, a document designed for printing, or something importable into another computer program. 
+
+4. Create new knowledge - Create an inference engine, turn it against your triple store, and look for relationships between distinct sets of URIs that weren't previously apparent. Here's one way how: 
+
+  1. allow the reader to select an actionable URI of personal
+     interest, ideally a URI from the set of URIs you curate
+
+  2. submit it an HTTP server or SPARQL endpoint and request RDF as
+     output
+
+  3. save the output to a local store
+
+  4. for each subject and object URI found the output, go to
+     Step #2
+
+  5. go to step #2 n times for each newly harvested URI in the store
+     where n is a reader-defined integer greater than 1; in other
+     words, harvest more and more URIs, predicates, and literals
+     based on the previously harvested URIs
+
+  6. create a set of human readable services/reports against the
+     content of the store, and think of these services/reports akin to
+     finding aids, reference materials, or museum exhibits of the
+     future: Example services/reports might include:
+
+      * hierarchal lists of all classes and properties - This
+        would be a sort of semantic map. Each item on the map
+        would be clickable allowing the reader to read more and
+        drill down.
+
+      * text mining reports - collect into a single "bag of
+        words" all the literals saved in the store and create:
+        word clouds, alphabetical lists, concordances,
+        bibliographies, directories, gazetteers, tabulations of
+        parts of speech, named entities, sentiment analyses,
+        topic models, etc.
+
+      * maps - use place names and geographic coordinates to
+        implement a geographic information service
+
+      * audio-visual mash-ups - bring together all the media
+        information and create things like slideshows, movies,
+        analyses of colors, shapes, patterns, etc.
+
+      * search interfaces - implement a search interface
+        against the result, SPARQL or otherwise
+
+      * facts - remember SPARQL queries can return more than
+        just lists. They can return mathematical results such
+        as sums, ratios, standard deviations, etc. It can also
+        return Boolean values helpful in answering yes/no
+        questions. You could have a set of canned fact queries
+        such as, how many ontologies are represented in the
+        store. Is the number of ontologies greater than 3? Are
+        there more than 100 names represented in this set? The
+        count of languages used in the set, etc.
+
+  7. Allow the reader to identify a new URI of personal interest,
+     specifically one garnered from the reports generated in Step #5.
+
+  8. Go to Step #2, but this time have the inference engine be more
+     selective by having it try to crawl back to your namespace and
+     set of locally curated URIs.
+
+  9. Return to the reader the URIs identified in Step #7, and by
+     consequence, these URIs ought to share some of the same
+     characteristics as the very first URI; you have implemented a
+     "find more like this one" tool. You, as curator of the collection
+     of URIs might have thought the relations between the first URI
+     and set of final URIs was obvious, but those relationships would
+     not necessarily be obvious to the reader, and therefore new
+     knowledge would have been created or brought to light.
+
+ 10. If there are no new URIs from Step #7, then go to Step #6
+     using the newly harvested content.
+
+ 11. Done - if a system were created such as the one above, then
+     the reader would quite likely have acquired some new knowledge,
+     and this would be especially true the greater the size of n in
+     Step #5. 
+
+
+
+Harvest other people's data and create an application
+
+  4. Harvest RDF - Collect RDF from the Web, and some of the collection may be some of your own content.
+
+Evaluate
+
+
+Repeat
+  6. Go to Step #1 - This is a never-ending process. 
+
+
+=====
+
+Design pattern for archives
+
+  The Use Cases for LiAM include scenarios in which understanding
+  of or access to archival collections are made more difficult or
+  cumbersome when description is strictly limited to the
+  traditional finding aid. In describing these scenarios, LiAM
+  staff and Working Group members drew on first-hand experience
+  managing and describing collections as well as helping
+  researchers use the collections in our care.
+
+  The Use Cases for LiAM include scenarios in which understanding
+  of or access to archival collections are made more difficult or
+  cumbersome when description is strictly limited to the
+  traditional finding aid. In describing these scenarios, LiAM
+  staff and Working Group members drew on first-hand experience
+  managing and describing collections as well as helping
+  researchers use the collections in our care.
+
+  General Problem Statement for LiAM
+
+  From the grant narrative:
+
+	  Most finding aids — archival collection descriptions often
+	  encoded in EAD — are hierarchical and linear narrative documents
+	  that take a top-down approach to archival description. They start
+	  by describing an archival collection as a whole, its creator(s),
+	  and how the collection is organized.
+
+	  From there finding aids typically describe series, subseries, and
+	  on down to the lowest level of description. The linear flow of
+	  the traditional finding aid closely mirrors the physical
+	  arrangement of the documents in hand, serving both as a
+	  description of the collection and as a map to where records are
+	  physically located on the actual shelves or within the actual
+	  boxes and folders.
+
+	  The archival principle of provenance provides the theoretical
+	  underpinning for this hierarchical formulation of the finding
+	  aid. This principle dictates that “records of different origins
+	  (provenance) be kept separate to preserve their context.”1
+	  Archivists use the finding aid as their main tool to adhere to
+	  this principle in their management and description of their
+	  archival holdings. The finding aid supports provenance by hewing
+	  closely to the notion of original order.
+
+  By crafting finding aids to provide a representation of how the
+  records creator arranged and ordered his, her, or its records,
+  archives aim to preserve “existing relationships and evidential
+  significance that can be inferred from the context of the
+  records.” Archivists use finding aids to provide intellectual and
+  physical control of their holdings, and to give users the means
+  to discover records and objects within collections and understand
+  the way items and groupings of documents relate to each other.
+
+  Complexity is not new to archival collections. However, we feel
+  that changes in recordkeeping from creation to use is increasing
+  the complexity of the descriptive work required of archivists and
+  challenging the effectiveness of traditional descriptive modes.
+  We feel the need to explore alternative descriptive approaches
+  that can meaningfully represent that complexity.
+
+  In most cases, archivists know or become aware of vital
+  contexualizing information as part of arrangement and description
+  work. However, they often struggle to articulate this information
+  it to users in ways that are easily accessible and meaningful and
+  that don’t require excessive supplemental narrative description.
+
+  Some of these complexities are:
+
+  * Name - 
+  * Question - "An individual record or series of records often have simultaneous significance in multiple contexts. (Anne Sauer)How do you signify simultaneous records when they might have multiple contexts?"
+  * Context - 
+  * Solution - 
+  * Example - 
+  * Discussion - 
+
+  * Name - 
+  * Question - "Record creators have multifaceted relationships to different records and series of records.(Anne Sauer) How do you model record creators with different series of records?"
+  * Context - 
+  * Solution - 
+  * Example - 
+  * Discussion - 
+
+  * Name - 
+  * Question - "Documentation of a function often spans provenance-based records series. (Anne Sauer)How do you link functions when provenance-based records span series?"
+  * Context - 
+  * Solution - 
+  * Example - 
+  * Discussion - 
+
+  * Name - 
+  * Question - "Documentation of an event often spans provenance-based records series. (Anne Sauer)How do you link events when provenance-based records span series?"
+  * Context - 
+  * Solution - 
+  * Example - 
+  * Discussion - 
+
+  * Name - 
+  * Question - "Intentional filing systems are often no longer employed as a file management strategy, undermining the affordance of original order as a conceptual basis for description. (Anne Sauer) How do you model the intentional filing system? "
+  * Context - 
+  * Solution - 
+  * Example - 
+  * Discussion - 
+
+  * Name - 
+  * Question - "Because women may change their names more frequently than men in Western culture, this project will be particularly helpful in connect collections that may end up being un-connected due to different names for the same person. An interesting example of scattered collections that would have been brought together are the William Cameron Blackett personal archive at the Harvard University Archives with two collections of papers of his daughter (Priscilla Blackett Dewey Houghton) described as the Priscilla B. Dewey papers at the Harvard Theatre Collection, Houghton Library and the papers of Priscilla Dewey Houghton at the Schlesinger Library. (Juliana Kuipers)"
+  * Context - 
+  * Solution - 
+  * Example - 
+  * Discussion - 
+
+  * Name - 
+  * Question - "How about linking by function? Responsibility and authority for a particular administrative function may move from one office to another. For example, student discipline may move from a President’s office to a Dean of a school, to the Dean of Students, and then to a disciplinary board. (Kate Bowers)"
+  * Context - 
+  * Solution - 
+  * Example - 
+  * Discussion - 
+
+  * Name - 
+  * Question - "Email addresses are another interesting point of convergence/divergence. Multiple aliases for the same email account may exist simultaneously, one person may have many email accounts. (Skip Kendall)"
+  * Context - 
+  * Solution - 
+  * Example - 
+  * Discussion - 
+
+  * Name - 
+  * Question - "@Skip, excellent point. Social media/Internet identities in general are all over the place. I’m just imagining trying to link the history of, well, me over the years: a number of e-mail addresses, twitter identities, blog identities, openID, etc. Of course doing such a thing opens up some interesting archival ethical questions. In many Internet subcultures there a reasonable concept of an open secret connecting somebody’s legal name with an Internet identity name. Presumably archival ethics would emphasize the “secret” part rather than the “open”whenever possible and avoid linking. Huh, thought-provoking.  @Kate, definitely true! And an important thing to track.  @Julianna, indeed, and there are other name changes to track as well, such as people who take Western names when they change countries, etc. (Deborah Kaplan)"
+  * Context - 
+  * Solution - 
+  * Example - 
+  * Discussion - 
+
+-----
+
 
 7.a.ii. Gaps: What is needed
 
