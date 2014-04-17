@@ -11,7 +11,7 @@ Strategies for putting linked data into practice for the archivist
   Rome in order to get a flavor of the wider community. If you can
   afford two weeks, then do everything you would do in a week, and
   in addition befriend somebody in the hopes of establishing a
-  life-long friendship." 
+  life-long relationship." 
 
 When you read a guidebook on Rome -- or any travel guidebook -- there are simply too many listed things to see & do. Nobody can see all the sites, visit all the museums, walk all the tours, nor eat at all the restaurants. It is literally impossible to experience everything a place like Rome has to offer. So it is with linked data. Despite this fact, if you were to do everything linked data had to offer, then you would do all of things on the following list starting at the first item, going all the way down to evaluation, and repeating the process over and over:
 
@@ -34,6 +34,40 @@ Given that it is quite possible you do not plan to immediately dive head-first i
   
   4. Rome in two weeks - First, do everything you would do in one week. Second, supplement your triple store with the RDF of others'. Third, write an application against the triple store that goes beyond search. In short, tell stories and you will be discussing linked data with the world, literally.
 
+
+Rome in a day
+
+  "If you to go to Rome for a day, then walk to the Colosseum and
+  Vatican City. Everything you see along the way will be extra."
+
+Linked data is not a fad. It is not a trend. It makes a lot of computing sense, and it is a modern way of fulfilling some the goals of archival practice. Just like Rome, it is not going away. An understanding of what linked data has to offer is akin to experiencing Rome first hand. Both will ultimately broaden your perspective. Consequently it is a good idea to make a concerted effort to learn about linked data, as well as visit Rome at least once. Once you have returned from your trip, discuss what you learned with your friends, neighbors, and colleagues. The result will be enlightening everybody.
+
+The previous sections of this book described what linked data is and why it is important. The balance of book describes more of the how's of linked data. For example, there is a glossary to help reenforce your knowledge of the jargon. You can learn about HTTP "content negotiation" to understand how actionable URIs can return HTML or RDF depending on the way you instruct remote HTTP servers. RDF stands for "Resource Description Framework", and the "resources" are represented by URIs. A later section of the book describes ways to design the URIs of your resources. Learn how you can transform existing metadata records like MARC or EAD into RDF/XML, and then learn how to put the RDF/XML on the Web. Learn how to exploit your existing databases (such as the one's under Archon, Archivist's Toolkit, or ArchiveSpace) to generate RDF. If you are the Do It Yourself type, then play with and explore the guidebook's tool section. Get the gentlest of introductions to searching RDF using a query language called SPARQL. Learn how to read and evaluate ontologies & vocabularies. They are manifested as XML files, and they are easily readable and visualizable using a number of programs. Read about and explore applications using RDF as the underlying data model. There are a growing number of them. The book includes a complete publishing system written in Perl, and if you approach the code of the publishing system as if it were a theatrical play, then the "scripts" read liked scenes. (Think of the scripts as if they were a type of poetry, and they will come to life. Most of the "scenes" are less than a page long. The poetry even includes a number of refrains. Think of the publishing system as if it were a one act play.) If you want to read more, and you desire a vetted list of books and articles, then a later section lists a set of further reading.
+
+After you have spent some time learning a bit more about linked data, discuss what you have learned with your colleagues. There are many different aspects of linked data publishing, such as but not limited to:
+
+  * allocating time and money 
+  * analyzing the RDF of yours as well as others
+  * articulating policies
+  * cleaning and improving RDF 
+  * collecting and harvesting the RDF of others
+  * deciding what ontologies & vocabularies to use
+  * designing local URIs
+  * enhancing RDF triples stores by asserting additional relationships
+  * finding and identifying URIs for the purposes of linking
+  * making RDF available on the Web (SPARQL, RDFa, data dumps, etc.)
+  * project management
+  * provisioning value-added services against RDF (catalogs, finding aids, etc.)
+  * storing RDF in triple stores
+
+In archival practice, each of these things would be done by different sets of people: archivists & content specialists, administrators & managers, computer programers & systems administrators, metadata experts & catalogers. Each of these sets of people have a piece of the publishing puzzle and something significant to contribute to the work. Read about linked data. Learn about linked data. Bring these sets of people together discuss what you have learned. At the very least you will have a better collective understanding of the possibilities. If you don't plan to "go to Rome" right away, you might decide to reconsider the "vacation" at another time.
+
+  "Even Michelangelo, when he painted the Sisten Chapel, worked
+  with a team of people each possessing a complementary set of
+  skills. Each had something different to offer, and the
+  discussion between themselves was key to their success."
+  
+  
 
 Strategies
 
