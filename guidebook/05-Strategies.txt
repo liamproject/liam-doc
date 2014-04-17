@@ -13,7 +13,7 @@ Strategies for putting linked data into practice for the archivist
   in addition befriend somebody in the hopes of establishing a
   life-long relationship." 
 
-When you read a guidebook on Rome -- or any travel guidebook -- there are simply too many listed things to see & do. Nobody can see all the sites, visit all the museums, walk all the tours, nor eat at all the restaurants. It is literally impossible to experience everything a place like Rome has to offer. So it is with linked data. Despite this fact, if you were to do everything linked data had to offer, then you would do all of things on the following list starting at the first item, going all the way down to evaluation, and repeating the process over and over:
+When you read a guidebook about Rome -- or any travel guidebook -- there are simply too many listed things to see & do. Nobody can see all the sites, visit all the museums, walk all the tours, nor eat at all the restaurants. It is literally impossible to experience everything a place like Rome has to offer. So it is with linked data. Despite this fact, if you were to do everything linked data had to offer, then you would do all of things on the following list starting at the first item, going all the way down to evaluation, and repeating the process over and over:
 
   1. design the structure your URIs
   2. select/design your ontology & vocabularies -- model your data
