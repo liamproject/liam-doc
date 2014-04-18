@@ -54,6 +54,8 @@ Data sets and projects
   * Dbpedia (http://dbpedia.org/About) - In the simplest terms, this is
 	the content of Wikipedia made accessible as RDF.
 
+  * [FindAndConnect (http://www.findandconnect.gov.au) - 
+
   * LIBRIS (http://libris.kb.se) - This is the joint catalog of the
 	Swedish academic and research libraries. Search results are presented
 	in HTML, but the URLs pointing to individual items are really
@@ -110,6 +112,8 @@ Data sets and projects
 	and intent are very similar to the the purpose and intent of the
 	combined LOCAH Project and Linking Lives.
 
+  * SNAC (http://socialarchive.iath.virginia.edu) - 
+  
   * World Bank Linked Data (http://worldbank.270a.info/.html) - A data
 	set of World Bank indicators, climate change information, finances,
 	etc.

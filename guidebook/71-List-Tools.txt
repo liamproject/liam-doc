@@ -50,6 +50,12 @@ RDF converters, validators, etc.
 	tool locally or use it as a hosted Web application to create OWL
 	ontologies.
 
+  * RAMP (http://www.rampeditor.info/) - "The Remixing Archival
+	Metadata Project (RAMP) is a lightweight web-based editing tool
+	that is intended to let users do two things: (1) generate
+	enhanced authority records for creators of archival collections
+	and (2) publish the content of those records as Wikipedia pages."
+  
   * RDF2RDF (http://www.l3s.de/~minack/rdf2rdf/) - A handy Java jar file
 	enabling you to convert various versions of serialized RDF into other
 	versions of serialized RDF.
