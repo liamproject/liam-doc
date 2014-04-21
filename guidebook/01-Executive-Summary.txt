@@ -1,4 +1,16 @@
-1. Executive Summary
 
+
+Executive Summary
+
+
+Linked data is a process for embedding the descriptive information of archives into the very fabric of the Web. By transforming archival description into linked data, an archivist will enable other people as well as computers to read and use their archival description, even if the others are not a part of the archival community. The process goes both ways. Linked data also empowers archivists to use and incorporate the information of other linked data providers into local description. This enables archivists to make their descriptions more thorough, more complete, and more value-added.
+
+Publishing and using linked data does not represent a change in the definition of archival description, but it does represent a change -- an evolution -- of how archival description is done. Much of current archival description is rooted in the creation and maintenance of archival finding aids in the form of EAD files. 
+
+
+
+
+
+ 
 [The Executive Summary will list core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
 
