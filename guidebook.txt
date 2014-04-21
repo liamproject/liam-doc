@@ -16,10 +16,22 @@
                                                    LiAM & Eric L. Morgan
                                             http://sites.tufts.edu/liam/
 
-                                                          April 20, 2014
+                                                          April 21, 2014
 
-1. Executive Summary
+
 
+Executive Summary
+
+
+Linked data is a process for embedding the descriptive information of archives into the very fabric of the Web. By transforming archival description into linked data, an archivist will enable other people as well as computers to read and use their archival description, even if the others are not a part of the archival community. The process goes both ways. Linked data also empowers archivists to use and incorporate the information of other linked data providers into local description. This enables archivists to make their descriptions more thorough, more complete, and more value-added.
+
+Publishing and using linked data does not represent a change in the definition of archival description, but it does represent a change -- an evolution -- of how archival description is done. Much of current archival description is rooted in the creation and maintenance of archival finding aids in the form of EAD files. 
+
+
+
+
+
+ 
 [The Executive Summary will list core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
 
 
@@ -1385,14 +1397,12 @@ Linked data frameworks and publishing systems
 	variety of forms: relational databases, RDF triples stores, etc. Again,
 	feature-rich and well-documented.
 
-  * openRDF (http://www.openrdf.org/) - This is a Java-based framework for
+  * openRDF Sesame (http://www.openrdf.org/) - This is a Java-based framework for
 	implementing linked data publishing including the establishment of a
 	triple store and a SPARQL endpoint. 
 
-  * openRDF (http://www.openrdf.org/) - This is a Java-based framework for
-	implementing linked data publishing including the establishment of a
-	triple store and a SPARQL endpoint. 
-
+  * OWLIM (https://www.ontotext.com/owlim) - 
+  
   * R2RML (http://www.w3.org/TR/r2rml/) - 
   
   
@@ -2494,17 +2504,18 @@ HTH.
 Eric Morgan
 
 
-Out takes
+About the author
 
-The Semantic Web is about encoding data, information, and knowledge in computer-readable fashions, making these encodings accessible on the World Wide Web, allowing computers to crawl the encodings, and finally, employing reasoning engines against them for the purpose of discovering and creating new knowledge. The following section are a primer to the principles and practices of linked data.
+Eric Lease Morgan is a Digital Initiatives Librarian as the University of Notre Dame. He considers himself to be a librarian first and a computer user second. His professional goal is to discover new ways to use computers to provide better library services. An advocate of open source software and open access publishing, he has been freely giving this intellectual property aways since before the phrases were coined. This Guidebook is the fourth book-length thing he has written. Others included: 1) WAIS and Gopher Servers: A Guide for Internet End-Users, 2) Pointers 4 Searching, Searching 4 Pointers, and 3) Open Source Software in Libraries. He has written and presented consistently throughout his career, and just about all of his writings can be found online at one of two places:
 
-linked open Data
+  1. Musings on Information and Librarianship
+	 (http://infomotions.com/musings/) - pretty much all of Eric's
+	 published work from the beginning of his career until 2010
 
-For all intents and contexts, linked data and linked open data are synonymous, but the subtle difference does need to be  discussed. Linked open data is a qualification of linked data.  Linked open data comes with  an explicit  license agreement denoting  how the accessible data can  be "freely" used. In this case, the words "free" and "open" are analogous to free "open source software". Just as open source software is available for use and re-use, linked open data is free for use and re-use. Attribution needs to be made. The data can be freely used. While copyrights may still be in place when it comes to linked open data, the copyrights allow for the use, re-use, and re-distribution. The intent of linked open data is to use the content in ways that it canb e used in many ways for many purposes. While the distinction between linked data and linked open data are may be large in the eyes of some people, for simplicities sake, the phrase linked data is synonymous with linked open data, even though some feel the distinction needs to be delineated to a greater degree.
+  2. Planet Eric Lease Morgan (http://planet.infomotions.com) - an
+	 aggregation of all his postings from as many as five different
+	 blogs
 
-Linked data is a standardized process for publishing and disseminating information via the Web. It represents the current "how" behind the ideas the Semantic Web.
+Eric also exhibits his paints, plays guitar, grows roses, likes to row in his boat, and binds his own handmade books.
 
-Increasingly you will hear of of linked data being qualified as "linked open data". The "open" qualifier alludes to the important distinctions between truly free data/information and licensed data/information coming with strings attached. Truly "open" linked data comes with no financial restrictions or restrictions on use, but there may very well be attribution requirements.
-
-Please remember, RDF is really about sets of triples, and these sets do not neatly correspond to document structures like MARC nor EAD. Using MARC and/or EAD to publish linked data is functional but not necessarily optimal. At the same time, there does not currently exist a method for people writing archival description to directly publish the fruits of their labors as RDF. Until such methods present themselves, transforming present dauy metadata file formats is a viable option.
 

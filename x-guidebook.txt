@@ -16,7 +16,7 @@
                                                    LiAM & Eric L. Morgan
                                             http://sites.tufts.edu/liam/
 
-                                                          April 19, 2014
+                                                          April 20, 2014
 
 1. Executive Summary
 
@@ -762,25 +762,90 @@ Do not keep your candle hidden beneath a bushel basket. Tell your colleagues abo
   the sights."
 
 
-===========================
-
-
 Rome in week
 
   "For a week, do everything you would do in a few days, and make
   one or two day-trips outside Rome in order to get a flavor of the
   wider community."
 
-In this "itinerary" you begin publishing RDF, but at the same time you actively design and document  URIs as well as select ontologies & vocabularies for your RDF. You then re-publish your existing data using the documentation as a guide. And you re-implement your SPARQL endpoint. Discuss linked data not only with your colleagues but with people outside archival practice. This particular strategy is probably most difficult it requires a lot of re-thinking about archival practice and ways it can be manifested. To these ends, there are three books of particular interest to the reader:
+In this "itinerary" you begin publishing RDF, but at the same time you actively design and document  URIs as well as select ontologies & vocabularies for your RDF. You then re-publish your existing data using your documentation as a guide. And you re-implement your SPARQL endpoint. Discuss linked data not only with your colleagues but with people outside archival practice. This particular strategy is probably the most difficult it requires a lot of re-thinking about archival practice and ways it can be manifested. To these ends, there are three books of particular interest to the reader. Think of them as required reading:
 
   1. Linked data: Evolving the Web into a global data space by Tom Heath and Christian Bizer [11] - This book provides a thorough and up-to-date overview of what linked data is and why it is important. It is full of useful examples and recipes for implementation.
   
-  2. Semantic Web for the working ontologist: Effective modeling in RDFS and OWL buy Dean Allemang and James Hendler [12] - This book is primarily intended for people who are evaluating and designing ontologies & vocabularies. It compares & contrasts RDF to alternative data models (like spreadsheets or relational databases), and explains why RDF is particular suitable to the Web. It then outlines how to create ones own ontology.
+  2. Semantic Web for the working ontologist: Effective modeling in RDFS and OWL buy Dean Allemang and James Hendler [12] - This book is primarily intended for people who are evaluating and designing ontologies & vocabularies. It compares & contrasts RDF to alternative data models (like spreadsheets or relational databases), and explains why RDF is particularly suitable to the Web. It then outlines how to create one's own ontology.
   
   3. Linked data patterns: A Pattern catalogue for modeling, publishing, and consuming linked data by Leigh Dodds and Ian Davis [13] - As a "pattern catalog", this book is a long list of common problem experienced by people implementing linked data as well as accompanying discussion and solutions to the problems. The problems and solutions are divided into a number of categories: URIs (identifiers), modeling, publishing, data management, and applications. 
 
 
 Design your URIs
+
+The heart of linked data is the description of things. Things can be anything, either real or imaginary, and all of these things are expected to be represented by URIs. Consequently, when you are intending to publish linked data, you need to think about the structure of the identifiers of your things. To large degree URIs are expected to be "cool". [14] This means they should not change and they should be:
+
+  * simple - short, human-readable without any name/value pairs,
+    and easily depicted in written form
+
+  * stable - immutable, something that lasts two, twenty, or two
+	hundred years, sans implementation bits such as file name
+	extensions because file types (JPEG, PDF, etc.) change over time
+
+  * manageable - meaning you have some sort of system for dealing
+	with implement changes behind the scenes; content negotiation
+	systems and HTTP server management systems are keys to success
+  
+Pete Johnson, while designing the URIs for the "things" in LOCAH, articulated the following pattern for the URIs he was going to mint [15]:
+
+  http://{domain}/id/{concept}/{reference}
+
+Examples then included:
+
+  * http://example.org/id/findingaid/mums059
+
+  * http://example.org/id/family/clarkfamily
+
+  * http://example.org/id/repository/usUS-DLC
+
+These URIs were derived from the data inside EAD files and took into account:
+
+  * local identifiers - URIs based embedded identifiers
+
+  * authority controlled values - building from the names in
+    remote lists
+
+  * locally scoped names - building from the names in local lists
+
+  * locally developed "rules" - identifiers based on long strings
+    of text
+
+  * identifier inheritance - URIs starting with local identifiers
+    and building on hierarchy
+
+These principles are not very much different from some of the Identifier Patterns articulated by Dodds and Davis. Patterns included:
+
+  * hierarchical URIs - these are "patterned" URIs denoting sub and
+    super-class relationships
+
+  * literal keys - based on custom properties, such as a sub-class
+    if Dublin Core identifiers
+
+  * natural keys - URIs built from things like ISSN numbers, OCLC
+    numbers, database keys, etc.
+
+  * patterned URIs - designed after predicable schemes, much like
+    Johnson's examples
+
+  * proxy URIs - URIs created after some alignment is done against
+    amalgamated RDF
+
+  * rebased URIs - a renamed URI done so because the previous one
+    was not as "cool" as it could be
+
+  * shared keys - identifiers created across domains
+
+  * URL slugs - patterned URIs based based on strings
+
+Designing your URIs is a bit of a chicken & egg problem. You are designing URIs for the "things" of your archival description, and before you can create the URIs you need to know what "things" you have, which is the subject of the next section. On the other hand, the subjects and objects of RDF statements are expected to be URIs -- the identifiers you will be sharing -- the very heart of linked data. In other words, you need both URIs as well as ontologies & vocabularies at once and at the same time to do the work of linked data. They go hand-in-hand. You can not do one without the other. 
+
+At the very least remember one thing, design your URIs to be "cool". 
 
 
 Select your ontology & vocabularies
@@ -814,16 +879,16 @@ Supplement and enhance your triple store
 
 RDF is published in many different ways such as but not limited to: as triple store dumps, via content negotiation on the other side of actionable URIs, embedded in HTML files as RDFa, available as the result of SPARQL queries, etc. Other metadata and information is available from other means such at REST-ful websites, OAI-PMH data providers, spreadsheets and databases from communities of interest. The information and metadata from each of these "places" can be identified and prioritized into some sort of collection development policy. For example, you might be interested in augmenting your RDF with the RDF of other archival collections. You might want to supplement your descriptions with images of people, places, and things. The places in your archival description may be enhanced with geographic coordinates. Controlled vocabularies in your description may be equivocated or related to other  controlled vocabularies enabling the interlinking across collections. What ever the reason, the harvesting and collecting of other people's metadata and information can only enrich the information services you provide.
 
-Begin the harvesting process by taking advantages of directories of RDF and metadata sets. Datahub is a good example. [14]  Dumps of RDF could be mirrored locally and then ingested into the triple store. HTML pages could be crawled, RDFa extracted, and the result ingested into the triple store. Lists of actionable URIs could be created by searching remote websites. These actionable URIs could then be fed to a computer program which will use content negotiation to harvest the remote RDF. The actual harvesting process will almost definitely require the skills of a computer programmer or systems administrator. After remote metadata and RDF has been incorporated into your local triple store, you will want to continue to implement your local SPARQL endpoint, because you will definitely use SPARQL to implement the triple store curation services as well as the services for the general public and scholar. 
+Begin the harvesting process by taking advantages of directories of RDF and metadata sets. Datahub is a good example. [16]  Dumps of RDF could be mirrored locally and then ingested into the triple store. HTML pages could be crawled, RDFa extracted, and the result ingested into the triple store. Lists of actionable URIs could be created by searching remote websites. These actionable URIs could then be fed to a computer program which will use content negotiation to harvest the remote RDF. The actual harvesting process will almost definitely require the skills of a computer programmer or systems administrator. After remote metadata and RDF has been incorporated into your local triple store, you will want to continue to implement your local SPARQL endpoint, because you will definitely use SPARQL to implement the triple store curation services as well as the services for the general public and scholar. 
 
  
 Curating the collection
 
-As additional information is brought into your triple store, there will be an increasing need to curate the information. This process is very similar, if not congruent with the processes behind a project of a few years ago called the National Science Foundation Digital Library (NSDL). [15] This project was intended to harvest data from across the Internet, amalgamate it, and provide services against the result. These services often included creating subsets of the data and search services on top of them. This curation process is similar to the collection / services processes undertaken by Europe's Europeana project and the Digital Public Library of America.
+As additional information is brought into your triple store, there will be an increasing need to curate the information. This process is very similar, if not congruent with the processes behind a project of a few years ago called the National Science Foundation Digital Library (NSDL). [17] This project was intended to harvest data from across the Internet, amalgamate it, and provide services against the result. These services often included creating subsets of the data and search services on top of them. This curation process is similar to the collection / services processes undertaken by Europe's Europeana project and the Digital Public Library of America.
 
 Once the metadata and information have been acquired there is a need to make it the "best" information possible. What does this mean? In this case, the word "best" connotes information that is: 1) consistent, 2) correct, 3) accurate, 4) complete, and 5) timely. The processes of maintaining metadata and information are just as ongoing and indeterminate as the curation of physical collection.
 
-Creating and maintaining metadata is a never-ending process. The items being described can always use elaboration. Collections may increase is size. Rights applied against content may change. Things become digitized, or digitized things are migrated from one format to another. Because of these sorts of things and many others, cleanup, conversion, and consistency are something every metadata specialist needs to keep in mind. They are things to be managed and maintained as the linked data of others is assimilated into your own collection. These issues have been nicely elaborated upon in separate articles by Dianne Hillman and Thomas Johnson. [16, 17]. Hillman outlines a number of problems:
+Creating and maintaining metadata is a never-ending process. The items being described can always use elaboration. Collections may increase is size. Rights applied against content may change. Things become digitized, or digitized things are migrated from one format to another. Because of these sorts of things and many others, cleanup, conversion, and consistency are something every metadata specialist needs to keep in mind. They are things to be managed and maintained as the linked data of others is assimilated into your own collection. These issues have been nicely elaborated upon in separate articles by Dianne Hillman and Thomas Johnson. [18, 19]. Hillman outlines a number of problems:
 
   1. missing data - metadata elements not present in supplied
      metadata
@@ -1005,22 +1070,42 @@ Expand beyond the document centric finding aid model. The archival finding aid (
 Links
 
 [1] LOCAH - http://archiveshub.ac.uk/locah/
+
 [2] ead2rdf - http://data.archiveshub.ac.uk/xslt/ead2rdf.xsl
+
 [3] mods2rdf - https://github.com/dltj/MARC-MODS-RDFizer/blob/master/stylesheets/mods2rdf.xslt
+
 [4] EAC-CPF - http://eac.staatsbibliothek-berlin.de/
+
 [5] FindAndConnect - http://www.findandconnect.gov.au
+
 [6] SNAC - http://socialarchive.iath.virginia.edu
+
 [7] RAMP - http://demo.rampeditor.info/export.php
+
 [8] ContentDM - http://www.contentdm.org
+
 [9] oai2lod - https://github.com/behas/oai2lod
+
 [10] D2RQ - http://d2rq.org
+
 [11] Linked data: Evolving the Web into a global data space by Tom Heath and Christian Bizer - http://linkeddatabook.com
+
 [12] Semantic Web for the working ontologist: Effective modeling in RDFS and OWL buy Dean Allemang and James Hendler - http://workingontologist.org
+
 [13] Linked data patterns: A Pattern catalogue for modeling, publishing, and consuming linked data by Leigh Dodds and Ian Davis - http://patterns.dataincubator.org
-[14] Datahub - http://datahub.io/
-[15] NSDL - https://nsdl.org
-[16] Improving Metadata Quality: Augmentation and Recombination by Diane Hillmann, Naomi Dushay, and Jon Phipps - http://dcpapers.dublincore.org/pubs/article/view/770/766
-[17] Recipes for Enhancing Digital Collections with Linked Data by Thomas Johnson and Karen Estlund - http://journal.code4lib.org/articles/9214
+
+[14] "cool" URIs - http://www.w3.org/TR/cooluris/
+
+[15] Identifying the “things”: URI Patterns for the Hub Linked Data by Pete Johnson - http://archiveshub.ac.uk/locah/2010/11/identifying-the-things-uri-patterns-for-the-hub-linked-data/
+
+[16] Datahub - http://datahub.io/
+
+[17] NSDL - https://nsdl.org
+
+[18] Improving Metadata Quality: Augmentation and Recombination by Diane Hillmann, Naomi Dushay, and Jon Phipps - http://dcpapers.dublincore.org/pubs/article/view/770/766
+
+[19] Recipes for Enhancing Digital Collections with Linked Data by Thomas Johnson and Karen Estlund - http://journal.code4lib.org/articles/9214
 
 7.a.ii. Gaps: What is needed
 

@@ -104,14 +104,12 @@ Linked data frameworks and publishing systems
 	variety of forms: relational databases, RDF triples stores, etc. Again,
 	feature-rich and well-documented.
 
-  * openRDF (http://www.openrdf.org/) - This is a Java-based framework for
+  * openRDF Sesame (http://www.openrdf.org/) - This is a Java-based framework for
 	implementing linked data publishing including the establishment of a
 	triple store and a SPARQL endpoint. 
 
-  * openRDF (http://www.openrdf.org/) - This is a Java-based framework for
-	implementing linked data publishing including the establishment of a
-	triple store and a SPARQL endpoint. 
-
+  * OWLIM (https://www.ontotext.com/owlim) - 
+  
   * R2RML (http://www.w3.org/TR/r2rml/) - 
   
   

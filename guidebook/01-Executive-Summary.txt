@@ -2,15 +2,12 @@
 
 Executive Summary
 
+Linked data is a process for embedding the descriptive information of archives into the very fabric of the Web. By transforming archival description into linked data, an archivist will enable other people as well as computers to read and use their archival description, even if the others are not a part of the archival community. The process goes both ways. Linked data also empowers archivists to use and incorporate the information of other linked data providers into their local description. This enables archivists to make their descriptions more thorough, more complete, and more value-added. For example, archival collections could be automatically supplemented with geographic coordinates in order to make maps, images of people or additional biographic descriptions to make collections come alive, or bibliographies for further reading.
 
-Linked data is a process for embedding the descriptive information of archives into the very fabric of the Web. By transforming archival description into linked data, an archivist will enable other people as well as computers to read and use their archival description, even if the others are not a part of the archival community. The process goes both ways. Linked data also empowers archivists to use and incorporate the information of other linked data providers into local description. This enables archivists to make their descriptions more thorough, more complete, and more value-added.
+Publishing and using linked data does not represent a change in the definition of archival description, but it does represent an evolution of how archival description is accomplished. For example, linked data is not about generating a document such as EAD file. Instead it is about asserting sets of statements about an archival thing, and then allowing those statements to be brought together in any number of ways for any number of purposes. A finding aid is one such purpose. Indexing is another purpose. For use by a digital humanist is anther purpose. While EAD files are encoded as XML documents and therefore very computer readable, the reader must know the structure of EAD in order to make the most out of the data. EAD is archives-centric. The way data is manifested in linked data is domain-agnostic. 
 
-Publishing and using linked data does not represent a change in the definition of archival description, but it does represent a change -- an evolution -- of how archival description is done. Much of current archival description is rooted in the creation and maintenance of archival finding aids in the form of EAD files. 
+The objectives of archives include collection, organization, preservation, description, and often times access to unique materials. Linked data is about description and access. By taking advantages of linked data principles, archives will be able to improve their descriptions and increase access. This will require a shift in the way things get done but not what gets done. The goal remains the same.
 
+Many tools are ready exist for transforming data in existing formats into linked data. This data can reside in Excel spreadsheets, database applications, MARC records, or EAD files. There are tiers of linked data publishing so one does not have to do everything all at once. But to transform existing information or to maintain information over the long haul requires the skills of many people: archivists & content specialists, administrators & managers, metadata specialists & catalogers, computer programers & systems administrators.
 
-
-
-
- 
-[The Executive Summary will list core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
-
+Moving forward with linked data is a lot like touristing to Rome. There are many ways to get there, and there are many things to do once you arrive, but the result will undoubtably improve your ability to participate in the discussion of the human condition on a world wide scale.
