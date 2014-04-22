@@ -16,13 +16,25 @@
                                                    LiAM & Eric L. Morgan
                                             http://sites.tufts.edu/liam/
 
-                                                          April 20, 2014
-
-1. Executive Summary
-
-[The Executive Summary will list core objectives, anticipated outcomes, and implications that will provide administrators or other senior leaders with the information that they will need in order to understand the benefits and potential costs of this path.]
+                                                          April 21, 2014
 
 
+
+Executive Summary
+
+Linked data is a process for embedding the descriptive information of archives into the very fabric of the Web. By transforming archival description into linked data, an archivist will enable other people as well as computers to read and use their archival description, even if the others are not a part of the archival community. The process goes both ways. Linked data also empowers archivists to use and incorporate the information of other linked data providers into their local description. This enables archivists to make their descriptions more thorough, more complete, and more value-added. For example, archival collections could be automatically supplemented with geographic coordinates in order to make maps, images of people or additional biographic descriptions to make collections come alive, or bibliographies for further reading.
+
+Publishing and using linked data does not represent a change in the definition of archival description, but it does represent an evolution of how archival description is accomplished. For example, linked data is not about generating a document such as EAD file. Instead it is about asserting sets of statements about an archival thing, and then allowing those statements to be brought together in any number of ways for any number of purposes. A finding aid is one such purpose. Indexing is another purpose. For use by a digital humanist is anther purpose. While EAD files are encoded as XML documents and therefore very computer readable, the reader must know the structure of EAD in order to make the most out of the data. EAD is archives-centric. The way data is manifested in linked data is domain-agnostic. 
+
+The objectives of archives include collection, organization, preservation, description, and often times access to unique materials. Linked data is about description and access. By taking advantages of linked data principles, archives will be able to improve their descriptions and increase access. This will require a shift in the way things get done but not what gets done. The goal remains the same.
+
+Many tools are ready exist for transforming data in existing formats into linked data. This data can reside in Excel spreadsheets, database applications, MARC records, or EAD files. There are tiers of linked data publishing so one does not have to do everything all at once. But to transform existing information or to maintain information over the long haul requires the skills of many people: archivists & content specialists, administrators & managers, metadata specialists & catalogers, computer programers & systems administrators.
+
+Moving forward with linked data is a lot like touristing to Rome. There are many ways to get there, and there are many things to do once you arrive, but the result will undoubtably improve your ability to participate in the discussion of the human condition on a world wide scale.
+
+Acknowledgements
+
+The creation of this guidebook is really the effort of many people, not a single author. First and foremost, thanks goes to Anne Sauer and Eliot Wilczek. Anne saw the need, spearheaded the project, and made it a reality. Working side-by-side was Eliot who saw the guidebook to fruition. Then there is the team of people from the Working Group: Greg Colati, Karen Gracy, Corey Harper, Michelle Light, Susan Pyzynski, Aaron Rubinstein, Ed Summers, Kenneth Thibodeau, and Kathy Wisser. These people made themselves available for discussion and clarification. They provided balance between human archival practice and seemingly cold computer technology. Additional people offered their advice into the issues of linked data in archives including: Kevin Cawley, Diane Hillman, Mark Matienzo, Ross Singer, and Jane & Ade Stevenson. They filled in many gaps. Special thanks goes to my boss Tracey Bergstrom who more than graciously enabled some of this work to happen on company time. The questions raised by the anonymized library school student are definitely appreciated. The Code4Lib community was very helpful -- a sort of reality check. And then there are the countless other people who listened over and over again about what linked data is, is not, and what it can do. A big "thank you" goes to all. 
 
 Introduction
 
@@ -30,7 +42,7 @@ Introduction
 
 The purpose of this guidebook is to describe in detail what linked data is, why it is important, how you can publish it to the Web, how you can take advantage of your linked data, and how you can exploit the linked data of others. For the archivist, linked data is about universally making accessible and repurposing sets of facts about you and your collections. As you publish these fact you will be able to maintain a more flexible Web presence as well as a Web presence that is richer, more complete, and better integrated with complementary collections. The principles behind linked data are inextricably bound to the inner workings of the Web. It is standard of practice that will last as long as the Web lasts, and that will be long into the foreseeable future. The process of publishing linked data in no way changes the what of archival practice, but it does shift how archival practice is accomplished. Linked data enables you to tell the stories of your collections, and it does in a way enabling you to reach much wider and more global audiences.  
 
-Linked Archival Metadata: A Guidebook provides archivists with an overview of the current linked data landscape, define basic concepts, identify practical strategies for adoption, and emphasize the tangible payoffs for archives implementing linked data. It focuses on clarifying why archives and archival users can benefit from linked data and will identify a graduated approach to applying linked data methods to archival description.
+Linked Archival Metadata: A Guidebook provides archivists with an overview of the current linked data landscape, defines basic concepts, identifies practical strategies for adoption, and emphasizes the tangible payoffs for archives implementing linked data. It focuses on clarifying why archives and archival users can benefit from linked data and will identify a graduated approach to applying linked data methods to archival description.
 
 "Let's go to Rome!" This book uses the metaphor of a guidebook, specifically a guidebook describing a trip to Rome. Any trip abroad requires an understanding of the place where you intend to go, some planning, some budgeting, and some room for adventure. You will need to know how you are going to get there, where you are going to stay, what you are going to eat, what you want to see and do once you arrive, and what you might want to bring back as souvenirs. You behooves you to know a bit of the history, customs, and language. This is also true of your adventure to Linked Data Land. To that end, this guidebook is divided into the following sections:
 
@@ -1385,14 +1397,12 @@ Linked data frameworks and publishing systems
 	variety of forms: relational databases, RDF triples stores, etc. Again,
 	feature-rich and well-documented.
 
-  * openRDF (http://www.openrdf.org/) - This is a Java-based framework for
+  * openRDF Sesame (http://www.openrdf.org/) - This is a Java-based framework for
 	implementing linked data publishing including the establishment of a
 	triple store and a SPARQL endpoint. 
 
-  * openRDF (http://www.openrdf.org/) - This is a Java-based framework for
-	implementing linked data publishing including the establishment of a
-	triple store and a SPARQL endpoint. 
-
+  * OWLIM (https://www.ontotext.com/owlim) - 
+  
   * R2RML (http://www.w3.org/TR/r2rml/) - 
   
   
@@ -2494,17 +2504,18 @@ HTH.
 Eric Morgan
 
 
-Out takes
+About the author
 
-The Semantic Web is about encoding data, information, and knowledge in computer-readable fashions, making these encodings accessible on the World Wide Web, allowing computers to crawl the encodings, and finally, employing reasoning engines against them for the purpose of discovering and creating new knowledge. The following section are a primer to the principles and practices of linked data.
+Eric Lease Morgan is a Digital Initiatives Librarian as the University of Notre Dame. He considers himself to be a librarian first and a computer user second. His professional goal is to discover new ways to use computers to provide better library services. An advocate of open source software and open access publishing, he has been freely giving this intellectual property aways since before the phrases were coined. This Guidebook is the fourth book-length thing he has written. Others included: 1) WAIS and Gopher Servers: A Guide for Internet End-Users, 2) Pointers 4 Searching, Searching 4 Pointers, and 3) Open Source Software in Libraries. He has written and presented consistently throughout his career, and just about all of his writings can be found online at one of two places:
 
-linked open Data
+  1. Musings on Information and Librarianship
+	 (http://infomotions.com/musings/) - pretty much all of Eric's
+	 published work from the beginning of his career until 2010
 
-For all intents and contexts, linked data and linked open data are synonymous, but the subtle difference does need to be  discussed. Linked open data is a qualification of linked data.  Linked open data comes with  an explicit  license agreement denoting  how the accessible data can  be "freely" used. In this case, the words "free" and "open" are analogous to free "open source software". Just as open source software is available for use and re-use, linked open data is free for use and re-use. Attribution needs to be made. The data can be freely used. While copyrights may still be in place when it comes to linked open data, the copyrights allow for the use, re-use, and re-distribution. The intent of linked open data is to use the content in ways that it canb e used in many ways for many purposes. While the distinction between linked data and linked open data are may be large in the eyes of some people, for simplicities sake, the phrase linked data is synonymous with linked open data, even though some feel the distinction needs to be delineated to a greater degree.
+  2. Planet Eric Lease Morgan (http://planet.infomotions.com) - an
+	 aggregation of all his postings from as many as five different
+	 blogs
 
-Linked data is a standardized process for publishing and disseminating information via the Web. It represents the current "how" behind the ideas the Semantic Web.
+Eric also exhibits his paints, plays guitar, grows roses, likes to row in his boat, and binds his own handmade books.
 
-Increasingly you will hear of of linked data being qualified as "linked open data". The "open" qualifier alludes to the important distinctions between truly free data/information and licensed data/information coming with strings attached. Truly "open" linked data comes with no financial restrictions or restrictions on use, but there may very well be attribution requirements.
-
-Please remember, RDF is really about sets of triples, and these sets do not neatly correspond to document structures like MARC nor EAD. Using MARC and/or EAD to publish linked data is functional but not necessarily optimal. At the same time, there does not currently exist a method for people writing archival description to directly publish the fruits of their labors as RDF. Until such methods present themselves, transforming present dauy metadata file formats is a viable option.
 
