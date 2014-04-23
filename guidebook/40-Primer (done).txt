@@ -414,46 +414,6 @@ RDF is not to be confused with RDF/XML or any other type of RDF "serialization".
 Linked data is a process. It is a process of making information easily accessible and inextricably tied to the way the Web works. By making information available as linked data, you will more easily make your available to others and vice versa. The result will be value-added services and increased visibility.
 
 
-Linked data, today
-
-4.b. Trends in LOD-LAM
-
-  * Mash ups
-  * Harvesting along side other protocols
-  * Increased interest
-  * Increased number of RDF serializations
-  * Governments making their content available
-  * Using them to enhance online catalogs
-  * Creating timelines
-  * Creating "named graphs"
-  * Increased number of programming toolkits
-  * Emphasis on "open" linked data and linked data in museums and archives
-  * Making RDF dumps available
-  * Interest in schema.org
-
-With great interest I read the Spring/Summer issue of Information Standards Quarterly where there were a number of articles pertaining to linked open data in cultural heritage institutions. [0] Of particular interest to me where the various loosely enumerated challenges of linked open data. Some of them included:
-
-  * the apparent Tower Of Babel when it comes to vocabularies used to describe content, and the same time we need to have "ontology mindfulness". 
-  * dirty, inconsistent, or wide varieties of data integrity
-  * persistent URIs
-  * the "chicken & egg" problem of why linked data if there is no killer application
-
-
-There are a number of challenges in the process. Some of them are listed below, and some of them have been alluded to above:
-
-  * Create useful LOD, meaning, create LOD that links to other LOD. LOD does not live in a world by itself. Remember, the "L" stands for "linked". For example, try to include URIs that are the URIs used on other LOD data sets. Sometimes this is not possible, for example, le with the names of people in archival materials. When possible, they used VIAF, but other times they needed to create their own URI denoting an individual.
-
-  * There is a level of rigor involved in creating the data model, and there may be many discussions regarding semantics. For example, what is a creator? Or, when is a term intended to be an index term as opposed reference. When does one term in one vocabulary equal a different term in a different vocabulary?
-
-  * Balance the creation of your own vocabulary with the need to speak the language of others using their vocabulary.
-
-  * Consider "fixing" the data as it comes in or goes out because it might not be consistent nor thorough.
-
-  * Provenance is an issue. People — especially scholars — will want to know where the LOD came from and whether or not it is authoritative. How to solve or address this problem? The jury is still out on this one.
-
-  * Creating and maintaining LOD is difficult because it requires the skills of a number of different types of people. Computer programmers. Database designers. Subject experts. Metadata specialists. Archivists. Etc. A team is all but necessary.
-
-
 Benefits
 
 Archives are about collecting, organizing, preserving, and disseminating original, unique, and primary literature. These are the whats of archival practice, but the hows of archival practice evolve with the changing technology. With the advent of ubiquitous networked computing, people's expectations regarding access to information and knowledge have changed significantly. Unless institutions like archives change with the times, then the needs previously filled by archives will be filled by other institutions. Linked data is a how of archival practice, and it is one of those changes behooving archives to adopt. It is a standards-based technique for making data and information available on the Web. It is rooted in the very fabric of the Web and therefore is not beholden to any particular constituency. It is a long lasting standard and practice that will last as long as the hypertext transfer protocol is operational.
