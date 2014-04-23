@@ -203,7 +203,7 @@ In this "itinerary" you begin publishing RDF, but at the same time you actively 
 
   1. Linked data: Evolving the Web into a global data space by Tom Heath and Christian Bizer [11] - This book provides a thorough and up-to-date overview of what linked data is and why it is important. It is full of useful examples and recipes for implementation.
   
-  2. Semantic Web for the working ontologist: Effective modeling in RDFS and OWL buy Dean Allemang and James Hendler [12] - This book is primarily intended for people who are evaluating and designing ontologies & vocabularies. It compares & contrasts RDF to alternative data models (like spreadsheets or relational databases), and explains why RDF is particularly suitable to the Web. It then outlines how to create one's own ontology.
+  2. Semantic Web for the working ontologist: Effective modeling in RDFS and OWL by Dean Allemang and James Hendler [12] - This book is primarily intended for people who are evaluating and designing ontologies & vocabularies. It compares & contrasts RDF to alternative data models (like spreadsheets or relational databases), and explains why RDF is particularly suitable to the Web. It then outlines how to create one's own ontology.
   
   3. Linked data patterns: A Pattern catalogue for modeling, publishing, and consuming linked data by Leigh Dodds and Ian Davis [13] - As a "pattern catalog", this book is a long list of common problem experienced by people implementing linked data as well as accompanying discussion and solutions to the problems. The problems and solutions are divided into a number of categories: URIs (identifiers), modeling, publishing, data management, and applications. 
 
