@@ -10,8 +10,8 @@
 
                          Linked Archival Metadata: A Guidebook
 
-                   draft Draft Draft! Draft!!! DRAFT!!!  D R A F T ! ! ! 
-  
+                                     version 0.99999
+                                      
                                                                       --
                                                    LiAM & Eric L. Morgan
                                             http://sites.tufts.edu/liam/
